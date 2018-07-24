@@ -59,3 +59,13 @@ typings/
 
 # next.js build output
 .next
+
+.vscode
+
+.cache
+
+.rpt2_cache
+
+dist/**/i18n
+dist/esm/index.d.ts
+dist/cjs/index.d.ts
