@@ -7,6 +7,6 @@ const translations: { [key: string]: II18n } = {
   en,
   fr,
   es
-}
+};
 
 export default translations;

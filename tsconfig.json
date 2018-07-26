@@ -7,21 +7,17 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "sourceMap": true,
-    "declaration": true,
-    "lib": [
-      "es2015",
-      "dom"
-    ],
+    "lib": ["es2015", "dom"],
     "baseUrl": ".",
-    "noImplicitAny": true,
-    "noImplicitThis": true,
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": true,
+    "inlineSourceMap": true,
+    "skipLibCheck": true,
     "strictNullChecks": true,
-    "strictFunctionTypes": true
+    "isolatedModules": true
   },
-  "include": [
-    "lib/**/*.ts",
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["lib/**/*.ts", "__tests__/**/*.ts"],
+  "exclude": ["node_modules"]
 }

@@ -1,11 +1,11 @@
 import translations from './i18n';
 
-interface IOptions {
-  wordsPerMinute?: number;
-  locale?: string;
+export interface IOptions {
+  wordsPerMinute?: number | null | undefined;
+  locale?: string | null | undefined;
 }
 
-interface IReadingTime {
+export interface IReadingTime {
   text: string;
   minutes: number;
   time: number;
@@ -14,34 +14,45 @@ interface IReadingTime {
 
 const defaultOpts: IOptions = {
   wordsPerMinute: 200,
-  locale: 'en',
-}
+  locale: 'en'
+};
 
-const readingTime = (data: string, opts?: IOptions): IReadingTime => {
-  const words: RegExpMatchArray | null = data.match(/[\w\d\s]+/gi);
-  const options = { ...defaultOpts, ...opts };
-
-  if (!words) {
+const readingTime = (
+  data: string | null | undefined,
+  opts?: IOptions
+): IReadingTime => {
+  if (data == null) {
     throw new Error('Data provided is invalid');
   }
 
-  if (!options.wordsPerMinute) {
-    throw new Error(`Please provide a 'wordPerMinute' option`);
+  const words = data.match(/[\w\d\s,.]+/gi);
+  const options = Object.assign({}, defaultOpts, opts);
+
+  if (words == null || words.length === 0) {
+    throw new Error('Data provided is invalid');
   }
 
-  if (!options.locale) {
+  if (options.wordsPerMinute == null || options.wordsPerMinute === 0) {
+    throw new Error(`Please provide a 'wordPerMinute' option greater than 0`);
+  }
+
+  if (options.locale == null || options.locale === '') {
     throw new Error(`Please provide a 'locale' option`);
   }
 
-  const minutes: number = words.length / options.wordsPerMinute;
-  const time: number = minutes * 60 * 1000;
-  const displayedTime: number = Math.round(parseInt(minutes.toFixed(2), 10));
+  const minutes = words.length / options.wordsPerMinute;
+  const time = minutes * 60 * 1000;
+  const displayedTime = Math.round(minutes);
   let text: string;
 
   if (displayedTime <= 1) {
-    text = translations[options.locale].less
+    text =
+      (translations[options.locale] && translations[options.locale].less) ||
+      translations.en.less;
   } else {
-    text = `${displayedTime} ${translations[options.locale].default}`
+    text = `${displayedTime} ${(translations[options.locale] &&
+      translations[options.locale].default) ||
+      translations.en.default}`;
   }
 
   return {
@@ -49,10 +60,7 @@ const readingTime = (data: string, opts?: IOptions): IReadingTime => {
     minutes,
     time,
     words: words.join(' ')
-  }
-}
-
-export {
-  readingTime
+  };
 };
 
+export { readingTime };
