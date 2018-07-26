@@ -1,0 +1,36 @@
+language: node_js
+dist: trusty
+node_js:
+- 8
+- 9
+- 10
+cache:
+  yarn: true
+  directories:
+  - node_modules
+stages:
+- test
+- npm release
+notifications:
+  email:
+    on_success: change
+    on_failure: always
+include:
+- stage: test
+  script: yarn test
+  if: type IN (push, pull_request)
+- stage: npm release
+  if: tag IS present
+  deploy:
+    skip_cleanup: true
+    provider: npm
+    email: lucien.benie@gmail.com
+    script: yarn build
+    api_key:
+      secure: b3EL8E70sH2ncNzGIrt1vZh3AkPhnEHfABLMi4x/Dy2alhAxZ+Ww+rmJv/rgd+V3QSevI9gciKU3Un15guop8fT4cKX66vChgoEoTnGVrw76Z9UUFUuNNho0JbkcikQ4eMCwyO6AHYZs6mVRtDM6N4A0XHT//gPvTAhZf9J7Gmroh98po1VJS3gKrJdnayjiEW8q+NtURb24YbfBIUh/xzqZUxhLdvrcmZ4gEXBJGYSf7y0FJpahysD51Zr5N7MTNHDbY5xNQlDjmegsu0sGdqFBGTlHTdGRQ8LaREwp4nEsruVfYQbMqgnsi2xCdUdI+WTgZH+wvg320UPwtLkEAOv0FaiXhLlrHtgaNj7cOaoNWp9CRwv8pzGGbVD+VQ/MEGwJTF9haG2xTIhTswcYJ8mZhwYf6XC9Dlvp2JdStrFKl4hRp2GEfwE9eEjla1JCaYRpsdEJv5yd+IlIX++lqy+ct5B2YuH5mpaNXN/8vlYdZ5xJa7xVElh/ACR+i3jvV8IzoFqwZDPcnHaWnEiUCGwLwhZ1hNd6BT323ysvaOEZ9ZnJvVkUAK8Aq+krcs+5xbK96sqibi6Qr6m4tm3oVmqw80OUBX33KmWB/eQrhlhUS5bjCFoefQZKt58gEghgW8DyMEUylfEqQkd2NQASbBqzKRsbCTOq73tODqxwEAU=
+    on:
+      tags: true
+      repo: lbenie/reading-time-estimator
+env:
+  global:
+    secure: Tti1lkdFV+/y+1RogX5m7mb5nmpI1JgugPrXCXzyJRvAGrhjuYmPTjwMCr5SUg1qKF2ycEeFPkKz7aLfmD1P6tYD/nLQxNtrCfvncWg/OEsAO3Iq6VsQLQC+HEeTltJUxXtL46F/iJPo7+sJdzs9tQSCbcAefUyoz+0bwjB2KFBANE7C/aIMeVW+dLt3/0Le/y+OHEJ+Vk7dJESdFlyVJlWM+dJ2SSgzlwrRE5S37PaU5xE7GDfexKaRWgMeiR3czbdfMLtq8KUNKQPTWv+WCPT4wvOio+RlTQbaWqYTaeVhtPP2rTZNTuJM0ESi9wZJfOmjREdBm4zfMivsudibqWLMW+XqtBavBT7HUXbxtUFhhg9Gj9Q7zp4q4ATug4AcFk35vSe96sI1KKFXtTFPUNRKuBbSvtgB5Uehb+xaT8RRhPT8s2IKc8ubWtBIq4lKcNCh1BTKlzfOc3jaASzRvSZatc4qIDRHwlfm5/VGHEneQpcBbgYt3N13O2vNCrDdnrdVyTASILTNZFiZiQES8tgArbPk7ttawW7Zqnl9XTxL4dBnyG+axlHitF0UQ6TuWEn7jEKG615dKVVY35wGBAeYYivNgAI+UrCWbxSmPxnzyV17s0D36QgOzghWQvZss3i/z3Ry0ljFHjzo2yQWTxRSuNuKYf+/FjZvNPW6rnI=

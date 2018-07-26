@@ -16,7 +16,7 @@
   ],
   "main": "./dist/iife/index.min.js",
   "module": "./dist/esm/index.js",
-  "types": "./dist/iife/index.d.ts",
+  "types": "./dist/iife/lib/index.d.ts",
   "bugs": {
     "url": "https://github.com/lbenie/reading-time-estimator/issues"
   },
@@ -32,7 +32,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "npx rollup -c rollup.config.js",
+    "build": "npx rollup -c",
     "test": "jest --config jest.config.js --colors"
   },
   "devDependencies": {

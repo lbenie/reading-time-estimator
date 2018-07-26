@@ -13,10 +13,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "declaration": true,
-    "inlineSourceMap": true,
-    "skipLibCheck": true,
-    "strictNullChecks": true,
-    "isolatedModules": true
+    "strictNullChecks": true
   },
   "include": ["lib/**/*.ts", "__tests__/**/*.ts"],
   "exclude": ["node_modules"]
