@@ -4,7 +4,6 @@ import commonjs from 'rollup-plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
 
-
 const rollupPlugins = () => [
   nodeResolve({
     jsnext: true,
@@ -27,12 +26,17 @@ export default {
   input,
   output: [
     {
-      file: pkg.main, format: 'iife', name, plugins: [terser({
-        ecma: 6,
-        output: {
-          comments: true
-        }
-      })]
+      file: pkg.main,
+      format: 'iife',
+      name,
+      plugins: [
+        terser({
+          ecma: 6,
+          output: {
+            comments: true
+          }
+        })
+      ]
     },
     { file: 'dist/iife/index.js', format: 'iife', name },
     { file: 'dist/cjs/index.js', format: 'cjs', name },
@@ -46,4 +50,4 @@ export default {
     commonjs(),
     typescript()
   ]
-}
+};
