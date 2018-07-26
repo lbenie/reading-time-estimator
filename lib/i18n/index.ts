@@ -9,4 +9,6 @@ const translations: { [key: string]: II18n } = {
   es
 };
 
-export default translations;
+const hasTranslation = (language: string): boolean => Object.keys(translations).some(x => x === language);
+
+export { translations, hasTranslation };

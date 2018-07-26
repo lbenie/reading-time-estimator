@@ -1,11 +1,11 @@
-import translations from './i18n';
+import { translations, hasTranslation } from './i18n';
 
-export interface IOptions {
-  wordsPerMinute?: number | null | undefined;
-  locale?: string | null | undefined;
+interface IOptions {
+  wordsPerMinute?: number | null;
+  locale?: string | null;
 }
 
-export interface IReadingTime {
+interface IReadingTime {
   text: string;
   minutes: number;
   time: number;
@@ -43,16 +43,14 @@ const readingTime = (
   const minutes = words.length / options.wordsPerMinute;
   const time = minutes * 60 * 1000;
   const displayedTime = Math.round(minutes);
-  let text: string;
+  const hasLocale = hasTranslation(options.locale);
 
-  if (displayedTime <= 1) {
-    text =
-      (translations[options.locale] && translations[options.locale].less) ||
-      translations.en.less;
-  } else {
-    text = `${displayedTime} ${(translations[options.locale] &&
-      translations[options.locale].default) ||
-      translations.en.default}`;
+  let text = `${displayedTime} ${
+    hasLocale ? translations[options.locale].default : translations.en.default
+  }`;
+
+  if (displayedTime < 1.0001) {
+    text = hasLocale ? translations[options.locale].less : translations.en.less;
   }
 
   return {
@@ -63,4 +61,4 @@ const readingTime = (
   };
 };
 
-export { readingTime };
+export { readingTime, IOptions, IReadingTime };

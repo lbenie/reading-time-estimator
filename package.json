@@ -33,7 +33,7 @@
   "license": "MIT",
   "scripts": {
     "build": "npx rollup -c",
-    "test": "jest --config jest.config.js --colors && stryker run"
+    "test": "npx jest --config jest.config.js --colors && npx stryker run"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.54",
