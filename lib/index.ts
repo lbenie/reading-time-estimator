@@ -25,7 +25,7 @@ const readingTime = (
     throw new Error('Data provided is invalid');
   }
 
-  const words = data.match(/[\w\d\s,.]+/gi);
+  const words = data.match(/[\w\d\s,.\u00C0-\u024F]+/gi);
   const options = Object.assign({}, defaultOpts, opts);
 
   if (words == null || words.length === 0) {

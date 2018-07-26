@@ -79,7 +79,7 @@ describe('readingTime()', () => {
 
   it('given_an_invalid_input_should_throw_data_is_invalid', () => {
     expect(() => {
-      readingTime('é');
+      readingTime('©');
     }).toThrowError('Data provided is invalid');
   });
 
