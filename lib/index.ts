@@ -36,7 +36,7 @@ const readingTime = (
     throw new Error(`Please provide a 'wordPerMinute' option greater than 0`);
   }
 
-  if (options.locale == null || options.locale === '') {
+  if (options.locale == null || options.locale.length === 0) {
     throw new Error(`Please provide a 'locale' option`);
   }
 
