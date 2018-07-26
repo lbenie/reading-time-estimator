@@ -15,12 +15,6 @@ const rollupPlugins = () => [
 
 const input = 'lib/index.ts';
 const name = 'readingTimeEstimator';
-const banner = `/*!
-* Lucien Bénié https://github.com/lbenie/reading-time-estimator
-*
-* Copyright (c) 2018, Lucien Bénié.
-* Released under the MIT License.
-*/`;
 
 export default {
   input,
