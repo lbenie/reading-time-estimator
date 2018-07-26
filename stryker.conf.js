@@ -13,6 +13,6 @@ module.exports = function(config) {
       project: 'default',
       config: require(__dirname + '/jest.config.js')
     },
-    timeoutMs: 50000
+    timeoutMs: 100000
   });
 };
