@@ -7,6 +7,7 @@ module.exports = function(config) {
     packageManager: 'yarn',
     coverageAnalysis: 'off',
     tsconfigFile: 'tsconfig.json',
+    maxConcurrentTestRunners: 8,
     mutate: ['lib/*.ts'],
     jest: {
       project: 'default',
