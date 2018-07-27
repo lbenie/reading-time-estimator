@@ -13,7 +13,7 @@ interface IReadingTime {
 }
 
 const defaultOpts: IOptions = {
-  wordsPerMinute: 200,
+  wordsPerMinute: 250,
   locale: 'en'
 };
 
@@ -40,7 +40,12 @@ const readingTime = (
     throw new Error(`Please provide a 'locale' option`);
   }
 
-  const minutes = words[0].length / options.wordsPerMinute;
+  const sum = words.reduce(
+    (acc: any, word: string) => (acc += word.trim().split(/\s+/).length),
+    0
+  );
+
+  const minutes = sum / options.wordsPerMinute;
   const time = minutes * 60 * 1000;
   const displayedTime = Math.round(minutes);
   const hasLocale = hasTranslation(options.locale);
@@ -57,7 +62,7 @@ const readingTime = (
     text,
     minutes,
     time,
-    words: words[0].length
+    words: sum
   };
 };
 

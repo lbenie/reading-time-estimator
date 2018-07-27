@@ -27,7 +27,7 @@
   const hasTranslation = (language) => Object.keys(translations).some(x => x === language);
 
   const defaultOpts = {
-      wordsPerMinute: 200,
+      wordsPerMinute: 250,
       locale: 'en'
   };
   const readingTime = (data, opts) => {
@@ -45,7 +45,8 @@
       if (options.locale == null || options.locale.length === 0) {
           throw new Error(`Please provide a 'locale' option`);
       }
-      const minutes = words[0].length / options.wordsPerMinute;
+      const sum = words.reduce((acc, word) => (acc += word.trim().split(/\s+/).length), 0);
+      const minutes = sum / options.wordsPerMinute;
       const time = minutes * 60 * 1000;
       const displayedTime = Math.round(minutes);
       const hasLocale = hasTranslation(options.locale);
@@ -57,7 +58,7 @@
           text,
           minutes,
           time,
-          words: words[0].length
+          words: sum
       };
   };
 

@@ -58,7 +58,7 @@ describe('readingTime()', () => {
   it('given_a_small_input_translations_should_be_in_english_and_less_than_a_minute', () => {
     const result = readingTime(smallText);
 
-    expect(result.text).toContain(translations.en.default);
+    expect(result.text).toContain(translations.en.less);
   });
 
   it('given_a_small_input_words_should_be_defined_and_greater_than_zero', () => {
@@ -70,19 +70,19 @@ describe('readingTime()', () => {
   it('given_a_small_input_words_should_be_equals_to_data_argument', () => {
     const result = readingTime(smallText);
 
-    expect(result.words).toBe(smallText.length);
+    expect(result.words).toBeGreaterThan(100);
   });
 
-  it('given_a_small_input_time_should_be_greater_than_or_equal_to_100000', () => {
+  it('given_a_small_input_time_should_be_greater_than_or_equal_to_2000', () => {
     const result = readingTime(smallText);
 
-    expect(result.time).toBeGreaterThanOrEqual(100000);
+    expect(result.time).toBeGreaterThanOrEqual(2000);
   });
 
-  it('given_a_small_input_minutes_should_be_greater_than_or_equal_to_1', () => {
+  it('given_a_small_input_minutes_should_be_less_than_or_equal_to_1', () => {
     const result = readingTime(smallText);
 
-    expect(result.minutes).toBeGreaterThanOrEqual(1);
+    expect(result.minutes).toBeLessThanOrEqual(1);
   });
 
   it('given_an_invalid_input_should_throw_data_is_invalid', () => {
