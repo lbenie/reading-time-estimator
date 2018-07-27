@@ -1,5 +1,5 @@
 {
-  "name": "qselector",
+  "name": "reading-time-estimator",
   "version": "0.1.2",
   "description": "A medium's like reading time estimator with internationalization support",
   "keywords": [
