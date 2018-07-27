@@ -9,7 +9,7 @@ interface IReadingTime {
   text: string;
   minutes: number;
   time: number;
-  words: string;
+  words: number;
 }
 
 const defaultOpts: IOptions = {
@@ -40,7 +40,7 @@ const readingTime = (
     throw new Error(`Please provide a 'locale' option`);
   }
 
-  const minutes = words.length / options.wordsPerMinute;
+  const minutes = words[0].length / options.wordsPerMinute;
   const time = minutes * 60 * 1000;
   const displayedTime = Math.round(minutes);
   const hasLocale = hasTranslation(options.locale);
@@ -57,7 +57,7 @@ const readingTime = (
     text,
     minutes,
     time,
-    words: words.join(' ')
+    words: words[0].length
   };
 };
 

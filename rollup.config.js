@@ -4,15 +4,6 @@ import commonjs from 'rollup-plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
 
-const rollupPlugins = () => [
-  nodeResolve({
-    jsnext: true,
-    main: true
-  }),
-  commonjs(),
-  typescript()
-];
-
 const input = 'lib/index.ts';
 const name = 'readingTimeEstimator';
 
@@ -32,7 +23,7 @@ export default {
         })
       ]
     },
-    { file: 'dist/iife/index.js', format: 'iife', name },
+    { file: 'dist/browser/index.js', format: 'iife', name },
     { file: 'dist/cjs/index.js', format: 'cjs', name },
     { file: pkg.module, format: 'es' }
   ],
