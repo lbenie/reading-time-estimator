@@ -1,6 +1,6 @@
 import { readingTime, IOptions } from '../lib';
 import { translations } from '../lib/i18n';
-import loremIpsum from 'lorem-ipsum';
+const loremIpsum = require('lorem-ipsum');
 
 describe('readingTime()', () => {
   let smallText: string;
