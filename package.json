@@ -12,7 +12,9 @@
     "reading-time",
     "time",
     "es6",
-    "medium"
+    "medium",
+    "i18n",
+    "estimator"
   ],
   "main": "./dist/umd/index.umd.js",
   "module": "./dist/esm/index.es6.js",
