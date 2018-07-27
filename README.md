@@ -22,7 +22,7 @@ yarn install reading-time-estimator
 
 ## API
 
-The api is fairly simple. Here's are the types definition for this module.
+The api is fairly simple. Here are the types definition for this module.
 
 ```typescript
 interface IOptions {
@@ -59,7 +59,7 @@ const defaultOpts: IOptions = {
 ```
 
 At the moment there is only 3 supported locales: `en`, `fr` and `es`. If a
-locale does not exists, it will fallback to `en`.
+locale does not exist, it will fallback to `en`.
 
 ### Usage
 
