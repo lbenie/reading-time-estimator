@@ -88,4 +88,4 @@ const result = readingTime(text, { locale: 'fr' });
 
 ## TODOs
 
-[ ] add more languages
+- [ ] add more languages
