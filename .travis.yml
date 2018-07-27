@@ -15,22 +15,23 @@ notifications:
   email:
     on_success: change
     on_failure: always
-include:
-- stage: test
-  script: yarn test
-  if: type IN (push, pull_request)
-- stage: npm release
-  if: tag IS present
-  deploy:
-    skip_cleanup: true
-    provider: npm
-    email: lucien.benie@gmail.com
-    script: yarn build
-    api_key:
-      secure: b3EL8E70sH2ncNzGIrt1vZh3AkPhnEHfABLMi4x/Dy2alhAxZ+Ww+rmJv/rgd+V3QSevI9gciKU3Un15guop8fT4cKX66vChgoEoTnGVrw76Z9UUFUuNNho0JbkcikQ4eMCwyO6AHYZs6mVRtDM6N4A0XHT//gPvTAhZf9J7Gmroh98po1VJS3gKrJdnayjiEW8q+NtURb24YbfBIUh/xzqZUxhLdvrcmZ4gEXBJGYSf7y0FJpahysD51Zr5N7MTNHDbY5xNQlDjmegsu0sGdqFBGTlHTdGRQ8LaREwp4nEsruVfYQbMqgnsi2xCdUdI+WTgZH+wvg320UPwtLkEAOv0FaiXhLlrHtgaNj7cOaoNWp9CRwv8pzGGbVD+VQ/MEGwJTF9haG2xTIhTswcYJ8mZhwYf6XC9Dlvp2JdStrFKl4hRp2GEfwE9eEjla1JCaYRpsdEJv5yd+IlIX++lqy+ct5B2YuH5mpaNXN/8vlYdZ5xJa7xVElh/ACR+i3jvV8IzoFqwZDPcnHaWnEiUCGwLwhZ1hNd6BT323ysvaOEZ9ZnJvVkUAK8Aq+krcs+5xbK96sqibi6Qr6m4tm3oVmqw80OUBX33KmWB/eQrhlhUS5bjCFoefQZKt58gEghgW8DyMEUylfEqQkd2NQASbBqzKRsbCTOq73tODqxwEAU=
-    on:
-      tags: true
-      repo: lbenie/reading-time-estimator
+jobs:
+  include:
+  - stage: test
+    script: yarn test
+    if: type IN (push, pull_request)
+  - stage: npm release
+    if: tag IS present
+    deploy:
+      skip_cleanup: true
+      provider: npm
+      email: lucien.benie@gmail.com
+      script: yarn build
+      api_key:
+        secure: b3EL8E70sH2ncNzGIrt1vZh3AkPhnEHfABLMi4x/Dy2alhAxZ+Ww+rmJv/rgd+V3QSevI9gciKU3Un15guop8fT4cKX66vChgoEoTnGVrw76Z9UUFUuNNho0JbkcikQ4eMCwyO6AHYZs6mVRtDM6N4A0XHT//gPvTAhZf9J7Gmroh98po1VJS3gKrJdnayjiEW8q+NtURb24YbfBIUh/xzqZUxhLdvrcmZ4gEXBJGYSf7y0FJpahysD51Zr5N7MTNHDbY5xNQlDjmegsu0sGdqFBGTlHTdGRQ8LaREwp4nEsruVfYQbMqgnsi2xCdUdI+WTgZH+wvg320UPwtLkEAOv0FaiXhLlrHtgaNj7cOaoNWp9CRwv8pzGGbVD+VQ/MEGwJTF9haG2xTIhTswcYJ8mZhwYf6XC9Dlvp2JdStrFKl4hRp2GEfwE9eEjla1JCaYRpsdEJv5yd+IlIX++lqy+ct5B2YuH5mpaNXN/8vlYdZ5xJa7xVElh/ACR+i3jvV8IzoFqwZDPcnHaWnEiUCGwLwhZ1hNd6BT323ysvaOEZ9ZnJvVkUAK8Aq+krcs+5xbK96sqibi6Qr6m4tm3oVmqw80OUBX33KmWB/eQrhlhUS5bjCFoefQZKt58gEghgW8DyMEUylfEqQkd2NQASbBqzKRsbCTOq73tODqxwEAU=
+      on:
+        tags: true
+        repo: lbenie/reading-time-estimator
 env:
   global:
   - secure: 6GvtG1r3JoriLPOwLy9dc22Yvyo74cSEmZgnethQTT/8mxWOPQUZNcfuqCSYLWSyDK1yVN/xJqfIN2lKjxW2G8X3PW3hci1+f6JwdTpZ4PZprsS0gRMkUg/nFPE6Xdr9kKAyS+8bMgLk1KhqqDnwmm8DZUkq4Pg02YWYypxYXaXIxRuDfSrgeqgN8I7URt2FTS+hdrX5vRfoPJ6DvzrL7CUi+G1CyjGgDYzjTGNxePB39m71sV944j1XFwnsgNDzJBIuyQEZ8Zs2R9SVp24HGEDIQyscDg8zg07KqJt/A20NAgOtb6hqHERDR7WUNDsKKuQPgrDQJXlBnYJebvoYPWO/4gRZcw58VNwgMZrZMjOkkmjSvHiGH0iQAPgav1N3RRx3uW+x4NMnGrovDIUAV7hydBxYJcSTzyK23d8XQnL6apGuVZUULQ776mAZ7E0TN8etZcxZy4rEEzSmfJKmRphXUNtJZCSyxEL0VjA/CYOJtylhRYarxL/tJrbUu66KOrG3gj9B6ADpbNtbSSEJpyutth0iUtu3vvbQ5Ud23WK59vQMDBvnN/ngGyzjgTbFV1Kv1ket/e2wytwMIsYhHpBF5s1fgU0EvNXQkUfJov0k2aTY2W3WyPBZ9TDWVGmQnAXkgj8OSL7dRjeAeF115nQFiWhqYM8iGRKJFdnxQtY=
