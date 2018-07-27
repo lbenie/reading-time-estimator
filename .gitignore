@@ -67,5 +67,6 @@ typings/
 .rpt2_cache
 
 dist/**/i18n
-dist/esm/index.d.ts
-dist/cjs/index.d.ts
+dist/esm/lib/index.d.ts
+dist/cjs/lib/index.d.ts
+reading-time-estimation.test.d.ts
