@@ -14,9 +14,9 @@
     "es6",
     "medium"
   ],
-  "main": "./dist/browser/index.js",
-  "module": "./dist/esm/index.js",
-  "types": "./dist/browser/lib/index.d.ts",
+  "main": "./dist/umd/index.umd.js",
+  "module": "./dist/esm/index.es6.js",
+  "types": "./dist/types/lib/index.d.ts",
   "bugs": {
     "url": "https://github.com/lbenie/reading-time-estimator/issues"
   },

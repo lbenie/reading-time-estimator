@@ -11,18 +11,17 @@ export default {
   output: [
     {
       file: pkg.main,
-      format: 'iife',
+      format: 'umd',
       name
     },
-    { file: 'dist/cjs/index.js', format: 'cjs', name },
     { file: pkg.module, format: 'es' }
   ],
   plugins: [
+    typescript({ useTsconfigDeclarationDir: true }),
+    commonjs(),
     nodeResolve({
       jsnext: true,
       main: true
-    }),
-    commonjs(),
-    typescript()
+    })
   ]
 };
