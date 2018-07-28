@@ -17,7 +17,7 @@ npm install reading-time-estimator --save
 or with Yarn
 
 ```sh
-yarn install reading-time-estimator
+yarn add reading-time-estimator
 ```
 
 ## API
