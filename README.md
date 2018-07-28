@@ -70,19 +70,19 @@ import { readingTime } from 'reading-time-estimator';
 const result = readingTime(text);
 
 // result: {
-//    text: '409 min. read',
-//    minutes: 408.615,
-//    time: 24516900,
-//    words: 81723
+//    text: '23 min. read',
+//    minutes: 22.944,
+//    time: 1376639.9999999998,
+//    words: 5736
 //  }
 
 // with french locale
 const result = readingTime(text, { locale: 'fr' });
 // result: {
-//    text: '409 min. de lecture',
-//    minutes: 408.615,
-//    time: 24516900,
-//    words: 81723
+//    text: '23 min. de lecture',
+//    minutes: 22.944,
+//    time: 1376639.9999999998,
+//    words: 5736
 //  }
 ```
 
