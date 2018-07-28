@@ -70,7 +70,7 @@ describe('readingTime()', () => {
   it('given_a_small_input_words_should_be_equals_to_data_argument', () => {
     const result = readingTime(smallText);
 
-    expect(result.words).toBeGreaterThan(100);
+    expect(result.words).toBeGreaterThan(4);
   });
 
   it('given_a_small_input_time_should_be_greater_than_or_equal_to_2000', () => {
