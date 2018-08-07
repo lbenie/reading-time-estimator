@@ -9,6 +9,8 @@ cache:
   directories:
   - node_modules
   - ~/.npm
+env:
+  - BUILD_LEADER_ID=4
 stages:
 - test
 - npm release
@@ -22,7 +24,8 @@ jobs:
     script: yarn test
     if: type IN (push, pull_request)
   - stage: npm release
-    if: tag IS present
+    if: branch = master
+    node_js: 10
     script: yarn build
     after_success:
     - yarn semantic-release
