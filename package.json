@@ -36,8 +36,8 @@
   "scripts": {
     "build": "npx rollup -c",
     "test": "npx jest --config jest.config.js --colors && npx stryker run",
-    "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "npx semantic-release",
+    "travis-deploy-once": "npx travis-deploy-once",
     "commit": "npx git-cz"
   },
   "devDependencies": {
