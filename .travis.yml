@@ -25,6 +25,7 @@ jobs:
     if: type IN (push, pull_request)
   - stage: npm release
     if: branch = master
+    skip-cleanup: true
     node_js: 10
     script: yarn build
     after_success:

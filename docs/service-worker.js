@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "90a8ea2f97e57501222fb56ab915e954"
+    "revision": "d322c7f1f82751fc8444aa7ca3cd2d81"
   },
   {
     "url": "assets/css/0.styles.082a6f98.css",
@@ -60,8 +60,8 @@ self.__precacheManifest = [
     "revision": "df1c7d97341e6b3cb34a04d8d5f5f340"
   },
   {
-    "url": "assets/js/7.61ac0d63.js",
-    "revision": "2b58e577d444363a0db139f92e837397"
+    "url": "assets/js/7.fc0c7c5c.js",
+    "revision": "f96e0ec0df2ec865039ae27b794d2bd1"
   },
   {
     "url": "assets/js/8.025e5b54.js",
@@ -72,24 +72,24 @@ self.__precacheManifest = [
     "revision": "2394992478efad0b1ebb6a1aba84c660"
   },
   {
-    "url": "assets/js/app.1c07afcc.js",
-    "revision": "51574f842a12b30638f808262f150f5f"
+    "url": "assets/js/app.e0795a1c.js",
+    "revision": "c89329fd5e49e0d0947fcce472154c53"
   },
   {
     "url": "fr/guide/index.html",
-    "revision": "81c34d58a028508065fb02d468e5bbb7"
+    "revision": "31995eaf609f479efef634b53faa283e"
   },
   {
     "url": "fr/index.html",
-    "revision": "6fb21d4376874838522793e60d0726a2"
+    "revision": "3c2e6b2bd378d9940a469e5c32bfa0a4"
   },
   {
     "url": "fr/try/index.html",
-    "revision": "bb19ad49a5a90853d0d8b2b7772b0543"
+    "revision": "e2b1d8cdece2b44d4ddf9114e2d9c227"
   },
   {
     "url": "guide/index.html",
-    "revision": "9d2a7b77a017b32308b13478f2df4ada"
+    "revision": "474ef77420fc8f64a1ffac5094301e83"
   },
   {
     "url": "icons/android-chrome-96x96.png",
@@ -117,7 +117,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "f8239e1fbc85d25453ef36c8bfe2f06f"
+    "revision": "2918f4000e5387bab637d96f944500e6"
   },
   {
     "url": "logo.png",
@@ -125,7 +125,7 @@ self.__precacheManifest = [
   },
   {
     "url": "try/index.html",
-    "revision": "63ad65880687518f558493244aa0ca27"
+    "revision": "7a0434d617d513fab943f394002635eb"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
