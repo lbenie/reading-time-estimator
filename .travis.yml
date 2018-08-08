@@ -23,7 +23,7 @@ jobs:
   - stage: test
     script: yarn test
     after_success:
-      - sh deploy.sh
+    - sh deploy.sh
     if: type IN (push, pull_request)
   - stage: npm release
     if: branch = master
