@@ -76,7 +76,3 @@ locale n’existe pas, elle retournera en `en`.
 
 Ce [package](https://www.npmjs.com/package/reading-time) n'offre pas la
 possibilité à l'internationalisation qui était un requis pour moi.
-
-```
-
-```
