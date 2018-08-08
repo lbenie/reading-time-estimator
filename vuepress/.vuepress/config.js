@@ -1,4 +1,6 @@
 module.exports = {
+  base: '/reading-time-estimator/',
+  dest: 'docs',
   locales: {
     '/': {
       lang: 'en-US',

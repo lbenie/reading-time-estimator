@@ -28,7 +28,6 @@ jobs:
     node_js: 10
     script: yarn build
     after_success:
-    - sh deploy.sh
     - yarn semantic-release
     # deploy:
     #   skip_cleanup: true

@@ -39,8 +39,8 @@
     "semantic-release": "npx semantic-release",
     "travis-deploy-once": "npx travis-deploy-once",
     "commit": "npx git-cz",
-    "docs:dev": "npx vuepress dev docs",
-    "docs:build": "npx vuepress build docs"
+    "docs:dev": "npx vuepress dev vuepress",
+    "docs:build": "npx vuepress build vuepress"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.54",
