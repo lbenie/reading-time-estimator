@@ -56,7 +56,7 @@ Options are optional, if not defined they will fallback to their default value :
 
 ```typescript
 const defaultOpts: IOptions = {
-  wordsPerMinute: 250,
+  wordsPerMinute: 500,
   locale: 'en',
 };
 ```

@@ -38,7 +38,7 @@ export default {
     return {
       text: '',
       locale: 'en',
-      wordsPerMinute: 250,
+      wordsPerMinute: 500,
       msg: {
         en: {
           noText: 'No text provided',

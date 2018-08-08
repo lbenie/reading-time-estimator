@@ -46,7 +46,7 @@ générée.
 Les options sont facultatives, si elles ne sont pas définies, elles auront leurs
 valeur par défaut:
 
-`` `typeScript const defaultOpts: IOptions = { motsPerMinute: 250, locale: 'en', }; ``
+`` `typeScript const defaultOpts: IOptions = { motsPerMinute: 500, locale: 'en', }; ``
 `
 
 Pour le moment, il n'y a que 3 locales supportées: `en`,`fr` et `es`. Si un

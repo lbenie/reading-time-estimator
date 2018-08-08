@@ -21,7 +21,7 @@ const translations = {
 const hasTranslation = (language) => Object.keys(translations).some(x => x === language);
 
 const defaultOpts = {
-    wordsPerMinute: 250,
+    wordsPerMinute: 500,
     locale: 'en'
 };
 const readingTime = (data, opts) => {

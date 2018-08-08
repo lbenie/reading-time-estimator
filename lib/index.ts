@@ -13,7 +13,7 @@ interface IReadingTime {
 }
 
 const defaultOpts: IOptions = {
-  wordsPerMinute: 250,
+  wordsPerMinute: 500,
   locale: 'en'
 };
 
