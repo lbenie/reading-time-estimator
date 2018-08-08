@@ -22,14 +22,13 @@ jobs:
   include:
   - stage: test
     script: yarn test
-    after_success:
-    - sh deploy.sh
     if: type IN (push, pull_request)
   - stage: npm release
     if: branch = master
     node_js: 10
     script: yarn build
     after_success:
+    - sh deploy.sh
     - yarn semantic-release
     # deploy:
     #   skip_cleanup: true
