@@ -5,7 +5,7 @@ sidebar: auto
 # Introduction
 
 Reading Time Estimator a été créé pour fournir une estimation de la durée de
-lecture d'un article ou d'un blog comme vu sur [medium](// medium.com).
+lecture d'un article ou d'un blog comme vu sur [medium](https://medium.com/).
 
 ## Comment ça fonctionne
 
@@ -27,16 +27,26 @@ ou Yarn
 
 L'api est assez simple. Voici la définition des types pour ce module.
 
-`` `typeScript interface IOptions { wordsPerMinute ?: nombre | nul; locale?:
-chaîne | nul; }
+```typescript
+interface IOptions {
+  wordsPerMinute?: number | null;
+  locale?: string | null;
+}
 
-interface IReadingTime { text: string; minutes: nombre; heure: numéro; mots:
-numéro; }
+interface IReadingTime {
+  text: string;
+  minutes: number;
+  time: number;
+  words: number;
+}
 
-declare const readingTime: ( data: string | null | indéfini, opte?: IOptions |
-indéfini, ) => IReadingTime;
+declare const readingTime: (
+  data: string | null | undefined,
+  opts?: IOptions | undefined,
+) => IReadingTime;
 
-export {readingTime, IOptions, IReadingTime}; `` `
+export { readingTime, IOptions, IReadingTime };
+```
 
 Si `data` est null ou undefined, une erreur est générée.
 
@@ -46,25 +56,27 @@ générée.
 Les options sont facultatives, si elles ne sont pas définies, elles auront leurs
 valeur par défaut:
 
-`` `typeScript const defaultOpts: IOptions = { motsPerMinute: 500, locale: 'en', }; ``
-`
+```typescript
+const defaultOpts: IOptions = {
+  wordsPerMinute: 500,
+  locale: 'en',
+};
+```
 
 Pour le moment, il n'y a que 3 locales supportées: `en`,`fr` et `es`. Si un
 locale n’existe pas, elle retournera en `en`.
 
-## Fonctionnalités
+## TODOs
 
-- i18n support (en, fr, es and more to come)
-- Typescript + typings intellisense
-- semver
-
-## Todo
-
-- Add more languages
+- Ajouter d'autres langues
 
 ## Pourquoi pas ...?
 
 ### reading-time
 
-This [package](https://www.npmjs.com/package/reading-time) does not offer
-internationalization support which was a must for me.
+Ce [package](https://www.npmjs.com/package/reading-time) n'offre pas la
+possibilité à l'internationalisation qui était un requis pour moi.
+
+```
+
+```
