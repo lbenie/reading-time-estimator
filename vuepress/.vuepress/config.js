@@ -30,7 +30,7 @@ module.exports = {
   themeConfig: {
     repo: 'lbenie/reading-time-estimator',
     editLinks: true,
-    docsDir: 'docs',
+    docsDir: 'vuepress',
     locales: {
       '/': {
         label: 'English',
@@ -68,7 +68,7 @@ module.exports = {
         nav: [
           {
             text: 'Guide',
-            link: '/guide/'
+            link: '/fr/guide/'
           },
           {
             text: 'Essayez-le!',
