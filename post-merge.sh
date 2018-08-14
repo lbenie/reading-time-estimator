@@ -12,4 +12,4 @@ check_run() {
 
 # Example usage
 # In this example it's used to run `npm install` if yarn.lock changed
-check_run yarn.lock "yarn"
+check_run "package.json" "yarn"
