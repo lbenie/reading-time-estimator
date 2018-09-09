@@ -26,7 +26,6 @@ module.exports = {
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   serviceWorker: true,
-  theme: 'vue',
   themeConfig: {
     repo: 'lbenie/reading-time-estimator',
     editLinks: true,
