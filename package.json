@@ -65,7 +65,7 @@
     "pug-plain-loader": "^1.0.0",
     "rollup": "^0.67.0",
     "rollup-plugin-commonjs": "^9.1.6",
-    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-typescript2": "^0.18.0",
     "semantic-release": "^15.9.14",
     "stryker": "^0.29.1",
