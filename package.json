@@ -59,7 +59,7 @@
     "husky": "^1.0.0-rc.13",
     "jest": "^23.5.0",
     "lint-staged": "^8.0.0",
-    "lorem-ipsum": "^1.0.6",
+    "lorem-ipsum": "^2.0.0",
     "prettier": "^1.14.2",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
