@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "*": ["node_modules/lorem-ipsum/types/src/index.d.ts"] },
     "target": "es2015",
     "module": "es2015",
     "strict": true,
