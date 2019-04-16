@@ -2993,7 +2993,7 @@ commander@^2.14.1, commander@^2.15.1, commander@^2.9.0:
 
 commander@^2.17.1:
   version "2.20.0"
-  resolved "https://nexus.devops.jive.com/repository/npm-all/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
   integrity sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
 
 commander@~2.13.0:
@@ -6865,7 +6865,7 @@ loose-envify@^1.0.0:
 
 lorem-ipsum@^2.0.1:
   version "2.0.1"
-  resolved "https://nexus.devops.jive.com/repository/npm-all/lorem-ipsum/-/lorem-ipsum-2.0.1.tgz#de6690f2184effe6059fa88385bc6b6ec83cfed6"
+  resolved "https://registry.yarnpkg.com/lorem-ipsum/-/lorem-ipsum-2.0.1.tgz#de6690f2184effe6059fa88385bc6b6ec83cfed6"
   integrity sha512-FjqfVmw4pEYOWCgzJf+ei2ohRTeuxhnPW/b+nQO+JK4z/QE9OEslnf+SeBVJJCTNRPKIupTW91evd7ezTX2xGA==
   dependencies:
     commander "^2.17.1"
