@@ -65,7 +65,7 @@
     "rollup": "^1.10.0",
     "rollup-plugin-commonjs": "^9.3.4",
     "rollup-plugin-node-resolve": "^4.2.3",
-    "rollup-plugin-typescript2": "^0.20.1",
+    "rollup-plugin-typescript2": "^0.21.0",
     "semantic-release": "^15.13.3",
     "stryker": "^0.35.1",
     "stryker-api": "^0.24.1",
