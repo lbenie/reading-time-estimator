@@ -1,0 +1,92 @@
+{
+  "name": "reading-time-estimator",
+  "version": "0.0.0-development",
+  "description": "A medium's like reading time estimator with internationalization support",
+  "keywords": [
+    "typescript",
+    "typescript-library",
+    "javascript",
+    "javascript-library",
+    "i18n",
+    "reading",
+    "reading-time",
+    "time",
+    "es6",
+    "medium",
+    "i18n",
+    "estimator"
+  ],
+  "main": "./dist/umd/index.umd.js",
+  "module": "./dist/esm/index.es6.js",
+  "types": "./dist/types/lib/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/lbenie/reading-time-estimator/issues"
+  },
+  "homepage": "https://github.com/lbenie/reading-time-estimator#readme",
+  "author": {
+    "name": "Lucien Bénié",
+    "email": "lucien.benie@gmail.com",
+    "url": "https://github.com/lbenie"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lbenie/reading-time-estimator"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "npx rollup -c",
+    "test": "npx jest --config jest.config.js --colors && npx stryker run",
+    "semantic-release": "npx semantic-release",
+    "travis-deploy-once": "npx travis-deploy-once",
+    "commit": "npx git-cz",
+    "docs:dev": "npx vuepress dev vuepress",
+    "docs:build": "npx vuepress build vuepress"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "@commitlint/prompt": "^7.5.0",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.4",
+    "commitizen": "^3.0.7",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "husky": "^1.3.1",
+    "jest": "^24.7.1",
+    "lint-staged": "^8.1.5",
+    "lorem-ipsum": "^2.0.1",
+    "prettier": "^1.17.0",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "rollup": "^1.10.0",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-typescript2": "^0.20.1",
+    "semantic-release": "^15.13.3",
+    "stryker": "^0.35.1",
+    "stryker-api": "^0.24.1",
+    "stryker-jest-runner": "^1.4.1",
+    "stryker-typescript": "^0.18.1",
+    "travis-deploy-once": "^5.0.11",
+    "ts-jest": "24.0.2",
+    "typescript": "^3.4.3",
+    "typescript-eslint-parser": "^22.0.0",
+    "vue-highlightjs": "^1.3.3",
+    "vuepress": "^0.14.11"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "vue-wysiwyg": "^1.7.2"
+  }
+}
