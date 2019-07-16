@@ -41,7 +41,7 @@ const readingTime = (
   }
 
   const sum = words.reduce<number>(
-    (acc, word) => (acc += word.trim().split(/\s+/).length),
+    (accumulator, word) => (accumulator += word.trim().split(/\s+/).length),
     0
   )
 
