@@ -1,0 +1,46 @@
+language: node_js
+dist: trusty
+node_js:
+- 8
+- 9
+- 10
+cache:
+  yarn: true
+  directories:
+  - node_modules
+  - ~/.npm
+env:
+  - BUILD_LEADER_ID=4
+stages:
+- test
+- npm release
+notifications:
+  email:
+    on_success: change
+    on_failure: always
+jobs:
+  include:
+  - stage: test
+    script: yarn test
+    if: type IN (push, pull_request)
+  - stage: npm release
+    if: branch = master
+    skip-cleanup: true
+    node_js: 10
+    script: yarn build
+    after_success:
+    - sh deploy.sh
+    - yarn semantic-release
+    # deploy:
+    #   skip_cleanup: true
+    #   provider: npm
+    #   email: lucien.benie@gmail.com
+    #   script: yarn build
+    #   api_key:
+    #     secure: AsahkSyxJoBUrJCRYfc7GXp1wa6BHp9FauF3n8lfBF/0jz+pKvu1n9StMHVt1Ac8Yi+amRqYuCderTGmiK7phBX2Atl6ShpegAS9IsjWRSIq4ArwK8C3cClrMgpWf+xjW1dzzdjscPU/qMXqK9zTvIim/xa3lY8LgXTF785YyVQHX7RtieIINd/1EOoJtjDUA3wNWa8wELE68YHz8WY468yaJ6AZOyVk5UejnIjJCkW6LLO/GYuV0lsdzIVUmI37SZja92eQb8ZYfvgM7VFktADVazBYzFva5+9i9PtZAU5vs2T6aEo5UvEreADBh88peH5wdGShsu207YuZvc/ek7tZIHhfK2QiV9OQvqukdfjTIVAWZUP7PrdrPRxL/95T+a2gOwP1Qv2HV90oHJ12swWB1mpHzaWmeW3B7IdOIa5X2ngHKkCDOC621PAQasiTuzYyP0v2vbZCYlXjIjOlmKyslMJroYEg8vRO8OsnsPCkk7++GKt0nJdXB85PwCgaQ2GytZAY68v4VEtPO0FutOJ2D5FfK+7CDYuVyjb+ZVMw88syxQmJ/5R6gGesV64SmTCohjARZ6wwcEzsUNP+lx1eLQGZ/JblCCTSIyozcprOovlrRGIAR4w06qToY5Y/iX2/n76IHvEIwPsjbSMz4jBmjrjNBTIc0kS4pOfUwbc=
+    #   on:
+    #     tags: true
+    #     repo: lbenie/reading-time-estimator
+env:
+  global:
+  - secure: 6GvtG1r3JoriLPOwLy9dc22Yvyo74cSEmZgnethQTT/8mxWOPQUZNcfuqCSYLWSyDK1yVN/xJqfIN2lKjxW2G8X3PW3hci1+f6JwdTpZ4PZprsS0gRMkUg/nFPE6Xdr9kKAyS+8bMgLk1KhqqDnwmm8DZUkq4Pg02YWYypxYXaXIxRuDfSrgeqgN8I7URt2FTS+hdrX5vRfoPJ6DvzrL7CUi+G1CyjGgDYzjTGNxePB39m71sV944j1XFwnsgNDzJBIuyQEZ8Zs2R9SVp24HGEDIQyscDg8zg07KqJt/A20NAgOtb6hqHERDR7WUNDsKKuQPgrDQJXlBnYJebvoYPWO/4gRZcw58VNwgMZrZMjOkkmjSvHiGH0iQAPgav1N3RRx3uW+x4NMnGrovDIUAV7hydBxYJcSTzyK23d8XQnL6apGuVZUULQ776mAZ7E0TN8etZcxZy4rEEzSmfJKmRphXUNtJZCSyxEL0VjA/CYOJtylhRYarxL/tJrbUu66KOrG3gj9B6ADpbNtbSSEJpyutth0iUtu3vvbQ5Ud23WK59vQMDBvnN/ngGyzjgTbFV1Kv1ket/e2wytwMIsYhHpBF5s1fgU0EvNXQkUfJov0k2aTY2W3WyPBZ9TDWVGmQnAXkgj8OSL7dRjeAeF115nQFiWhqYM8iGRKJFdnxQtY=
