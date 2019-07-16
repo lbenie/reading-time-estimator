@@ -14,5 +14,5 @@ module.exports = function(config) {
       config: require(__dirname + '/jest.config.js')
     },
     timeoutMs: 100000
-  });
-};
+  })
+}

@@ -28,24 +28,24 @@ or Yarn
 The api is fairly simple. Here are the types definition for this module.
 
 ```typescript
-interface IOptions {
-  wordsPerMinute?: number | null;
-  locale?: string | null;
+interface Options {
+  wordsPerMinute?: number | null
+  locale?: string | null
 }
 
-interface IReadingTime {
-  text: string;
-  minutes: number;
-  time: number;
-  words: number;
+interface ReadingTime {
+  text: string
+  minutes: number
+  time: number
+  words: number
 }
 
-declare const readingTime: (
-  data: string | null | undefined,
-  opts?: IOptions | undefined,
-) => IReadingTime;
+const defaultOpts: Options = {
+  wordsPerMinute: 500,
+  locale: 'en'
+}
 
-export { readingTime, IOptions, IReadingTime };
+export { readingTime, Options, ReadingTime }
 ```
 
 If `data` is null or undefined an error is thrown.

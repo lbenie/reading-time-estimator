@@ -28,24 +28,24 @@ ou Yarn
 L'api est assez simple. Voici la définition des types pour ce module.
 
 ```typescript
-interface IOptions {
-  wordsPerMinute?: number | null;
-  locale?: string | null;
+interface Options {
+  wordsPerMinute?: number | null
+  locale?: string | null
 }
 
-interface IReadingTime {
-  text: string;
-  minutes: number;
-  time: number;
-  words: number;
+interface ReadingTime {
+  text: string
+  minutes: number
+  time: number
+  words: number
 }
 
-declare const readingTime: (
-  data: string | null | undefined,
-  opts?: IOptions | undefined,
-) => IReadingTime;
+const defaultOpts: Options = {
+  wordsPerMinute: 500,
+  locale: 'en'
+}
 
-export { readingTime, IOptions, IReadingTime };
+export { readingTime, Options, ReadingTime }
 ```
 
 Si `data` est null ou undefined, une erreur est générée.
@@ -63,8 +63,8 @@ const defaultOpts: IOptions = {
 };
 ```
 
-Pour le moment, il n'y a que 3 locales supportées: `en`,`fr` et `es`. Si un
-locale n’existe pas, elle retournera en `en`.
+Pour le moment, il n'y a que 3 locales supportées: `en`,`fr` et `es`. Si une
+locale n’existe pas, elle retournera `en`.
 
 ## TODOs
 
