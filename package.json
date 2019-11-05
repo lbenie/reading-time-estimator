@@ -80,7 +80,7 @@
     "vuepress": "^1.1.0"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "config": {
     "commitizen": {

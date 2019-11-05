@@ -19,12 +19,16 @@ notifications:
 jobs:
   include:
   - stage: test
+    before_install:
+    - npm install -g yarn
     script: yarn test
     if: type IN (push, pull_request)
   - stage: npm release
     if: branch = master
     skip-cleanup: true
     node_js: 10
+    before_install:
+    - npm install -g yarn
     script: yarn build
     after_success:
     - sh deploy.sh
