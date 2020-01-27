@@ -59,7 +59,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "husky": "^3.0.0",
     "jest": "^24.8.0",
-    "lint-staged": "^9.2.0",
+    "lint-staged": "^10.0.3",
     "lorem-ipsum": "^2.0.3",
     "prettier": "^1.18.2",
     "pug": "^2.0.4",
