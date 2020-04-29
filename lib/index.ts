@@ -14,7 +14,7 @@ interface ReadingTime {
 
 const defaultOpts: Options = {
   wordsPerMinute: 500,
-  locale: 'en'
+  locale: 'en',
 }
 
 const readingTime = (
@@ -62,7 +62,7 @@ const readingTime = (
     text,
     minutes,
     time,
-    words: sum
+    words: sum,
   }
 }
 
