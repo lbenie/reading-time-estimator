@@ -27,41 +27,13 @@ or Yarn
 
 The api is fairly simple. Here are the types definition for this module.
 
-```typescript
-interface Options {
-  wordsPerMinute?: number | null
-  locale?: string | null
-}
+It is a simple function that takes the data as a required argument with the words per minute and locale as optional arguments.
 
-interface ReadingTime {
-  text: string
-  minutes: number
-  time: number
-  words: number
-}
+Per default the locale is set to english `en`.
 
-const defaultOpts: Options = {
-  wordsPerMinute: 500,
-  locale: 'en'
-}
+Per default the word per minute is set to `300`.
 
-export { readingTime, Options, ReadingTime }
-```
-
-If `data` is null or undefined an error is thrown.
-
-If either `locale` or `wordsPerMinute` are null an error is thrown.
-
-Options are optional, if not defined they will fallback to their default value :
-
-```typescript
-const defaultOpts: IOptions = {
-  wordsPerMinute: 500,
-  locale: 'en',
-};
-```
-
-At the moment there is only 3 supported locales: `en`, `fr` and `es`. If a
+At the moment there is only 4 supported locales: `en`, `fr`, `es` and `cn`. If a
 locale does not exist, it will fallback to `en`.
 
 ### Usage
@@ -70,23 +42,25 @@ locale does not exist, it will fallback to `en`.
 import { readingTime } from 'reading-time-estimator';
 
 // default options
-const result = readingTime(text);
+const result = readingTime(text, 10);
 
-// result: {
-//    text: '23 min. read',
-//    minutes: 22.944,
-//    time: 1376639.9999999998,
-//    words: 5736
-//  }
+output:
+{
+  minutes: 4,
+  words: 43,
+  text: `4 min read`
+}
+
 
 // with french locale
-const result = readingTime(text, { locale: 'fr' });
-// result: {
-//    text: '23 min. de lecture',
-//    minutes: 22.944,
-//    time: 1376639.9999999998,
-//    words: 5736
-//  }
+const result = readingTime(text, 10, 'fr');
+
+output:
+{
+  minutes: 4,
+  words: 43,
+  text: `4 min de lecture`
+}
 ```
 
 ## TODOs

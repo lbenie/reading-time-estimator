@@ -1,69 +1,48 @@
-import { translations, hasTranslation } from './i18n'
-
-interface Options {
-  wordsPerMinute?: number | null
-  locale?: string | null
-}
+import { SupportedLanguages, translations, hasTranslation } from './i18n'
 
 interface ReadingTime {
-  text: string
   minutes: number
-  time: number
   words: number
+  text: string
 }
 
-const defaultOpts: Options = {
-  wordsPerMinute: 500,
-  locale: 'en',
-}
+const parseWords = (data: string) =>
+  data.match(/[\w\d\s,.\u00C0-\u024F]+/giu) ?? []
+
+const parseChineseWords = (data: string) =>
+  data.match(/[\u4E00-\u9FA5]/gu) ?? []
+
+const getNumberOfWords = (data: string) =>
+  parseWords(data).reduce(
+    (accumulator, word) =>
+      accumulator +
+      (!word.trim().length ? 0 : word.trim().split(/\s+/u).length),
+    0
+  ) + parseChineseWords(data).length
+
+const isLessThanAMinute = (words: number) => words < 1.00001
+
+const getLocale = (words: number, locale = SupportedLanguages.EN) =>
+  translations[hasTranslation(locale) ? locale : SupportedLanguages.EN][
+    isLessThanAMinute(words) ? 'less' : 'default'
+  ]
 
 const readingTime = (
-  data: string | null | undefined,
-  opts?: Options
+  data: string,
+  wordsPerMinute = 300,
+  language = SupportedLanguages.EN
 ): ReadingTime => {
-  if (data == null) {
-    throw new Error('Data provided is invalid')
-  }
-
-  const words = data.match(/[\w\d\s,.\u00C0-\u024F]+/gi)
-  const options = Object.assign({}, defaultOpts, opts)
-
-  if (words == null || words.length === 0) {
-    throw new Error('Data provided is invalid')
-  }
-
-  if (options.wordsPerMinute == null || options.wordsPerMinute === 0) {
-    throw new Error(`Please provide a 'wordPerMinute' option greater than 0`)
-  }
-
-  if (options.locale == null || options.locale.length === 0) {
-    throw new Error(`Please provide a 'locale' option`)
-  }
-
-  const sum = words.reduce<number>(
-    (accumulator, word) => (accumulator += word.trim().split(/\s+/).length),
-    0
-  )
-
-  const minutes = sum / options.wordsPerMinute
-  const time = minutes * 60 * 1000
-  const displayedTime = Math.round(minutes)
-  const hasLocale = hasTranslation(options.locale)
-
-  let text = `${displayedTime} ${
-    hasLocale ? translations[options.locale].default : translations.en.default
-  }`
-
-  if (displayedTime < 1.0001) {
-    text = hasLocale ? translations[options.locale].less : translations.en.less
-  }
+  const words = getNumberOfWords(data ?? '')
+  const minutes = +Math.round(words / wordsPerMinute).toFixed(2)
 
   return {
-    text,
     minutes,
-    time,
-    words: sum,
+    words,
+    text: `${isLessThanAMinute(minutes) ? '' : minutes} ${getLocale(
+      words,
+      language
+    )}`.trimLeft(),
   }
 }
 
-export { readingTime, Options, ReadingTime }
+export { readingTime }
