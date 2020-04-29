@@ -27,44 +27,42 @@ ou Yarn
 
 L'api est assez simple. Voici la définition des types pour ce module.
 
-```typescript
-interface Options {
-  wordsPerMinute?: number | null
-  locale?: string | null
-}
 
-interface ReadingTime {
-  text: string
-  minutes: number
-  time: number
-  words: number
-}
+Il s'agit d'une fonction simple qui prend les données comme argument requis avec les mots par minute et les paramètres régionaux comme arguments facultatifs.
 
-const defaultOpts: Options = {
-  wordsPerMinute: 500,
-  locale: 'en'
-}
+Par défaut, les paramètres régionaux sont définis en anglais `en`.
 
-export { readingTime, Options, ReadingTime }
-```
+Par défaut, le mot par minute a comme valeur `300`.
 
-Si `data` est null ou undefined, une erreur est générée.
+Pour le moment, il n'y a que 4 paramètres régionaux prises en charge: `en`,` fr`, `es` et` cn`. Si un
+paramètre régionale n'existe pas, il sera traiter comme la valeur `en`.
 
-Si les paramètres `locale` ou`wordsPerMinute` sont nulls, une erreur est
-générée.
-
-Les options sont facultatives, si elles ne sont pas définies, elles auront leurs
-valeur par défaut:
+### Usage
 
 ```typescript
-const defaultOpts: IOptions = {
-  wordsPerMinute: 500,
-  locale: 'en',
-};
-```
+import { readingTime } from 'reading-time-estimator';
 
-Pour le moment, il n'y a que 3 locales supportées: `en`,`fr` et `es`. Si une
-locale n’existe pas, elle retournera `en`.
+// default options
+const result = readingTime(text, 10);
+
+output:
+{
+  minutes: 4,
+  words: 43,
+  text: `4 min read`
+}
+
+
+// with french locale
+const result = readingTime(text, 10, 'fr');
+
+output:
+{
+  minutes: 4,
+  words: 43,
+  text: `4 min de lecture`
+}
+```
 
 ## TODOs
 

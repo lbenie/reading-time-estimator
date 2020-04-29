@@ -1,15 +1,23 @@
 import { en } from './en'
 import { fr } from './fr'
 import { es } from './es'
+import { cn } from './cn'
 import { I18n } from './II18n'
 
-const translations: { [key: string]: I18n } = {
-  en,
-  fr,
-  es
+enum SupportedLanguages {
+  EN = 'en',
+  FR = 'fr',
+  ES = 'es',
+  CN = 'cn',
 }
 
-const hasTranslation = (language: string) =>
-  Object.keys(translations).some(x => x === language)
+const translations: Record<SupportedLanguages, I18n> = {
+  en,
+  fr,
+  es,
+  cn,
+}
 
-export { translations, hasTranslation }
+const hasTranslation = (language: SupportedLanguages) => translations[language]
+
+export { translations, hasTranslation, SupportedLanguages }

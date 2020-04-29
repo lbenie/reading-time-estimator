@@ -10,6 +10,7 @@
               option(value='en') en
               option(value='fr') fr
               option(value='es') es
+              option(value='cn') cn
         .form-group.row
           label.col-sm-6.col-form-label(for="wordPerMinutes") {{ msg[lang].wpm }}
           .col-sm-1
@@ -39,7 +40,7 @@ export default {
     return {
       text: "",
       locale: "en",
-      wordsPerMinute: 500,
+      wordsPerMinute: 300,
       msg: {
         en: {
           noText: "No text provided",
@@ -50,6 +51,16 @@ export default {
           noText: "Aucun texte fourni",
           result: "Résultat",
           wpm: "Mots par minute"
+        },
+        es: {
+          noText: "No hay texto proporcionado",
+          result: "Resultado",
+          wpm: "Palabras por minuto"
+        },
+        cn: {
+          noText: "没有提供文字",
+          result: "结果",
+          wpm: "每分钟字数e"
         }
       }
     };
@@ -57,10 +68,7 @@ export default {
   computed: {
     result() {
       return this.text !== ""
-        ? readingTime(this.text, {
-            locale: this.locale,
-            wordsPerMinute: this.wordsPerMinute
-          })
+        ? readingTime(this.text, this.wordsPerMinute, this.locale)
         : this.msg[this.lang].noText;
     }
   }
