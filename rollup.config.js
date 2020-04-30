@@ -1,10 +1,12 @@
 import typescript from 'rollup-plugin-typescript2'
-import nodeResolve from 'rollup-plugin-node-resolve'
-import commonjs from 'rollup-plugin-commonjs'
+import nodeResolve from '@rollup/plugin-node-resolve'
+import commonjs from '@rollup/plugin-commonjs'
 import pkg from './package.json'
 
 const input = 'lib/index.ts'
 const name = 'readingTimeEstimator'
+
+const extensions = ['.js', '.ts']
 
 export default {
   input,
@@ -12,16 +14,20 @@ export default {
     {
       file: pkg.main,
       format: 'umd',
-      name
+      name,
     },
-    { file: pkg.module, format: 'es' }
+    { file: pkg.module, format: 'es' },
   ],
   plugins: [
-    typescript({ useTsconfigDeclarationDir: true }),
+    typescript({
+      typescript: require('typescript'),
+      tslib: require('tslib'),
+    }),
     nodeResolve({
       jsnext: true,
-      main: true
+      main: true,
+      extensions,
     }),
-    commonjs()
-  ]
+    commonjs({ jsnext: true, extensions }),
+  ],
 }

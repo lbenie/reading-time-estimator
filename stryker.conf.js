@@ -1,4 +1,4 @@
-module.exports = function(config) {
+module.exports = (config) => {
   config.set({
     testRunner: 'jest',
     testFramework: 'jest',
@@ -11,8 +11,8 @@ module.exports = function(config) {
     mutate: ['lib/*.ts'],
     jest: {
       project: 'default',
-      config: require(__dirname + '/jest.config.js')
+      config: require(__dirname + '/jest.config.js'),
     },
-    timeoutMs: 100000
+    timeoutMs: 100000,
   })
 }
