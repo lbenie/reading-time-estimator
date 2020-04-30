@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Setup node
+    - name: Use Node.js
       uses: actions/setup-node@v1
       with:
         node-version: 12
@@ -30,8 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Use Node.js
       uses: actions/setup-node@v1
       with:
         node-version: 12
-    - run: yarn install --frozen-lockfile
     - run: yarn test
