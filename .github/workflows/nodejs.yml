@@ -27,6 +27,7 @@ jobs:
     - run: yarn install --frozen-lockfile
     - run: yarn eslint lib/**/*.ts
   test:
+    needs: [lint]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
