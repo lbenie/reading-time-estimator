@@ -19,7 +19,7 @@ export default {
   plugins: [
     typescript({ useTsconfigDeclarationDir: true }),
     nodeResolve({
-      mainFields: ['jsnest', 'main', 'module'],
+      mainFields: ['jsnext', 'main', 'module'],
     }),
     commonjs(),
   ],
