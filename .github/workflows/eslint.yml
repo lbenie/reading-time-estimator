@@ -1,11 +1,9 @@
-name: Test
+name: Lint
 
 on:
   [push, pull_request]
-
-jobs:
-  test:
-    name: Test
+test:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -26,7 +24,5 @@ jobs:
             ${{ runner.os }}-yarn-
       - name: Installing dependencies
         run: yarn install --frozen-lockfile
-      - name: Running unit tests
-        run: yarn jest
-      - name: Running mutation tests
-        run: yarn stryker run
+      - name: Linting files
+        run: yarn eslint lib/**/*.ts
