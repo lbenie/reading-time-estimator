@@ -2,6 +2,7 @@ import { en } from './en'
 import { fr } from './fr'
 import { es } from './es'
 import { cn } from './cn'
+import { ja } from './ja'
 import { I18n } from './II18n'
 
 enum SupportedLanguages {
@@ -9,6 +10,7 @@ enum SupportedLanguages {
   FR = 'fr',
   ES = 'es',
   CN = 'cn',
+  JA = 'ja',
 }
 
 const translations: Record<SupportedLanguages, I18n> = {
@@ -16,6 +18,7 @@ const translations: Record<SupportedLanguages, I18n> = {
   fr,
   es,
   cn,
+  ja,
 }
 
 const hasTranslation = (language: SupportedLanguages) => translations[language]
