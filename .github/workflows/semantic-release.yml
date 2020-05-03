@@ -27,6 +27,8 @@ jobs:
             ${{ runner.os }}-yarn-
       - name: Installing dependencies
         run: yarn install --frozen-lockfile
+      -name: Build
+        run: yarn build
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB }}
