@@ -1,11 +1,12 @@
-name: Test
-
+name: Semantic Release
 on:
-  [push, pull_request]
+  push:
+    branches:
+      - master
 
 jobs:
-  test:
-    name: Test
+  release:
+    name: Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,11 +25,8 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
-      - name: Installing dependencies
-        run: yarn install --frozen-lockfile
-      - name: Running unit tests
-        run: yarn jest
-      - name: Running mutation tests
+      - name: Release
         env:
-          STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD }}
-        run: yarn stryker run
+          GITHUB_TOKEN: ${{ secrets.GITHUB }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: yarn semantic-release
