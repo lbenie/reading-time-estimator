@@ -12,15 +12,20 @@ const parseWords = (data: string) =>
 const parseChineseWords = (data: string) =>
   data.match(/[\u4E00-\u9FA5]/gu) ?? []
 
+const parseJapaneseWords = (data: string) =>
+  data.match(/[\u3041-\u3096]/gu) ?? []
+
 const getNumberOfWords = (data: string) =>
   parseWords(data).reduce(
     (accumulator, word) =>
       accumulator +
       (!word.trim().length ? 0 : word.trim().split(/\s+/u).length),
     0
-  ) + parseChineseWords(data).length
+  ) +
+  parseChineseWords(data).length +
+  parseJapaneseWords(data).length
 
-const isLessThanAMinute = (words: number) => words < 1.00001
+const isLessThanAMinute = (words: number) => words < 1 + Number.EPSILON
 
 const getLocale = (words: number, locale = SupportedLanguages.EN) =>
   translations[hasTranslation(locale) ? locale : SupportedLanguages.EN][

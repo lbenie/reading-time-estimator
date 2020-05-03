@@ -11,6 +11,7 @@
               option(value='fr') fr
               option(value='es') es
               option(value='cn') cn
+              option(value='ja') ja
         .form-group.row
           label.col-sm-6.col-form-label(for="wordPerMinutes") {{ msg[lang].wpm }}
           .col-sm-1
@@ -61,6 +62,11 @@ export default {
           noText: "没有提供文字",
           result: "结果",
           wpm: "每分钟字数e"
+        },
+        ja: {
+          noText: "テキストがありません",
+          result: "結果",
+          wpm: "1分あたりの単語数"
         }
       }
     };

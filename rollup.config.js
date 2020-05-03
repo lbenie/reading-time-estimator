@@ -12,16 +12,15 @@ export default {
     {
       file: pkg.main,
       format: 'umd',
-      name
+      name,
     },
-    { file: pkg.module, format: 'es' }
+    { file: pkg.module, format: 'es' },
   ],
   plugins: [
     typescript({ useTsconfigDeclarationDir: true }),
     nodeResolve({
-      jsnext: true,
-      main: true
+      mainFields: ['jsnext', 'main', 'module'],
     }),
-    commonjs()
-  ]
+    commonjs(),
+  ],
 }

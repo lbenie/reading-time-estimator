@@ -34,7 +34,7 @@ Par défaut, les paramètres régionaux sont définis en anglais `en`.
 
 Par défaut, le mot par minute a comme valeur `300`.
 
-Pour le moment, il n'y a que 4 paramètres régionaux prises en charge: `en`,` fr`, `es` et` cn`. Si un
+Pour le moment, il n'y a que 4 paramètres régionaux prises en charge: `en`,` fr`, `es`, `cn` et `ja`. Si un
 paramètre régionale n'existe pas, il sera traiter comme la valeur `en`.
 
 ### Usage
