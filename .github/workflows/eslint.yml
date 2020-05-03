@@ -2,7 +2,9 @@ name: Lint
 
 on:
   [push, pull_request]
-test:
+
+jobs:
+  lint:
     name: Lint
     runs-on: ubuntu-latest
     steps:
