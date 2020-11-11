@@ -15,6 +15,6 @@
     "strictNullChecks": true,
     "declarationDir": "dist/types"
   },
-  "include": ["lib/**/*.ts", "__tests__/**/*.ts"],
+  "include": ["lib/**/*.ts"],
   "exclude": ["node_modules"]
 }
