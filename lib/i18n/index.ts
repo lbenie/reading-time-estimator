@@ -21,6 +21,7 @@ const translations: Record<SupportedLanguages, I18n> = {
   ja,
 }
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const hasTranslation = (language: SupportedLanguages) => translations[language]
 
 export { translations, hasTranslation, SupportedLanguages }
