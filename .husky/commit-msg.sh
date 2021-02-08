@@ -1,3 +1,3 @@
 # .husky/commit-msg (v5)
 
-commitlint -e $GIT_PARAMS
+yarn commitlint --edit $1
