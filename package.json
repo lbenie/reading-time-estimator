@@ -66,7 +66,7 @@
     "jest": "26.6.3",
     "lint-staged": "10.5.4",
     "lorem-ipsum": "2.0.3",
-    "pinst": "2.1.4",
+    "pinst": "2.1.6",
     "prettier": "2.2.1",
     "pug": "3.0.1",
     "pug-plain-loader": "1.1.0",
