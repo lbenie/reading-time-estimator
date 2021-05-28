@@ -74,7 +74,7 @@
     "rollup-plugin-commonjs": "10.1.0",
     "rollup-plugin-node-resolve": "5.2.0",
     "rollup-plugin-typescript2": "0.29.0",
-    "semantic-release": "17.3.8",
+    "semantic-release": "17.4.3",
     "stryker": "0.35.1",
     "stryker-api": "0.24.1",
     "stryker-jest-runner": "1.4.1",
