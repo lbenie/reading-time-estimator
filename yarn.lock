@@ -1611,7 +1611,7 @@
   dependencies:
     "@octokit/openapi-types" "^7.2.3"
 
-"@rollup/plugin-commonjs@^19.0.0":
+"@rollup/plugin-commonjs@19.0.0":
   version "19.0.0"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-commonjs/-/plugin-commonjs-19.0.0.tgz#8c3e71f9a66908e60d70cc1be205834ef3e45f71"
   integrity sha512-adTpD6ATGbehdaQoZQ6ipDFhdjqsTgpOAhFiPwl+dzre4pPshsecptDPyEFb61JMJ1+mGljktaC4jI8ARMSNyw==
@@ -1624,7 +1624,7 @@
     magic-string "^0.25.7"
     resolve "^1.17.0"
 
-"@rollup/plugin-node-resolve@^13.0.0":
+"@rollup/plugin-node-resolve@13.0.0":
   version "13.0.0"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-node-resolve/-/plugin-node-resolve-13.0.0.tgz#352f07e430ff377809ec8ec8a6fd636547162dc4"
   integrity sha512-41X411HJ3oikIDivT5OKe9EZ6ud6DXudtfNrGbC4nniaxx2esiWjkLOzgnZsWq1IM8YIeL2rzRGLZLBjlhnZtQ==
@@ -1756,7 +1756,7 @@
     mutation-testing-report-schema "1.7.1"
     tslib "~2.2.0"
 
-"@stryker-mutator/core@^5.0.1":
+"@stryker-mutator/core@5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@stryker-mutator/core/-/core-5.0.1.tgz#88cc54c45a88df52c67cc82a0bead2a86dd77073"
   integrity sha512-OWH9usWdEnfz+GVTpeQmmhE/LMn0iXw13hQiMYBmcdZf06nJLkSzfdlCVe1o6T0NPjH+WRyRmX7v8zmvZXenVQ==
@@ -1806,7 +1806,7 @@
     angular-html-parser "~1.8.0"
     weapon-regex "~0.5.1"
 
-"@stryker-mutator/jest-runner@^5.0.1":
+"@stryker-mutator/jest-runner@5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@stryker-mutator/jest-runner/-/jest-runner-5.0.1.tgz#7904c3409e6acbcb55165dfac86048bce4a2782b"
   integrity sha512-yj3WcoPPx848f5rDi7c8RaUVOvZbWi3kWNVWhY1m0YUt+NVpquVWw3dv7t/B5/TK2FX47UgvbbaveJgTc/UCbg==
@@ -4143,7 +4143,7 @@ concat-stream@^1.5.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
-concurrently@^6.2.0:
+concurrently@6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-6.2.0.tgz#587e2cb8afca7234172d8ea55176088632c4c56d"
   integrity sha512-v9I4Y3wFoXCSY2L73yYgwA9ESrQMpRn80jMcqMgHx720Hecz2GZAvTI6bREVST6lkddNypDKRN22qhK0X8Y00g==
