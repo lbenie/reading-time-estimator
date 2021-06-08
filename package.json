@@ -75,7 +75,7 @@
     "prettier": "2.3.1",
     "pug": "3.0.2",
     "pug-plain-loader": "1.1.0",
-    "rollup": "2.51.0",
+    "rollup": "2.51.1",
     "rollup-plugin-typescript2": "0.30.0",
     "semantic-release": "17.4.3",
     "travis-deploy-once": "5.0.11",
