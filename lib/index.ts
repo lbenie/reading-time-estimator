@@ -25,11 +25,11 @@ const getNumberOfWords = (data: string) =>
   parseChineseWords(data).length +
   parseJapaneseWords(data).length
 
-const isLessThanAMinute = (words: number) => words < 1 + Number.EPSILON
+const isLessThanAMinute = (minutes: number) => minutes < 1 + Number.EPSILON
 
-const getLocale = (words: number, locale = SupportedLanguages.EN) =>
+const getLocale = (minutes: number, locale = SupportedLanguages.EN) =>
   translations[hasTranslation(locale) ? locale : SupportedLanguages.EN][
-    isLessThanAMinute(words) ? 'less' : 'default'
+    isLessThanAMinute(minutes) ? 'less' : 'default'
   ]
 
 const readingTime = (
@@ -44,7 +44,7 @@ const readingTime = (
     minutes,
     words,
     text: `${isLessThanAMinute(minutes) ? '' : minutes} ${getLocale(
-      words,
+      minutes,
       language
     )}`.trimLeft(),
   }

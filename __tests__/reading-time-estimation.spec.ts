@@ -15,13 +15,13 @@ describe('readingTime', () => {
   it.each`
     language                 | words           | wordsPerMinute | expectedResult
     ${SupportedLanguages.EN} | ${englishText}  | ${10}          | ${{ minutes: 4, words: 43, text: `4 ${translations[SupportedLanguages.EN].default}` }}
-    ${SupportedLanguages.EN} | ${englishText}  | ${undefined}   | ${{ minutes: 0, words: 43, text: `${translations[SupportedLanguages.EN].default}` }}
+    ${SupportedLanguages.EN} | ${englishText}  | ${undefined}   | ${{ minutes: 0, words: 43, text: `${translations[SupportedLanguages.EN].less}` }}
     ${SupportedLanguages.EN} | ${''}           | ${undefined}   | ${{ minutes: 0, words: 0, text: translations[SupportedLanguages.EN].less }}
     ${undefined}             | ${undefined}    | ${undefined}   | ${{ minutes: 0, words: 0, text: translations[SupportedLanguages.EN].less }}
     ${SupportedLanguages.CN} | ${chineseText}  | ${2}           | ${{ minutes: 5, words: 10, text: `5 ${translations[SupportedLanguages.CN].default}` }}
     ${SupportedLanguages.FR} | ${frenchText}   | ${10}          | ${{ minutes: 3, words: 26, text: `3 ${translations[SupportedLanguages.FR].default}` }}
     ${SupportedLanguages.ES} | ${spanishText}  | ${10}          | ${{ minutes: 2, words: 24, text: `2 ${translations[SupportedLanguages.ES].default}` }}
-    ${SupportedLanguages.JA} | ${japaneseText} | ${10}          | ${{ minutes: 1, words: 8, text: `${translations[SupportedLanguages.JA].default}` }}
+    ${SupportedLanguages.JA} | ${japaneseText} | ${10}          | ${{ minutes: 1, words: 8, text: `${translations[SupportedLanguages.JA].less}` }}
   `(
     'approximates time to read a text in $language',
     ({
