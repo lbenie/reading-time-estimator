@@ -85,7 +85,7 @@
     semver "^6.3.0"
     source-map "^0.5.0"
 
-"@babel/generator@^7.14.2", "@babel/generator@^7.14.3", "@babel/generator@^7.7.2", "@babel/generator@~7.14.3":
+"@babel/generator@^7.14.2", "@babel/generator@^7.14.3", "@babel/generator@^7.7.2":
   version "7.14.3"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.14.3.tgz#0c2652d91f7bddab7cccc6ba8157e4f40dcedb91"
   integrity sha512-bn0S6flG/j0xtQdz3hsjJ624h3W0r3llttBMfyHX3YrZ/KtLYr15bjA0FXkgW7FpvrDuTuElXeVjiKlYRpnOFA==
@@ -112,7 +112,7 @@
     jsesc "^2.5.1"
     source-map "^0.5.0"
 
-"@babel/generator@^7.15.0":
+"@babel/generator@^7.15.0", "@babel/generator@~7.15.0":
   version "7.15.0"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.15.0.tgz#a7d0c172e0d814974bad5aa77ace543b97917f15"
   integrity sha512-eKl4XdMrbpYvuB505KTta4AV9g+wWzmVBW69tX0H2NwKVKd2YJbKgyK6M8j/rgLbmHOYJn6rUklV677nOyJrEQ==
@@ -203,6 +203,18 @@
     "@babel/helper-member-expression-to-functions" "^7.14.5"
     "@babel/helper-optimise-call-expression" "^7.14.5"
     "@babel/helper-replace-supers" "^7.14.5"
+    "@babel/helper-split-export-declaration" "^7.14.5"
+
+"@babel/helper-create-class-features-plugin@^7.15.0":
+  version "7.15.0"
+  resolved "https://registry.yarnpkg.com/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.15.0.tgz#c9a137a4d137b2d0e2c649acf536d7ba1a76c0f7"
+  integrity sha512-MdmDXgvTIi4heDVX/e9EFfeGpugqm9fobBVg/iioE8kueXrOHdRDe36FAY7SnE9xXLVeYCoJR/gdrBEIHRC83Q==
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.14.5"
+    "@babel/helper-function-name" "^7.14.5"
+    "@babel/helper-member-expression-to-functions" "^7.15.0"
+    "@babel/helper-optimise-call-expression" "^7.14.5"
+    "@babel/helper-replace-supers" "^7.15.0"
     "@babel/helper-split-export-declaration" "^7.14.5"
 
 "@babel/helper-create-regexp-features-plugin@^7.12.13":
@@ -580,7 +592,7 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.12.13", "@babel/parser@^7.14.2", "@babel/parser@^7.14.3", "@babel/parser@^7.6.0", "@babel/parser@^7.7.2", "@babel/parser@^7.9.6", "@babel/parser@~7.14.1":
+"@babel/parser@^7.1.0", "@babel/parser@^7.12.13", "@babel/parser@^7.14.2", "@babel/parser@^7.14.3", "@babel/parser@^7.6.0", "@babel/parser@^7.7.2", "@babel/parser@^7.9.6":
   version "7.14.3"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.14.3.tgz#9b530eecb071fd0c93519df25c5ff9f14759f298"
   integrity sha512-7MpZDIfI7sUC5zWo2+foJ50CSI5lcqDehZ0lVgIhSi4bFEk94fLAKlF3Q0nzSQQ+ca0lm+O6G9ztKVBeu8PMRQ==
@@ -595,7 +607,7 @@
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.14.8.tgz#66fd41666b2d7b840bd5ace7f7416d5ac60208d4"
   integrity sha512-syoCQFOoo/fzkWDeM0dLEZi5xqurb5vuyzwIMNZRNun+N/9A4cUZeQaE7dTrB8jGaKuJRBtEOajtnmw0I5hvvA==
 
-"@babel/parser@^7.15.0":
+"@babel/parser@^7.15.0", "@babel/parser@~7.15.0":
   version "7.15.0"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.15.0.tgz#b6d6e29058ca369127b0eeca2a1c4b5794f1b6b9"
   integrity sha512-0v7oNOjr6YT9Z2RAOTv4T9aP+ubfx4Q/OhVtAet7PFDt0t9Oy6Jn+/rfC6b8HJ5zEqrQCiMxJfgtHpmIminmJQ==
@@ -1538,12 +1550,12 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
-"@babel/plugin-transform-typescript@^7.14.5":
-  version "7.14.5"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.14.5.tgz#5b41b59072f765bd1ec1d0b694e08c7df0f6f8a0"
-  integrity sha512-cFD5PKp4b8/KkwQ7h71FdPXFvz1RgwTFF9akRZwFldb9G0AHf7CgoPx96c4Q/ZVjh6V81tqQwW5YiHws16OzPg==
+"@babel/plugin-transform-typescript@^7.15.0":
+  version "7.15.0"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.15.0.tgz#553f230b9d5385018716586fc48db10dd228eb7e"
+  integrity sha512-WIIEazmngMEEHDaPTx0IZY48SaAmjVWe3TRSX7cmJXn0bEv9midFzAjxiruOWYIVf5iQ10vFx7ASDpgEO08L5w==
   dependencies:
-    "@babel/helper-create-class-features-plugin" "^7.14.5"
+    "@babel/helper-create-class-features-plugin" "^7.15.0"
     "@babel/helper-plugin-utils" "^7.14.5"
     "@babel/plugin-syntax-typescript" "^7.14.5"
 
@@ -1754,14 +1766,14 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/preset-typescript@~7.14.5 ":
-  version "7.14.5"
-  resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.14.5.tgz#aa98de119cf9852b79511f19e7f44a2d379bcce0"
-  integrity sha512-u4zO6CdbRKbS9TypMqrlGH7sd2TAJppZwn3c/ZRLeO/wGsbddxgbPDUZVNrie3JWYLQ9vpineKlsrWFvO6Pwkw==
+"@babel/preset-typescript@~7.15.0 ":
+  version "7.15.0"
+  resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.15.0.tgz#e8fca638a1a0f64f14e1119f7fe4500277840945"
+  integrity sha512-lt0Y/8V3y06Wq/8H/u0WakrqciZ7Fz7mwPDHWUJAXlABL5hiUG42BNlRXiELNjeWjO5rWmnNKlx+yzJvxezHow==
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
     "@babel/helper-validator-option" "^7.14.5"
-    "@babel/plugin-transform-typescript" "^7.14.5"
+    "@babel/plugin-transform-typescript" "^7.15.0"
 
 "@babel/register@^7.0.0":
   version "7.13.16"
@@ -2720,29 +2732,29 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@stryker-mutator/api@5.2.3":
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/@stryker-mutator/api/-/api-5.2.3.tgz#4e411631598cbdf72abccb93bdfd161d7b3ed987"
-  integrity sha512-/3awV6uxaj3/q/EHOqV7325XkuE99cjzcgs7eprks0mpZDA03B13Txos+i/xV1sojP/wVuXNOcT8MC8U+H79kg==
+"@stryker-mutator/api@5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/api/-/api-5.3.0.tgz#2c081c488d174c3c95b97902af885bab68bdfcf8"
+  integrity sha512-P2+IfgMXFfnuB4jGEnkYz4uO0mHTD770oolVaZL/WyyxKoKQhRe1+t529Rdt4+KhcrN8ayFxO4TLpJuPuOhqDA==
   dependencies:
-    mutation-testing-metrics "1.7.4"
+    mutation-testing-metrics "1.7.5"
     mutation-testing-report-schema "1.7.4"
     tslib "~2.3.0"
 
-"@stryker-mutator/core@5.2.3":
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/@stryker-mutator/core/-/core-5.2.3.tgz#681ee69701fd708c8159d83151e95b455b38ceab"
-  integrity sha512-PKup+xtI+JwQupuV1sm4o3C9BWnGx2gumxnMeB6yo5/2VXdCoPPMZxrQtqVhQWJCrMFggjRjZko4p7IdI+ROBA==
+"@stryker-mutator/core@5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/core/-/core-5.3.0.tgz#89c5c94df6bf148508e318737115b1a3312767d2"
+  integrity sha512-RVa+clC3GzQjXvQJ2QKvEGQkLkc0+1Xr+hY3zesx2WlBJSwzWuDinX7ApPjbQ0Ln6Kz6IXLPQZfWjOm5lwrWVQ==
   dependencies:
-    "@stryker-mutator/api" "5.2.3"
-    "@stryker-mutator/instrumenter" "5.2.3"
-    "@stryker-mutator/util" "5.2.3"
+    "@stryker-mutator/api" "5.3.0"
+    "@stryker-mutator/instrumenter" "5.3.0"
+    "@stryker-mutator/util" "5.3.0"
     ajv "~8.6.0"
     chalk "~4.1.0"
     commander "~8.0.0"
     execa "~5.1.1"
     file-url "~3.0.0"
-    get-port "~5.0.0"
+    get-port "~5.1.1"
     glob "~7.1.2"
     inquirer "~8.1.0"
     lodash.flatmap "~4.5.0"
@@ -2750,49 +2762,50 @@
     log4js "~6.2.1"
     minimatch "~3.0.4"
     mkdirp "~1.0.3"
-    mutation-testing-elements "1.7.4"
-    mutation-testing-metrics "1.7.4"
+    mutation-testing-elements "1.7.5"
+    mutation-testing-metrics "1.7.5"
     npm-run-path "~4.0.1"
     progress "~2.0.0"
     rimraf "~3.0.0"
-    rxjs "~7.2.0"
+    rxjs "~7.3.0"
+    semver "^7.3.5"
     source-map "~0.7.3"
     tree-kill "~1.2.2"
     tslib "~2.3.0"
     typed-inject "~3.0.0"
     typed-rest-client "~1.8.0"
 
-"@stryker-mutator/instrumenter@5.2.3":
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/@stryker-mutator/instrumenter/-/instrumenter-5.2.3.tgz#6dadd90001f8dfa8b5746baab63c39e8822d40e6"
-  integrity sha512-oCQNoKmsH8EG4qrscSa0mf9rq+vL75TYMjF5SsnYsHDveeglol4TZRX7vChRzAnKLQxDdoIUFNDqkiDPvoZcLw==
+"@stryker-mutator/instrumenter@5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/instrumenter/-/instrumenter-5.3.0.tgz#2896b971444d2bc72c2fdc58dae1bde4bdf0ace7"
+  integrity sha512-X+vr/MzcJbkL42dPBB9uLTHSMn+MS3I+It/grfCTE+GGFoflDJ1bS4EYNxFPHpmfUt1352r3mw2yAnPxxEamIg==
   dependencies:
     "@babel/core" "~7.14.0"
-    "@babel/generator" "~7.14.3"
-    "@babel/parser" "~7.14.1"
+    "@babel/generator" "~7.15.0"
+    "@babel/parser" "~7.15.0"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
     "@babel/plugin-proposal-decorators" "~7.14.5 "
     "@babel/plugin-proposal-private-methods" "^7.12.1"
-    "@babel/preset-typescript" "~7.14.5 "
-    "@stryker-mutator/api" "5.2.3"
-    "@stryker-mutator/util" "5.2.3"
+    "@babel/preset-typescript" "~7.15.0 "
+    "@stryker-mutator/api" "5.3.0"
+    "@stryker-mutator/util" "5.3.0"
     angular-html-parser "~1.8.0"
     weapon-regex "~0.6.0"
 
-"@stryker-mutator/jest-runner@5.2.3":
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/@stryker-mutator/jest-runner/-/jest-runner-5.2.3.tgz#4361a0c3cbb9d2227b81780d3582a4dde4f771ed"
-  integrity sha512-ZMrLPv0Xo0cDskJec9c52DMMSGErDbdZBzTVdjWOQi3GdCnA4sGpJ4TB4LRpSmGGhJHwZUKqgiso63wXKU8eIw==
+"@stryker-mutator/jest-runner@5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/jest-runner/-/jest-runner-5.3.0.tgz#616cb1a36507026bf38500bfbde6d15ea36fa712"
+  integrity sha512-TuWhhM/6gxNvgG6dunHBc/Jhh0/OIh1YFOGDRGBZPkwrc2jhJNxkzSer3DeXY8YdHPD7jv2yGD4rZh80YdKeNA==
   dependencies:
-    "@stryker-mutator/api" "5.2.3"
-    "@stryker-mutator/util" "5.2.3"
+    "@stryker-mutator/api" "5.3.0"
+    "@stryker-mutator/util" "5.3.0"
     semver "~7.3.5"
     tslib "~2.3.0"
 
-"@stryker-mutator/util@5.2.3":
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/@stryker-mutator/util/-/util-5.2.3.tgz#340a0ec05e7ced7df81724ea6ad39471d82acf5d"
-  integrity sha512-WRuHo+yBrMRIxKJtrI0MRXZFl2R5FfieIwWGh19jodityOEZIkylECSp5ogwBor5ZYLwrP9QUg3qV2jz8Pf7ZQ==
+"@stryker-mutator/util@5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/util/-/util-5.3.0.tgz#3d435e379b95f92d7e3978e523244c93823f7760"
+  integrity sha512-nt6qQwu6fqS2g56hwW4j7rOwuMQ7lWGvXO79NndLR88q3njHNH9t2jZtaBgFoHLLS01kEN42j3wzKC9k6I1UWg==
   dependencies:
     lodash.flatmap "~4.5.0"
 
@@ -7209,12 +7222,10 @@ get-package-type@^0.1.0:
   resolved "https://registry.yarnpkg.com/get-package-type/-/get-package-type-0.1.0.tgz#8de2d803cff44df3bc6c456e6668b36c3926e11a"
   integrity sha512-pjzuKtY64GYfWizNAJ0fr9VqttZkNiK2iS430LtIHzjBEr6bX8Am2zm4sW4Ro5wjWW5cAlRL1qAMTcXbjNAO2Q==
 
-get-port@~5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/get-port/-/get-port-5.0.0.tgz#aa22b6b86fd926dd7884de3e23332c9f70c031a6"
-  integrity sha512-imzMU0FjsZqNa6BqOjbbW6w5BivHIuQKopjpPqcnx0AVHJQKCxK1O+Ab3OrVXhrekqfVMjwA9ZYu062R+KcIsQ==
-  dependencies:
-    type-fest "^0.3.0"
+get-port@~5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/get-port/-/get-port-5.1.1.tgz#0469ed07563479de6efb986baf053dcd7d4e3193"
+  integrity sha512-g/Q1aTSDOxFpchXC4i8ZWvxA1lnPqx/JHqcpIw0/LX9T8x/GBbi6YnlN5nhaKIFkT8oFsscUKgDJYxfwfS6QsQ==
 
 get-stream@^3.0.0:
   version "3.0.0"
@@ -10374,15 +10385,15 @@ multicast-dns@^6.0.1:
     dns-packet "^1.3.1"
     thunky "^1.0.2"
 
-mutation-testing-elements@1.7.4:
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/mutation-testing-elements/-/mutation-testing-elements-1.7.4.tgz#c3ef1a19ef082bcbbfca5b9c30bcc81b0be2386e"
-  integrity sha512-3LpSQeHzxJdlT1Vvg5V6C9/+Vh8TkBZ0zfx+qtseQzRl3EH0/dV2uh2ATXtdjv6/mfKUITNdA8TRbeI9ILKPxQ==
+mutation-testing-elements@1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/mutation-testing-elements/-/mutation-testing-elements-1.7.5.tgz#f169c7f194dcd1926ca95738426eabd4b9d9420c"
+  integrity sha512-s42vYrnIt3IF9nvnSjGMUqv8kwxxpXVNiaBVl+a29p2c3ec4xn7jq/VnmYYwhGE0I9DTNYzxgO9kg0pwm4deOA==
 
-mutation-testing-metrics@1.7.4:
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/mutation-testing-metrics/-/mutation-testing-metrics-1.7.4.tgz#27d42aeeb2bd54650b8c20f1f0b5a45222a9c43f"
-  integrity sha512-OLXiu419XwYWdUOh8UtteJ3mh6qWhftimWzBrbi+PhaPnEnGx9GTdWSRsE8Ub5Y3PP94GQgyhSalKJaj50YXaw==
+mutation-testing-metrics@1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/mutation-testing-metrics/-/mutation-testing-metrics-1.7.5.tgz#8138e7fa711c146e1613bef5c9c90194308c6591"
+  integrity sha512-BkXuzaMHzP3V+1QlScJ0es13PWEIXsc48t8/OMuCB/RDyCKKblZNlGb7KpY4oDgU0VIFMR6sBJ4F3IFkY6Elnw==
   dependencies:
     mutation-testing-report-schema "1.7.4"
 
@@ -12750,10 +12761,10 @@ rxjs@^6.4.0, rxjs@^6.6.3, rxjs@^6.6.6, rxjs@^6.6.7:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@~7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.2.0.tgz#5cd12409639e9514a71c9f5f9192b2c4ae94de31"
-  integrity sha512-aX8w9OpKrQmiPKfT1bqETtUr9JygIz6GZ+gql8v7CijClsP0laoFUdKzxFAoWuRdSlOdU2+crss+cMf+cqMTnw==
+rxjs@~7.3.0:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.3.0.tgz#39fe4f3461dc1e50be1475b2b85a0a88c1e938c6"
+  integrity sha512-p2yuGIg9S1epc3vrjKf6iVb3RCaAYjYskkO+jHIaV0IjOPlJop4UnodOoFb2xeNwlguqLYvGw1b1McillYb5Gw==
   dependencies:
     tslib "~2.1.0"
 
@@ -14133,11 +14144,6 @@ type-fest@^0.21.3:
   version "0.21.3"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.21.3.tgz#d260a24b0198436e133fa26a524a6d65fa3b2e37"
   integrity sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==
-
-type-fest@^0.3.0:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.3.1.tgz#63d00d204e059474fe5e1b7c011112bbd1dc29e1"
-  integrity sha512-cUGJnCdr4STbePCgqNFbpVNCepa+kAVohJs1sLhxzdH+gnEoOd8VhbYa7pD3zZYGiURWM2xzEII3fQcRizDkYQ==
 
 type-fest@^0.6.0:
   version "0.6.0"
