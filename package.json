@@ -72,7 +72,7 @@
     "lint-staged": "11.1.2",
     "lorem-ipsum": "2.0.3",
     "pinst": "2.1.6",
-    "prettier": "2.4.0",
+    "prettier": "2.4.1",
     "pug": "3.0.2",
     "pug-plain-loader": "1.1.0",
     "rollup": "2.56.3",
