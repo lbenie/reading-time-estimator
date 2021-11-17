@@ -76,7 +76,7 @@
     "pug": "3.0.2",
     "pug-plain-loader": "1.1.0",
     "rollup": "2.60.0",
-    "rollup-plugin-typescript2": "0.30.0",
+    "rollup-plugin-typescript2": "0.31.0",
     "semantic-release": "18.0.0",
     "travis-deploy-once": "5.0.11",
     "ts-jest": "27.0.7",
