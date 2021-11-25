@@ -1,7 +1,4 @@
 # reading-time-estimator
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Test](https://github.com/lbenie/reading-time-estimator/workflows/Test/badge.svg)
 ![Lint](https://github.com/lbenie/reading-time-estimator/workflows/Lint/badge.svg)
@@ -12,6 +9,12 @@
 [![npm](https://img.shields.io/npm/l/reading-time-estimator.svg)](https://github.com/lbenie/reading-time-estimator/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/dt/reading-time-estimator.svg)](https://www.npmjs.com/package/reading-time-estimator)
 [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/reading-time-estimator.svg)](https://www.npmjs.com/package/reading-time-estimator)
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
