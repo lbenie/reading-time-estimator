@@ -19,6 +19,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "visierrat",
+      "name": "Victor Sierra",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1642224?v=4",
+      "profile": "https://github.com/visierrat",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7

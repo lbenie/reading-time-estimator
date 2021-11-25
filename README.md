@@ -1,6 +1,6 @@
 # reading-time-estimator
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Test](https://github.com/lbenie/reading-time-estimator/workflows/Test/badge.svg)
@@ -35,6 +35,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://lbenie.xyz/"><img src="https://avatars.githubusercontent.com/u/7316046?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lucien Bénié</b></sub></a><br /><a href="https://github.com/Lucien benie/reading-time-estimator/commits?author=lbenie" title="Code">💻</a> <a href="https://github.com/Lucien benie/reading-time-estimator/commits?author=lbenie" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/visierrat"><img src="https://avatars.githubusercontent.com/u/1642224?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Victor Sierra</b></sub></a><br /><a href="https://github.com/Lucien benie/reading-time-estimator/commits?author=visierrat" title="Code">💻</a></td>
   </tr>
 </table>
 
