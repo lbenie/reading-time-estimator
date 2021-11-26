@@ -16,9 +16,18 @@
     "i18n",
     "estimator"
   ],
-  "main": "./dist/umd/index.umd.js",
-  "module": "./dist/esm/index.es6.js",
-  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/reading-time-estimator.umd.js",
+  "module": "./dist/reading-time-estimator.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/reading-time-estimator.es.js",
+      "require": "./dist/reading-time-estimator.umd.js"
+    }
+  },
+  "types": "dist/types/index.d.ts",
   "bugs": {
     "url": "https://github.com/lbenie/reading-time-estimator/issues"
   },
@@ -34,10 +43,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "npx rollup -c",
+    "build": "vite build",
     "test": "concurrently -n jest,stryker 'jest --coverage' 'stryker run'",
     "semantic-release": "npx semantic-release",
-    "travis-deploy-once": "npx travis-deploy-once",
     "commit": "npx git-cz",
     "docs:dev": "npx vuepress dev vuepress",
     "docs:build": "npx vuepress build vuepress",
@@ -46,13 +54,10 @@
     "postpublish": "pinst --enable"
   },
   "devDependencies": {
-    "@babel/core": "7.16.0",
-    "@babel/preset-env": "7.16.4",
     "@commitlint/cli": "15.0.0",
     "@commitlint/config-conventional": "15.0.0",
     "@commitlint/prompt": "15.0.0",
-    "@rollup/plugin-commonjs": "21.0.1",
-    "@rollup/plugin-node-resolve": "13.0.6",
+    "@rollup/plugin-typescript": "^8.3.0",
     "@stryker-mutator/core": "5.5.0",
     "@stryker-mutator/jest-runner": "5.5.0",
     "@types/jest": "27.0.3",
@@ -71,18 +76,18 @@
     "is-ci": "3.0.1",
     "jest": "27.3.1",
     "lint-staged": "12.1.2",
-    "lorem-ipsum": "2.0.4",
     "pinst": "2.1.6",
     "prettier": "2.5.0",
     "pug": "3.0.2",
     "pug-plain-loader": "1.1.0",
-    "rollup": "2.60.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-typescript2": "0.31.1",
     "semantic-release": "18.0.1",
-    "travis-deploy-once": "5.0.11",
     "ts-jest": "27.0.7",
     "typescript": "4.5.2",
+    "vite": "^2.6.14",
     "vue-highlightjs": "1.3.3",
+    "vue-wysiwyg": "^1.7.2",
     "vuepress": "1.8.2"
   },
   "engines": {
@@ -92,8 +97,5 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "dependencies": {
-    "vue-wysiwyg": "^1.7.2"
   }
 }

@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": { "*": ["node_modules/lorem-ipsum/types/src/index.d.ts"] },
     "target": "es2015",
     "module": "es2015",
     "strict": true,
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "lib": ["es2015", "dom"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -16,5 +17,5 @@
     "declarationDir": "dist/types"
   },
   "include": ["lib/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "*.spec.ts"]
 }

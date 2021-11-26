@@ -1,4 +1,5 @@
-import { SupportedLanguages, translations, hasTranslation } from './i18n'
+import { translations } from './i18n'
+import type { SupportedLanguages } from './i18n'
 
 interface ReadingTime {
   minutes: number
@@ -27,15 +28,13 @@ const getNumberOfWords = (data: string) =>
 
 const isLessThanAMinute = (minutes: number) => minutes < 1 + Number.EPSILON
 
-const getLocale = (minutes: number, locale = SupportedLanguages.EN) =>
-  translations[hasTranslation(locale) ? locale : SupportedLanguages.EN][
-    isLessThanAMinute(minutes) ? 'less' : 'default'
-  ]
+const getLocale = (minutes: number, locale: SupportedLanguages = 'en') =>
+  translations[locale][isLessThanAMinute(minutes) ? 'less' : 'default']
 
 const readingTime = (
   data: string,
   wordsPerMinute = 300,
-  language = SupportedLanguages.EN
+  language: SupportedLanguages = 'en'
 ): ReadingTime => {
   const words = getNumberOfWords(data ?? '')
   const minutes = +Math.round(words / wordsPerMinute).toFixed(2)
