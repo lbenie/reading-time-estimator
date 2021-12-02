@@ -2055,15 +2055,24 @@
     mutation-testing-report-schema "1.7.6"
     tslib "~2.3.0"
 
-"@stryker-mutator/core@5.5.0":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@stryker-mutator/core/-/core-5.5.0.tgz#12518cc938902d5d7ad3ae97f8fffed5eed430fa"
-  integrity sha512-DFnljBnxkJNpJu1Alh2q9iJWCQbfoi+675t/9v59OYg7jErwjKy9aXYJvNJBMBYCPZN5TVK+Adv4oLlnygNH/w==
+"@stryker-mutator/api@5.5.1":
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/api/-/api-5.5.1.tgz#8d33cf3b5c638b42086a0b55e2bcd573ea94d05a"
+  integrity sha512-B7o2wM2IDWT+90sy8ygmB9RjTS+VasN2assqtoiLch6ncYHD5ojtJL9cDKTI7oiZPmJiTO4EkpnJnJhtOFYB4w==
   dependencies:
-    "@stryker-mutator/api" "5.5.0"
-    "@stryker-mutator/instrumenter" "5.5.0"
-    "@stryker-mutator/util" "5.5.0"
-    ajv "~8.6.0"
+    mutation-testing-metrics "1.7.6"
+    mutation-testing-report-schema "1.7.6"
+    tslib "~2.3.0"
+
+"@stryker-mutator/core@5.5.1":
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/core/-/core-5.5.1.tgz#2279ec7df5e7ed18e10c56b795845d983ce8f3b2"
+  integrity sha512-w6qfhFQPo0SAMqVXCCmBilGDBtbqEjm3+/+cNrgGmfu+NWlR/CE4xAWQCKTlRKLvBUGebrzPZ2ofQTnWQGom3A==
+  dependencies:
+    "@stryker-mutator/api" "5.5.1"
+    "@stryker-mutator/instrumenter" "5.5.1"
+    "@stryker-mutator/util" "5.5.1"
+    ajv "~8.8.2"
     chalk "~4.1.0"
     commander "~8.3.0"
     execa "~5.1.1"
@@ -2089,10 +2098,10 @@
     typed-inject "~3.0.0"
     typed-rest-client "~1.8.0"
 
-"@stryker-mutator/instrumenter@5.5.0":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@stryker-mutator/instrumenter/-/instrumenter-5.5.0.tgz#4c23a68c7cb73db2e9df208b6e0d6768665db766"
-  integrity sha512-5+3Osauukk9LRUBnWEmxKF7rzYXzRwTpK5dpLcCbbM6w0wfH0s7NoXWtWUirBzRvKnmLq2rVkhxr8j5MKKjBvQ==
+"@stryker-mutator/instrumenter@5.5.1":
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/instrumenter/-/instrumenter-5.5.1.tgz#89c5fa14414d89193865c8a021f28e9f12d29413"
+  integrity sha512-PTXrERyeikAvp/1ID2U7WF1/APnVMbr5qOJ2UiChbfDCkz0Jn/I4V3rrcxse28ra3nelpzC4y8x5nREnfnMI9A==
   dependencies:
     "@babel/core" "~7.16.0"
     "@babel/generator" "~7.16.0"
@@ -2101,8 +2110,8 @@
     "@babel/plugin-proposal-decorators" "~7.16.0 "
     "@babel/plugin-proposal-private-methods" "~7.16.0"
     "@babel/preset-typescript" "~7.16.0 "
-    "@stryker-mutator/api" "5.5.0"
-    "@stryker-mutator/util" "5.5.0"
+    "@stryker-mutator/api" "5.5.1"
+    "@stryker-mutator/util" "5.5.1"
     angular-html-parser "~1.8.0"
     weapon-regex "~0.6.0"
 
@@ -2120,6 +2129,13 @@
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/@stryker-mutator/util/-/util-5.5.0.tgz#a614677696578a43c25075402701e4c90b74c5e0"
   integrity sha512-dMPK20uyPcazLV+KP2LN5CeTlh/Ui5RLhsFjxNK6szvS526ENpgPVg24WN0Ol2oyM2eHTFc8xcHBy+sgsFI9kg==
+  dependencies:
+    lodash.flatmap "~4.5.0"
+
+"@stryker-mutator/util@5.5.1":
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/util/-/util-5.5.1.tgz#2e286cd70345e8b54303560081978107ded2deea"
+  integrity sha512-+g1FKS6zFpjidvRMBaqN1Cpjt2BwD5mPrkQ+Ry3cDg7ezZ7Ml3fHS0zrB1cVHfwsp1NWhzvo8FgVDFXD146J/w==
   dependencies:
     lodash.flatmap "~4.5.0"
 
@@ -2925,10 +2941,10 @@ ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3, ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ajv@~8.6.0:
-  version "8.6.0"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.6.0.tgz#60cc45d9c46a477d80d92c48076d972c342e5720"
-  integrity sha512-cnUG4NSBiM4YFBxgZIj/In3/6KX+rQ2l2YPRVcvAMQGWEPKuXoPIhxzwqh31jA3IPbI4qEOp/5ILI4ynioXsGQ==
+ajv@~8.8.2:
+  version "8.8.2"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.8.2.tgz#01b4fef2007a28bf75f0b7fc009f62679de4abbb"
+  integrity sha512-x9VuX+R/jcFj1DHo/fCp99esgGDWiHENrKxaCENuCxpoMCmAt/COCGVDwA7kleEpEzJjDnvh3yGoOuLu0Dtllw==
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
