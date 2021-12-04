@@ -77,7 +77,7 @@
     "jest": "27.4.3",
     "lint-staged": "12.1.2",
     "pinst": "2.1.6",
-    "prettier": "2.5.0",
+    "prettier": "2.5.1",
     "pug": "3.0.2",
     "pug-plain-loader": "1.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
