@@ -65,7 +65,7 @@
     "@stryker-mutator/jest-runner": "5.5.1",
     "@types/jest": "27.0.3",
     "@types/node": "16.11.12",
-    "@typescript-eslint/eslint-plugin": "5.6.0",
+    "@typescript-eslint/eslint-plugin": "5.7.0",
     "@typescript-eslint/parser": "5.6.0",
     "@vuepress/plugin-google-analytics": "1.8.2",
     "all-contributors-cli": "^6.20.0",
