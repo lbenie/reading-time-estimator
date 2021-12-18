@@ -65,7 +65,6 @@
     "@vuepress/plugin-google-analytics": "1.8.2",
     "all-contributors-cli": "^6.20.0",
     "concurrently": "6.5.0",
-    "conventional-changelog-eslint": "^3.0.9",
     "eslint": "8.5.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "4.0.0",
