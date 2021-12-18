@@ -1,4 +1,4 @@
 export interface I18n {
-  less: string
-  default: string
+  less: string;
+  default: string;
 }
