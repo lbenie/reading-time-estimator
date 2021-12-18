@@ -51,7 +51,8 @@
     "docs:build": "npx vuepress build vuepress",
     "postinstall": "is-ci || husky install",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "postpublish": "pinst --enable",
+    "format": "prettier lib --write"
   },
   "devDependencies": {
     "@commitlint/cli": "15.0.0",
