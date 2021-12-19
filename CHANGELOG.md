@@ -1,3 +1,5 @@
+## [1.4.3](https://github.com/lbenie/reading-time-estimator/compare/v1.4.2...v1.4.3) (2021-12-19)
+
 ## [1.4.2](https://github.com/lbenie/reading-time-estimator/compare/v1.4.1...v1.4.2) (2021-12-18)
 
 
