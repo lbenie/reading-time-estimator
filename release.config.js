@@ -36,7 +36,56 @@ module.exports = {
     [
       '@semantic-release/release-notes-generator',
       {
-        preset: 'angular',
+        preset: 'conventionalcommits',
+        presetConfig: {
+          types: [
+            {
+              type: 'feat',
+              section: ':sparkles: Features',
+              hidden: false,
+            },
+            {
+              type: 'fix',
+              section: ':bug: Fixes',
+              hidden: false,
+            },
+            {
+              type: 'docs',
+              section: ':memo: Documenation',
+              hidden: false,
+            },
+            {
+              type: 'style',
+              section: ':barber: Styling',
+              hidden: false,
+            },
+            {
+              type: 'refactor',
+              section: ':zap: Refactoring',
+              hidden: false,
+            },
+            {
+              type: 'perf',
+              section: ':fast_forward: Performance',
+              hidden: false,
+            },
+            {
+              type: 'test',
+              section: ':white_check_mark: Tests',
+              hidden: true,
+            },
+            {
+              type: 'ci',
+              section: ':repeat: CI',
+              hidden: true,
+            },
+            {
+              type: 'chore',
+              section: ':white_check_mark: Chores',
+              hidden: false,
+            },
+          ],
+        },
         parserOpts: {
           noteKeywords: [
             'BREAKING CHANGE',
