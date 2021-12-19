@@ -60,6 +60,21 @@ module.exports = {
     ],
     '@semantic-release/npm',
     [
+      '@semantic-release/github',
+      {
+        assets: [
+          {
+            path: 'dist/reading-time-estimator.js',
+            label: 'ES js distribution',
+          },
+          {
+            path: 'dist/reading-time-estimator.js',
+            label: 'UMD js distribution',
+          },
+        ],
+      },
+    ],
+    [
       '@semantic-release/git',
       {
         assets: ['package.json', 'CHANGELOG.md'],
