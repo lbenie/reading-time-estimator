@@ -1,3 +1,10 @@
+### [1.4.7](https://github.com/lbenie/reading-time-estimator/compare/v1.4.6...v1.4.7) (2021-12-20)
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency @vuepress/plugin-google-analytics to v1.8.3 ([c126d0d](https://github.com/lbenie/reading-time-estimator/commit/c126d0d7ba3bbb6feee618aa99c9b3667b7c9e2a))
+
 ### [1.4.6](https://github.com/lbenie/reading-time-estimator/compare/v1.4.5...v1.4.6) (2021-12-20)
 
 
