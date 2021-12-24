@@ -63,7 +63,7 @@
     "@types/node": "17.0.4",
     "@typescript-eslint/eslint-plugin": "5.8.0",
     "@typescript-eslint/parser": "5.8.0",
-    "@vuepress/plugin-google-analytics": "1.9.3",
+    "@vuepress/plugin-google-analytics": "1.9.4",
     "all-contributors-cli": "^6.20.0",
     "concurrently": "6.5.1",
     "conventional-changelog-conventionalcommits": "^4.6.1",
