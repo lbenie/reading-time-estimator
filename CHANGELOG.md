@@ -1,3 +1,10 @@
+### [1.4.18](https://github.com/lbenie/reading-time-estimator/compare/v1.4.17...v1.4.18) (2021-12-24)
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency vuepress to v1.9.4 ([2c19e7e](https://github.com/lbenie/reading-time-estimator/commit/2c19e7ecaf700faee0afa3e18e3643436b9734b5))
+
 ### [1.4.17](https://github.com/lbenie/reading-time-estimator/compare/v1.4.16...v1.4.17) (2021-12-24)
 
 
