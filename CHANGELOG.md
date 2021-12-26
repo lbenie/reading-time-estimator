@@ -1,3 +1,10 @@
+### [1.4.21](https://github.com/lbenie/reading-time-estimator/compare/v1.4.20...v1.4.21) (2021-12-26)
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency @types/node to v17.0.5 ([d036912](https://github.com/lbenie/reading-time-estimator/commit/d036912241b7c5ea98c1ea73490ab80098d3289b))
+
 ### [1.4.20](https://github.com/lbenie/reading-time-estimator/compare/v1.4.19...v1.4.20) (2021-12-26)
 
 
