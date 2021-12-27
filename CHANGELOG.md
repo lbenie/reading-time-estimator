@@ -1,3 +1,10 @@
+### [1.4.22](https://github.com/lbenie/reading-time-estimator/compare/v1.4.21...v1.4.22) (2021-12-27)
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v5.8.1 ([b69fa73](https://github.com/lbenie/reading-time-estimator/commit/b69fa739bda1f098fabdc5bdd7bbf931c87be7f7))
+
 ### [1.4.21](https://github.com/lbenie/reading-time-estimator/compare/v1.4.20...v1.4.21) (2021-12-26)
 
 
