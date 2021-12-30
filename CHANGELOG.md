@@ -1,3 +1,10 @@
+### [1.4.24](https://github.com/lbenie/reading-time-estimator/compare/v1.4.23...v1.4.24) (2021-12-30)
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency @types/jest to v27.4.0 ([c49e27e](https://github.com/lbenie/reading-time-estimator/commit/c49e27e2d3458b87a411c4624d14675e08f356e1))
+
 ### [1.4.23](https://github.com/lbenie/reading-time-estimator/compare/v1.4.22...v1.4.23) (2021-12-27)
 
 
