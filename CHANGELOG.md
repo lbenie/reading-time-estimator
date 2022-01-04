@@ -1,3 +1,10 @@
+### [1.4.30](https://github.com/lbenie/reading-time-estimator/compare/v1.4.29...v1.4.30) (2022-01-04)
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency @typescript-eslint/parser to v5.9.0 ([d1bf7bf](https://github.com/lbenie/reading-time-estimator/commit/d1bf7bf14ee5f53e4e3ec6800ed0ed9ae61a5766))
+
 ### [1.4.29](https://github.com/lbenie/reading-time-estimator/compare/v1.4.28...v1.4.29) (2022-01-03)
 
 
