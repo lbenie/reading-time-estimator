@@ -1,3 +1,10 @@
+### [1.4.38](https://github.com/lbenie/reading-time-estimator/compare/v1.4.37...v1.4.38) (2022-01-15)
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency ts-jest to v27.1.3 ([96ed5ee](https://github.com/lbenie/reading-time-estimator/commit/96ed5ee269df437899c8eb9e15bd53cb1faacfb2))
+
 ### [1.4.37](https://github.com/lbenie/reading-time-estimator/compare/v1.4.36...v1.4.37) (2022-01-10)
 
 
