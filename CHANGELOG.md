@@ -1,3 +1,10 @@
+### [1.4.39](https://github.com/lbenie/reading-time-estimator/compare/v1.4.38...v1.4.39) (2022-01-16)
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency eslint to v8.7.0 ([949fa30](https://github.com/lbenie/reading-time-estimator/commit/949fa306d1d38742eb7ba681a7b72b1637b85e3e))
+
 ### [1.4.38](https://github.com/lbenie/reading-time-estimator/compare/v1.4.37...v1.4.38) (2022-01-15)
 
 
