@@ -1,3 +1,10 @@
+### [1.4.47](https://github.com/lbenie/reading-time-estimator/compare/v1.4.46...v1.4.47) (2022-01-18)
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency semantic-release to v19 ([2d5f119](https://github.com/lbenie/reading-time-estimator/commit/2d5f11984b8dbe3c0855213b3ff25804f60585c7))
+
 ### [1.4.46](https://github.com/lbenie/reading-time-estimator/compare/v1.4.45...v1.4.46) (2022-01-18)
 
 
