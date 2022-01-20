@@ -1,3 +1,10 @@
+### [1.4.49](https://github.com/lbenie/reading-time-estimator/compare/v1.4.48...v1.4.49) (2022-01-20)
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency typescript to v4.5.5 ([c67d39d](https://github.com/lbenie/reading-time-estimator/commit/c67d39d7892a923abb3733a26c11fe2303746f4f))
+
 ### [1.4.48](https://github.com/lbenie/reading-time-estimator/compare/v1.4.47...v1.4.48) (2022-01-18)
 
 
