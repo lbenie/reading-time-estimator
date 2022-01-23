@@ -1,3 +1,10 @@
+### [1.4.50](https://github.com/lbenie/reading-time-estimator/compare/v1.4.49...v1.4.50) (2022-01-23)
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency @stryker-mutator/core to v5.6.1 ([2199192](https://github.com/lbenie/reading-time-estimator/commit/21991929079ad6059d35ad7f55b2f5c02e04a084))
+
 ### [1.4.49](https://github.com/lbenie/reading-time-estimator/compare/v1.4.48...v1.4.49) (2022-01-20)
 
 
