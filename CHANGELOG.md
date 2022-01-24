@@ -1,3 +1,10 @@
+### [1.4.51](https://github.com/lbenie/reading-time-estimator/compare/v1.4.50...v1.4.51) (2022-01-24)
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency @stryker-mutator/jest-runner to v5.6.1 ([8aa1f8f](https://github.com/lbenie/reading-time-estimator/commit/8aa1f8fbe5527a9e2a8f22b5b0214d9625a2d4da))
+
 ### [1.4.50](https://github.com/lbenie/reading-time-estimator/compare/v1.4.49...v1.4.50) (2022-01-23)
 
 
