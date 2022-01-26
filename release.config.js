@@ -19,7 +19,7 @@ module.exports = {
         releaseRules: [
           { type: 'docs', release: 'patch' },
           { type: 'refactor', release: 'patch' },
-          { type: 'chore', scope: 'deps', release: 'patch' },
+          // { type: 'chore', scope: 'deps', release: 'patch' },
         ],
         parserOpts: {
           noteKeywords: [
