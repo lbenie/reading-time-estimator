@@ -1,5 +1,6 @@
 import { readingTime } from '../lib'
-import { translations, SupportedLanguages } from '../lib/i18n'
+import { translations } from '../lib/i18n'
+import type { SupportedLanguages } from '../lib/i18n'
 
 const englishText = `I never took the time to properly build my website even though I am a Frontend Developer. I started to look at some technologies in 2018 and 2019, I found some amazing projects (nuxt, vuepress, etc...) but I never did finish my website.`
 
@@ -10,6 +11,13 @@ const frenchText = `Reading Time Estimator a été créé pour fournir une estim
 const spanishText = `Reading Time Estimator fue creado para proporcionar una estimación del tiempo de lectura de un artículo o blog como se ve en el medio`
 
 const japaneseText = `どういたしまして。`
+
+interface TestSetup {
+  readonly language: SupportedLanguages
+  readonly words: string
+  readonly wordsPerMinute?: number
+  readonly expectedResult: { readonly minutes: number; readonly words: number }
+}
 
 describe('readingTime', () => {
   it.each`
@@ -24,17 +32,7 @@ describe('readingTime', () => {
     ${'ja'}      | ${japaneseText} | ${10}          | ${{ minutes: 1, words: 8, text: `${translations['ja'].less}` }}
   `(
     'approximates time to read a text in $language',
-    ({
-      language,
-      words,
-      wordsPerMinute,
-      expectedResult,
-    }: {
-      language: SupportedLanguages
-      words: string
-      wordsPerMinute?: number
-      expectedResult: { minutes: number; words: number }
-    }) => {
+    ({ language, words, wordsPerMinute, expectedResult }: TestSetup) => {
       const result = readingTime(words, wordsPerMinute, language)
 
       expect(result).toEqual(expectedResult)
