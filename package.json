@@ -1,6 +1,6 @@
 {
   "name": "reading-time-estimator",
-  "version": "1.4.55",
+  "version": "1.5.0",
   "description": "A medium's like reading time estimator with internationalization support",
   "keywords": [
     "typescript",

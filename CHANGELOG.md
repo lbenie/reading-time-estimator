@@ -1,3 +1,18 @@
+## [1.5.0](https://github.com/lbenie/reading-time-estimator/compare/v1.4.55...v1.5.0) (2022-01-27)
+
+
+### :white_check_mark: Chores
+
+* **deps:** bump follow-redirects from 1.14.1 to 1.14.7 ([#442](https://github.com/lbenie/reading-time-estimator/issues/442)) ([15a8a86](https://github.com/lbenie/reading-time-estimator/commit/15a8a862f7829ef3d17fb866b4c82247983b617f))
+* **deps:** bump nanoid from 3.1.30 to 3.2.0 ([#455](https://github.com/lbenie/reading-time-estimator/issues/455)) ([e56409d](https://github.com/lbenie/reading-time-estimator/commit/e56409d72af3048ce9d320a7cc3f0eb14af21ef3))
+* **deps:** bump node-fetch from 2.6.6 to 2.6.7 ([#458](https://github.com/lbenie/reading-time-estimator/issues/458)) ([06e7dbd](https://github.com/lbenie/reading-time-estimator/commit/06e7dbdab0e62f992651fdf680f60bda640e6626))
+* **deps:** update stefanzweifel/git-auto-commit-action action to v4.13.1 ([#441](https://github.com/lbenie/reading-time-estimator/issues/441)) ([2baedb1](https://github.com/lbenie/reading-time-estimator/commit/2baedb12b5d88556cb198c7f5c046efdbbb039b4))
+
+
+### :sparkles: Features
+
+* readonly returned interface ([9ad5b2c](https://github.com/lbenie/reading-time-estimator/commit/9ad5b2cf48bb9442628754b55595ec2d639a1e34))
+
 ### [1.4.55](https://github.com/lbenie/reading-time-estimator/compare/v1.4.54...v1.4.55) (2022-01-25)
 
 
