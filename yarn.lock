@@ -2062,15 +2062,6 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@stryker-mutator/api@5.6.1":
-  version "5.6.1"
-  resolved "https://registry.yarnpkg.com/@stryker-mutator/api/-/api-5.6.1.tgz#dfd7ffec05ca42cd351f2fd3fc9eabc51e685e86"
-  integrity sha512-VMsyi6EATGw69RvsS5ObR1Eh8Dz6XbsESA9VHTOF5xXSTob9ZVj2okmgBo/QPh54Rafdl7W75yhNxI3mDz58Kw==
-  dependencies:
-    mutation-testing-metrics "1.7.8"
-    mutation-testing-report-schema "1.7.8"
-    tslib "~2.3.0"
-
 "@stryker-mutator/api@6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@stryker-mutator/api/-/api-6.0.0.tgz#4487b902a342e7f60fb9a0508f8d6d8a3cdadfee"
@@ -2131,22 +2122,15 @@
     angular-html-parser "~1.8.0"
     weapon-regex "~0.6.0"
 
-"@stryker-mutator/jest-runner@5.6.1":
-  version "5.6.1"
-  resolved "https://registry.yarnpkg.com/@stryker-mutator/jest-runner/-/jest-runner-5.6.1.tgz#18306639891ad645bdde7c068cb65a1b91d7e29f"
-  integrity sha512-5jDk56nlWyv/8Y4PZFAr9f0nk9H8LKv5trT2wKZc08SFaxbVMas2qbbyrvd0gD8tfwsc0IpNiLqa9I41efqxUw==
+"@stryker-mutator/jest-runner@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/jest-runner/-/jest-runner-6.0.0.tgz#451d6d6fb9d9ba757b1161364712ff91c574d74f"
+  integrity sha512-/uu8kjWjIaP9RuS3HV03l46vcnkqay0QUXx06xWDf6HHstvfloarvMNEawHFql54GqydS5uO9jPlW6Auq8AfGw==
   dependencies:
-    "@stryker-mutator/api" "5.6.1"
-    "@stryker-mutator/util" "5.6.1"
+    "@stryker-mutator/api" "6.0.0"
+    "@stryker-mutator/util" "6.0.0"
     semver "~7.3.5"
-    tslib "~2.3.0"
-
-"@stryker-mutator/util@5.6.1":
-  version "5.6.1"
-  resolved "https://registry.yarnpkg.com/@stryker-mutator/util/-/util-5.6.1.tgz#598ceafbe57ba3fa0ae5ab1608f4ad40f829ce32"
-  integrity sha512-Tdw/nqSkB0zJ+tivlB+WWN+Byj8p8BJeJwFmw2aW1C13J7Dt4c9OQTATOZJ9cKaVpPwoLPsN5d7XurRewDQ7gA==
-  dependencies:
-    lodash.flatmap "~4.5.0"
+    tslib "~2.3.1"
 
 "@stryker-mutator/util@6.0.0":
   version "6.0.0"
@@ -9720,22 +9704,10 @@ mutation-testing-metrics@1.7.10:
   dependencies:
     mutation-testing-report-schema "1.7.10"
 
-mutation-testing-metrics@1.7.8:
-  version "1.7.8"
-  resolved "https://registry.yarnpkg.com/mutation-testing-metrics/-/mutation-testing-metrics-1.7.8.tgz#1b57e6a947447a47d7a7e89a0290d7443340f690"
-  integrity sha512-WZACxXE5s3Sh5pHLaTcmJ3tdHI3JX1PGwrPE/nNZ2DQ2rl6y8CBlWsCMmHwFLpWT+JYGirx7MJoU7/7smBCZoQ==
-  dependencies:
-    mutation-testing-report-schema "1.7.8"
-
 mutation-testing-report-schema@1.7.10:
   version "1.7.10"
   resolved "https://registry.yarnpkg.com/mutation-testing-report-schema/-/mutation-testing-report-schema-1.7.10.tgz#3e03a2791097cb68bca11120cd936ec67b665fa1"
   integrity sha512-lPbEVTAlx0XCXA5GKpb6+0mtDk9MoepYVsXhEtRcwiHRjmqBn2frwXL1Xmkh6HxYnEDIQddzZAgk8SIbkV7p+g==
-
-mutation-testing-report-schema@1.7.8:
-  version "1.7.8"
-  resolved "https://registry.yarnpkg.com/mutation-testing-report-schema/-/mutation-testing-report-schema-1.7.8.tgz#3f5b041ef85e2d42c84db8e651e9d3a74a3547e2"
-  integrity sha512-m0hjxDUMdGpgQRQILM3tr2/j7aJ8baBA9lhERzEK2sVv+7JLTyIVd0BjhI97v7xLNeIOSKny+jEWLejoINmfug==
 
 mute-stream@0.0.8, mute-stream@~0.0.4:
   version "0.0.8"
@@ -13266,7 +13238,7 @@ tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.1.0, tslib@^2.3.1:
+tslib@^2.1.0, tslib@^2.3.1, tslib@~2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
