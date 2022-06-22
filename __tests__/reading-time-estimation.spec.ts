@@ -13,29 +13,112 @@ const spanishText = `Reading Time Estimator fue creado para proporcionar una est
 const japaneseText = `どういたしまして。`
 
 interface TestSetup {
-  readonly language: SupportedLanguages
-  readonly words: string
-  readonly wordsPerMinute?: number
-  readonly expectedResult: { readonly minutes: number; readonly words: number }
+  readonly language: SupportedLanguages | undefined
+  readonly words: string | undefined
+  readonly wordsPerMinute: number | undefined
+  readonly expectedResult: {
+    readonly minutes: number
+    readonly words: number
+    readonly text: string
+  }
 }
 
 describe('readingTime', () => {
-  it.each`
-    language     | words           | wordsPerMinute | expectedResult
-    ${'en'}      | ${englishText}  | ${10}          | ${{ minutes: 4, words: 43, text: `4 ${translations['en'].default}` }}
-    ${'en'}      | ${englishText}  | ${undefined}   | ${{ minutes: 0, words: 43, text: `${translations['en'].less}` }}
-    ${'en'}      | ${''}           | ${undefined}   | ${{ minutes: 0, words: 0, text: translations['en'].less }}
-    ${undefined} | ${undefined}    | ${undefined}   | ${{ minutes: 0, words: 0, text: translations['en'].less }}
-    ${'cn'}      | ${chineseText}  | ${2}           | ${{ minutes: 5, words: 10, text: `5 ${translations['cn'].default}` }}
-    ${'fr'}      | ${frenchText}   | ${10}          | ${{ minutes: 3, words: 26, text: `3 ${translations['fr'].default}` }}
-    ${'es'}      | ${spanishText}  | ${10}          | ${{ minutes: 2, words: 24, text: `2 ${translations['es'].default}` }}
-    ${'ja'}      | ${japaneseText} | ${10}          | ${{ minutes: 1, words: 8, text: `${translations['ja'].less}` }}
-  `(
-    'approximates time to read a text in $language',
-    ({ language, words, wordsPerMinute, expectedResult }: TestSetup) => {
-      const result = readingTime(words, wordsPerMinute, language)
+  it.each<readonly TestSetup[]>([
+    [
+      {
+        language: 'en',
+        words: englishText,
+        wordsPerMinute: 10,
+        expectedResult: {
+          minutes: 4,
+          words: 43,
+          text: `4 ${translations['en'].default}`,
+        },
+      },
+    ],
+    [
+      {
+        language: 'en',
+        words: englishText,
+        wordsPerMinute: undefined,
+        expectedResult: {
+          minutes: 0,
+          words: 43,
+          text: `${translations['en'].less}`,
+        },
+      },
+    ],
+    [
+      {
+        language: 'en',
+        words: '',
+        wordsPerMinute: undefined,
+        expectedResult: { minutes: 0, words: 0, text: translations['en'].less },
+      },
+    ],
+    [
+      {
+        language: undefined,
+        words: undefined,
+        wordsPerMinute: undefined,
+        expectedResult: { minutes: 0, words: 0, text: translations['en'].less },
+      },
+    ],
+    [
+      {
+        language: 'cn',
+        words: chineseText,
+        wordsPerMinute: 2,
+        expectedResult: {
+          minutes: 5,
+          words: 10,
+          text: `5 ${translations['cn'].default}`,
+        },
+      },
+    ],
+    [
+      {
+        language: 'fr',
+        words: frenchText,
+        wordsPerMinute: 10,
+        expectedResult: {
+          minutes: 3,
+          words: 26,
+          text: `3 ${translations['fr'].default}`,
+        },
+      },
+    ],
+    [
+      {
+        language: 'es',
+        words: spanishText,
+        wordsPerMinute: 10,
+        expectedResult: {
+          minutes: 2,
+          words: 24,
+          text: `2 ${translations['es'].default}`,
+        },
+      },
+    ],
+    [
+      {
+        language: 'ja',
+        words: japaneseText,
+        wordsPerMinute: 10,
+        expectedResult: {
+          minutes: 1,
+          words: 8,
+          text: `${translations['ja'].less}`,
+        },
+      },
+    ],
+  ])(
+    'approximates time to read a text in %s',
+    ({ words, wordsPerMinute, language, expectedResult }) => {
+      const result = readingTime(words ?? '', wordsPerMinute, language)
 
-      expect(result).toEqual(expectedResult)
+      expect(result).toStrictEqual(expectedResult)
     }
   )
 })
