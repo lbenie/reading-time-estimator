@@ -23,6 +23,7 @@
   "module": "./dist/reading-time-estimator.es.js",
   "exports": {
     ".": {
+      "types": "./dist/types/index.d.ts",
       "import": "./dist/reading-time-estimator.es.js",
       "require": "./dist/reading-time-estimator.umd.js"
     }
