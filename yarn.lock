@@ -1963,7 +1963,7 @@
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
 
-"@rollup/plugin-typescript@^8.3.0":
+"@rollup/plugin-typescript@8.3.0":
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-typescript/-/plugin-typescript-8.3.0.tgz#bc1077fa5897b980fc27e376c4e377882c63e68b"
   integrity sha512-I5FpSvLbtAdwJ+naznv+B4sjXZUcIvLLceYpITAn7wAP8W0wqc5noLdGIp9HGVntNhRWXctwPYrSSFQxtl0FPA==
@@ -1988,7 +1988,7 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@semantic-release/changelog@^6.0.1":
+"@semantic-release/changelog@6.0.1":
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-6.0.1.tgz#8dd0334fd8c7d50cda747d2591e4f18f816b3c9c"
   integrity sha512-FT+tAGdWHr0RCM3EpWegWnvXJ05LQtBkQUaQRIExONoXjVjLuOILNm4DEKNaV+GAQyJjbLRVs57ti//GypH6PA==
@@ -2021,7 +2021,7 @@
   resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-3.0.0.tgz#30a3b97bbb5844d695eb22f9d3aa40f6a92770c2"
   integrity sha512-5hiM4Un+tpl4cKw3lV4UgzJj+SmfNIDCLLw0TepzQxz9ZGV5ixnqkzIVF+3tp0ZHgcMKE+VNGHJjEeyFG2dcSw==
 
-"@semantic-release/git@^10.0.1":
+"@semantic-release/git@10.0.1":
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-10.0.1.tgz#c646e55d67fae623875bf3a06a634dd434904498"
   integrity sha512-eWrx5KguUcU2wUPaO6sfvZI0wPafUKAMNC18aXY4EnNcrZL86dEmpNVnC9uMpGZkmZJ9EfCVJBQx4pV4EMGT1w==
@@ -2034,6 +2034,28 @@
     lodash "^4.17.4"
     micromatch "^4.0.0"
     p-reduce "^2.0.0"
+
+"@semantic-release/github@8.0.2":
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-8.0.2.tgz#80114a41f6ec8ab6c0d38a436b48ff3f2223ab16"
+  integrity sha512-wIbfhOeuxlYzMTjtSAa2xgr54n7ZuPAS2gadyTWBpUt2PNAPgla7A6XxCXJnaKPgfVF0iFfSk3B+KlVKk6ByVg==
+  dependencies:
+    "@octokit/rest" "^18.0.0"
+    "@semantic-release/error" "^2.2.0"
+    aggregate-error "^3.0.0"
+    bottleneck "^2.18.1"
+    debug "^4.0.0"
+    dir-glob "^3.0.0"
+    fs-extra "^10.0.0"
+    globby "^11.0.0"
+    http-proxy-agent "^5.0.0"
+    https-proxy-agent "^5.0.0"
+    issue-parser "^6.0.0"
+    lodash "^4.17.4"
+    mime "^3.0.0"
+    p-filter "^2.0.0"
+    p-retry "^4.0.0"
+    url-join "^4.0.0"
 
 "@semantic-release/github@^8.0.0":
   version "8.0.4"
@@ -2057,29 +2079,7 @@
     p-retry "^4.0.0"
     url-join "^4.0.0"
 
-"@semantic-release/github@^8.0.2":
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-8.0.2.tgz#80114a41f6ec8ab6c0d38a436b48ff3f2223ab16"
-  integrity sha512-wIbfhOeuxlYzMTjtSAa2xgr54n7ZuPAS2gadyTWBpUt2PNAPgla7A6XxCXJnaKPgfVF0iFfSk3B+KlVKk6ByVg==
-  dependencies:
-    "@octokit/rest" "^18.0.0"
-    "@semantic-release/error" "^2.2.0"
-    aggregate-error "^3.0.0"
-    bottleneck "^2.18.1"
-    debug "^4.0.0"
-    dir-glob "^3.0.0"
-    fs-extra "^10.0.0"
-    globby "^11.0.0"
-    http-proxy-agent "^5.0.0"
-    https-proxy-agent "^5.0.0"
-    issue-parser "^6.0.0"
-    lodash "^4.17.4"
-    mime "^3.0.0"
-    p-filter "^2.0.0"
-    p-retry "^4.0.0"
-    url-join "^4.0.0"
-
-"@semantic-release/npm@^9.0.0":
+"@semantic-release/npm@^9.0.0-beta.1":
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-9.0.1.tgz#d81828eb1fb771e2767b3a8ee989915e1af27075"
   integrity sha512-I5nVZklxBzfMFwemhRNbSrkiN/dsH3c7K9+KSk6jUnq0rdLFUuJt7EBsysq4Ir3moajQgFkfEryEHPqiKJj20g==
@@ -2098,7 +2098,7 @@
     semver "^7.1.2"
     tempy "^1.0.0"
 
-"@semantic-release/release-notes-generator@^10.0.0", "@semantic-release/release-notes-generator@^10.0.3":
+"@semantic-release/release-notes-generator@10.0.3", "@semantic-release/release-notes-generator@^10.0.0":
   version "10.0.3"
   resolved "https://registry.yarnpkg.com/@semantic-release/release-notes-generator/-/release-notes-generator-10.0.3.tgz#85f7ca78bfa6b01fb5fda0ac48112855d69171dc"
   integrity sha512-k4x4VhIKneOWoBGHkx0qZogNjCldLPRiAjnIpMnlUh6PtaWXp/T+C9U7/TaNDDtgDa5HMbHl4WlREdxHio6/3w==
@@ -3194,7 +3194,7 @@ algoliasearch@^3.24.5:
     semver "^5.1.0"
     tunnel-agent "^0.6.0"
 
-all-contributors-cli@^6.20.0:
+all-contributors-cli@6.20.0:
   version "6.20.0"
   resolved "https://registry.yarnpkg.com/all-contributors-cli/-/all-contributors-cli-6.20.0.tgz#9bc98dda38cb29cfe8afc8a78c004e14af25d2f6"
   integrity sha512-trEQlL1s1u8FSWSwY2w9uL4GCG7Fo9HIW5rm5LtlE0SQHSolfXQBzJib07Qes5j52/t72wjuE6sEKkuRrwiuuQ==
@@ -4730,7 +4730,7 @@ conventional-changelog-angular@^5.0.0:
     compare-func "^2.0.0"
     q "^1.5.1"
 
-conventional-changelog-conventionalcommits@^5.0.0:
+conventional-changelog-conventionalcommits@5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-5.0.0.tgz#41bdce54eb65a848a4a3ffdca93e92fa22b64a86"
   integrity sha512-lCDbA+ZqVFQGUj7h9QBKoIpLhl8iihkO0nCTyRNzuXtcd7ubODpYB04IFy31JloiJgG0Uovu8ot8oxRzn7Nwtw==
@@ -11863,7 +11863,7 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rollup-plugin-peer-deps-external@^2.2.4:
+rollup-plugin-peer-deps-external@2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/rollup-plugin-peer-deps-external/-/rollup-plugin-peer-deps-external-2.2.4.tgz#8a420bbfd6dccc30aeb68c9bf57011f2f109570d"
   integrity sha512-AWdukIM1+k5JDdAqV/Cxd+nejvno2FVLVeZ74NKggm3Q5s9cbbcOgUPGdbxPi4BXu7xGaZ8HG12F+thImYu/0g==
@@ -11998,15 +11998,15 @@ selfsigned@^1.10.8:
   dependencies:
     node-forge "^0.10.0"
 
-semantic-release@^19.0.0:
-  version "19.0.3"
-  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-19.0.3.tgz#9291053ad9890052f28e7c5921d4741530d516fd"
-  integrity sha512-HaFbydST1cDKZHuFZxB8DTrBLJVK/AnDExpK0s3EqLIAAUAHUgnd+VSJCUtTYQKkAkauL8G9CucODrVCc7BuAA==
+semantic-release@19.0.0:
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-19.0.0.tgz#7c91b07fa62a05c160419edad202ebd0a8fa0995"
+  integrity sha512-5wq2uWde+LoI976p80TzDM0V+UEZVzgPbi377b4rdtKhp3gsxGoeTlSKE198acdr4tco19YRH7jQ3XoADq5OQA==
   dependencies:
     "@semantic-release/commit-analyzer" "^9.0.2"
     "@semantic-release/error" "^3.0.0"
     "@semantic-release/github" "^8.0.0"
-    "@semantic-release/npm" "^9.0.0"
+    "@semantic-release/npm" "^9.0.0-beta.1"
     "@semantic-release/release-notes-generator" "^10.0.0"
     aggregate-error "^3.0.0"
     cosmiconfig "^7.0.0"
@@ -13578,7 +13578,7 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vite@^2.6.14:
+vite@2.6.14:
   version "2.6.14"
   resolved "https://registry.yarnpkg.com/vite/-/vite-2.6.14.tgz#35c09a15e4df823410819a2a239ab11efb186271"
   integrity sha512-2HA9xGyi+EhY2MXo0+A2dRsqsAG3eFNEVIo12olkWhOmc8LfiM+eMdrXf+Ruje9gdXgvSqjLI9freec1RUM5EA==
@@ -13663,7 +13663,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue-wysiwyg@^1.7.2:
+vue-wysiwyg@1.7.2:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/vue-wysiwyg/-/vue-wysiwyg-1.7.2.tgz#8f5ffe46e95e984c1f36874cc42ede5213e3b2d8"
   integrity sha512-ypj9vqmGJTuM/YYC30+vRPWm6+UizBqvNHnIJr1l6k92eHA33q5ubE+WPfij8Qr8mK+wbaCwaVBO7dQqvxzSTQ==
