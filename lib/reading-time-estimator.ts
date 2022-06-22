@@ -31,12 +31,19 @@ const isLessThanAMinute = (minutes: number) => minutes < 1 + Number.EPSILON
 const getLocale = (minutes: number, locale: SupportedLanguages = 'en') =>
   translations[locale][isLessThanAMinute(minutes) ? 'less' : 'default']
 
+/**
+ *
+ * @param data - The text to be estimated
+ * @param wordsPerMinute - The number of words per minute
+ * @param language - The language of the text
+ * @returns The estimated reading time
+ */
 export const readingTime = (
   data: string,
   wordsPerMinute = 300,
   language: SupportedLanguages = 'en'
 ): ReadingTime => {
-  const words = getNumberOfWords(data ?? '')
+  const words = getNumberOfWords(data)
   const minutes = +Math.round(words / wordsPerMinute).toFixed(2)
 
   return {
