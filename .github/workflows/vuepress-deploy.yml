@@ -14,5 +14,5 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: lbenie/reading-time-estimator
         TARGET_BRANCH: master
-        BUILD_SCRIPT: yarn build && yarn build:docs
+        BUILD_SCRIPT: yarn build && yarn docs:build
         BUILD_DIR: docs
