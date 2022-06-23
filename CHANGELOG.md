@@ -1,3 +1,20 @@
+## [1.5.2](https://github.com/lbenie/reading-time-estimator/compare/v1.5.1...v1.5.2) (2022-06-23)
+
+
+### :memo: Documenation
+
+* add typedoc ([91f5b1a](https://github.com/lbenie/reading-time-estimator/commit/91f5b1a4b1c1d57bef25bbceea4a7d32ef964540))
+* fix documentation supported languages number ([8e849c8](https://github.com/lbenie/reading-time-estimator/commit/8e849c8d42d8e89226d834da2403c7def18f2a2a))
+* remove mutation testing badge ([cfdfd5d](https://github.com/lbenie/reading-time-estimator/commit/cfdfd5dd97526f6108851a6f34cb9ae3406ef529))
+* replaces javscript with typescript ([d913b45](https://github.com/lbenie/reading-time-estimator/commit/d913b45c03b5591903c3470f80d304d593494cc0))
+
+
+### :white_check_mark: Chores
+
+* fix deps ([96f0c76](https://github.com/lbenie/reading-time-estimator/commit/96f0c761f2803521debc91b258cdd6e586102360))
+* update deps ([fd1bd77](https://github.com/lbenie/reading-time-estimator/commit/fd1bd77c44c3eed63f8a91df70c01303b3316de7))
+* update lock file ([5096b9d](https://github.com/lbenie/reading-time-estimator/commit/5096b9d979a63e2e46f1bbdf92b28e65bb04d595))
+
 ## [1.5.1](https://github.com/lbenie/reading-time-estimator/compare/v1.5.0...v1.5.1) (2022-06-22)
 
 
