@@ -6,15 +6,14 @@ interface ReadingTime {
   readonly words: number
   readonly text: string
 }
-
+/**
+ *
+ * @param data - The text to be analyzed
+ * @returns Parsed chinese, japanese and accented text
+ */
 const parseWords = (data: string) =>
-  data.match(/[\w\d\s,.\u00C0-\u024F]+/giu) ?? []
-
-const parseChineseWords = (data: string) =>
-  data.match(/[\u4E00-\u9FA5]/gu) ?? []
-
-const parseJapaneseWords = (data: string) =>
-  data.match(/[\u3041-\u3096]/gu) ?? []
+  data.match(/[\w|\d|\s|,|.|\u00C0-\u024F|\u4E00-\u9FA5|\u3041-\u309F]+/giu) ??
+  []
 
 const getNumberOfWords = (data: string) =>
   parseWords(data).reduce(
@@ -22,9 +21,7 @@ const getNumberOfWords = (data: string) =>
       accumulator +
       (!word.trim().length ? 0 : word.trim().split(/\s+/u).length),
     0
-  ) +
-  parseChineseWords(data).length +
-  parseJapaneseWords(data).length
+  )
 
 const isLessThanAMinute = (minutes: number) => minutes < 1 + Number.EPSILON
 
@@ -49,9 +46,9 @@ export const readingTime = (
   return {
     minutes,
     words,
-    text: `${isLessThanAMinute(minutes) ? '' : minutes} ${getLocale(
+    text: `${isLessThanAMinute(minutes) ? '' : `${minutes} `}${getLocale(
       minutes,
       language
-    )}`.trimStart(),
+    )}`,
   } as const
 }
