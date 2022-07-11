@@ -67,7 +67,7 @@
     "c8": "7.11.3",
     "concurrently": "7.2.2",
     "conventional-changelog-conventionalcommits": "5.0.0",
-    "eslint": "8.18.0",
+    "eslint": "8.19.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.0.0",
     "prettier": "2.7.1",
