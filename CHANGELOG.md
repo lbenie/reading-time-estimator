@@ -1,3 +1,25 @@
+## [1.5.3](https://github.com/lbenie/reading-time-estimator/compare/v1.5.2...v1.5.3) (2022-07-11)
+
+
+### :white_check_mark: Chores
+
+* add vuepress deploy ([b956148](https://github.com/lbenie/reading-time-estimator/commit/b95614808063c8f80c32fac9f39146b5f779b012))
+* add vuepress deploy ([a6318f4](https://github.com/lbenie/reading-time-estimator/commit/a6318f48c14f2f6378b347e4a40c3fa6d2baa300))
+* fix test pipeline ([c907b96](https://github.com/lbenie/reading-time-estimator/commit/c907b967440f658ee9e1f0d617417383a0d342fd))
+* fix test pipeline ([719b884](https://github.com/lbenie/reading-time-estimator/commit/719b8846da718106f712837f09738a2251d84721))
+* fix vuepress deploy ([d33fc9d](https://github.com/lbenie/reading-time-estimator/commit/d33fc9d322b52e0f21eed4389712ea5417130306))
+* **deps:** update dependency @semantic-release/github to v8.0.5 ([#623](https://github.com/lbenie/reading-time-estimator/issues/623)) ([3c85383](https://github.com/lbenie/reading-time-estimator/commit/3c853837e02f6a314e6f1622c7a2a96a9089e38e))
+* **deps:** update dependency @types/node to v18.0.3 ([#622](https://github.com/lbenie/reading-time-estimator/issues/622)) ([6fe24c2](https://github.com/lbenie/reading-time-estimator/commit/6fe24c2b855d3c629b9d820c049701f0e14dd422))
+* **deps:** update dependency @typescript-eslint/parser to v5.30.5 ([#620](https://github.com/lbenie/reading-time-estimator/issues/620)) ([3855501](https://github.com/lbenie/reading-time-estimator/commit/3855501b0d9c12e350775ac903aca1aeb512ee84))
+* **deps:** update dependency eslint to v8.19.0 ([#621](https://github.com/lbenie/reading-time-estimator/issues/621)) ([11c2235](https://github.com/lbenie/reading-time-estimator/commit/11c22350f68c68aced03e872ef2721ab3d37c3af))
+* **deps:** update dependency eslint-plugin-prettier to v4.2.1 ([#618](https://github.com/lbenie/reading-time-estimator/issues/618)) ([3ca148d](https://github.com/lbenie/reading-time-estimator/commit/3ca148de1c9628940f8c9d630c07f9d18ecad709))
+* **deps:** update dependency vitest to ^0.18.0 ([#617](https://github.com/lbenie/reading-time-estimator/issues/617)) ([1e35405](https://github.com/lbenie/reading-time-estimator/commit/1e35405f409c491c2cecf9b666f087579a9ff61c))
+
+
+### :bug: Fixes
+
+* properly parse japanese and chinese characters ([a4fb277](https://github.com/lbenie/reading-time-estimator/commit/a4fb27761cb2ead8ecc1b821c3ceb5e52cff98da))
+
 ## [1.5.2](https://github.com/lbenie/reading-time-estimator/compare/v1.5.1...v1.5.2) (2022-06-23)
 
 
