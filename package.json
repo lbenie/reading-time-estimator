@@ -54,7 +54,7 @@
     "format": "prettier lib --write"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "8.3.4",
+    "@rollup/plugin-typescript": "8.4.0",
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.5",
