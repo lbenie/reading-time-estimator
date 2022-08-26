@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/lbenie/reading-time-estimator/compare/v1.6.0...v1.6.1) (2022-08-26)
+
+
+### :memo: Documenation
+
+* build vuepress site ([055e681](https://github.com/lbenie/reading-time-estimator/commit/055e6817d41b7e5d4dfa1fcfd0edfb315bdf330a))
+
 ## [1.6.0](https://github.com/lbenie/reading-time-estimator/compare/v1.5.3...v1.6.0) (2022-08-26)
 
 
