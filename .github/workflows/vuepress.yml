@@ -1,0 +1,21 @@
+name: Documentation site
+
+on: [push]
+
+jobs:
+  documentation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+      - name: vuepress-deploy
+        uses: jenkey2011/vuepress-deploy@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TARGET_BRANCH: master
+          BUILD_SCRIPT: yarn docs:build
+          BUILD_DIR: docs
+          COMMIT_MESSAGE: 'docs: update documentation site'
+          CNAME: https://lbenie.github.io/reading-time-estimator
