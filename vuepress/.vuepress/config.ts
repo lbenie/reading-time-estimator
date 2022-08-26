@@ -1,6 +1,5 @@
 import { defineConfig } from 'vuepress/config'
 import { resolve } from 'path'
-import { main } from '../../package.json'
 
 export default defineConfig({
   base: '/reading-time-estimator/',

@@ -17,7 +17,7 @@ jobs:
         uses: jenkey2011/vuepress-deploy@master
         env:
           ACCESS_TOKEN: ${{ secrets.GH_TOKEN }}
-          TARGET_BRANCH: master
+          TARGET_BRANCH: docs
           BUILD_SCRIPT: yarn build && yarn docs:build
           BUILD_DIR: docs
           COMMIT_MESSAGE: 'docs: update documentation site'
