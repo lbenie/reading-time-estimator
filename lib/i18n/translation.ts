@@ -13,5 +13,5 @@ export const translations: Record<SupportedLanguages, I18n> = {
   es,
   cn,
   ja,
-  de
+  de,
 }
