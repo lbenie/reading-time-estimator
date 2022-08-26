@@ -62,6 +62,7 @@
     "@types/node": "18.7.13",
     "@typescript-eslint/eslint-plugin": "5.35.1",
     "@typescript-eslint/parser": "5.35.1",
+    "@vitest/coverage-c8": "0.22.1",
     "@vuepress/plugin-google-analytics": "1.9.7",
     "all-contributors-cli": "6.20.0",
     "c8": "7.12.0",
