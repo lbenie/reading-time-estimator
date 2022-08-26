@@ -28,7 +28,7 @@ ou Yarn
 L'api est assez simple. Voici la définition des types pour ce module.
 
 
-Il s'agit d'une fonction simple qui prend les données comme argument requis avec les mots par minute et les paramètres régionaux comme arguments facultatifs.Ì
+Il s'agit d'une fonction simple qui prend les données comme argument requis avec les mots par minute et les paramètres régionaux comme arguments facultatifs.
 
 Par défaut, les paramètres régionaux sont définis en anglais `en`.
 
