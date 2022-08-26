@@ -12,6 +12,8 @@ const spanishText = `Reading Time Estimator fue creado para proporcionar una est
 
 const japaneseText = `どういたしまして。`
 
+const germanText = `Ich habe mir nie die Zeit genommen, meine Website richtig zu bauen, obwohl ich ein Frontend-Entwickler bin. Ich habe 2018 und 2019 begonnen, mich mit einigen Technologien zu beschäftigen, ich habe einige tolle Projekte gefunden (nuxt, vuepress, etc...), aber ich habe meine Website nie fertiggestellt`
+
 interface TestSetup {
   readonly language: SupportedLanguages | undefined
   readonly words: string | undefined
@@ -110,6 +112,18 @@ describe('readingTime', () => {
           minutes: 0,
           words: 1,
           text: translations['ja'].less,
+        },
+      },
+    ],
+    [
+      {
+        language: 'de',
+        words: germanText,
+        wordsPerMinute: 10,
+        expectedResult: {
+          minutes: 5,
+          words: 47,
+          text: `5 ${translations['de'].default}`,
         },
       },
     ],
