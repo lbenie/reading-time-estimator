@@ -28,13 +28,13 @@ ou Yarn
 L'api est assez simple. Voici la définition des types pour ce module.
 
 
-Il s'agit d'une fonction simple qui prend les données comme argument requis avec les mots par minute et les paramètres régionaux comme arguments facultatifs.
+Il s'agit d'une fonction simple qui prend les données comme argument requis avec les mots par minute et les paramètres régionaux comme arguments facultatifs.Ì
 
 Par défaut, les paramètres régionaux sont définis en anglais `en`.
 
 Par défaut, le mot par minute a comme valeur `300`.
 
-Pour le moment, il n'y a que 5 paramètres régionaux prises en charge: `en`,` fr`, `es`, `cn` et `ja`. Si un
+Pour le moment, il n'y a que 6 paramètres régionaux prises en charge: `en`,` fr`, `es`, `cn`, `ja` et `de`. Si un
 paramètre régionale n'existe pas, il sera traiter comme la valeur `en`.
 
 ### Usage
