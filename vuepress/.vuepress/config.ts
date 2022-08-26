@@ -16,14 +16,24 @@ export default defineConfig({
       description: 'Un estimateur de temps de lecture avec prise en charge de l\'internationalisation comme sur medium.'
     }
   },
-  plugins: [
-    [
-      '@vuepress/google-analytics',
-      {
-        'ga': 'UA-99037201-3'
+  plugins:  {
+    '@vuepress/google-analytics': {
+      ga: 'UA-99037201-3',
+    },
+    '@vuepress/pwa': {
+      serviceWorker: true,
+      updatePopup:  {
+        '/': {
+          message: "New content is available.",
+          buttonText: "Refresh",
+        },
+        '/fr/': {
+          message: "Nouveau contenu disponible.",
+          buttonText: "Rafraîchir",
+        }
       }
-    ]
-  ],
+    }
+  },
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -36,7 +46,6 @@ export default defineConfig({
     ['meta', { name: 'msapplication-TileImage', content: '/icons/mstile-150x150.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
   ],
-  serviceWorker: true,
   themeConfig: {
     repo: 'lbenie/reading-time-estimator',
     editLinks: true,
@@ -47,12 +56,6 @@ export default defineConfig({
         selectText: 'Languages',
         editLinkText: 'Edit this page on GitHub',
         lastUpdated: 'Last Updated',
-        serviceWorker: {
-          updatePopup: {
-            message: "New content is available.",
-            buttonText: "Refresh"
-          }
-        },
         nav: [
           {
             text: 'Guide',
@@ -69,12 +72,6 @@ export default defineConfig({
         selectText: 'Langues',
         editLinkText: 'Modifier sur github',
         lastUpdated: 'Dernière mise à jour',
-        serviceWorker: {
-          updatePopup: {
-            message: "De nouveaux contenus sont disponibles.",
-            buttonText: "Rafraîchir"
-          }
-        },
         nav: [
           {
             text: 'Guide',
