@@ -1,4 +1,8 @@
-module.exports = {
+import { defineConfig } from 'vuepress/config'
+import { resolve } from 'path'
+import { main } from '../../package.json'
+
+export default defineConfig({
   base: '/reading-time-estimator/',
   dest: 'docs',
   locales: {
@@ -84,5 +88,11 @@ module.exports = {
         ]
       }
     }
+  },
+  clientDynamicModules() {
+    return {
+      name: 'reading-time-estimator',
+      content: `export const readingTime = '${resolve(__dirname, '../../dist/reading-time-estimator.umd.js')}'`,
+    }
   }
-}
+})

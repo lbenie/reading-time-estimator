@@ -22,63 +22,63 @@
   </div>
 </template>
 <script>
-import { readingTime } from "../../../../reading-time-estimator";
-import wysiwyg from "vue-wysiwyg";
-import VueHighlightJS from "vue-highlightjs";
-import Vue from "vue";
+import { readingTime } from '@dynamic/reading-time-estimator'
+import wysiwyg from 'vue-wysiwyg'
+import VueHighlightJS from 'vue-highlightjs'
+import Vue from 'vue'
 
-Vue.use(wysiwyg);
-Vue.use(VueHighlightJS);
+Vue.use(wysiwyg)
+Vue.use(VueHighlightJS)
 
 export default {
   props: {
     lang: {
       type: String,
-      default: "en"
-    }
+      default: 'en',
+    },
   },
   data: () => {
     return {
-      text: "",
-      locale: "en",
+      text: '',
+      locale: 'en',
       wordsPerMinute: 300,
       msg: {
         en: {
-          noText: "No text provided",
-          result: "Result",
-          wpm: "Words per minute"
+          noText: 'No text provided',
+          result: 'Result',
+          wpm: 'Words per minute',
         },
         fr: {
-          noText: "Aucun texte fourni",
-          result: "Résultat",
-          wpm: "Mots par minute"
+          noText: 'Aucun texte fourni',
+          result: 'Résultat',
+          wpm: 'Mots par minute',
         },
         es: {
-          noText: "No hay texto proporcionado",
-          result: "Resultado",
-          wpm: "Palabras por minuto"
+          noText: 'No hay texto proporcionado',
+          result: 'Resultado',
+          wpm: 'Palabras por minuto',
         },
         cn: {
-          noText: "没有提供文字",
-          result: "结果",
-          wpm: "每分钟字数e"
+          noText: '没有提供文字',
+          result: '结果',
+          wpm: '每分钟字数e',
         },
         ja: {
-          noText: "テキストがありません",
-          result: "結果",
-          wpm: "1分あたりの単語数"
-        }
-      }
-    };
+          noText: 'テキストがありません',
+          result: '結果',
+          wpm: '1分あたりの単語数',
+        },
+      },
+    }
   },
   computed: {
     result() {
-      return this.text !== ""
+      return this.text !== ''
         ? readingTime(this.text, this.wordsPerMinute, this.locale)
-        : this.msg[this.lang].noText;
-    }
-  }
-};
+        : this.msg[this.lang].noText
+    },
+  },
+}
 </script>
 <style lang="stylus" scoped>
 @import '~vue-wysiwyg/dist/vueWysiwyg.css'

@@ -1,6 +1,9 @@
 name: Documentation site
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   documentation:
@@ -15,7 +18,7 @@ jobs:
         env:
           ACCESS_TOKEN: ${{ secrets.GH_TOKEN }}
           TARGET_BRANCH: master
-          BUILD_SCRIPT: yarn docs:build
+          BUILD_SCRIPT: yarn build && yarn docs:build
           BUILD_DIR: docs
           COMMIT_MESSAGE: 'docs: update documentation site'
           CNAME: https://lbenie.github.io/reading-time-estimator
