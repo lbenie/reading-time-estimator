@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/lbenie/reading-time-estimator/compare/v1.6.1...v1.6.2) (2022-08-26)
+
+
+### :memo: Documenation
+
+* add pwa ([f38223a](https://github.com/lbenie/reading-time-estimator/commit/f38223a0d38884c925694bf9a3a9251617b83191))
+
 ## [1.6.1](https://github.com/lbenie/reading-time-estimator/compare/v1.6.0...v1.6.1) (2022-08-26)
 
 
