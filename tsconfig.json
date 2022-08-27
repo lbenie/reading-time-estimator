@@ -5,7 +5,6 @@
     "module": "es2015",
     "strict": true,
     "moduleResolution": "node",
-    "sourceMap": true,
     "typeRoots": [
       "node_modules/@types"
     ],
