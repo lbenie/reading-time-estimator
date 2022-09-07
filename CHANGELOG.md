@@ -1,3 +1,35 @@
+## [1.7.0](https://github.com/lbenie/reading-time-estimator/compare/v1.6.2...v1.7.0) (2022-09-07)
+
+
+### :white_check_mark: Chores
+
+* **deps:** add pwa for vuepress ([4cb0fe1](https://github.com/lbenie/reading-time-estimator/commit/4cb0fe10ac1452c72ccb42474392a0b736ed03f7))
+* ignore docs folder ([d536fde](https://github.com/lbenie/reading-time-estimator/commit/d536fdea9f1183de40935c23f8f2fba0bec11865))
+* remove docs ([8a20b02](https://github.com/lbenie/reading-time-estimator/commit/8a20b02332515542104701e3a26e189d55a4809f))
+* remove unused stuff ([0beb789](https://github.com/lbenie/reading-time-estimator/commit/0beb789a586e82280700d43c3e495ab1e039a741))
+* remove vuepress workflow ([68783c2](https://github.com/lbenie/reading-time-estimator/commit/68783c2f93659973a4ec29b90f40c2a0714b0f53))
+* target es2021 ([b2fa56d](https://github.com/lbenie/reading-time-estimator/commit/b2fa56dfe93593704d73d8f7383a781710dc3c04))
+* target esnext ([884e3fd](https://github.com/lbenie/reading-time-estimator/commit/884e3fded19238ef272d92d29f839951155526e6))
+* **deps:** update dependency @rollup/plugin-typescript to v8.5.0 ([175999c](https://github.com/lbenie/reading-time-estimator/commit/175999c0ca6d9bd18a0b3e67d5daa1fbdec93637))
+* **deps:** update dependency @semantic-release/github to v8.0.6 ([4a87f72](https://github.com/lbenie/reading-time-estimator/commit/4a87f72289bfdf04962e39434deabaa81aad6077))
+* **deps:** update dependency @types/node to v18.7.14 ([b0922a6](https://github.com/lbenie/reading-time-estimator/commit/b0922a6ef97c1f47a02667b09d5ce81b9a1b48e9))
+* **deps:** update dependency @types/node to v18.7.15 ([67668f1](https://github.com/lbenie/reading-time-estimator/commit/67668f1a653fe6f188294d952e1a85bddcbfc129))
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v5.36.0 ([45b72fb](https://github.com/lbenie/reading-time-estimator/commit/45b72fb2e7912d6220f3e684a0d9b16a5e56ee00))
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v5.36.1 ([eeba378](https://github.com/lbenie/reading-time-estimator/commit/eeba3782e0b6d3dee9e89f06facba7cfce2d2158))
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v5.36.2 ([5f73e5e](https://github.com/lbenie/reading-time-estimator/commit/5f73e5eca34637ec508ff6f9e1eae88b41c91334))
+* **deps:** update dependency @typescript-eslint/parser to v5.36.1 ([43ddc7b](https://github.com/lbenie/reading-time-estimator/commit/43ddc7bb07a27165fc8d8133163966aecbba117c))
+* **deps:** update dependency @typescript-eslint/parser to v5.36.2 ([231a5af](https://github.com/lbenie/reading-time-estimator/commit/231a5af78f0481235185029583488f83c458693b))
+* **deps:** update dependency @vitest/coverage-c8 to v0.23.0 ([0cedcbe](https://github.com/lbenie/reading-time-estimator/commit/0cedcbe05cd9a1f864e43141a0ea2dc34303ff22))
+* **deps:** update dependency @vitest/coverage-c8 to v0.23.1 ([c65f315](https://github.com/lbenie/reading-time-estimator/commit/c65f3151b1e24922cb99cc6c29af4c249c5c3e6d))
+* **deps:** update dependency eslint to v8.23.0 ([492eb8f](https://github.com/lbenie/reading-time-estimator/commit/492eb8f833273f6c9e6a0d36db02d7beb67c5acf))
+* **deps:** update dependency vite to v3.1.0 ([c3352bd](https://github.com/lbenie/reading-time-estimator/commit/c3352bda7bb155d996461c1491210bdddd04678d))
+* **deps:** update dependency vitest to ^0.23.0 ([9f1ea78](https://github.com/lbenie/reading-time-estimator/commit/9f1ea786f884242ef77961af47de8538b171eb5f))
+
+
+### :sparkles: Features
+
+* export user type ([#707](https://github.com/lbenie/reading-time-estimator/issues/707)) ([a7966f1](https://github.com/lbenie/reading-time-estimator/commit/a7966f182f3b3e88fbe358e7831fe2888f84095e))
+
 ## [1.6.2](https://github.com/lbenie/reading-time-estimator/compare/v1.6.1...v1.6.2) (2022-08-26)
 
 
