@@ -1,3 +1,18 @@
+## [1.7.1](https://github.com/lbenie/reading-time-estimator/compare/v1.7.0...v1.7.1) (2022-09-08)
+
+
+### :white_check_mark: Chores
+
+* (docs) add live project url [skip ci] ([01acba3](https://github.com/lbenie/reading-time-estimator/commit/01acba3ee9ae9e1a5f97cd8e7c9d365d79e48b45))
+* **deps:** update dependency @types/node to v18.7.16 ([0c340b4](https://github.com/lbenie/reading-time-estimator/commit/0c340b49cbe9830a489a9d23dd47637c786ed14f))
+* **deps:** update dependency all-contributors-cli to v6.20.3 ([1bf303b](https://github.com/lbenie/reading-time-estimator/commit/1bf303b5ae0b3792f84303701436ecced78e646b))
+* **deps:** update dependency concurrently to v7.4.0 ([8b46d2a](https://github.com/lbenie/reading-time-estimator/commit/8b46d2a8d115a77b1021c7bdae19c1191326ca9b))
+
+
+### :memo: Documenation
+
+* adds typedoc ([#709](https://github.com/lbenie/reading-time-estimator/issues/709)) ([9ceb6f9](https://github.com/lbenie/reading-time-estimator/commit/9ceb6f9cae75df312ae61746dccb3a8c2a684ef8))
+
 ## [1.7.0](https://github.com/lbenie/reading-time-estimator/compare/v1.6.2...v1.7.0) (2022-09-07)
 
 
