@@ -56,6 +56,8 @@ locale does not exist, it will fallback to `en`.
 
 ### Usage
 
+Try it live [here](https://codesandbox.io/s/condescending-rosalind-lll23r?file=/src/App.tsx)
+
 ```typescript
 import { readingTime } from 'reading-time-estimator'
 
