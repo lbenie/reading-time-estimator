@@ -1,3 +1,16 @@
+## [1.7.2](https://github.com/lbenie/reading-time-estimator/compare/v1.7.1...v1.7.2) (2022-09-09)
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency all-contributors-cli to v6.20.4 ([73d3bd8](https://github.com/lbenie/reading-time-estimator/commit/73d3bd87d17bf83299277053bbb67f48e8c8e33e))
+* **deps:** update dependency typescript to v4.8.3 ([9255ae1](https://github.com/lbenie/reading-time-estimator/commit/9255ae1669f7ce48a34fe3bccb8bffb5d51edc6c))
+
+
+### :bug: Fixes
+
+* **build:** properly sets the correct paths for main, module and exports ([#712](https://github.com/lbenie/reading-time-estimator/issues/712)) ([9908d7c](https://github.com/lbenie/reading-time-estimator/commit/9908d7c4436838d5ca437b7e1c98af84f4fd808b)), closes [#704](https://github.com/lbenie/reading-time-estimator/issues/704)
+
 ## [1.7.1](https://github.com/lbenie/reading-time-estimator/compare/v1.7.0...v1.7.1) (2022-09-08)
 
 
