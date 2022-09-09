@@ -19,16 +19,17 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/reading-time-estimator.umd.js",
-  "module": "./dist/reading-time-estimator.es.js",
+  "main": "./dist/reading-time-estimator.umd.cjs",
+  "module": "./dist/reading-time-estimator.js",
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/types/index.d.ts",
-      "import": "./dist/reading-time-estimator.es.js",
-      "require": "./dist/reading-time-estimator.umd.js"
+      "import": "./dist/reading-time-estimator.js",
+      "require": "./dist/reading-time-estimator.umd.cjs"
     }
   },
-  "types": "dist/types/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "bugs": {
     "url": "https://github.com/lbenie/reading-time-estimator/issues"
   },
