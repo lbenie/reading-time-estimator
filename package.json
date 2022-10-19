@@ -58,7 +58,7 @@
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.6",
     "@semantic-release/release-notes-generator": "10.0.3",
-    "@types/node": "18.11.0",
+    "@types/node": "18.11.2",
     "@typescript-eslint/eslint-plugin": "5.40.1",
     "@typescript-eslint/parser": "5.40.1",
     "@vitest/coverage-c8": "0.24.3",
