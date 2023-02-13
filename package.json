@@ -59,7 +59,7 @@
     "@semantic-release/github": "8.0.7",
     "@semantic-release/release-notes-generator": "10.0.3",
     "@types/node": "18.13.0",
-    "@typescript-eslint/eslint-plugin": "5.51.0",
+    "@typescript-eslint/eslint-plugin": "5.52.0",
     "@typescript-eslint/parser": "5.51.0",
     "@vitest/coverage-c8": "0.28.5",
     "all-contributors-cli": "6.24.0",
