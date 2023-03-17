@@ -15,5 +15,5 @@ export const translations: Record<SupportedLanguages, I18n> = {
   cn,
   ja,
   de,
-  ptBr,
+  'pt-br': ptBr,
 }

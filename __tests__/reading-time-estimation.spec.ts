@@ -132,13 +132,13 @@ describe('readingTime', () => {
     ],
     [
       {
-        language: 'ptBr',
+        language: 'pt-br',
         words: brazilianPortugueseText,
         wordsPerMinute: 10,
         expectedResult: {
           minutes: 3,
           words: 26,
-          text: `3 ${translations['ptBr'].default}`,
+          text: `3 ${translations['pt-br'].default}`,
         },
       },
     ],
