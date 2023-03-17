@@ -14,6 +14,9 @@ const japaneseText = `どういたしまして。`
 
 const germanText = `Ich habe mir nie die Zeit genommen, meine Website richtig zu bauen, obwohl ich ein Frontend-Entwickler bin. Ich habe 2018 und 2019 begonnen, mich mit einigen Technologien zu beschäftigen, ich habe einige tolle Projekte gefunden (nuxt, vuepress, etc...), aber ich habe meine Website nie fertiggestellt`
 
+const brazilianPortugueseText =
+  'Eu gostaria de ter um site que eu achasse incrível, com cores belas e que se casem uma com a outra, mas nunca chegou perto disso'
+
 interface TestSetup {
   readonly language: SupportedLanguages | undefined
   readonly words: string | undefined
@@ -124,6 +127,18 @@ describe('readingTime', () => {
           minutes: 5,
           words: 47,
           text: `5 ${translations['de'].default}`,
+        },
+      },
+    ],
+    [
+      {
+        language: 'pt-br',
+        words: brazilianPortugueseText,
+        wordsPerMinute: 10,
+        expectedResult: {
+          minutes: 3,
+          words: 26,
+          text: `3 ${translations['pt-br'].default}`,
         },
       },
     ],
