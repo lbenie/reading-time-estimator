@@ -47,6 +47,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "matheusinit",
+      "name": "Matheus Oliveira",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68296035?v=4",
+      "profile": "https://matheusinit-blog.vercel.app/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

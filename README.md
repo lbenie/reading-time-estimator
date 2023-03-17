@@ -10,9 +10,7 @@
 [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/reading-time-estimator.svg)](https://www.npmjs.com/package/reading-time-estimator)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
@@ -99,12 +97,15 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://lbenie.xyz/"><img src="https://avatars.githubusercontent.com/u/7316046?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lucien Bénié</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=lbenie" title="Code">💻</a> <a href="https://github.com/lbenie/reading-time-estimator/commits?author=lbenie" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/visierrat"><img src="https://avatars.githubusercontent.com/u/1642224?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Victor Sierra</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=visierrat" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/zchazc"><img src="https://avatars.githubusercontent.com/u/10862234?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ZhangC</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=zchazc" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/RichardMEN11"><img src="https://avatars.githubusercontent.com/u/34884710?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rich11</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=RichardMEN11" title="Code">💻</a> <a href="https://github.com/lbenie/reading-time-estimator/commits?author=RichardMEN11" title="Documentation">📖</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://lbenie.xyz/"><img src="https://avatars.githubusercontent.com/u/7316046?v=4?s=100" width="100px;" alt="Lucien Bénié"/><br /><sub><b>Lucien Bénié</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=lbenie" title="Code">💻</a> <a href="https://github.com/lbenie/reading-time-estimator/commits?author=lbenie" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/visierrat"><img src="https://avatars.githubusercontent.com/u/1642224?v=4?s=100" width="100px;" alt="Victor Sierra"/><br /><sub><b>Victor Sierra</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=visierrat" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/zchazc"><img src="https://avatars.githubusercontent.com/u/10862234?v=4?s=100" width="100px;" alt="ZhangC"/><br /><sub><b>ZhangC</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=zchazc" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/RichardMEN11"><img src="https://avatars.githubusercontent.com/u/34884710?v=4?s=100" width="100px;" alt="Rich11"/><br /><sub><b>Rich11</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=RichardMEN11" title="Code">💻</a> <a href="https://github.com/lbenie/reading-time-estimator/commits?author=RichardMEN11" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://matheusinit-blog.vercel.app/"><img src="https://avatars.githubusercontent.com/u/68296035?v=4?s=100" width="100px;" alt="Matheus Oliveira"/><br /><sub><b>Matheus Oliveira</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=matheusinit" title="Code">💻</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
