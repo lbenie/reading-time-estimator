@@ -14,4 +14,4 @@ export const supportedLanguages = [
 /**
  * Supported languages types of the library
  */
-export type SupportedLanguages = typeof supportedLanguages[number]
+export type SupportedLanguages = (typeof supportedLanguages)[number]
