@@ -27,6 +27,9 @@ export default defineConfig({
       name,
     },
     rollupOptions: {
+      output: {
+        dir: 'dist',
+      },
       plugins: [
         peerDepsExternal(),
         typescript({
