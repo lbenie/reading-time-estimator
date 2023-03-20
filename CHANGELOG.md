@@ -1,3 +1,16 @@
+## [1.8.1](https://github.com/lbenie/reading-time-estimator/compare/v1.8.0...v1.8.1) (2023-03-20)
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency prettier to v2.8.5 ([0093410](https://github.com/lbenie/reading-time-estimator/commit/00934108707b0fc4665e6e1a4db2c9fb66457580))
+* **deps:** update dependency semantic-release to v20.1.3 ([657a846](https://github.com/lbenie/reading-time-estimator/commit/657a8463ca2088067b02cd34a5f4c47179f75833))
+
+
+### :bug: Fixes
+
+* specify folder to dist ([#931](https://github.com/lbenie/reading-time-estimator/issues/931)) ([c676938](https://github.com/lbenie/reading-time-estimator/commit/c67693806bbcc76b10d5b3f6095efedfb0dc04bf))
+
 ## [1.8.0](https://github.com/lbenie/reading-time-estimator/compare/v1.7.2...v1.8.0) (2023-03-17)
 
 
