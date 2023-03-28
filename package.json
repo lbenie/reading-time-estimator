@@ -61,7 +61,7 @@
     "@types/node": "18.15.10",
     "@typescript-eslint/eslint-plugin": "5.57.0",
     "@typescript-eslint/parser": "5.57.0",
-    "@vitest/coverage-c8": "0.29.7",
+    "@vitest/coverage-c8": "0.29.8",
     "all-contributors-cli": "6.24.0",
     "c8": "7.13.0",
     "concurrently": "7.6.0",
