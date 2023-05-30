@@ -11,9 +11,9 @@
     "@jridgewell/trace-mapping" "^0.3.9"
 
 "@antfu/utils@^0.7.2":
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/@antfu/utils/-/utils-0.7.2.tgz#3bb6f37a6b188056fe9e2f363b6aa735ed65d7ca"
-  integrity sha512-vy9fM3pIxZmX07dL+VX1aZe7ynZ+YyB0jY+jE6r3hOK6GNY2t6W8rzpFC4tgpbXUYABkFQwgJq2XYXlxbXAI0g==
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/@antfu/utils/-/utils-0.7.3.tgz#aec3c1deaf1b620770fa7c48ef2b03a26ac01b20"
+  integrity sha512-sAPXKvlJFVQB4cvmdGoUa9IAavzRrm7N2ctxdD1GuAEIOZu8BRrv2SUzquGXTpRDUa0sY7OkkVHqhi6ySMnMTg==
 
 "@babel/code-frame@^7.0.0":
   version "7.16.7"
@@ -903,9 +903,9 @@
   integrity sha512-mEo1sAde+UCE6b2hxn332f1g1E8WfYRu6p5SvTKr2ZKC1f7gFJXk4h5PyGP9Dt6gCaG8y8XhwnXWC6Iy2cmBng==
 
 "@types/estree@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.0.tgz#5fb2e536c1ae9bf35366eed879e827fa59ca41c2"
-  integrity sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.1.tgz#aa22750962f3bf0e79d753d3cc067f010c95f194"
+  integrity sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==
 
 "@types/istanbul-lib-coverage@^2.0.1":
   version "2.0.4"
@@ -3667,17 +3667,7 @@ mkdirp@^1.0.3, mkdirp@^1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
-mlly@^1.1.1, mlly@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/mlly/-/mlly-1.2.0.tgz#f0f6c2fc8d2d12ea6907cd869066689b5031b613"
-  integrity sha512-+c7A3CV0KGdKcylsI6khWyts/CYrGTrRVo4R/I7u/cUsy0Conxa6LUhiEzVKIw14lc2L5aiO4+SeVe4TeGRKww==
-  dependencies:
-    acorn "^8.8.2"
-    pathe "^1.1.0"
-    pkg-types "^1.0.2"
-    ufo "^1.1.1"
-
-mlly@^1.2.1:
+mlly@^1.2.0, mlly@^1.2.1:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/mlly/-/mlly-1.3.0.tgz#3184cb80c6437bda861a9f452ae74e3434ed9cd1"
   integrity sha512-HT5mcgIQKkOrZecOjOX3DJorTikWXwsBfpcr/MGBkhfWcjiqvnaL/9ppxvIUXfjT6xt4DVIAsN9fMUz1ev4bIw==
@@ -4345,15 +4335,6 @@ pkg-dir@^4.1.0:
   integrity sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==
   dependencies:
     find-up "^4.0.0"
-
-pkg-types@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/pkg-types/-/pkg-types-1.0.2.tgz#c233efc5210a781e160e0cafd60c0d0510a4b12e"
-  integrity sha512-hM58GKXOcj8WTqUXnsQyJYXdeAPbythQgEF3nTcEo+nkD49chjQ9IKm/QJy9xf6JakXptz86h7ecP2024rrLaQ==
-  dependencies:
-    jsonc-parser "^3.2.0"
-    mlly "^1.1.1"
-    pathe "^1.1.0"
 
 pkg-types@^1.0.3:
   version "1.0.3"
@@ -5364,11 +5345,6 @@ typescript@5.0.4:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.0.4.tgz#b217fd20119bd61a94d4011274e0ab369058da3b"
   integrity sha512-cW9T5W9xY37cc+jfEnaUvX91foxtHkza3Nw3wkoF4sSlKn0MONdkdEndig/qPBWXNkmplh3NzayQzCiHM4/hqw==
 
-ufo@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/ufo/-/ufo-1.1.1.tgz#e70265e7152f3aba425bd013d150b2cdf4056d7c"
-  integrity sha512-MvlCc4GHrmZdAllBc0iUDowff36Q9Ndw/UzqmEKyrfSzokTd9ZCy1i+IIk5hrYKkjoYVQyNbrw7/F8XJ2rEwTg==
-
 ufo@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/ufo/-/ufo-1.1.2.tgz#d0d9e0fa09dece0c31ffd57bd363f030a35cfe76"
@@ -5442,9 +5418,9 @@ universalify@^2.0.0:
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
 unplugin-auto-import@^0.16.0:
-  version "0.16.2"
-  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.16.2.tgz#0c677296b8ecbab9e4b131e468644c702f52d1a7"
-  integrity sha512-t5f+xArJZRsfgF8Zftc2JFTJJTo7BPkPSeLQUXt6xxambnwWBer8vpEgwaCYrR50MIm5mjmhjebt33OZXIW0uQ==
+  version "0.16.4"
+  resolved "https://registry.yarnpkg.com/unplugin-auto-import/-/unplugin-auto-import-0.16.4.tgz#7b78de0c1ec92cc1a753a89d718ed23828576db9"
+  integrity sha512-xdgBa9NAS3JG8HjkAZHSbGSMlrjKpaWKXGUzaF6RzEtr980RCl1t0Zsu0skUInNYrEQfqaHc7aGWPv41DLTK/w==
   dependencies:
     "@antfu/utils" "^0.7.2"
     "@rollup/pluginutils" "^5.0.2"
