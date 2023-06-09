@@ -64,7 +64,7 @@
     "@vitest/coverage-c8": "0.32.0",
     "all-contributors-cli": "6.26.0",
     "c8": "7.14.0",
-    "concurrently": "8.1.0",
+    "concurrently": "8.2.0",
     "conventional-changelog-conventionalcommits": "6.0.0",
     "eslint": "8.42.0",
     "eslint-config-prettier": "8.8.0",
