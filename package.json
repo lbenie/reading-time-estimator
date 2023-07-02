@@ -70,6 +70,7 @@
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.8.8",
+    "rollup": "^3.26.0",
     "rollup-plugin-peer-deps-external": "2.2.4",
     "rollup-plugin-typescript2": "0.35.0",
     "semantic-release": "21.0.6",
