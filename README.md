@@ -10,7 +10,7 @@
 [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/reading-time-estimator.svg)](https://www.npmjs.com/package/reading-time-estimator)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
@@ -105,6 +105,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/RichardMEN11"><img src="https://avatars.githubusercontent.com/u/34884710?v=4?s=100" width="100px;" alt="Rich11"/><br /><sub><b>Rich11</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=RichardMEN11" title="Code">💻</a> <a href="https://github.com/lbenie/reading-time-estimator/commits?author=RichardMEN11" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://matheusinit-blog.vercel.app/"><img src="https://avatars.githubusercontent.com/u/68296035?v=4?s=100" width="100px;" alt="Matheus Oliveira"/><br /><sub><b>Matheus Oliveira</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=matheusinit" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/can-guven"><img src="https://avatars.githubusercontent.com/u/76837895?v=4?s=100" width="100px;" alt="Can Güven"/><br /><sub><b>Can Güven</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=can-guven" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/astrutz"><img src="https://avatars.githubusercontent.com/u/22653731?v=4?s=100" width="100px;" alt="Alexander Strutz"/><br /><sub><b>Alexander Strutz</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=astrutz" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
