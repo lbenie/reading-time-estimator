@@ -65,6 +65,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "astrutz",
+      "name": "Alexander Strutz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22653731?v=4",
+      "profile": "https://github.com/astrutz",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
