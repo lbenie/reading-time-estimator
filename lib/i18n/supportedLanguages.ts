@@ -8,6 +8,7 @@ export const supportedLanguages = [
   'cn',
   'ja',
   'de',
+  'ro',
   'pt-br',
 ] as const
 
