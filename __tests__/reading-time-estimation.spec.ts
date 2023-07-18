@@ -17,6 +17,9 @@ const germanText = `Ich habe mir nie die Zeit genommen, meine Website richtig zu
 const brazilianPortugueseText =
   'Eu gostaria de ter um site que eu achasse incrível, com cores belas e que se casem uma com a outra, mas nunca chegou perto disso'
 
+const turkishText =
+  'Güvenemem servetime, malıma, Ümidim yok bugün ile yarına, Toprak beni de basacak bağrına, Adaletin bu mu dünya, Ne yar verdin, ne mal, dünya, Kötülerinsin sen dünya, İyileri öldüren dünya, Ne insanlar gelip geçti kapından, Memnun gelip giden var mı yolundan, Kimi fakir, kimi ayrılmış yarinden'
+
 interface TestSetup {
   readonly language: SupportedLanguages | undefined
   readonly words: string | undefined
@@ -142,12 +145,24 @@ describe('readingTime', () => {
         },
       },
     ],
+    [
+      {
+        language: 'tr',
+        words: turkishText,
+        wordsPerMinute: 10,
+        expectedResult: {
+          minutes: 5,
+          words: 45,
+          text: `5 ${translations['tr'].default}`,
+        },
+      },
+    ],
   ])(
     'approximates time to read a text in %s',
     ({ words, wordsPerMinute, language, expectedResult }) => {
       const result = readingTime(words ?? '', wordsPerMinute, language)
 
       expect(result).toStrictEqual(expectedResult)
-    }
+    },
   )
 })
