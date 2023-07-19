@@ -1,6 +1,7 @@
 import { readingTime } from '../lib'
 import { translations } from '../lib/i18n'
 import type { SupportedLanguages } from '../lib/i18n'
+import { ro } from '../lib/i18n/ro'
 
 const englishText = `I never took the time to properly build my website even though I am a Frontend Developer. I started to look at some technologies in 2018 and 2019, I found some amazing projects (nuxt, vuepress, etc...) but I never did finish my website.`
 
@@ -19,6 +20,8 @@ const brazilianPortugueseText =
 
 const turkishText =
   'Güvenemem servetime, malıma, Ümidim yok bugün ile yarına, Toprak beni de basacak bağrına, Adaletin bu mu dünya, Ne yar verdin, ne mal, dünya, Kötülerinsin sen dünya, İyileri öldüren dünya, Ne insanlar gelip geçti kapından, Memnun gelip giden var mı yolundan, Kimi fakir, kimi ayrılmış yarinden'
+
+const romanianText = '„Nu mi-am făcut niciodată timp să-mi construiesc site-ul corect, chiar dacă sunt dezvoltator Frontend. Am început să mă uit la unele tehnologii în 2018 și 2019, am găsit niște proiecte uimitoare (nuxt, vuepress, etc...) dar nu mi-am terminat niciodată site-ul.'
 
 interface TestSetup {
   readonly language: SupportedLanguages | undefined
@@ -154,6 +157,18 @@ describe('readingTime', () => {
           minutes: 5,
           words: 45,
           text: `5 ${translations['tr'].default}`,
+        },
+      },
+    ],
+    [
+      {
+        language: 'ro',
+        words: romanianText,
+        wordsPerMinute: 10,
+        expectedResult: {
+          minutes: 5,
+          words: 45,
+          text: `5 ${translations['ro'].default}`,
         },
       },
     ],
