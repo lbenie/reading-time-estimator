@@ -71,7 +71,7 @@
     "prettier": "3.0.3",
     "rollup": "^3.26.0",
     "rollup-plugin-peer-deps-external": "2.2.4",
-    "rollup-plugin-typescript2": "0.35.0",
+    "rollup-plugin-typescript2": "0.36.0",
     "semantic-release": "22.0.5",
     "typescript": "5.2.2",
     "unplugin-auto-import": "^0.16.0",
