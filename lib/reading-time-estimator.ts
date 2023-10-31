@@ -4,7 +4,7 @@ import type { SupportedLanguages } from './i18n'
 /**
  * Reading time estimator result shape
  */
-type ReadingTime = {
+export type ReadingTime = {
   /**
    * Number of minutes to read the text
    */
