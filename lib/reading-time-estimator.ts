@@ -38,7 +38,7 @@ const getNumberOfWords = (data: string) =>
     (accumulator, word) =>
       accumulator +
       (!word.trim().length ? 0 : word.trim().split(/\s+/u).length),
-    0,
+    0
   )
 
 /**
@@ -67,7 +67,7 @@ const getLocale = (minutes: number, locale: SupportedLanguages = 'en') =>
 export const readingTime = (
   data: string,
   wordsPerMinute = 300,
-  language: SupportedLanguages = 'en',
+  language: SupportedLanguages = 'en'
 ): ReadingTime => {
   const words = getNumberOfWords(data)
   const minutes = Number(Math.round(words / wordsPerMinute).toFixed(2))
@@ -77,7 +77,7 @@ export const readingTime = (
     words,
     text: `${isLessThanAMinute(minutes) ? '' : `${minutes} `}${getLocale(
       minutes,
-      language,
+      language
     )}`,
   } as const
 }
