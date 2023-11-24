@@ -50,7 +50,7 @@
     "test": "concurrently -n vitest 'vitest --coverage'",
     "test:vitest": "vitest",
     "semantic-release": "npx semantic-release",
-    "format": "prettier lib --write"
+    "format": "eslint lib --fix"
   },
   "devDependencies": {
     "@lbenie/linting": "1.5.1",

@@ -5,9 +5,9 @@ export type I18n = {
   /**
    * Translation for less than a minute
    */
-  less: string
+  readonly less: string
   /**
    * Translation for more than a minute
    */
-  default: string
+  readonly default: string
 }
