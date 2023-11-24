@@ -23,18 +23,12 @@
   "less.validate": true,
   "typescript.validate.enable": true,
   "javascript.validate.enable": true,
-  "tslint.autoFixOnSave": true,
   "typescript.tsdk": "node_modules/typescript/lib",
-  "prettier.tslintIntegration": false,
-  "prettier.stylelintIntegration": false,
-  "prettier.requireConfig": true,
-  "prettier.eslintIntegration": true,
-  "prettier.disableLanguages": [],
   "eslint.validate": [
     "javascript",
     "typescript"
   ],
-  "eslint.alwaysShowStatus": true,
+  "eslint.experimental.useFlatConfig": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   }

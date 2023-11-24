@@ -53,7 +53,7 @@
     "format": "prettier lib --write"
   },
   "devDependencies": {
-    "@lbenie/linting": "latest",
+    "@lbenie/linting": "1.5.1",
     "@rollup/plugin-typescript": "11.1.5",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
