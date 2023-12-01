@@ -1,3 +1,30 @@
+## [1.9.2](https://github.com/lbenie/reading-time-estimator/compare/v1.9.1...v1.9.2) (2023-12-01)
+
+
+### :bug: Fixes
+
+* remove the redundant code about calculating minutes ([#1267](https://github.com/lbenie/reading-time-estimator/issues/1267)) ([8532adb](https://github.com/lbenie/reading-time-estimator/commit/8532adbf727fc71e5ab4c660ca29a3ec5a166dcb))
+
+
+### :memo: Documenation
+
+* add zS1m as a contributor for code ([#1268](https://github.com/lbenie/reading-time-estimator/issues/1268)) ([5a06f40](https://github.com/lbenie/reading-time-estimator/commit/5a06f409e91f64adf186420cfba84a222f342e63))
+
+
+### :white_check_mark: Chores
+
+* apply formatting changes ([8309990](https://github.com/lbenie/reading-time-estimator/commit/830999049df2607212e20f8306aeed1ef004fe0d))
+* **deps:** update dependency @lbenie/linting to v1.6.0 ([#1259](https://github.com/lbenie/reading-time-estimator/issues/1259)) ([47b9556](https://github.com/lbenie/reading-time-estimator/commit/47b9556c6449c04812204e5caead41e53f9d7345))
+* **deps:** update dependency @semantic-release/github to v9.2.4 ([7d430a2](https://github.com/lbenie/reading-time-estimator/commit/7d430a2f3c03ca3bd9f97a8dc8a2a64ec78b7d8d))
+* **deps:** update dependency @types/node to v20.10.0 ([#1257](https://github.com/lbenie/reading-time-estimator/issues/1257)) ([f37dc02](https://github.com/lbenie/reading-time-estimator/commit/f37dc021182c7e5a1af4fa827eaa72bfae9972b8))
+* **deps:** update dependency @types/node to v20.10.1 ([e231d30](https://github.com/lbenie/reading-time-estimator/commit/e231d30245175be3930aee056037d0ded5bb6f5c))
+* **deps:** update dependency rollup to v4.6.0 ([ad1e518](https://github.com/lbenie/reading-time-estimator/commit/ad1e5183d305a862114ed0c29e30c08a9adcbdd6))
+* **deps:** update dependency rollup to v4.6.1 ([17763a6](https://github.com/lbenie/reading-time-estimator/commit/17763a6597020448c7d5c2b2df4f851ec761b1bf))
+* **deps:** update dependency unplugin-auto-import to ^0.17.0 ([#1258](https://github.com/lbenie/reading-time-estimator/issues/1258)) ([7a398ba](https://github.com/lbenie/reading-time-estimator/commit/7a398ba1ed20f668e7558eb1ca54c024b6b1fba0))
+* **deps:** update dependency vite to v5.0.3 ([cce5472](https://github.com/lbenie/reading-time-estimator/commit/cce5472513cef2f9f6c5061066fe1c35ca5def30))
+* **deps:** update dependency vite to v5.0.4 ([bd336cd](https://github.com/lbenie/reading-time-estimator/commit/bd336cd7fa6044d16c96c393649803aa65102ac6))
+* update format script [skip ci] ([e6b9009](https://github.com/lbenie/reading-time-estimator/commit/e6b9009c4af3448aa4500c846009d4ccdfad1930))
+
 ## [1.9.1](https://github.com/lbenie/reading-time-estimator/compare/v1.9.0...v1.9.1) (2023-11-24)
 
 
