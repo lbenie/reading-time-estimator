@@ -70,7 +70,7 @@ export const readingTime = (
   language: SupportedLanguages = 'en',
 ): ReadingTime => {
   const words = getNumberOfWords(data)
-  const minutes = Number(Math.round(words / wordsPerMinute).toFixed(2))
+  const minutes = Math.round(words / wordsPerMinute)
 
   return {
     minutes,
