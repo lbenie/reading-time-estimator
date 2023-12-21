@@ -9,6 +9,8 @@ import type { SupportedLanguages } from './supportedLanguages'
 import { ptBr } from './pt-br'
 import { tr } from './tr'
 import { ro } from './ro'
+import { bn } from './ro'
+
 
 export const translations: Record<SupportedLanguages, I18n> = {
   en,
@@ -20,4 +22,5 @@ export const translations: Record<SupportedLanguages, I18n> = {
   'pt-br': ptBr,
   tr,
   ro,
+  bn,
 }
