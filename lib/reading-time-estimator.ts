@@ -22,11 +22,15 @@ type ReadingTime = {
 /**
  * Parses the text and returns an array of words
  * @param {string} data - The text to be analyzed
- * @returns {string} Parsed chinese, japanese and accented text
+ * @returns {string[]} Parsed chinese, japanese and accented text
  */
-const parseWords = (data: string) =>
-  data.match(/[\w|\d|\s|,|.|\u00C0-\u024F|\u4E00-\u9FA5|\u3041-\u309F]+/giu) ??
-  []
+const parseWords = (data: string) => {
+  const words =
+    data.match(
+      /[\w|\d|\s|,|.|\u00C0-\u024F|\u4E00-\u9FA5|\u3041-\u309F]+/giu,
+    ) ?? []
+  return words.flatMap((word) => word.match(/[\u4E00-\u9FA5]/gu) ?? word)
+}
 
 /**
  * Calculates the number of words in the text
