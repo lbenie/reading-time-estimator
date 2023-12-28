@@ -5,7 +5,7 @@ import { ro } from '../lib/i18n/ro'
 
 const englishText = `I never took the time to properly build my website even though I am a Frontend Developer. I started to look at some technologies in 2018 and 2019, I found some amazing projects (nuxt, vuepress, etc...) but I never did finish my website.`
 
-const chineseText = `春眠不觉晓，处处闻啼鸟。`
+const chineseText = `中文 多来几个字`
 
 const frenchText = `Reading Time Estimator a été créé pour fournir une estimation de la durée de lecture d'un article ou d'un blog comme vu sur medium`
 
@@ -82,9 +82,9 @@ describe('readingTime', () => {
         words: chineseText,
         wordsPerMinute: 2,
         expectedResult: {
-          minutes: 1,
-          words: 2,
-          text: translations['cn'].less,
+          minutes: 4,
+          words: 7,
+          text: `4 ${translations['cn'].default}`,
         },
       },
     ],
