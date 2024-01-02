@@ -22,7 +22,7 @@ type ReadingTime = {
 /**
  * Parses the text and returns an array of words
  * @param {string} data - The text to be analyzed
- * @returns {string[]} Parsed chinese, japanese and accented text
+ * @returns {ReadonlyArray<string>} Parsed chinese, japanese and accented text
  */
 const parseWords = (data: string) => {
   const words =
@@ -54,12 +54,12 @@ const isLessThanAMinute = (minutes: number) => minutes < 1 + Number.EPSILON
 
 /**
  * Grabs the correct translation
- * @param {number} minutes - Number of minutes to read the text
+ * @param {boolean} isLessThanOne - True if the number of minutes is less than 1, otherwise false
  * @param {SupportedLanguages} locale - Locale to be used in the result
  * @returns {string} localized message with the number of minutes to read the text
  */
-const getLocale = (minutes: number, locale: SupportedLanguages = 'en') =>
-  translations[locale][isLessThanAMinute(minutes) ? 'less' : 'default']
+const getLocale = (isLessThanOne: boolean, locale: SupportedLanguages = 'en') =>
+  translations[locale][isLessThanOne ? 'less' : 'default']
 
 /**
  *
@@ -75,12 +75,13 @@ export const readingTime = (
 ): ReadingTime => {
   const words = getNumberOfWords(data)
   const minutes = Math.round(words / wordsPerMinute)
+  const isLessThanOne = isLessThanAMinute(minutes)
 
   return {
     minutes,
     words,
-    text: `${isLessThanAMinute(minutes) ? '' : `${minutes} `}${getLocale(
-      minutes,
+    text: `${isLessThanOne ? '' : `${minutes} `}${getLocale(
+      isLessThanOne,
       language,
     )}`,
   } as const
