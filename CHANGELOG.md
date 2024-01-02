@@ -1,3 +1,19 @@
+## [1.9.4](https://github.com/lbenie/reading-time-estimator/compare/v1.9.3...v1.9.4) (2024-01-02)
+
+
+### :zap: Refactoring
+
+* calculate is less than a minute once ([a5c5738](https://github.com/lbenie/reading-time-estimator/commit/a5c57383575d8dda37f4d501c57f9e7658db6f0a))
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency @lbenie/linting to v1.6.9 ([b897b1e](https://github.com/lbenie/reading-time-estimator/commit/b897b1ef9d4417e3758fcb24d4e63929a26439a0))
+* **deps:** update dependency @types/node to v20.10.6 ([8e8befc](https://github.com/lbenie/reading-time-estimator/commit/8e8befc9ed6f83dd7402697047463997fba42f6a))
+* **deps:** update dependency @vitest/coverage-v8 to v1.1.1 ([e37445e](https://github.com/lbenie/reading-time-estimator/commit/e37445ea759c56c62e3ed18a74220f6929c8336c))
+* **deps:** update dependency rollup to v4.9.2 ([1ae51d8](https://github.com/lbenie/reading-time-estimator/commit/1ae51d870cce0aa245591480b1a4d97725fba1f9))
+* **deps:** update dependency vitest to v1.1.1 ([07af3a0](https://github.com/lbenie/reading-time-estimator/commit/07af3a0254140480fa7c1b06a727023541f9c111))
+
 ## [1.9.3](https://github.com/lbenie/reading-time-estimator/compare/v1.9.2...v1.9.3) (2023-12-28)
 
 
