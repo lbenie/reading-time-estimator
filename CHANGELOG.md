@@ -1,3 +1,53 @@
+## [1.9.3](https://github.com/lbenie/reading-time-estimator/compare/v1.9.2...v1.9.3) (2023-12-28)
+
+
+### :bug: Fixes
+
+* chinese language calculation ([#1309](https://github.com/lbenie/reading-time-estimator/issues/1309)) ([bf7bf46](https://github.com/lbenie/reading-time-estimator/commit/bf7bf4643f83680864ae5a3eb490d79bc8f63874))
+
+
+### :white_check_mark: Chores
+
+* fix eslint ([7889577](https://github.com/lbenie/reading-time-estimator/commit/788957748d84f95eb1bffd580b59aaa1436fed32))
+* **deps:** update dependency @lbenie/linting to v1.6.2 ([59f2e5f](https://github.com/lbenie/reading-time-estimator/commit/59f2e5f8913655b68dd0f3a4e9a65df4ffeeb8a0))
+* **deps:** update dependency @lbenie/linting to v1.6.3 ([8a90e00](https://github.com/lbenie/reading-time-estimator/commit/8a90e009d1b59e6c307e2e2e305564dc6cec43fb))
+* **deps:** update dependency @lbenie/linting to v1.6.4 ([c6bdf19](https://github.com/lbenie/reading-time-estimator/commit/c6bdf19822ad11121c6bd75313eb6b6612a99f00))
+* **deps:** update dependency @lbenie/linting to v1.6.7 ([cefdb8b](https://github.com/lbenie/reading-time-estimator/commit/cefdb8b1df4f102c82eec5325ee7d18ee8802786))
+* **deps:** update dependency @semantic-release/github to v9.2.5 ([2b3efc8](https://github.com/lbenie/reading-time-estimator/commit/2b3efc8454ca285db9dc8a42fe425bf2fe6b1c4d))
+* **deps:** update dependency @semantic-release/github to v9.2.6 ([8e37b99](https://github.com/lbenie/reading-time-estimator/commit/8e37b99ec2900a346ae77ae5410e92fcc4ebaeb1))
+* **deps:** update dependency @types/node to v20.10.2 ([676799d](https://github.com/lbenie/reading-time-estimator/commit/676799d9b5b14311e10099955fec857734033406))
+* **deps:** update dependency @types/node to v20.10.3 ([69ad9ed](https://github.com/lbenie/reading-time-estimator/commit/69ad9edfc4c95a24e2a4170e2e61abf286889eb3))
+* **deps:** update dependency @types/node to v20.10.4 ([8db3dae](https://github.com/lbenie/reading-time-estimator/commit/8db3dae754429a64ca340d8ac13101556b425032))
+* **deps:** update dependency @types/node to v20.10.5 ([e5cd5e9](https://github.com/lbenie/reading-time-estimator/commit/e5cd5e94ac25ffdc7578089b9f0d613260bc1e74))
+* **deps:** update dependency @vitest/coverage-v8 to v1 ([#1274](https://github.com/lbenie/reading-time-estimator/issues/1274)) ([6da560d](https://github.com/lbenie/reading-time-estimator/commit/6da560d77e9833f6fef0200c707f3bc887dc51ad))
+* **deps:** update dependency @vitest/coverage-v8 to v1.0.2 ([0cbb123](https://github.com/lbenie/reading-time-estimator/commit/0cbb1232f523d204e2aeb28082ca1ca88f3f29c3))
+* **deps:** update dependency @vitest/coverage-v8 to v1.0.4 ([5d40ac3](https://github.com/lbenie/reading-time-estimator/commit/5d40ac3debeedd67c5403a0617e009e8f694244f))
+* **deps:** update dependency @vitest/coverage-v8 to v1.1.0 ([b5490c0](https://github.com/lbenie/reading-time-estimator/commit/b5490c060ebbf1eade561fa681070acdc379df20))
+* **deps:** update dependency rollup to v4.7.0 ([22f43c1](https://github.com/lbenie/reading-time-estimator/commit/22f43c187acd554ae7133ade1b15119631e1196d))
+* **deps:** update dependency rollup to v4.8.0 ([68dac58](https://github.com/lbenie/reading-time-estimator/commit/68dac58e51d842c211bf02459e8586ddfa7703fa))
+* **deps:** update dependency rollup to v4.9.0 ([5095907](https://github.com/lbenie/reading-time-estimator/commit/509590770597dd3ff1e0bba412f417c7e3051ae0))
+* **deps:** update dependency rollup to v4.9.1 ([6f0b3b4](https://github.com/lbenie/reading-time-estimator/commit/6f0b3b4ca38af24131817fbafffd20c0c90280c9))
+* **deps:** update dependency semantic-release to v22.0.10 ([2c0ba33](https://github.com/lbenie/reading-time-estimator/commit/2c0ba33d8d41ae8065480231576e8ad3143630d3))
+* **deps:** update dependency semantic-release to v22.0.11 ([3ae6626](https://github.com/lbenie/reading-time-estimator/commit/3ae6626885e2b95783ed606f5248a8cfebd94515))
+* **deps:** update dependency semantic-release to v22.0.12 ([81ed926](https://github.com/lbenie/reading-time-estimator/commit/81ed926918a15879587b3cfba65e5ef1e19c1e07))
+* **deps:** update dependency semantic-release to v22.0.9 ([0247511](https://github.com/lbenie/reading-time-estimator/commit/0247511ea0df1ffa0d1100af08448ed3656b29fc))
+* **deps:** update dependency typescript to v5.3.3 ([9f25818](https://github.com/lbenie/reading-time-estimator/commit/9f258183ac6368354532f41e127e95e1217d6549))
+* **deps:** update dependency unplugin-auto-import to v0.17.2 ([86607e2](https://github.com/lbenie/reading-time-estimator/commit/86607e22822c16671af13ad6a67e5715c82cea45))
+* **deps:** update dependency unplugin-auto-import to v0.17.3 ([29ed9ce](https://github.com/lbenie/reading-time-estimator/commit/29ed9ce882252d3b486ff5378605109cd7faf542))
+* **deps:** update dependency vite to v5.0.10 ([7eecefe](https://github.com/lbenie/reading-time-estimator/commit/7eecefe02d57919f859d5b90150d7b02dc747c91))
+* **deps:** update dependency vite to v5.0.5 ([2e40272](https://github.com/lbenie/reading-time-estimator/commit/2e40272026321204822e2e01da8b0af487ee29ed))
+* **deps:** update dependency vite to v5.0.6 ([2aad4e7](https://github.com/lbenie/reading-time-estimator/commit/2aad4e7e33d0fcc8727f92fa0960f0f5e4bd4fb8))
+* **deps:** update dependency vite to v5.0.7 ([f86bd3e](https://github.com/lbenie/reading-time-estimator/commit/f86bd3ebf958df12a4da06bf3854d2e3d172bcb2))
+* **deps:** update dependency vite to v5.0.8 ([d8e5e47](https://github.com/lbenie/reading-time-estimator/commit/d8e5e47816684a30d7dad7e2f2eb337d228cfa55))
+* **deps:** update dependency vite to v5.0.9 ([bf1403d](https://github.com/lbenie/reading-time-estimator/commit/bf1403db7bec2739029c0fd4f8801505efcfeaa3))
+* **deps:** update dependency vitest to v1.0.1 ([270207f](https://github.com/lbenie/reading-time-estimator/commit/270207f21846f4c49370a035d12b1cbd84184f7a))
+* **deps:** update dependency vitest to v1.0.2 ([fa85b23](https://github.com/lbenie/reading-time-estimator/commit/fa85b23a283e7046670db6eea3edbf371cb7f631))
+* **deps:** update dependency vitest to v1.0.3 ([dc25124](https://github.com/lbenie/reading-time-estimator/commit/dc251249a28860fc79059d0d0a33ea18d9e4fd35))
+* **deps:** update dependency vitest to v1.0.4 ([720ddbf](https://github.com/lbenie/reading-time-estimator/commit/720ddbf121eab6a109d1338c2a12dfe0ebcefb7d))
+* **deps:** update dependency vitest to v1.1.0 ([6494553](https://github.com/lbenie/reading-time-estimator/commit/64945534d8e4c5149a462a46cbbc784a95e791d1))
+* **deps:** update dependency vitest to v1 ([04b6f2b](https://github.com/lbenie/reading-time-estimator/commit/04b6f2b4b2aa560fa62831a234934ccf91e2e932))
+* **deps:** update github/codeql-action action to v3 ([#1299](https://github.com/lbenie/reading-time-estimator/issues/1299)) ([83d4bc0](https://github.com/lbenie/reading-time-estimator/commit/83d4bc0354a7858d4372a1a5b7d068c4b0f53309))
+
 ## [1.9.2](https://github.com/lbenie/reading-time-estimator/compare/v1.9.1...v1.9.2) (2023-12-01)
 
 
