@@ -1,6 +1,6 @@
 {
   "name": "reading-time-estimator",
-  "version": "1.9.3",
+  "version": "1.9.4",
   "description": "A medium's like reading time estimator with internationalization support",
   "keywords": [
     "typescript",
@@ -53,13 +53,13 @@
     "format": "eslint lib --fix"
   },
   "devDependencies": {
-    "@lbenie/linting": "1.6.9",
-    "@rollup/plugin-typescript": "11.1.5",
+    "@lbenie/linting": "1.6.10",
+    "@rollup/plugin-typescript": "11.1.6",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "9.2.6",
     "@semantic-release/release-notes-generator": "12.1.0",
-    "@types/node": "20.10.6",
+    "@types/node": "20.11.0",
     "@vitest/coverage-v8": "^1.0.0",
     "all-contributors-cli": "6.26.1",
     "concurrently": "8.2.2",
@@ -70,7 +70,7 @@
     "semantic-release": "22.0.12",
     "typescript": "5.3.3",
     "unplugin-auto-import": "^0.17.0",
-    "vite": "5.0.10",
+    "vite": "5.0.11",
     "vitest": "^1.0.0"
   },
   "dependencies": {}

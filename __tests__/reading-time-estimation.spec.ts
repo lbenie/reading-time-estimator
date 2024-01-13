@@ -1,7 +1,6 @@
 import { readingTime } from '../lib'
 import { translations } from '../lib/i18n'
 import type { SupportedLanguages } from '../lib/i18n'
-import { ro } from '../lib/i18n/ro'
 
 const englishText = `I never took the time to properly build my website even though I am a Frontend Developer. I started to look at some technologies in 2018 and 2019, I found some amazing projects (nuxt, vuepress, etc...) but I never did finish my website.`
 
