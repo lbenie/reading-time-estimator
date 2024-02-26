@@ -49,7 +49,7 @@ Per default the locale is set to english `en`.
 
 Per default the word per minute is set to `300`.
 
-At the moment there is only 9 supported locales: `en`, `fr`, `es`, `pt-br`, `cn`, `ja`, `de`, `tr` and `ro`.
+At the moment there is only 11 supported locales: `en`, `fr`, `es`, `pt-br`, `cn`, `ja`, `de`, `tr`, `ro`, `sk` and `cs`.
 
 ### Usage
 

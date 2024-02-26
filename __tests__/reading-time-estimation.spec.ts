@@ -22,6 +22,10 @@ const turkishText =
 
 const romanianText = '„Nu mi-am făcut niciodată timp să-mi construiesc site-ul corect, chiar dacă sunt dezvoltator Frontend. Am început să mă uit la unele tehnologii în 2018 și 2019, am găsit niște proiecte uimitoare (nuxt, vuepress, etc...) dar nu mi-am terminat niciodată site-ul.'
 
+const slovakText = `Reading Time Estimator bol vytvorený s cieľom poskytnúť odhad, aký dlhý čas je potrebný na prečítanie článku alebo blogu tak, ako je to implementované na stránke medium.`
+
+const czechText = `Reading Time Estimator byl vytvořen s cílem poskytnout odhad, jak dlouhou dobu je zapotřebí k přečtení článku nebo blogu tak, jak je to implementováno na stránce medium.`
+
 interface TestSetup {
   readonly language: SupportedLanguages | undefined
   readonly words: string | undefined
@@ -168,6 +172,30 @@ describe('readingTime', () => {
           minutes: 5,
           words: 45,
           text: `5 ${translations['ro'].default}`,
+        },
+      },
+    ],
+    [
+      {
+        language: 'sk',
+        words: slovakText,
+        wordsPerMinute: 10,
+        expectedResult: {
+          minutes: 5,
+          words: 27,
+          text: `3 ${translations['sk'].default}`,
+        },
+      },
+    ],
+    [
+      {
+        language: 'cs',
+        words: czechText,
+        wordsPerMinute: 10,
+        expectedResult: {
+          minutes: 3,
+          words: 27,
+          text: `3 ${translations['cs'].default}`,
         },
       },
     ],
