@@ -83,6 +83,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Grolicek",
+      "name": "Oliver Groma",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58747066?v=4",
+      "profile": "https://github.com/Grolicek",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
