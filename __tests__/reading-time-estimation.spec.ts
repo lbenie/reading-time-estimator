@@ -20,7 +20,10 @@ const brazilianPortugueseText =
 const turkishText =
   'Güvenemem servetime, malıma, Ümidim yok bugün ile yarına, Toprak beni de basacak bağrına, Adaletin bu mu dünya, Ne yar verdin, ne mal, dünya, Kötülerinsin sen dünya, İyileri öldüren dünya, Ne insanlar gelip geçti kapından, Memnun gelip giden var mı yolundan, Kimi fakir, kimi ayrılmış yarinden'
 
-const romanianText = '„Nu mi-am făcut niciodată timp să-mi construiesc site-ul corect, chiar dacă sunt dezvoltator Frontend. Am început să mă uit la unele tehnologii în 2018 și 2019, am găsit niște proiecte uimitoare (nuxt, vuepress, etc...) dar nu mi-am terminat niciodată site-ul.'
+const romanianText =
+  '„Nu mi-am făcut niciodată timp să-mi construiesc site-ul corect, chiar dacă sunt dezvoltator Frontend. Am început să mă uit la unele tehnologii în 2018 și 2019, am găsit niște proiecte uimitoare (nuxt, vuepress, etc...) dar nu mi-am terminat niciodată site-ul.'
+
+const banglaText = `Riḍiṁ ṭā'ima ēsṭimēṭara tairi karā haẏēchila ēkaṭi ārṭikēla bā blagēra paṛāra samaẏēra ēkaṭi anumāna pradāna karāra jan'ya yā miḍiẏāmē dēkhā yāẏa`
 
 interface TestSetup {
   readonly language: SupportedLanguages | undefined
@@ -34,143 +37,129 @@ interface TestSetup {
 }
 
 describe('readingTime', () => {
-  it.each<readonly TestSetup[]>([
-    [
-      {
-        language: 'en',
-        words: englishText,
-        wordsPerMinute: 10,
-        expectedResult: {
-          minutes: 4,
-          words: 43,
-          text: `4 ${translations['en'].default}`,
-        },
+  it.each<TestSetup>([
+    {
+      language: 'en',
+      words: englishText,
+      wordsPerMinute: 10,
+      expectedResult: {
+        minutes: 4,
+        words: 43,
+        text: `4 ${translations['en'].default}`,
       },
-    ],
-    [
-      {
-        language: 'en',
-        words: englishText,
-        wordsPerMinute: undefined,
-        expectedResult: {
-          minutes: 0,
-          words: 43,
-          text: `${translations['en'].less}`,
-        },
+    },
+    {
+      language: 'en',
+      words: englishText,
+      wordsPerMinute: undefined,
+      expectedResult: {
+        minutes: 0,
+        words: 43,
+        text: `${translations['en'].less}`,
       },
-    ],
-    [
-      {
-        language: 'en',
-        words: '',
-        wordsPerMinute: undefined,
-        expectedResult: { minutes: 0, words: 0, text: translations['en'].less },
+    },
+    {
+      language: 'en',
+      words: '',
+      wordsPerMinute: undefined,
+      expectedResult: { minutes: 0, words: 0, text: translations['en'].less },
+    },
+    {
+      language: undefined,
+      words: undefined,
+      wordsPerMinute: undefined,
+      expectedResult: { minutes: 0, words: 0, text: translations['en'].less },
+    },
+    {
+      language: 'cn',
+      words: chineseText,
+      wordsPerMinute: 2,
+      expectedResult: {
+        minutes: 4,
+        words: 7,
+        text: `4 ${translations['cn'].default}`,
       },
-    ],
-    [
-      {
-        language: undefined,
-        words: undefined,
-        wordsPerMinute: undefined,
-        expectedResult: { minutes: 0, words: 0, text: translations['en'].less },
+    },
+    {
+      language: 'fr',
+      words: frenchText,
+      wordsPerMinute: 10,
+      expectedResult: {
+        minutes: 3,
+        words: 26,
+        text: `3 ${translations['fr'].default}`,
       },
-    ],
-    [
-      {
-        language: 'cn',
-        words: chineseText,
-        wordsPerMinute: 2,
-        expectedResult: {
-          minutes: 4,
-          words: 7,
-          text: `4 ${translations['cn'].default}`,
-        },
+    },
+    {
+      language: 'es',
+      words: spanishText,
+      wordsPerMinute: 10,
+      expectedResult: {
+        minutes: 2,
+        words: 24,
+        text: `2 ${translations['es'].default}`,
       },
-    ],
-    [
-      {
-        language: 'fr',
-        words: frenchText,
-        wordsPerMinute: 10,
-        expectedResult: {
-          minutes: 3,
-          words: 26,
-          text: `3 ${translations['fr'].default}`,
-        },
+    },
+    {
+      language: 'ja',
+      words: japaneseText,
+      wordsPerMinute: 10,
+      expectedResult: {
+        minutes: 0,
+        words: 1,
+        text: translations['ja'].less,
       },
-    ],
-    [
-      {
-        language: 'es',
-        words: spanishText,
-        wordsPerMinute: 10,
-        expectedResult: {
-          minutes: 2,
-          words: 24,
-          text: `2 ${translations['es'].default}`,
-        },
+    },
+    {
+      language: 'de',
+      words: germanText,
+      wordsPerMinute: 10,
+      expectedResult: {
+        minutes: 5,
+        words: 47,
+        text: `5 ${translations['de'].default}`,
       },
-    ],
-    [
-      {
-        language: 'ja',
-        words: japaneseText,
-        wordsPerMinute: 10,
-        expectedResult: {
-          minutes: 0,
-          words: 1,
-          text: translations['ja'].less,
-        },
+    },
+    {
+      language: 'pt-br',
+      words: brazilianPortugueseText,
+      wordsPerMinute: 10,
+      expectedResult: {
+        minutes: 3,
+        words: 26,
+        text: `3 ${translations['pt-br'].default}`,
       },
-    ],
-    [
-      {
-        language: 'de',
-        words: germanText,
-        wordsPerMinute: 10,
-        expectedResult: {
-          minutes: 5,
-          words: 47,
-          text: `5 ${translations['de'].default}`,
-        },
+    },
+    {
+      language: 'tr',
+      words: turkishText,
+      wordsPerMinute: 10,
+      expectedResult: {
+        minutes: 5,
+        words: 45,
+        text: `5 ${translations['tr'].default}`,
       },
-    ],
-    [
-      {
-        language: 'pt-br',
-        words: brazilianPortugueseText,
-        wordsPerMinute: 10,
-        expectedResult: {
-          minutes: 3,
-          words: 26,
-          text: `3 ${translations['pt-br'].default}`,
-        },
+    },
+    {
+      language: 'ro',
+      words: romanianText,
+      wordsPerMinute: 10,
+      expectedResult: {
+        minutes: 5,
+        words: 45,
+        text: `5 ${translations['ro'].default}`,
       },
-    ],
-    [
-      {
-        language: 'tr',
-        words: turkishText,
-        wordsPerMinute: 10,
-        expectedResult: {
-          minutes: 5,
-          words: 45,
-          text: `5 ${translations['tr'].default}`,
-        },
+    },
+    {
+      language: 'bn',
+      words: banglaText,
+      wordsPerMinute: 10,
+      expectedResult: {
+        minutes: 4,
+        words: 35,
+        text: `4 ${translations['bn'].default}`,
       },
-    ],
-    [
-      {
-        language: 'ro',
-        words: romanianText,
-        wordsPerMinute: 10,
-        expectedResult: {
-          minutes: 5,
-          words: 45,
-          text: `5 ${translations['ro'].default}`,
-        },
-      },
-    ],
+    },
   ])(
     'approximates time to read a text in %s',
     ({ words, wordsPerMinute, language, expectedResult }) => {
