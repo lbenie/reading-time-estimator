@@ -25,6 +25,11 @@ const romanianText =
 
 const banglaText = `Riḍiṁ ṭā'ima ēsṭimēṭara tairi karā haẏēchila ēkaṭi ārṭikēla bā blagēra paṛāra samaẏēra ēkaṭi anumāna pradāna karāra jan'ya yā miḍiẏāmē dēkhā yāẏa`
 
+const slovakText = `Reading Time Estimator bol vytvorený s cieľom poskytnúť odhad, aký dlhý čas je potrebný na prečítanie článku alebo blogu tak, ako je to implementované na stránke medium.`
+
+const czechText = `Reading Time Estimator byl vytvořen s cílem poskytnout odhad, jak dlouhou dobu je zapotřebí k přečtení článku nebo blogu tak, jak je to implementováno na stránce medium.`
+
+
 interface TestSetup {
   readonly language: SupportedLanguages | undefined
   readonly words: string | undefined
@@ -158,6 +163,26 @@ describe('readingTime', () => {
         minutes: 4,
         words: 35,
         text: `4 ${translations['bn'].default}`,
+      },
+    },
+    {
+      language: 'sk',
+      words: slovakText,
+      wordsPerMinute: 10,
+      expectedResult: {
+        minutes: 3,
+        words: 27,
+        text: `3 ${translations['sk'].default}`,
+      },
+    },
+    {
+      language: 'cs',
+      words: czechText,
+      wordsPerMinute: 10,
+      expectedResult: {
+        minutes: 3,
+        words: 27,
+        text: `3 ${translations['cs'].default}`,
       },
     },
   ])(
