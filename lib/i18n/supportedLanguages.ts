@@ -11,6 +11,7 @@ export const supportedLanguages = [
   'pt-br',
   'tr',
   'ro',
+  'bn',
 ] as const
 
 /**

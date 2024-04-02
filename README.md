@@ -49,7 +49,7 @@ Per default the locale is set to english `en`.
 
 Per default the word per minute is set to `300`.
 
-At the moment there is only 9 supported locales: `en`, `fr`, `es`, `pt-br`, `cn`, `ja`, `de`, `tr` and `ro`.
+At the moment there is only 10 supported locales: `en`, `fr`, `es`, `pt-br`, `cn`, `ja`, `de`, `tr`, `ro` and `bn`.
 
 ### Usage
 
@@ -108,6 +108,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://contrails.space"><img src="https://avatars.githubusercontent.com/u/41533924?v=4?s=100" width="100px;" alt="凝结尾迹"/><br /><sub><b>凝结尾迹</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=zS1m" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://www.steempro.com"><img src="https://avatars.githubusercontent.com/u/53206866?v=4?s=100" width="100px;" alt="Muhammad Faisal Amin"/><br /><sub><b>Muhammad Faisal Amin</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=faisalamin9696" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Grolicek"><img src="https://avatars.githubusercontent.com/u/58747066?v=4?s=100" width="100px;" alt="Oliver Groma"/><br /><sub><b>Oliver Groma</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=Grolicek" title="Code">💻</a></td>
     </tr>
   </tbody>
