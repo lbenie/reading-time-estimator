@@ -1,3 +1,39 @@
+## [1.11.0](https://github.com/lbenie/reading-time-estimator/compare/v1.10.0...v1.11.0) (2024-04-02)
+
+
+### :sparkles: Features
+
+* add slovak and czech languages ([#1416](https://github.com/lbenie/reading-time-estimator/issues/1416)) ([557050d](https://github.com/lbenie/reading-time-estimator/commit/557050d787a79fcc5c5884867c036e91ee915ea4))
+
+
+### :memo: Documenation
+
+* add Grolicek as a contributor for code ([#1378](https://github.com/lbenie/reading-time-estimator/issues/1378)) ([d45072c](https://github.com/lbenie/reading-time-estimator/commit/d45072c5a0f38b1ffdf1c24354138a5664fda051))
+
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency @lbenie/linting to v1.7.4 ([aa06311](https://github.com/lbenie/reading-time-estimator/commit/aa063118359e9df02943fbc57925fd03a2c7b663))
+* **deps:** update dependency @lbenie/linting to v1.7.5 ([9945a56](https://github.com/lbenie/reading-time-estimator/commit/9945a569afccfbb494eccdc303d4a77b49726d49))
+* **deps:** update dependency @lbenie/linting to v1.7.6 ([6a3cfb9](https://github.com/lbenie/reading-time-estimator/commit/6a3cfb9f44e3da296efe0a4373464666b81970d7))
+* **deps:** update dependency @semantic-release/release-notes-generator to v13 ([49a72ac](https://github.com/lbenie/reading-time-estimator/commit/49a72acec972c4a59d6891d3ea932f7d87bece22))
+* **deps:** update dependency @types/node to v20.11.29 ([440fbc5](https://github.com/lbenie/reading-time-estimator/commit/440fbc5be9869b2d5dd195f43098e6e83daaca7d))
+* **deps:** update dependency @types/node to v20.11.30 ([aab587b](https://github.com/lbenie/reading-time-estimator/commit/aab587b3ca7176711b81d128fbbe03bf51460e2c))
+* **deps:** update dependency @types/node to v20.12.2 ([d3b9233](https://github.com/lbenie/reading-time-estimator/commit/d3b9233d10c2019638fa5ba6c4b116bd19b3c095))
+* **deps:** update dependency rollup to v4.13.1 ([7022e87](https://github.com/lbenie/reading-time-estimator/commit/7022e87888e898c457e80eff53b58f4448e1b822))
+* **deps:** update dependency rollup to v4.13.2 ([b718ffb](https://github.com/lbenie/reading-time-estimator/commit/b718ffb884764c42e77818e1ecc09a3650204233))
+* **deps:** update dependency semantic-release to v23.0.5 ([eccc191](https://github.com/lbenie/reading-time-estimator/commit/eccc191078da84460b6f9df90eac25d703734d8b))
+* **deps:** update dependency semantic-release to v23.0.6 ([3b71b63](https://github.com/lbenie/reading-time-estimator/commit/3b71b6355dcb23151be0af0eab4046b607a7ae7e))
+* **deps:** update dependency typescript to v5.4.3 ([5860f43](https://github.com/lbenie/reading-time-estimator/commit/5860f436fecd9d4582ab1de242e0c1b290734dca))
+* **deps:** update dependency vite to v5.2.2 ([db510c2](https://github.com/lbenie/reading-time-estimator/commit/db510c22183521868d0e1da5b5dad30d009d0d07))
+* **deps:** update dependency vite to v5.2.3 ([6368fe4](https://github.com/lbenie/reading-time-estimator/commit/6368fe4c43cf309f98119c96f3d37f2e8724a2c7))
+* **deps:** update dependency vite to v5.2.4 ([c260019](https://github.com/lbenie/reading-time-estimator/commit/c260019c81640886cfb65d0d3d0e2efe90c33865))
+* **deps:** update dependency vite to v5.2.5 ([a6190fb](https://github.com/lbenie/reading-time-estimator/commit/a6190fbd2aa0e8f9d83eff5f2cc6bcb7c6b30a5a))
+* **deps:** update dependency vite to v5.2.6 ([f7baf36](https://github.com/lbenie/reading-time-estimator/commit/f7baf36d08f95674f6d210da42f10b20187d2bc4))
+* **deps:** update dependency vite to v5.2.7 ([a492e63](https://github.com/lbenie/reading-time-estimator/commit/a492e63c5d56062f96c423b22566d6b101edf11c))
+* **docs:** update readme ([c659758](https://github.com/lbenie/reading-time-estimator/commit/c6597584a938f38a0d6f968d7b83c45fdf8d6051))
+* **deps:** update wagoid/commitlint-github-action action to v6 ([#1411](https://github.com/lbenie/reading-time-estimator/issues/1411)) ([326cfed](https://github.com/lbenie/reading-time-estimator/commit/326cfedc69196006d7809a7e6727390edbae893f))
+
 ## [1.10.0](https://github.com/lbenie/reading-time-estimator/compare/v1.9.4...v1.10.0) (2024-03-17)
 
 
