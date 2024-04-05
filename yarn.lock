@@ -506,17 +506,17 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lbenie/linting@1.7.6":
-  version "1.7.6"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.6.tgz#1df45e5a12bd0f7f369c0a56c9df2bd18427da63"
-  integrity sha512-45J9AQv0WmOZN/fU5PvLl58Vjs7JvdFwf/07yKhsaSRNBY0gh3YAn0ShJB+/5CxbYseoE1AHWa4/at+lrne4IA==
+"@lbenie/linting@1.7.7":
+  version "1.7.7"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.7.tgz#bce5ca8f838977989bf1ae54677677123307b5e2"
+  integrity sha512-3akupAg94e4aG0GU2W+tEeOrvWUB3uFSaxre8BU8+ReehIJ6ibMsRC6eJkfQspIdHQeKCxCt8FimW1mcr4nzxg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "7.5.0"
     "@typescript-eslint/parser" "7.5.0"
     eslint "8.57.0"
     eslint-plugin-astro "0.33.1"
     eslint-plugin-functional "6.4.0"
-    eslint-plugin-jsdoc "48.2.2"
+    eslint-plugin-jsdoc "48.2.3"
     eslint-plugin-jsx-a11y "6.8.0"
     eslint-plugin-lit-a11y "4.1.2"
     eslint-plugin-prettier "5.1.3"
@@ -2903,10 +2903,10 @@ eslint-plugin-functional@6.4.0:
     semver "^7.6.0"
     ts-api-utils "^1.3.0"
 
-eslint-plugin-jsdoc@48.2.2:
-  version "48.2.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-48.2.2.tgz#eefdc5e3bb3cea957b66dd4817e9de30930b5270"
-  integrity sha512-S0Gk+rpT5w/ephKCncUY7kUsix9uE4B9XI8D/fS1/26d8okE+vZsuG1IvIt4B6sJUdQqsnzi+YXfmh+HJG11CA==
+eslint-plugin-jsdoc@48.2.3:
+  version "48.2.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-48.2.3.tgz#0188d17c7a4aa7185416556589e71a954b343ecd"
+  integrity sha512-r9DMAmFs66VNvNqRLLjHejdnJtILrt3xGi+Qx0op0oRfFGVpOR1Hb3BC++MacseHx93d8SKYPhyrC9BS7Os2QA==
   dependencies:
     "@es-joy/jsdoccomment" "~0.42.0"
     are-docs-informative "^0.0.2"
