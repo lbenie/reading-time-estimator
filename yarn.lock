@@ -391,16 +391,16 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lbenie/linting@1.7.8":
-  version "1.7.8"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.8.tgz#015b34c17abd3a0cdd5832d901181037f59c87f7"
-  integrity sha512-GCIpHENzwikQshiaH3NyNYZ7NLqH40/9xX16oeOYAtfItZ0B329NmLCSTuBOD8OUiKfGS/MMPoVOrUTHm+fFSg==
+"@lbenie/linting@1.7.9":
+  version "1.7.9"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.9.tgz#54367d21dd344a774771e7b80b6d4d250b75144b"
+  integrity sha512-QdssVaZTdsLPKBigj+SM7QlLv4eltdYskpE+toWNkdN4IMBC3xTA5GxEkLNUEf38jB9/H60yDsCiCoNjmhEBvQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "7.6.0"
     "@typescript-eslint/parser" "7.6.0"
     eslint "8.57.0"
     eslint-plugin-astro "0.33.1"
-    eslint-plugin-functional "6.4.0"
+    eslint-plugin-functional "6.4.1"
     eslint-plugin-jsdoc "48.2.3"
     eslint-plugin-jsx-a11y "6.8.0"
     eslint-plugin-lit-a11y "4.1.2"
@@ -2782,10 +2782,10 @@ eslint-plugin-astro@0.33.1:
     postcss "^8.4.14"
     postcss-selector-parser "^6.0.10"
 
-eslint-plugin-functional@6.4.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-functional/-/eslint-plugin-functional-6.4.0.tgz#5d4add9604b5a7078a0d9a461911487e65786f85"
-  integrity sha512-dw3MXkMgHciKyHM/2BIrai0Q0+1sXJMuyPvrS4ehcVMm4/AXxhpZcL/kip1869/Ssefoj6PYfIF/HDTNLAgnyA==
+eslint-plugin-functional@6.4.1:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-functional/-/eslint-plugin-functional-6.4.1.tgz#119e8345fe96c267bcc33e6ee49e3801b5b04cd3"
+  integrity sha512-V+FAQoOI8l1rgDABDS7Olbpg6m+ahPglQGK+6y/l7zPxC1Ko7LH3Nf9cI6kL9sR0+nDHVH6YFiyWqFrn57079A==
   dependencies:
     "@typescript-eslint/utils" "^7.3.1"
     deepmerge-ts "^5.1.0"
