@@ -391,16 +391,16 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lbenie/linting@1.7.9":
-  version "1.7.9"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.9.tgz#54367d21dd344a774771e7b80b6d4d250b75144b"
-  integrity sha512-QdssVaZTdsLPKBigj+SM7QlLv4eltdYskpE+toWNkdN4IMBC3xTA5GxEkLNUEf38jB9/H60yDsCiCoNjmhEBvQ==
+"@lbenie/linting@1.7.10":
+  version "1.7.10"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.10.tgz#a47a0f7e89f6efee7a0038832697b898a7c6ac68"
+  integrity sha512-emLB6FTfzUObYwdiACiEsCVnCVSv3P0w29VJ8M/ITw2vG0ZLJNO5J3irJQwn0S8SPclNgUFlSLD+EnWONbLMUA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "7.6.0"
     "@typescript-eslint/parser" "7.6.0"
     eslint "8.57.0"
     eslint-plugin-astro "0.33.1"
-    eslint-plugin-functional "6.4.1"
+    eslint-plugin-functional "6.5.1"
     eslint-plugin-jsdoc "48.2.3"
     eslint-plugin-jsx-a11y "6.8.0"
     eslint-plugin-lit-a11y "4.1.2"
@@ -2782,15 +2782,15 @@ eslint-plugin-astro@0.33.1:
     postcss "^8.4.14"
     postcss-selector-parser "^6.0.10"
 
-eslint-plugin-functional@6.4.1:
-  version "6.4.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-functional/-/eslint-plugin-functional-6.4.1.tgz#119e8345fe96c267bcc33e6ee49e3801b5b04cd3"
-  integrity sha512-V+FAQoOI8l1rgDABDS7Olbpg6m+ahPglQGK+6y/l7zPxC1Ko7LH3Nf9cI6kL9sR0+nDHVH6YFiyWqFrn57079A==
+eslint-plugin-functional@6.5.1:
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-functional/-/eslint-plugin-functional-6.5.1.tgz#b99ea098f338f83444588728ac65b8a767403f1a"
+  integrity sha512-8FbXylC/kptJ1drux4fyopVWmDkNTHGj/p7DKFt6G8hVXUhkC1eHCcNb5bnUOrpYEycIXXi0MrE3Nt0oEOkrQA==
   dependencies:
     "@typescript-eslint/utils" "^7.3.1"
     deepmerge-ts "^5.1.0"
     escape-string-regexp "^4.0.0"
-    is-immutable-type "^2.0.4"
+    is-immutable-type "^3.1.0"
     semver "^7.6.0"
     ts-api-utils "^1.3.0"
 
@@ -4026,13 +4026,14 @@ is-glob@^4.0.0, is-glob@^4.0.1, is-glob@^4.0.3, is-glob@~4.0.1:
   dependencies:
     is-extglob "^2.1.1"
 
-is-immutable-type@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/is-immutable-type/-/is-immutable-type-2.0.4.tgz#df53d2996ba497d50706636570a94afd59e03603"
-  integrity sha512-kjNGSmAQdEj7NJ/Cim9u6OUB/efEsuoUU3fCygl+o0DBwNS0blVjRHumRBX9cBwpZQEQaYVpVLO635HqWvdZRw==
+is-immutable-type@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/is-immutable-type/-/is-immutable-type-3.1.0.tgz#8a2dfcf9aa6c289805846ea8e4efa0b5ac038116"
+  integrity sha512-EIAsgCk/4tEohdqKa5iGf1+IwoRYV/81Fe1awSspgobMxOmmxTZslvkH/PAtSKtR2NDFXGVkZZNqiLQA37GKBQ==
   dependencies:
     "@typescript-eslint/type-utils" "^7.2.0"
     ts-api-utils "^1.3.0"
+    ts-declaration-location "^1.0.0"
 
 is-inside-container@^1.0.0:
   version "1.0.0"
@@ -7140,6 +7141,13 @@ ts-api-utils@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/ts-api-utils/-/ts-api-utils-1.3.0.tgz#4b490e27129f1e8e686b45cc4ab63714dc60eea1"
   integrity sha512-UQMIo7pb8WRomKR1/+MFVLTroIvDVtMX3K6OUir8ynLyzB8Jeriont2bTAtmNPa1ekAgN7YPDyf6V+ygrdU+eQ==
+
+ts-declaration-location@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ts-declaration-location/-/ts-declaration-location-1.0.0.tgz#b13cfbe9844f156e26dcbd300c48f915b6808ddc"
+  integrity sha512-/C+R0e1CLF1KtwbE59IFhCg4jLwfU7Puob+uVIl4iUVQhepN/bHmWXy3Gt3mAgvdLQybEZ4yb4qhnJQbphnEgA==
+  dependencies:
+    fast-glob "^3.3.2"
 
 tslib@^1.9.0:
   version "1.14.1"
