@@ -391,15 +391,15 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lbenie/linting@1.7.18":
-  version "1.7.18"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.18.tgz#67435d5d780a46fe6191d11881b31e742345642c"
-  integrity sha512-0viq6qeV+Sg7btiHA8RSL052HlPWs1aaMHOMnRCaDM7XVrkK3ygo7BlFPXkp+bMTGDWADtcvfLAOEwmOytPLIA==
+"@lbenie/linting@1.7.19":
+  version "1.7.19"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.19.tgz#8467430293d8c7e711466ca516336d509833d088"
+  integrity sha512-p2XEh2tc6Bt2TXbeuJy9B3FKZMJfkIbpSquk+y557HpQ9H+SLOrrbQWrifLUvwrGzfRg/+LeiJmTw0E//VjY0g==
   dependencies:
     "@typescript-eslint/eslint-plugin" "7.8.0"
     "@typescript-eslint/parser" "7.8.0"
     eslint "8.57.0"
-    eslint-plugin-astro "1.1.0"
+    eslint-plugin-astro "1.1.1"
     eslint-plugin-functional "6.5.1"
     eslint-plugin-jsdoc "48.2.3"
     eslint-plugin-jsx-a11y "6.8.0"
@@ -2742,10 +2742,10 @@ eslint-compat-utils@^0.5.0:
   dependencies:
     semver "^7.5.4"
 
-eslint-plugin-astro@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-astro/-/eslint-plugin-astro-1.1.0.tgz#12d71ea299f0523fc9223f6c4156edc117980b17"
-  integrity sha512-fvvy7nYRqtr9V7hMgpZ3lKXLhbxZdPzerGhesq6bLBl49lRF944EsJsIRNt5kcvRD0ZJlNL7nXbw09xOWXGTqg==
+eslint-plugin-astro@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-astro/-/eslint-plugin-astro-1.1.1.tgz#ab0419e1b2d99301652c5eee0cb6d2a22bd71893"
+  integrity sha512-DDRPLz25oahOHpET5ubbK/G/O8D2CP18XKhQmf8r2jF4BJ5JCk8YGfK4kNmInsw5J41eeZiK1T8aey5ItLrr/g==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
