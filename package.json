@@ -53,7 +53,7 @@
     "format": "eslint lib --fix"
   },
   "devDependencies": {
-    "@lbenie/linting": "1.7.35",
+    "@lbenie/linting": "1.7.37",
     "@rollup/plugin-typescript": "11.1.6",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
