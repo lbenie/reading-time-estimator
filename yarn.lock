@@ -509,16 +509,16 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lbenie/linting@1.7.47":
-  version "1.7.47"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.47.tgz#8e6baabf60a2278aa1e25ee22c7b89ae6224ddb5"
-  integrity sha512-lc2U3WxjXeZ6uh35Zhv8sTgUH3vjiXOhG+EZncD1Rxs4zN22MEa5F9hiGxx8eA3cbc6m8QlXEoXzSmVDPj5YEw==
+"@lbenie/linting@1.7.48":
+  version "1.7.48"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.48.tgz#825e8aa0de55480cdb4a2e5f53e52354cc5e9c1d"
+  integrity sha512-fLQb/vsgpoGKco5Zxg2hKV1+bReb+jlB7+RfFsVTfr67wO58VH5RFfESThxFtW56xlpFafcfSQltBqtpD21/gA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "7.13.1"
     "@typescript-eslint/parser" "7.13.1"
     eslint "8.57.0"
     eslint-plugin-astro "1.2.2"
-    eslint-plugin-functional "6.5.1"
+    eslint-plugin-functional "6.6.0"
     eslint-plugin-jsdoc "48.2.12"
     eslint-plugin-jsx-a11y "6.8.0"
     eslint-plugin-lit-a11y "4.1.2"
@@ -2917,15 +2917,15 @@ eslint-plugin-astro@1.2.2:
     postcss "^8.4.14"
     postcss-selector-parser "^6.0.10"
 
-eslint-plugin-functional@6.5.1:
-  version "6.5.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-functional/-/eslint-plugin-functional-6.5.1.tgz#b99ea098f338f83444588728ac65b8a767403f1a"
-  integrity sha512-8FbXylC/kptJ1drux4fyopVWmDkNTHGj/p7DKFt6G8hVXUhkC1eHCcNb5bnUOrpYEycIXXi0MrE3Nt0oEOkrQA==
+eslint-plugin-functional@6.6.0:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-functional/-/eslint-plugin-functional-6.6.0.tgz#2a378cb197aba8109b01552dfa857a4ba31db9d0"
+  integrity sha512-RhNEVL+YrN6gJcpIkootKc1knUzZyljhuiuDpv/dGRERdXEGsnKCkq+oBnM8qFtZFIkSKMoMj4/M1bPGlSl5JQ==
   dependencies:
     "@typescript-eslint/utils" "^7.3.1"
     deepmerge-ts "^5.1.0"
     escape-string-regexp "^4.0.0"
-    is-immutable-type "^3.1.0"
+    is-immutable-type "^4.0.0"
     semver "^7.6.0"
     ts-api-utils "^1.3.0"
 
@@ -4192,10 +4192,10 @@ is-glob@^4.0.0, is-glob@^4.0.1, is-glob@^4.0.3, is-glob@~4.0.1:
   dependencies:
     is-extglob "^2.1.1"
 
-is-immutable-type@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/is-immutable-type/-/is-immutable-type-3.1.0.tgz#8a2dfcf9aa6c289805846ea8e4efa0b5ac038116"
-  integrity sha512-EIAsgCk/4tEohdqKa5iGf1+IwoRYV/81Fe1awSspgobMxOmmxTZslvkH/PAtSKtR2NDFXGVkZZNqiLQA37GKBQ==
+is-immutable-type@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/is-immutable-type/-/is-immutable-type-4.0.0.tgz#d62ad1ff411eef8dfa3a87222960ec3b645db1a1"
+  integrity sha512-gyFBCXv+NikTs8/PGZhgjbMmFZQ5jvHGZIsVu6+/9Bk4K7imlWBIDN7hTr9fNioGzFg71I4YM3z8f0aKXarTAw==
   dependencies:
     "@typescript-eslint/type-utils" "^7.2.0"
     ts-api-utils "^1.3.0"
