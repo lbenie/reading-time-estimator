@@ -58,7 +58,7 @@
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "10.0.6",
-    "@semantic-release/release-notes-generator": "14.0.0",
+    "@semantic-release/release-notes-generator": "14.0.1",
     "@types/node": "20.14.7",
     "@vitest/coverage-v8": "^1.0.0",
     "all-contributors-cli": "6.26.1",
