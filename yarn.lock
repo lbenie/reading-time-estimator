@@ -502,19 +502,19 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lbenie/linting@1.7.54":
-  version "1.7.54"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.54.tgz#f1b270ab1c286086bbccf35968e95bc24c3f8d49"
-  integrity sha512-y9cBqLkSW0WZBrxAcTah+G/OTKf7UU4r9a3T7pEklf0PtCOIDwDcpScc0HgaBc9t3aHcWrYv0p0jBdoOy+UGSg==
+"@lbenie/linting@1.7.56":
+  version "1.7.56"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.56.tgz#94d6850ddb29f13766098bb417048012e9064219"
+  integrity sha512-kaTvbQymE9fuCLHFQqkS0sXYR6CZORQjPiIsHb5WlgBHNqwNMivg15MrSTORFmMjmxRL7bsLbZE1bsALh37qow==
   dependencies:
     "@typescript-eslint/eslint-plugin" "7.14.1"
     "@typescript-eslint/parser" "7.14.1"
     eslint "8.57.0"
     eslint-plugin-astro "1.2.2"
     eslint-plugin-functional "6.6.0"
-    eslint-plugin-jsdoc "48.4.0"
+    eslint-plugin-jsdoc "48.5.0"
     eslint-plugin-jsx-a11y "6.9.0"
-    eslint-plugin-lit-a11y "4.1.2"
+    eslint-plugin-lit-a11y "4.1.3"
     eslint-plugin-prettier "5.1.3"
     globals "15.6.0"
     postcss "8.4.38"
@@ -1253,6 +1253,13 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/merge-streams/-/merge-streams-4.0.0.tgz#abb11d99aeb6d27f1b563c38147a72d50058e339"
   integrity sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==
 
+"@thepassle/axobject-query@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@thepassle/axobject-query/-/axobject-query-4.0.0.tgz#55913184bbd715544c4a5960eac85e598c03715c"
+  integrity sha512-/LHo+2jOdxs2WtbGocr3/lDSzsnjgCV6DSoBf4Y1Q0D24Hu67NPWuneoJimfHu5auqqSWi1fAvtln2013VxVqg==
+  dependencies:
+    dequal "^2.0.3"
+
 "@tootallnate/once@2":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
@@ -1968,11 +1975,6 @@ axe-core@^4.9.1:
   version "4.9.1"
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.9.1.tgz#fcd0f4496dad09e0c899b44f6c4bb7848da912ae"
   integrity sha512-QbUdXJVTpvUTHU7871ppZkdOLBeGUKBQWHkHrvN2V9IQWGMt61zf3B45BtzjxEJzYuj0JBjBZP/hmYS/R9pmAw==
-
-axobject-query@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-2.2.0.tgz#943d47e10c0b704aa42275e20edf3722648989be"
-  integrity sha512-Td525n+iPOOyUQIeBfcASuG6uJsDOITl7Mds5gFyerkWiX7qhUTdYUBlSgNMyVqtSJqwpt1kXGLdUt6SykLMRA==
 
 axobject-query@~3.1.1:
   version "3.1.1"
@@ -3150,10 +3152,10 @@ eslint-plugin-functional@6.6.0:
     semver "^7.6.0"
     ts-api-utils "^1.3.0"
 
-eslint-plugin-jsdoc@48.4.0:
-  version "48.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-48.4.0.tgz#746a30b8d01a9aa7894e52f8a273a49ca681ef78"
-  integrity sha512-xBUxuAx03cKoEA7y+MYSUdwyN8AJyZHbAJ257sOFXgVgCScm574S4zEYJpBoARwaCu4chhCbvA+gdm+00whlxA==
+eslint-plugin-jsdoc@48.5.0:
+  version "48.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-48.5.0.tgz#24e2026d1e7ba97214ee21bb16fd5162cd6487c8"
+  integrity sha512-ukXPNpGby3KjCveCizIS8t1EbuJEHYEu/tBg8GCbn/YbHcXwphyvYCdvRZ/oMRfTscGSSzfsWoZ+ZkAP0/6YMQ==
   dependencies:
     "@es-joy/jsdoccomment" "~0.43.1"
     are-docs-informative "^0.0.2"
@@ -3188,14 +3190,14 @@ eslint-plugin-jsx-a11y@6.9.0:
     safe-regex-test "^1.0.3"
     string.prototype.includes "^2.0.0"
 
-eslint-plugin-lit-a11y@4.1.2:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-lit-a11y/-/eslint-plugin-lit-a11y-4.1.2.tgz#8d813e8c07a6a3a905fb3404138571783accd89a"
-  integrity sha512-otrF1Q0uv6RUz/AflVgnf1rVzbfQJfgUmnB+xBl71IR8EwtJGEOrqGs3Ky/4APMda+maF6bsZLctppcz16m7Hw==
+eslint-plugin-lit-a11y@4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-lit-a11y/-/eslint-plugin-lit-a11y-4.1.3.tgz#121787a69f27a6e3dc46d6be1744bf022ac63185"
+  integrity sha512-ndfGZU0RFKp9xqm17f94sQzjgVchDtYL1z/N0qG0otQiDtia1EUVCdd1eMlCeeUe6LTtfjV4iAsNU4r0bVB/Yw==
   dependencies:
+    "@thepassle/axobject-query" "^4.0.0"
     aria-query "^5.1.3"
     axe-core "^4.3.3"
-    axobject-query "^2.2.0"
     dom5 "^3.0.1"
     emoji-regex "^10.2.1"
     eslint-plugin-lit "^1.10.1"
