@@ -502,17 +502,17 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lbenie/linting@1.7.60":
-  version "1.7.60"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.60.tgz#04a94575e5e21f75cef646fad4cd8c433c3fe59c"
-  integrity sha512-pfucIYiiYJ4H/l/02AeJ1U9v/iJ4VkENQ2rQyBvLMrnMdNUOoXFRlzrNos+brtxd7PSkWKx5EKwHuoEk/sq8fw==
+"@lbenie/linting@1.7.61":
+  version "1.7.61"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.61.tgz#3521f3a4a2f4d0032bb5cd6260821b6df151aabd"
+  integrity sha512-BSRSjPw/xN7WEb6dFKsSAtqFPNuwfNuzf6t1yAaD/LDicBiTK+thDTDJOC/hizzCfCsP2A/7rcpfJjIgg2EkDg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "7.15.0"
     "@typescript-eslint/parser" "7.15.0"
     eslint "8.57.0"
     eslint-plugin-astro "1.2.2"
     eslint-plugin-functional "6.6.0"
-    eslint-plugin-jsdoc "48.5.0"
+    eslint-plugin-jsdoc "48.5.2"
     eslint-plugin-jsx-a11y "6.9.0"
     eslint-plugin-lit-a11y "4.1.3"
     eslint-plugin-prettier "5.1.3"
@@ -2602,6 +2602,13 @@ debug@^4.3.3:
   dependencies:
     ms "2.1.2"
 
+debug@^4.3.5:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.5.tgz#e83444eceb9fedd4a1da56d671ae2446a01a6e1e"
+  integrity sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==
+  dependencies:
+    ms "2.1.2"
+
 decamelize@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
@@ -3152,15 +3159,15 @@ eslint-plugin-functional@6.6.0:
     semver "^7.6.0"
     ts-api-utils "^1.3.0"
 
-eslint-plugin-jsdoc@48.5.0:
-  version "48.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-48.5.0.tgz#24e2026d1e7ba97214ee21bb16fd5162cd6487c8"
-  integrity sha512-ukXPNpGby3KjCveCizIS8t1EbuJEHYEu/tBg8GCbn/YbHcXwphyvYCdvRZ/oMRfTscGSSzfsWoZ+ZkAP0/6YMQ==
+eslint-plugin-jsdoc@48.5.2:
+  version "48.5.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-48.5.2.tgz#c355846dc6a41095fa10855cbc64bed8d2d3f79d"
+  integrity sha512-VXBJFviQz30rynlOEQ+dNWLmeopjoAgutUVrWOZwm6Ki4EVDm4XkyIqAV/Zhf7FcDr0AG0aGmRn5FxxCtAF0tA==
   dependencies:
     "@es-joy/jsdoccomment" "~0.43.1"
     are-docs-informative "^0.0.2"
     comment-parser "1.4.1"
-    debug "^4.3.4"
+    debug "^4.3.5"
     escape-string-regexp "^4.0.0"
     esquery "^1.5.0"
     parse-imports "^2.1.0"
