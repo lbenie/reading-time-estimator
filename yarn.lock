@@ -143,14 +143,13 @@
   resolved "https://registry.yarnpkg.com/@dual-bundle/import-meta-resolve/-/import-meta-resolve-4.1.0.tgz#519c1549b0e147759e7825701ecffd25e5819f7b"
   integrity sha512-+nxncfwHM5SgAtrVzgpzJOI1ol0PkumhVo469KCf9lUi21IGcY90G98VuHm9VRrUypmAzawAHO9bs6hqeADaVg==
 
-"@es-joy/jsdoccomment@~0.43.1":
-  version "0.43.1"
-  resolved "https://registry.yarnpkg.com/@es-joy/jsdoccomment/-/jsdoccomment-0.43.1.tgz#4b1979b7b4ff8b596fb19a3aa696a438e44608d7"
-  integrity sha512-I238eDtOolvCuvtxrnqtlBaw0BwdQuYqK7eA6XIonicMdOOOb75mqdIzkGDUbS04+1Di007rgm9snFRNeVrOog==
+"@es-joy/jsdoccomment@~0.45.0":
+  version "0.45.0"
+  resolved "https://registry.yarnpkg.com/@es-joy/jsdoccomment/-/jsdoccomment-0.45.0.tgz#20410348ab4d703e602179f5c79f9d59819377a0"
+  integrity sha512-U8T5eXLkP78Sr12rR91494GhlEgp8jqs7OaUHbdUffADxU1JQmKjZm5uSyAEGv2oolDMJ+wce7yylfnnwOevtA==
   dependencies:
     "@types/eslint" "^8.56.5"
     "@types/estree" "^1.0.5"
-    "@typescript-eslint/types" "^7.2.0"
     comment-parser "1.4.1"
     esquery "^1.5.0"
     jsdoc-type-pratt-parser "~4.0.0"
@@ -502,17 +501,17 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lbenie/linting@1.7.64":
-  version "1.7.64"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.64.tgz#b14c96e3e25f54814ae76306898d9f899e8dc1ed"
-  integrity sha512-kAZWuZU2q6idYVbJbaXeEUX8LnxeD9ki8JuNFdx3tPTwg1RiY4Nc61N661lCJabrKeYjY3zrGkEVimCYucMPmw==
+"@lbenie/linting@1.7.65":
+  version "1.7.65"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.7.65.tgz#fa2438835b8a0c4ce0d34d9a06612c0401e48d0c"
+  integrity sha512-NV6NQ9xDPS2b34gtjkzh2Ini/ShLvADyec7s5zTivGsue/yFAmU0gFSKJqupmIiBQ7EJsbOj8WPPcrhy6izvSg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "7.16.0"
     "@typescript-eslint/parser" "7.16.0"
     eslint "8.57.0"
     eslint-plugin-astro "1.2.3"
     eslint-plugin-functional "6.6.1"
-    eslint-plugin-jsdoc "48.5.2"
+    eslint-plugin-jsdoc "48.6.0"
     eslint-plugin-jsx-a11y "6.9.0"
     eslint-plugin-lit-a11y "4.1.3"
     eslint-plugin-prettier "5.1.3"
@@ -1414,11 +1413,6 @@
   version "7.7.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-7.7.1.tgz#f903a651fb004c75add08e4e9e207f169d4b98d7"
   integrity sha512-AmPmnGW1ZLTpWa+/2omPrPfR7BcbUU4oha5VIbSbS1a1Tv966bklvLNXxp3mrbc+P2j4MNOTfDffNsk4o0c6/w==
-
-"@typescript-eslint/types@^7.2.0":
-  version "7.8.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-7.8.0.tgz#1fd2577b3ad883b769546e2d1ef379f929a7091d"
-  integrity sha512-wf0peJ+ZGlcH+2ZS23aJbOv+ztjeeP8uQ9GgwMJGVLx/Nj9CJt17GWgWWoSmoRVKAX2X+7fzEnAjxdvK2gqCLw==
 
 "@typescript-eslint/typescript-estree@7.16.0":
   version "7.16.0"
@@ -3159,18 +3153,18 @@ eslint-plugin-functional@6.6.1:
     semver "^7.6.0"
     ts-api-utils "^1.3.0"
 
-eslint-plugin-jsdoc@48.5.2:
-  version "48.5.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-48.5.2.tgz#c355846dc6a41095fa10855cbc64bed8d2d3f79d"
-  integrity sha512-VXBJFviQz30rynlOEQ+dNWLmeopjoAgutUVrWOZwm6Ki4EVDm4XkyIqAV/Zhf7FcDr0AG0aGmRn5FxxCtAF0tA==
+eslint-plugin-jsdoc@48.6.0:
+  version "48.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-48.6.0.tgz#e8fade0fe783fd9c8d2f30a462ba2c1e506091aa"
+  integrity sha512-UsOdFYWeyYaiGW1OzJaKvRpb88JPF0HGpDkmMDvhfWbTGu3B4TYKhGH3cPGiRjMDxKPA3fJ/+tL823argNxOkA==
   dependencies:
-    "@es-joy/jsdoccomment" "~0.43.1"
+    "@es-joy/jsdoccomment" "~0.45.0"
     are-docs-informative "^0.0.2"
     comment-parser "1.4.1"
     debug "^4.3.5"
     escape-string-regexp "^4.0.0"
-    esquery "^1.5.0"
-    parse-imports "^2.1.0"
+    esquery "^1.6.0"
+    parse-imports "^2.1.1"
     semver "^7.6.2"
     spdx-expression-parse "^4.0.0"
     synckit "^0.9.0"
@@ -3328,6 +3322,13 @@ esquery@^1.4.2, esquery@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/esquery/-/esquery-1.5.0.tgz#6ce17738de8577694edd7361c57182ac8cb0db0b"
   integrity sha512-YQLXUplAwJgCydQ78IMJywZCceoqk1oH01OERdSAJc/7U2AylwjhSCLDEtqwg811idIS/9fIU5GjG73IgjKMVg==
+  dependencies:
+    estraverse "^5.1.0"
+
+esquery@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/esquery/-/esquery-1.6.0.tgz#91419234f804d852a82dceec3e16cdc22cf9dae7"
+  integrity sha512-ca9pw9fomFcKPvFLXhBKUK90ZvGibiGOvRJNbjljY7s7uq/5YO4BOzcYtJqExdx99rF6aAcnRxHmcUHcz6sQsg==
   dependencies:
     estraverse "^5.1.0"
 
@@ -6083,10 +6084,10 @@ parse-conflict-json@^3.0.0, parse-conflict-json@^3.0.1:
     just-diff "^6.0.0"
     just-diff-apply "^5.2.0"
 
-parse-imports@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/parse-imports/-/parse-imports-2.1.0.tgz#22a152f4503da34e8fb89c902383895f59e93d2d"
-  integrity sha512-JQWgmK2o4w8leUkZeZPatWdAny6vXGU/3siIUvMF6J2rDCud9aTt8h/px9oZJ6U3EcfhngBJ635uPFI0q0VAeA==
+parse-imports@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/parse-imports/-/parse-imports-2.1.1.tgz#ce52141df24990065d72a446a364bffd595577f4"
+  integrity sha512-TDT4HqzUiTMO1wJRwg/t/hYk8Wdp3iF/ToMIlAoVQfL1Xs/sTxq1dKWSMjMbQmIarfWKymOyly40+zmPHXMqCA==
   dependencies:
     es-module-lexer "^1.5.3"
     slashes "^3.0.12"
