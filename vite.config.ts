@@ -1,4 +1,5 @@
-import { defineConfig } from 'vitest/config'
+import { supportedLanguages } from './lib/i18n/supportedLanguages'
+import { defineConfig, coverageConfigDefaults } from 'vitest/config'
 import { resolve } from 'path'
 import { name } from './package.json'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
@@ -12,7 +13,16 @@ export default defineConfig({
     clearMocks: true,
     setupFiles: [],
     coverage: {
-      exclude: ['config/**', '__tests__/**'],
+      provider: 'v8',
+      exclude: [
+        'config/**',
+        '__tests__/**',
+        'release.config.cjs',
+        'lib/i18n/i18n.ts',
+        'lib/i18n/index.ts',
+        'lib/i18n/supportedLanguages.ts',
+        ...coverageConfigDefaults.exclude,
+      ],
     },
   },
   plugins: [
