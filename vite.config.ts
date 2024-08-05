@@ -1,4 +1,3 @@
-import { supportedLanguages } from './lib/i18n/supportedLanguages'
 import { defineConfig, coverageConfigDefaults } from 'vitest/config'
 import { resolve } from 'path'
 import { name } from './package.json'
@@ -41,6 +40,7 @@ export default defineConfig({
         dir: 'dist',
       },
       plugins: [
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-call
         peerDepsExternal(),
         typescript({
           tsconfig: resolve(__dirname, 'tsconfig.json'),
