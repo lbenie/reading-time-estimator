@@ -67,7 +67,7 @@
     "rollup": "^4.20.0",
     "rollup-plugin-peer-deps-external": "2.2.4",
     "rollup-plugin-typescript2": "0.36.0",
-    "semantic-release": "24.0.0",
+    "semantic-release": "24.1.0",
     "typescript": "5.5.4",
     "unplugin-auto-import": "^0.18.2",
     "vite": "5.4.1",
