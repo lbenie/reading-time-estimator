@@ -59,7 +59,7 @@
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "10.1.6",
     "@semantic-release/release-notes-generator": "14.0.1",
-    "@types/node": "22.4.0",
+    "@types/node": "22.4.1",
     "@vitest/coverage-v8": "^2.0.5",
     "all-contributors-cli": "6.26.1",
     "concurrently": "8.2.2",
