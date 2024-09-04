@@ -70,7 +70,7 @@
     "semantic-release": "24.1.0",
     "typescript": "5.5.4",
     "unplugin-auto-import": "^0.18.2",
-    "vite": "5.4.2",
+    "vite": "5.4.3",
     "vitest": "^2.0.5"
   },
   "dependencies": {},
