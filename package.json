@@ -57,7 +57,7 @@
     "@rollup/plugin-typescript": "12.1.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "10.3.5",
+    "@semantic-release/github": "11.0.0",
     "@semantic-release/release-notes-generator": "14.0.1",
     "@types/node": "22.6.1",
     "@vitest/coverage-v8": "^2.0.5",
