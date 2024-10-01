@@ -399,20 +399,20 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lbenie/linting@1.8.25":
-  version "1.8.25"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.25.tgz#bc62c3f4e93c5390a1b6b8163ed1bfbb63a507a1"
-  integrity sha512-YEwKVrpqzFo46inzDtKYwBzX2Xx4a76C6LTWrKRza+3pUYfT1HRy9faw7hCmLz1qVU31nnhUpOdFzThfF7FR2A==
+"@lbenie/linting@1.8.27":
+  version "1.8.27"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.27.tgz#ca4842169ccec75dedde2e27072fcd607d7c446a"
+  integrity sha512-g80Q9drgZolitlaF6njawH3MD2ppwx0jaDbeG4WiFgwycTvIG85Awm+BiuaPJE+LzORoM+Witi+YQyWAJsZEGA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "8.8.0"
     "@typescript-eslint/parser" "8.8.0"
     eslint "9.11.1"
     eslint-plugin-astro "1.2.4"
     eslint-plugin-functional "7.0.2"
-    eslint-plugin-jsdoc "50.3.0"
+    eslint-plugin-jsdoc "50.3.1"
     eslint-plugin-lit-a11y "4.1.4"
     eslint-plugin-prettier "5.2.1"
-    globals "15.9.0"
+    globals "15.10.0"
     postcss "8.4.47"
     postcss-scss "4.0.9"
     postcss-styl "0.12.3"
@@ -2510,10 +2510,10 @@ eslint-plugin-functional@7.0.2:
     ts-api-utils "^1.3.0"
     ts-declaration-location "^1.0.4"
 
-eslint-plugin-jsdoc@50.3.0:
-  version "50.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-50.3.0.tgz#2a4d1ac7f45b2b62de42389ba8006fd00b7f08dd"
-  integrity sha512-P7qDB/RckdKETpBM4CtjHRQ5qXByPmFhRi86sN3E+J+tySchq+RSOGGhI2hDIefmmKFuTi/1ACjqsnDJDDDfzg==
+eslint-plugin-jsdoc@50.3.1:
+  version "50.3.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-50.3.1.tgz#4b56340a3ef55df9957dede430c6338c717dc0dc"
+  integrity sha512-SY9oUuTMr6aWoJggUS40LtMjsRzJPB5ZT7F432xZIHK3EfHF+8i48GbUBpwanrtlL9l1gILNTHK9o8gEhYLcKA==
   dependencies:
     "@es-joy/jsdoccomment" "~0.48.0"
     are-docs-informative "^0.0.2"
@@ -3169,10 +3169,10 @@ global-prefix@^3.0.0:
     kind-of "^6.0.2"
     which "^1.3.1"
 
-globals@15.9.0:
-  version "15.9.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-15.9.0.tgz#e9de01771091ffbc37db5714dab484f9f69ff399"
-  integrity sha512-SmSKyLLKFbSr6rptvP8izbyxJL4ILwqO9Jg23UA0sDlGlu58V59D1//I3vlc0KJphVdUR7vMjHIplYnzBxorQA==
+globals@15.10.0:
+  version "15.10.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-15.10.0.tgz#a7eab3886802da248ad8b6a9ccca6573ff899c9b"
+  integrity sha512-tqFIbz83w4Y5TCbtgjZjApohbuh7K9BxGYFm7ifwDR240tvdb7P9x+/9VvUKlmkPoiknoJtanI8UOrqxS3a7lQ==
 
 globals@^14.0.0:
   version "14.0.0"
