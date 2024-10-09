@@ -417,10 +417,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lbenie/linting@1.8.28":
-  version "1.8.28"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.28.tgz#2ca3c06b9c27960fee9aa082fbc346ef32be96c7"
-  integrity sha512-ABVKcd9f2C2S7MHl11DRnZduRHiR21tJHWDYmfA/fgtTFTy8QDQ9CkhgY3xPXmUTTRg/W8Qh9T5uoA6LHY0YDQ==
+"@lbenie/linting@1.8.29":
+  version "1.8.29"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.29.tgz#2143dd2ce07cee9f88387ec89bf2a806d9f23d94"
+  integrity sha512-jvMyeWQmZzHrfWNNY5bq7tsd/9Ff8RrvDi4G2BPCymlEpa7KSCbXEdmzb0SZoirR4kgqFw2s5/4IY9OLJ2Cu8Q==
   dependencies:
     "@typescript-eslint/eslint-plugin" "8.8.1"
     "@typescript-eslint/parser" "8.8.1"
@@ -430,7 +430,7 @@
     eslint-plugin-jsdoc "50.3.1"
     eslint-plugin-lit-a11y "4.1.4"
     eslint-plugin-prettier "5.2.1"
-    globals "15.10.0"
+    globals "15.11.0"
     postcss "8.4.47"
     postcss-scss "4.0.9"
     postcss-styl "0.12.3"
@@ -3194,10 +3194,10 @@ global-prefix@^3.0.0:
     kind-of "^6.0.2"
     which "^1.3.1"
 
-globals@15.10.0:
-  version "15.10.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-15.10.0.tgz#a7eab3886802da248ad8b6a9ccca6573ff899c9b"
-  integrity sha512-tqFIbz83w4Y5TCbtgjZjApohbuh7K9BxGYFm7ifwDR240tvdb7P9x+/9VvUKlmkPoiknoJtanI8UOrqxS3a7lQ==
+globals@15.11.0:
+  version "15.11.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-15.11.0.tgz#b96ed4c6998540c6fb824b24b5499216d2438d6e"
+  integrity sha512-yeyNSjdbyVaWurlwCpcA6XNBrHTMIeDdj0/hnvX/OLJ9ekOXYbLsLinH/MucQyGvNnXhidTdNhTtJaffL2sMfw==
 
 globals@^14.0.0:
   version "14.0.0"
