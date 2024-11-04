@@ -62,7 +62,7 @@
     "@types/node": "22.8.7",
     "@vitest/coverage-v8": "^2.0.5",
     "all-contributors-cli": "6.26.1",
-    "concurrently": "9.0.1",
+    "concurrently": "9.1.0",
     "conventional-changelog-conventionalcommits": "8.0.0",
     "rollup": "^4.20.0",
     "rollup-plugin-peer-deps-external": "2.2.4",
