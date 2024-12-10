@@ -10,7 +10,7 @@
 [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/reading-time-estimator.svg)](https://www.npmjs.com/package/reading-time-estimator)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
@@ -110,6 +110,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="http://contrails.space"><img src="https://avatars.githubusercontent.com/u/41533924?v=4?s=100" width="100px;" alt="凝结尾迹"/><br /><sub><b>凝结尾迹</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=zS1m" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://www.steempro.com"><img src="https://avatars.githubusercontent.com/u/53206866?v=4?s=100" width="100px;" alt="Muhammad Faisal Amin"/><br /><sub><b>Muhammad Faisal Amin</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=faisalamin9696" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Grolicek"><img src="https://avatars.githubusercontent.com/u/58747066?v=4?s=100" width="100px;" alt="Oliver Groma"/><br /><sub><b>Oliver Groma</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=Grolicek" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.stefanobartoletti.it"><img src="https://avatars.githubusercontent.com/u/36746429?v=4?s=100" width="100px;" alt="Stefano Bartoletti"/><br /><sub><b>Stefano Bartoletti</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=stefanobartoletti" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
