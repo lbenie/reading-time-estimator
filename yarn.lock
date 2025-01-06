@@ -542,16 +542,16 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lbenie/linting@1.8.66":
-  version "1.8.66"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.66.tgz#4f51b91462d8295f1bd29bbadabf438706ab808c"
-  integrity sha512-0aw2ZNhCpjimAytp8n2dDcqptFp5DJ7qtYyD1FEHflLiTb+vV/KTnrvnSPx38yrH9Tt0/dcEesVpkOKjRrlMLQ==
+"@lbenie/linting@1.8.67":
+  version "1.8.67"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.67.tgz#998695904c64e5d0b9222e097fa3a986c37ae890"
+  integrity sha512-9zdCDGVRL+LDcdrrDGdi2r1oxA2tVKWA4ju0FfWgmMB8nvRRQUfJ7XrIru7So+Nu+EK3iGS+vl74JhLStDA3ug==
   dependencies:
     "@typescript-eslint/eslint-plugin" "8.19.0"
     "@typescript-eslint/parser" "8.19.0"
     eslint "9.17.0"
     eslint-plugin-astro "1.3.1"
-    eslint-plugin-functional "7.2.0"
+    eslint-plugin-functional "7.2.1"
     eslint-plugin-jsdoc "50.6.1"
     eslint-plugin-lit-a11y "4.1.4"
     eslint-plugin-prettier "5.2.1"
@@ -2772,16 +2772,16 @@ eslint-plugin-astro@1.3.1:
     postcss "^8.4.14"
     postcss-selector-parser "^7.0.0"
 
-eslint-plugin-functional@7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-functional/-/eslint-plugin-functional-7.2.0.tgz#c534de4a8a46d0aa758909f53a79f6b353edbec4"
-  integrity sha512-4tP92re2id4bgz/zSTqUqSxvi5XEvLjohwPHOS6ChmBM8bsEfQPT0CCd4aMjS+O53mmxvjirbOa5Zlt9v4Z/MQ==
+eslint-plugin-functional@7.2.1:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-functional/-/eslint-plugin-functional-7.2.1.tgz#65e74fc98c185c0b82e5df5f3b185755d6c0e82d"
+  integrity sha512-cHhUmrOSde6pGuUJ6guuuJQKudbEMpk6DtgHLjStwjbI/NnzWp2jIizaLF1U1zVDJBjJHfJ1HeqYiDyiCF34CQ==
   dependencies:
     "@typescript-eslint/utils" "^8.10.0"
     deepmerge-ts "^7.1.3"
     escape-string-regexp "^5.0.0"
     is-immutable-type "^5.0.0"
-    ts-api-utils "^1.3.0"
+    ts-api-utils "^2.0.0"
     ts-declaration-location "^1.0.4"
 
 eslint-plugin-jsdoc@50.6.1:
@@ -6769,6 +6769,11 @@ ts-api-utils@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/ts-api-utils/-/ts-api-utils-1.3.0.tgz#4b490e27129f1e8e686b45cc4ab63714dc60eea1"
   integrity sha512-UQMIo7pb8WRomKR1/+MFVLTroIvDVtMX3K6OUir8ynLyzB8Jeriont2bTAtmNPa1ekAgN7YPDyf6V+ygrdU+eQ==
+
+ts-api-utils@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ts-api-utils/-/ts-api-utils-2.0.0.tgz#b9d7d5f7ec9f736f4d0f09758b8607979044a900"
+  integrity sha512-xCt/TOAc+EOHS1XPnijD3/yzpH6qg2xppZO1YDqGoVsNXfQfzHpOdNuXwrwOU8u4ITXJyDCTyt8w5g1sZv9ynQ==
 
 ts-declaration-location@^1.0.4:
   version "1.0.4"
