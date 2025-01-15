@@ -552,10 +552,10 @@
   dependencies:
     buffer "^6.0.3"
 
-"@lbenie/linting@1.8.76":
-  version "1.8.76"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.76.tgz#868dcb07a09936dcad091f5efdf4a660c4939039"
-  integrity sha512-rDuk3RDOmUkrm1jup8KlFIumy3+Z2uzDkyXKf9WYQyRcVJ+pIHBqiT9UbLTNVJlECBflZ7Q//WeVKTNGwA8GQQ==
+"@lbenie/linting@1.8.77":
+  version "1.8.77"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.77.tgz#dd82ac1f46f92365f512716227294684024e1c20"
+  integrity sha512-/LkrWr40Wgi/MGAtsclLB901oT9eCNcF297rfiZ/8bXD/EfwbmIUb4LHCqHu0FPArZ71tNTVBRvnB79wkE2N/w==
   dependencies:
     "@typescript-eslint/eslint-plugin" "8.20.0"
     "@typescript-eslint/parser" "8.20.0"
@@ -564,7 +564,7 @@
     eslint-plugin-functional "7.3.0"
     eslint-plugin-jsdoc "50.6.1"
     eslint-plugin-lit-a11y "4.1.4"
-    eslint-plugin-prettier "5.2.1"
+    eslint-plugin-prettier "5.2.2"
     globals "15.14.0"
     postcss "8.5.1"
     postcss-scss "4.0.9"
@@ -2809,10 +2809,10 @@ eslint-plugin-lit@^1.10.1:
     parse5-htmlparser2-tree-adapter "^6.0.1"
     requireindex "^1.2.0"
 
-eslint-plugin-prettier@5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-5.2.1.tgz#d1c8f972d8f60e414c25465c163d16f209411f95"
-  integrity sha512-gH3iR3g4JfF+yYPaJYkN7jEl9QbweL/YfkoRlNnuIEHEz1vHVlCmWOS+eGGiRuzHQXdJFCOTxRgvju9b8VUmrw==
+eslint-plugin-prettier@5.2.2:
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-5.2.2.tgz#d1f068f65dc8490f102eda21d1f4cd150c205211"
+  integrity sha512-1yI3/hf35wmlq66C8yOyrujQnel+v5l1Vop5Cl2I6ylyNTT1JbuUUnV3/41PzwTzcyDp/oF0jWE3HXvcH5AQOQ==
   dependencies:
     prettier-linter-helpers "^1.0.0"
     synckit "^0.9.1"
