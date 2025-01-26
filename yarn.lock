@@ -552,17 +552,17 @@
   dependencies:
     buffer "^6.0.3"
 
-"@lbenie/linting@1.8.81":
-  version "1.8.81"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.81.tgz#0e4f346ea5880a1cfab044349e5ebf4fb8ff1f71"
-  integrity sha512-lQun3iqQXTeJI8bgxen/vaiwzoq1v4p1Uma3AWpF0xGAFH0DPVKJRelv2kGGRlOz5XKP+C5sFWjiX6q/3eI/EA==
+"@lbenie/linting@1.8.83":
+  version "1.8.83"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.83.tgz#83efdba27665dc7e4917014dd03d84bd2379a44f"
+  integrity sha512-tSd5NTzpk79IOi4OiHmpHY82rRwy7fTH5P217EkQQOicEDT6DOQoYQEWzUu2QAZe0upebhK+pQLE9TzGqzLfuA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "8.21.0"
     "@typescript-eslint/parser" "8.21.0"
     eslint "9.19.0"
     eslint-plugin-astro "1.3.1"
     eslint-plugin-functional "7.3.0"
-    eslint-plugin-jsdoc "50.6.2"
+    eslint-plugin-jsdoc "50.6.3"
     eslint-plugin-lit-a11y "4.1.4"
     eslint-plugin-prettier "5.2.3"
     globals "15.14.0"
@@ -570,7 +570,7 @@
     postcss-scss "4.0.9"
     postcss-styl "0.12.3"
     prettier "3.4.2"
-    stylelint "16.13.2"
+    stylelint "16.14.0"
     stylelint-order "6.0.4"
     stylelint-stylus "1.0.0"
 
@@ -2811,10 +2811,10 @@ eslint-plugin-functional@7.3.0:
     ts-api-utils "^2.0.0"
     ts-declaration-location "^1.0.5"
 
-eslint-plugin-jsdoc@50.6.2:
-  version "50.6.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-50.6.2.tgz#9c95646d8d85a1b5ed87206695c8f10f2ee35537"
-  integrity sha512-n7GNZ4czMAAbDg7DsDA7PvHo1IPIUwAXYmxTx6j/hTlXbt5V0x5q/kGkiJ7s4wA9SpB/yaiK8jF7CO237lOLew==
+eslint-plugin-jsdoc@50.6.3:
+  version "50.6.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-50.6.3.tgz#668dc4d32e823c84ede7310cffbf70c9d370d291"
+  integrity sha512-NxbJyt1M5zffPcYZ8Nb53/8nnbIScmiLAMdoe0/FAszwb7lcSiX3iYBTsuF7RV84dZZJC8r3NghomrUXsmWvxQ==
   dependencies:
     "@es-joy/jsdoccomment" "~0.49.0"
     are-docs-informative "^0.0.2"
@@ -3751,7 +3751,7 @@ ignore@^5.3.1:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.3.1.tgz#5073e554cd42c5b33b394375f538b8593e34d4ef"
   integrity sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==
 
-ignore@^7.0.1:
+ignore@^7.0.3:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-7.0.3.tgz#397ef9315dfe0595671eefe8b633fec6943ab733"
   integrity sha512-bAH5jbK/F3T3Jls4I0SO1hmPR0dKU0a7+SY6n1yzRtG54FLO8d6w/nxLFX2Nb7dBu6cCWXPaAME6cYqFUMmuCA==
@@ -5652,7 +5652,7 @@ postcss-value-parser@^4.2.0:
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz#723c09920836ba6d3e5af019f92bc0971c02e514"
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
-postcss@8.5.1:
+postcss@8.5.1, postcss@^8.5.1:
   version "8.5.1"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.5.1.tgz#e2272a1f8a807fafa413218245630b5db10a3214"
   integrity sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==
@@ -6531,10 +6531,10 @@ stylelint-stylus@1.0.0:
     stylelint-config-html "^1.0.0"
     svg-tags "^1.0.0"
 
-stylelint@16.13.2:
-  version "16.13.2"
-  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-16.13.2.tgz#a0e8aab7cedde55f185ac8af6f526e53df783294"
-  integrity sha512-wDlgh0mRO9RtSa3TdidqHd0nOG8MmUyVKl+dxA6C1j8aZRzpNeEgdhFmU5y4sZx4Fc6r46p0fI7p1vR5O2DZqA==
+stylelint@16.14.0:
+  version "16.14.0"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-16.14.0.tgz#eb0dd492c8dd545c7093f6cce8249752e09a0059"
+  integrity sha512-orePw2dKxzXC0hd1VmxrDBqgf1KUV9DYsZY4guKLE9XcQD7m0BxVnWMaoQqMNsQIG14MyyTHf6zoajvOnDra8g==
   dependencies:
     "@csstools/css-parser-algorithms" "^3.0.4"
     "@csstools/css-tokenizer" "^3.0.3"
@@ -6554,7 +6554,7 @@ stylelint@16.13.2:
     globby "^11.1.0"
     globjoin "^0.1.4"
     html-tags "^3.3.1"
-    ignore "^7.0.1"
+    ignore "^7.0.3"
     imurmurhash "^0.1.4"
     is-plain-object "^5.0.0"
     known-css-properties "^0.35.0"
@@ -6563,7 +6563,7 @@ stylelint@16.13.2:
     micromatch "^4.0.8"
     normalize-path "^3.0.0"
     picocolors "^1.1.1"
-    postcss "^8.4.49"
+    postcss "^8.5.1"
     postcss-resolve-nested-selector "^0.1.6"
     postcss-safe-parser "^7.0.1"
     postcss-selector-parser "^7.0.0"
