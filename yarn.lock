@@ -547,10 +547,10 @@
   dependencies:
     buffer "^6.0.3"
 
-"@lbenie/linting@1.8.96":
-  version "1.8.96"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.96.tgz#33c540e625f924c336543f1368a5bb9b3134cde2"
-  integrity sha512-UG55E5yQ7zhBa8GhZ4ZXdGVnr9K47+IAaboJZ6pqRakWkPXb/lb2JLxtYyZCapG+OfX8m+o7DFIgGi+BjSK4UA==
+"@lbenie/linting@1.8.97":
+  version "1.8.97"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.97.tgz#2bb697fc8f762ec1b539d646d1e8f4ece90f06f5"
+  integrity sha512-E2uJG6AT/DVhnng+LNCnpct2xgxy96QnaIUI8s+qdCGGLtitKaaOuOAHSA1olzXegM1+9hoFIbjAqxGwcnFXIw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "8.24.1"
     "@typescript-eslint/parser" "8.24.1"
@@ -564,7 +564,7 @@
     postcss "8.5.3"
     postcss-scss "4.0.9"
     postcss-styl "0.12.3"
-    prettier "3.5.1"
+    prettier "3.5.2"
     stylelint "16.14.1"
     stylelint-order "6.0.4"
     stylelint-stylus "1.0.0"
@@ -5693,10 +5693,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@3.5.1:
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.5.1.tgz#22fac9d0b18c0b92055ac8fb619ac1c7bef02fb7"
-  integrity sha512-hPpFQvHwL3Qv5AdRvBFMhnKo4tYxp0ReXiPn2bxkiohEX6mBeBwEpBSQTkD458RaaDKQMYSp4hX4UtfUTA5wDw==
+prettier@3.5.2:
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.5.2.tgz#d066c6053200da0234bf8fa1ef45168abed8b914"
+  integrity sha512-lc6npv5PH7hVqozBR7lkBNOGXV9vMwROAPlumdBkX0wTbbzPu/U1hk5yL8p2pt4Xoc+2mkT8t/sow2YrV/M5qg==
 
 prettier@^2:
   version "2.8.8"
