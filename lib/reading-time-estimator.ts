@@ -1,5 +1,6 @@
 import { translations } from './i18n'
 import type { SupportedLanguages } from './i18n'
+import sanitizeHtml from 'sanitize-html'
 
 /**
  * Reading time estimator result shape
@@ -20,13 +21,22 @@ type ReadingTime = {
 }
 
 /**
+ * Strips HTML tags from the input text
+ * @param {string} data - The text to be stripped of HTML tags
+ * @returns {string} The text without HTML tags
+ */
+const stripHtmlTags = (data: string) =>
+  sanitizeHtml(data, { allowedTags: [], allowedAttributes: {} })
+
+/**
  * Parses the text and returns an array of words
  * @param {string} data - The text to be analyzed
  * @returns {ReadonlyArray<string>} Parsed chinese, japanese and accented text
  */
 const parseWords = (data: string) => {
+  const strippedHTML = stripHtmlTags(data)
   const words =
-    data.match(
+    strippedHTML.match(
       /[\w|\d|\s|,|.|\u00C0-\u024F|\u4E00-\u9FA5|\u3041-\u309F]+/giu,
     ) ?? []
   return words.flatMap((word) => word.match(/[\u4E00-\u9FA5]/gu) ?? word)

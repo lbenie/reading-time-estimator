@@ -13,7 +13,8 @@
     "emitDecoratorMetadata": true,
     "declaration": true,
     "strictNullChecks": true,
-    "declarationDir": "dist/types"
+    "declarationDir": "dist/types",
+    "allowSyntheticDefaultImports": true,
   },
   "include": ["lib/**/*.ts"],
   "exclude": ["node_modules", "*.spec.ts"]

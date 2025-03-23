@@ -29,7 +29,6 @@ const slovakText = `Reading Time Estimator bol vytvorený s cieľom poskytnúť 
 
 const czechText = `Reading Time Estimator byl vytvořen s cílem poskytnout odhad, jak dlouhou dobu je zapotřebí k přečtení článku nebo blogu tak, jak je to implementováno na stránce medium.`
 
-
 interface TestSetup {
   readonly language: SupportedLanguages | undefined
   readonly words: string | undefined
@@ -193,4 +192,16 @@ describe('readingTime', () => {
       expect(result).toStrictEqual(expectedResult)
     },
   )
+
+  it('strips out HTML tags', () => {
+    const text = `<p>Reading Time Estimator</p>`
+
+    const result = readingTime(text, 10, 'en')
+
+    expect(result).toStrictEqual({
+      minutes: 0,
+      words: 3,
+      text: 'less than a minute read',
+    })
+  })
 })
