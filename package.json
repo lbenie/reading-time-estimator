@@ -60,6 +60,7 @@
     "@semantic-release/github": "11.0.1",
     "@semantic-release/release-notes-generator": "14.0.3",
     "@types/node": "22.13.11",
+    "@types/sanitize-html": "^2.13.0",
     "@vitest/coverage-v8": "^2.0.5",
     "all-contributors-cli": "6.26.1",
     "concurrently": "9.1.2",
@@ -73,6 +74,8 @@
     "vite": "6.2.2",
     "vitest": "^2.0.5"
   },
-  "dependencies": {},
+  "dependencies": {
+    "sanitize-html": "^2.15.0"
+  },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
