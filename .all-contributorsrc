@@ -101,6 +101,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "stefanobartoletti",
+      "name": "Stefano Bartoletti",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36746429?v=4",
+      "profile": "https://www.stefanobartoletti.it",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
