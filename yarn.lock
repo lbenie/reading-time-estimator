@@ -552,10 +552,10 @@
   dependencies:
     buffer "^6.0.3"
 
-"@lbenie/linting@1.8.114":
-  version "1.8.114"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.114.tgz#155e8f1aacc21169cede958a1684bd51ccf63bfd"
-  integrity sha512-XANUbJbnJDaC8JnUOEQbmXfoVpGNme9ps4+Nq4VXR2CvLlJocyqvlbTwvVTd1LGGStmhRyDG3HyaVxISsR2MBA==
+"@lbenie/linting@1.8.115":
+  version "1.8.115"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.115.tgz#8916ef5ff36cccf82e3596877c92f154e22abce2"
+  integrity sha512-6pEVi026MuN0B/KSlJ6EYr5feehbJtW8GSlmBNeW+6HbFwcKbIU7TgKdaGoKUCGNIqMZM8+b6msBKknacFGxEw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "8.29.0"
     "@typescript-eslint/parser" "8.29.0"
@@ -564,7 +564,7 @@
     eslint-plugin-functional "7.3.0"
     eslint-plugin-jsdoc "50.6.9"
     eslint-plugin-lit-a11y "4.1.4"
-    eslint-plugin-prettier "5.2.5"
+    eslint-plugin-prettier "5.2.6"
     globals "15.15.0"
     postcss "8.5.3"
     postcss-scss "4.0.9"
@@ -2873,13 +2873,13 @@ eslint-plugin-lit@^1.10.1:
     parse5-htmlparser2-tree-adapter "^6.0.1"
     requireindex "^1.2.0"
 
-eslint-plugin-prettier@5.2.5:
-  version "5.2.5"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-5.2.5.tgz#0ff00b16f4c80ccdafd6a24a263effba1700087e"
-  integrity sha512-IKKP8R87pJyMl7WWamLgPkloB16dagPIdd2FjBDbyRYPKo93wS/NbCOPh6gH+ieNLC+XZrhJt/kWj0PS/DFdmg==
+eslint-plugin-prettier@5.2.6:
+  version "5.2.6"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-5.2.6.tgz#be39e3bb23bb3eeb7e7df0927cdb46e4d7945096"
+  integrity sha512-mUcf7QG2Tjk7H055Jk0lGBjbgDnfrvqjhXh9t2xLMSCjZVcw9Rb1V6sVNXO0th3jgeO7zllWPTNRil3JW94TnQ==
   dependencies:
     prettier-linter-helpers "^1.0.0"
-    synckit "^0.10.2"
+    synckit "^0.11.0"
 
 eslint-rule-extender@0.0.1:
   version "0.0.1"
@@ -6707,10 +6707,10 @@ svg-tags@^1.0.0:
   resolved "https://registry.yarnpkg.com/svg-tags/-/svg-tags-1.0.0.tgz#58f71cee3bd519b59d4b2a843b6c7de64ac04764"
   integrity sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==
 
-synckit@^0.10.2:
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/synckit/-/synckit-0.10.3.tgz#940aea2c7b6d141a4f74dbdebc81e0958c331a4b"
-  integrity sha512-R1urvuyiTaWfeCggqEvpDJwAlDVdsT9NM+IP//Tk2x7qHCkSvBk/fwFgw/TLAHzZlrAnnazMcRw0ZD8HlYFTEQ==
+synckit@^0.11.0:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/synckit/-/synckit-0.11.1.tgz#8ea44544e9d9c0540963c6bddb8f14616fef5425"
+  integrity sha512-fWZqNBZNNFp/7mTUy1fSsydhKsAKJ+u90Nk7kOK5Gcq9vObaqLBLjWFDBkyVU9Vvc6Y71VbOevMuGhqv02bT+Q==
   dependencies:
     "@pkgr/core" "^0.2.0"
     tslib "^2.8.1"
