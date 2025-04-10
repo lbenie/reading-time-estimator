@@ -29,6 +29,14 @@ const slovakText = `Reading Time Estimator bol vytvorený s cieľom poskytnúť 
 
 const czechText = `Reading Time Estimator byl vytvořen s cílem poskytnout odhad, jak dlouhou dobu je zapotřebí k přečtení článku nebo blogu tak, jak je to implementováno na stránce medium.`
 
+const russianText = `Reading Time Estimator был создан, чтобы предоставить оценку времени, необходимого для прочтения статьи или блога, так, как это реализовано на сайте medium.`;
+
+const vietnameseText = `Reading Time Estimator được tạo ra nhằm cung cấp ước tính về thời gian cần thiết để đọc một bài viết hoặc blog, giống như cách nó được triển khai trên trang medium.`;
+
+const italianText = `Reading Time Estimator è stato creato per fornire una stima di quanto tempo sia necessario per leggere un articolo o un blog, così come viene implementato sul sito medium.`;
+
+const indonesianText = `Reading Time Estimator dibuat untuk memberikan perkiraan waktu yang dibutuhkan untuk membaca artikel atau blog, sebagaimana diimplementasikan di situs medium.`;
+
 interface TestSetup {
   readonly language: SupportedLanguages | undefined
   readonly words: string | undefined
@@ -182,6 +190,46 @@ describe('readingTime', () => {
         minutes: 3,
         words: 27,
         text: `3 ${translations['cs'].default}`,
+      },
+    },
+    {
+      language: 'ru',
+      words: russianText,
+      wordsPerMinute: 10,
+      expectedResult: {
+        minutes: 1,
+        words: 8,
+        text: `${translations['ru'].less}`,
+      },
+    },
+    {
+      language: 'vi',
+      words: vietnameseText,
+      wordsPerMinute: 10,
+      expectedResult: {
+        minutes: 5,
+        words: 48,
+        text: `5 ${translations['vi'].default}`,
+      },
+    },
+    {
+      language: 'it',
+      words: italianText,
+      wordsPerMinute: 10,
+      expectedResult: {
+        minutes: 3,
+        words: 29,
+        text: `3 ${translations['it'].default}`,
+      },
+    },
+    {
+      language: 'id',
+      words: indonesianText,
+      wordsPerMinute: 10,
+      expectedResult: {
+        minutes: 2,
+        words: 20,
+        text: `2 ${translations['id'].default}`,
       },
     },
   ])(
