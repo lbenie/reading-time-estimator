@@ -14,6 +14,7 @@ import { sk } from './sk'
 import { cs } from './cs'
 import { ru } from './ru'
 import { vi } from './vi'
+import { it } from './it'
 
 export const translations: Record<SupportedLanguages, I18n> = {
   en,
@@ -30,4 +31,5 @@ export const translations: Record<SupportedLanguages, I18n> = {
   cs,
   ru,
   vi,
+  it,
 }
