@@ -4,7 +4,9 @@ import type { SupportedLanguages } from '../lib/i18n'
 
 const englishText = `I never took the time to properly build my website even though I am a Frontend Developer. I started to look at some technologies in 2018 and 2019, I found some amazing projects (nuxt, vuepress, etc...) but I never did finish my website.`
 
-const chineseText = `中文 多来几个字`
+const simplifiedChineseText = `中文 多来几个字`
+
+const traditionalChineseText = `繁體中文，海上生明月，天涯共此時。`
 
 const frenchText = `Reading Time Estimator a été créé pour fournir une estimation de la durée de lecture d'un article ou d'un blog comme vu sur medium`
 
@@ -75,13 +77,23 @@ describe('readingTime', () => {
       expectedResult: { minutes: 0, words: 0, text: translations['en'].less },
     },
     {
-      language: 'cn',
-      words: chineseText,
+      language: 'zh-cn',
+      words: simplifiedChineseText,
       wordsPerMinute: 2,
       expectedResult: {
         minutes: 4,
         words: 7,
-        text: `4 ${translations['cn'].default}`,
+        text: `4 ${translations['zh-cn'].default}`,
+      },
+    },
+    {
+      language: 'zh-tw',
+      words: traditionalChineseText,
+      wordsPerMinute: 2,
+      expectedResult: {
+        minutes: 7,
+        words: 14,
+        text: `7 ${translations['zh-tw'].default}`,
       },
     },
     {
