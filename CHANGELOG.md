@@ -1,3 +1,43 @@
+## [1.13.0](https://github.com/lbenie/reading-time-estimator/compare/v1.12.0...v1.13.0) (2025-04-15)
+
+### :sparkles: Features
+
+* zh-tw support ([#1863](https://github.com/lbenie/reading-time-estimator/issues/1863)) ([cf73523](https://github.com/lbenie/reading-time-estimator/commit/cf73523634645ac4d0719d4227b3e7a4c2aa8978))
+
+### :memo: Documenation
+
+* add Qnurye as a contributor for code ([#1866](https://github.com/lbenie/reading-time-estimator/issues/1866)) ([9c0574d](https://github.com/lbenie/reading-time-estimator/commit/9c0574dfd0dd7c877d738a0ded9d79155b281f99))
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency @lbenie/linting to v1.8.109 ([#1836](https://github.com/lbenie/reading-time-estimator/issues/1836)) ([122bc00](https://github.com/lbenie/reading-time-estimator/commit/122bc009b865a9bc2df5d1a4cd29cfcd5cf79d08))
+* **deps:** update dependency @lbenie/linting to v1.8.110 ([#1839](https://github.com/lbenie/reading-time-estimator/issues/1839)) ([8e9cf35](https://github.com/lbenie/reading-time-estimator/commit/8e9cf35d709ee6739d77045f75fda489be5a5605))
+* **deps:** update dependency @lbenie/linting to v1.8.111 ([#1840](https://github.com/lbenie/reading-time-estimator/issues/1840)) ([db17e6b](https://github.com/lbenie/reading-time-estimator/commit/db17e6b5ba10cc15a74b7c306471ebc9bacc7a39))
+* **deps:** update dependency @lbenie/linting to v1.8.112 ([#1841](https://github.com/lbenie/reading-time-estimator/issues/1841)) ([4a1ecf5](https://github.com/lbenie/reading-time-estimator/commit/4a1ecf504a586632a18a7b9499bc870f0fd64f2a))
+* **deps:** update dependency @lbenie/linting to v1.8.113 ([#1843](https://github.com/lbenie/reading-time-estimator/issues/1843)) ([b2be7c6](https://github.com/lbenie/reading-time-estimator/commit/b2be7c62644649b4725e430b33ddee96f3b1329b))
+* **deps:** update dependency @lbenie/linting to v1.8.114 ([#1849](https://github.com/lbenie/reading-time-estimator/issues/1849)) ([9cab409](https://github.com/lbenie/reading-time-estimator/commit/9cab4096f9af5942e08b24f8af550073e1847c05))
+* **deps:** update dependency @lbenie/linting to v1.8.115 ([#1853](https://github.com/lbenie/reading-time-estimator/issues/1853)) ([086af3e](https://github.com/lbenie/reading-time-estimator/commit/086af3e7e48e56794918e9c32ddc04ff5a648341))
+* **deps:** update dependency @lbenie/linting to v1.8.116 ([#1854](https://github.com/lbenie/reading-time-estimator/issues/1854)) ([d420e77](https://github.com/lbenie/reading-time-estimator/commit/d420e77fef35c6b47f21b7a04c7d1639045f0247))
+* **deps:** update dependency @lbenie/linting to v1.8.117 ([#1855](https://github.com/lbenie/reading-time-estimator/issues/1855)) ([0d2ff7d](https://github.com/lbenie/reading-time-estimator/commit/0d2ff7dfc805c2560f9d93bd615b0d5c5a57872f))
+* **deps:** update dependency @lbenie/linting to v1.8.118 ([#1858](https://github.com/lbenie/reading-time-estimator/issues/1858)) ([2cc1990](https://github.com/lbenie/reading-time-estimator/commit/2cc199065120c81fee6a3c0ec17f443c8752e77e))
+* **deps:** update dependency @lbenie/linting to v1.8.119 ([#1859](https://github.com/lbenie/reading-time-estimator/issues/1859)) ([1358f05](https://github.com/lbenie/reading-time-estimator/commit/1358f05753b227bb37ba3ab697abadd31e2e4214))
+* **deps:** update dependency @lbenie/linting to v1.8.120 ([#1867](https://github.com/lbenie/reading-time-estimator/issues/1867)) ([cd03e28](https://github.com/lbenie/reading-time-estimator/commit/cd03e28135ecf44e2d434716e7b12f09bc7f20cc))
+* **deps:** update dependency @types/node to v22.13.13 ([#1837](https://github.com/lbenie/reading-time-estimator/issues/1837)) ([b96bd05](https://github.com/lbenie/reading-time-estimator/commit/b96bd05b56217aab7e220704f294e9e0cf846497))
+* **deps:** update dependency @types/node to v22.13.14 ([#1844](https://github.com/lbenie/reading-time-estimator/issues/1844)) ([3a2d35d](https://github.com/lbenie/reading-time-estimator/commit/3a2d35d41728192a7fc3bb5f98d17cf4ff4ec5ca))
+* **deps:** update dependency @types/node to v22.13.17 ([#1850](https://github.com/lbenie/reading-time-estimator/issues/1850)) ([9f70126](https://github.com/lbenie/reading-time-estimator/commit/9f701260b323fe19ca4aacddd99faf04b01dccb7))
+* **deps:** update dependency @types/node to v22.14.0 ([#1852](https://github.com/lbenie/reading-time-estimator/issues/1852)) ([c2e41fb](https://github.com/lbenie/reading-time-estimator/commit/c2e41fbbf37dfd6ae09cad05a41201c43e44b086))
+* **deps:** update dependency @types/node to v22.14.1 ([#1862](https://github.com/lbenie/reading-time-estimator/issues/1862)) ([055a522](https://github.com/lbenie/reading-time-estimator/commit/055a522634f8b33279e2dfe22d0e10f8830a8181))
+* **deps:** update dependency @types/sanitize-html to v2.15.0 ([#1845](https://github.com/lbenie/reading-time-estimator/issues/1845)) ([cf3b00d](https://github.com/lbenie/reading-time-estimator/commit/cf3b00d001535e1ef4d74621d2dd6bc782b9dbc4))
+* **deps:** update dependency rollup to v4.38.0 ([#1846](https://github.com/lbenie/reading-time-estimator/issues/1846)) ([904824e](https://github.com/lbenie/reading-time-estimator/commit/904824eb853743ad8c5b8a46889eadb0b55dabc2))
+* **deps:** update dependency rollup to v4.39.0 ([#1851](https://github.com/lbenie/reading-time-estimator/issues/1851)) ([2d09346](https://github.com/lbenie/reading-time-estimator/commit/2d0934629e20c4bf99b654122b7f23f098119345))
+* **deps:** update dependency rollup to v4.40.0 ([#1864](https://github.com/lbenie/reading-time-estimator/issues/1864)) ([1003cb2](https://github.com/lbenie/reading-time-estimator/commit/1003cb2792fb9b0c36627b68281a304705a89b64))
+* **deps:** update dependency typescript to v5.8.3 ([#1856](https://github.com/lbenie/reading-time-estimator/issues/1856)) ([147b758](https://github.com/lbenie/reading-time-estimator/commit/147b7586ff3ee512edef89345133563ba7f13d57))
+* **deps:** update dependency unplugin-auto-import to v19.1.2 ([#1842](https://github.com/lbenie/reading-time-estimator/issues/1842)) ([fbc925f](https://github.com/lbenie/reading-time-estimator/commit/fbc925f1d08f70d4a9910ebd320cd89076cafacd))
+* **deps:** update dependency vite to v6.2.3 ([#1838](https://github.com/lbenie/reading-time-estimator/issues/1838)) ([09e38b0](https://github.com/lbenie/reading-time-estimator/commit/09e38b0f84b17f72354093104225af54aa4d66c9))
+* **deps:** update dependency vite to v6.2.4 [security] ([#1848](https://github.com/lbenie/reading-time-estimator/issues/1848)) ([1a5e704](https://github.com/lbenie/reading-time-estimator/commit/1a5e70473c73ea5d0cfbf77bd07cbf8ad7be5fc6))
+* **deps:** update dependency vite to v6.2.5 ([#1847](https://github.com/lbenie/reading-time-estimator/issues/1847)) ([c7d443f](https://github.com/lbenie/reading-time-estimator/commit/c7d443f060a7f6141814a1f5c255e656ca7a0ce7))
+* **deps:** update dependency vite to v6.2.6 ([#1861](https://github.com/lbenie/reading-time-estimator/issues/1861)) ([beed0f7](https://github.com/lbenie/reading-time-estimator/commit/beed0f7e22c938523f392114f64064f7fd4a9cdf))
+
 ## [1.12.0](https://github.com/lbenie/reading-time-estimator/compare/v1.11.0...v1.12.0) (2025-03-23)
 
 ### :sparkles: Features
