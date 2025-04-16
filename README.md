@@ -10,7 +10,7 @@
 [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/reading-time-estimator.svg)](https://www.npmjs.com/package/reading-time-estimator)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
@@ -49,7 +49,7 @@ Per default the locale is set to english `en`.
 
 Per default the word per minute is set to `300`.
 
-At the moment it supports these locales: `en`, `fr`, `es`, `pt-br`, `cn`, `ja`, `de`, `tr`, `ro`, `bn`, `sk`, `ru`, `vi`, `it`, `id` and `cs`.
+At the moment it supports these locales: `en`, `fr`, `es`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `de`, `tr`, `ro`, `bn`, `sk` and `cs`.
 
 ### Usage
 
@@ -110,6 +110,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="http://contrails.space"><img src="https://avatars.githubusercontent.com/u/41533924?v=4?s=100" width="100px;" alt="凝结尾迹"/><br /><sub><b>凝结尾迹</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=zS1m" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://www.steempro.com"><img src="https://avatars.githubusercontent.com/u/53206866?v=4?s=100" width="100px;" alt="Muhammad Faisal Amin"/><br /><sub><b>Muhammad Faisal Amin</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=faisalamin9696" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Grolicek"><img src="https://avatars.githubusercontent.com/u/58747066?v=4?s=100" width="100px;" alt="Oliver Groma"/><br /><sub><b>Oliver Groma</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=Grolicek" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://qnury.es"><img src="https://avatars.githubusercontent.com/u/50016379?v=4?s=100" width="100px;" alt="Luo Wenjie"/><br /><sub><b>Luo Wenjie</b></sub></a><br /><a href="https://github.com/lbenie/reading-time-estimator/commits?author=Qnurye" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
