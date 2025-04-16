@@ -1,3 +1,17 @@
+## [1.14.0](https://github.com/lbenie/reading-time-estimator/compare/v1.13.0...v1.14.0) (2025-04-16)
+
+### :sparkles: Features
+
+* add russian, vietnamese, italian and indonesian languages ([#1860](https://github.com/lbenie/reading-time-estimator/issues/1860)) ([1a150df](https://github.com/lbenie/reading-time-estimator/commit/1a150dfa1c3304d088299cfcea23518a04e00b54))
+
+### :memo: Documenation
+
+* add FocussedFlyer3 as a contributor for code ([#1869](https://github.com/lbenie/reading-time-estimator/issues/1869)) ([9409914](https://github.com/lbenie/reading-time-estimator/commit/9409914ac159669a21b85a0e4ea044183a2f5332))
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency vite to v6.3.0 ([#1868](https://github.com/lbenie/reading-time-estimator/issues/1868)) ([ed1df3a](https://github.com/lbenie/reading-time-estimator/commit/ed1df3afd8b77e6e675e7ee0b76eecea7679b9f2))
+
 ## [1.13.0](https://github.com/lbenie/reading-time-estimator/compare/v1.12.0...v1.13.0) (2025-04-15)
 
 ### :sparkles: Features
