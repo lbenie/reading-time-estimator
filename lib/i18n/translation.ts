@@ -13,6 +13,10 @@ import { bn } from './bn'
 import { sk } from './sk'
 import { cs } from './cs'
 import { zhTw } from './zh-tw'
+import { ru } from './ru'
+import { vi } from './vi'
+import { it } from './it'
+import { id } from './id'
 
 export const translations: Record<SupportedLanguages, I18n> = {
   en,
@@ -29,4 +33,8 @@ export const translations: Record<SupportedLanguages, I18n> = {
   bn,
   sk,
   cs,
+  ru,
+  vi,
+  it,
+  id,
 }
