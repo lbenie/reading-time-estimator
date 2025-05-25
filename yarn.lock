@@ -562,10 +562,10 @@
   dependencies:
     buffer "^6.0.3"
 
-"@lbenie/linting@1.8.137":
-  version "1.8.137"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.137.tgz#7de14deab79185f4a7b3a509400d2c7a83c1f41f"
-  integrity sha512-8DJ/xtEjYvjqOReW71SkPXRNhks9yERxNQvyC9+VezTDFoQTqZaMfKzR/aJNB4TTk5qQuGoXdMRM3hTnAMLFPQ==
+"@lbenie/linting@1.8.138":
+  version "1.8.138"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.138.tgz#213f3ec878e2da56f527031625cd58dcea83252d"
+  integrity sha512-4jmeVzhj94jhAKt8/qZ9gQ0NC/QmWMXIu92VaaQRD4oNX5I7Z1Pk1Zepf9CXjozq/hOWCRjNySaTwWNK1U4nqw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "8.32.1"
     "@typescript-eslint/parser" "8.32.1"
@@ -575,7 +575,7 @@
     eslint-plugin-jsdoc "50.6.17"
     eslint-plugin-lit-a11y "4.1.4"
     eslint-plugin-prettier "5.4.0"
-    globals "16.1.0"
+    globals "16.2.0"
     postcss "8.5.3"
     postcss-scss "4.0.9"
     postcss-styl "0.12.3"
@@ -3653,10 +3653,10 @@ global-prefix@^3.0.0:
     kind-of "^6.0.2"
     which "^1.3.1"
 
-globals@16.1.0:
-  version "16.1.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-16.1.0.tgz#ee6ab147d41c64e9f2beaaaf66572d18df8e1e60"
-  integrity sha512-aibexHNbb/jiUSObBgpHLj+sIuUmJnYcgXBlrfsiDZ9rt4aF2TFRbyLgZ2iFQuVZ1K5Mx3FVkbKRSgKrbK3K2g==
+globals@16.2.0:
+  version "16.2.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-16.2.0.tgz#19efcd1ddde2bd5efce128e5c2e441df1abc6f7c"
+  integrity sha512-O+7l9tPdHCU320IigZZPj5zmRCFG9xHmx9cU8FqU2Rp+JN714seHV+2S9+JslCpY4gJwU2vOGox0wzgae/MCEg==
 
 globals@^14.0.0:
   version "14.0.0"
