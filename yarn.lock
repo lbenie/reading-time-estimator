@@ -562,10 +562,10 @@
   dependencies:
     buffer "^6.0.3"
 
-"@lbenie/linting@1.8.139":
-  version "1.8.139"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.139.tgz#2444b407d1699e4efff3512a6ab945929c60a55b"
-  integrity sha512-DKpb1Jl/IkFBC9sFPbg0Sn+7N3Px98KSN3RjPOEnAvuckQSzOE8bVuZyaGH6AJWF79UMzoFqBpSa4XaD8PQJAg==
+"@lbenie/linting@1.8.140":
+  version "1.8.140"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.140.tgz#8591330705b6eda5fecd4486c3d127d6a1a12eb4"
+  integrity sha512-vLqoK4egvythGqZdIt8DWhycPQ+z9LsSFMzrO7eIgnnDy6czWrBy+KeIDOmEcwMQehuZu6ELaal0Rp08v9iwTg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "8.33.0"
     "@typescript-eslint/parser" "8.33.0"
@@ -576,7 +576,7 @@
     eslint-plugin-lit-a11y "4.1.4"
     eslint-plugin-prettier "5.4.0"
     globals "16.2.0"
-    postcss "8.5.3"
+    postcss "8.5.4"
     postcss-scss "4.0.9"
     postcss-styl "0.12.3"
     prettier "3.5.3"
@@ -5003,6 +5003,11 @@ mz@^2.4.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
+nanoid@^3.3.11, nanoid@^3.3.8:
+  version "3.3.11"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.11.tgz#4f4f112cefbe303202f2199838128936266d185b"
+  integrity sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==
+
 nanoid@^3.3.6:
   version "3.3.6"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.6.tgz#443380c856d6e9f9824267d960b4236ad583ea4c"
@@ -5012,11 +5017,6 @@ nanoid@^3.3.7:
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.7.tgz#d0c301a691bc8d54efa0a2226ccf3fe2fd656bd8"
   integrity sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==
-
-nanoid@^3.3.8:
-  version "3.3.11"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.11.tgz#4f4f112cefbe303202f2199838128936266d185b"
-  integrity sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==
 
 natural-compare@^1.4.0:
   version "1.4.0"
@@ -5864,12 +5864,12 @@ postcss-value-parser@^4.2.0:
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz#723c09920836ba6d3e5af019f92bc0971c02e514"
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
-postcss@8.5.3, postcss@^8.3.11, postcss@^8.5.3:
-  version "8.5.3"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.5.3.tgz#1463b6f1c7fb16fe258736cba29a2de35237eafb"
-  integrity sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==
+postcss@8.5.4:
+  version "8.5.4"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.5.4.tgz#d61014ac00e11d5f58458ed7247d899bd65f99c0"
+  integrity sha512-QSa9EBe+uwlGTFmHsPKokv3B/oEMQZxfqW0QqNCyhpa6mB1afzulwn8hihglqAb2pOw+BJgNlmXQ8la2VeHB7w==
   dependencies:
-    nanoid "^3.3.8"
+    nanoid "^3.3.11"
     picocolors "^1.1.1"
     source-map-js "^1.2.1"
 
@@ -5881,6 +5881,15 @@ postcss@8.5.3, postcss@^8.3.11, postcss@^8.5.3:
     nanoid "^3.3.6"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
+
+postcss@^8.3.11, postcss@^8.5.3:
+  version "8.5.3"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.5.3.tgz#1463b6f1c7fb16fe258736cba29a2de35237eafb"
+  integrity sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==
+  dependencies:
+    nanoid "^3.3.8"
+    picocolors "^1.1.1"
+    source-map-js "^1.2.1"
 
 postcss@^8.4.32:
   version "8.4.35"
