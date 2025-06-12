@@ -561,21 +561,21 @@
   dependencies:
     buffer "^6.0.3"
 
-"@lbenie/linting@1.8.147":
-  version "1.8.147"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.147.tgz#dc87d86bbb0bb2f66cc9b08ee65817d5e1b36c40"
-  integrity sha512-gMYn6Hb4gm0XUa5gpSaHJFbzmSFWDjW6VLjL+xIcvsjfRsG9/ZT8tpM8pKraJbqhEWc4wpJCiTVy/dc5VtOO6g==
+"@lbenie/linting@1.8.149":
+  version "1.8.149"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.149.tgz#fea9098be7f41439bc3fcdfa37dfbdc068a63d58"
+  integrity sha512-3lcBeebO20mH9SAsdKWopNRMgOgIIuSX7gxZdU3rBxk30XrNXyRfOuitz1tIK4Ix1SDoJw7gGV77kKZ0RHmLmg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "8.34.0"
     "@typescript-eslint/parser" "8.34.0"
     eslint "9.28.0"
     eslint-plugin-astro "1.3.1"
     eslint-plugin-functional "9.0.2"
-    eslint-plugin-jsdoc "50.7.1"
+    eslint-plugin-jsdoc "50.8.0"
     eslint-plugin-lit-a11y "4.1.4"
     eslint-plugin-prettier "5.4.1"
     globals "16.2.0"
-    postcss "8.5.4"
+    postcss "8.5.5"
     postcss-scss "4.0.9"
     postcss-styl "0.12.3"
     prettier "3.5.3"
@@ -2991,10 +2991,10 @@ eslint-plugin-functional@9.0.2:
     ts-api-utils "^2.0.1"
     ts-declaration-location "^1.0.6"
 
-eslint-plugin-jsdoc@50.7.1:
-  version "50.7.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-50.7.1.tgz#f3475c5545473f1d3e5fb272ad2f3988283b42e5"
-  integrity sha512-XBnVA5g2kUVokTNUiE1McEPse5n9/mNUmuJcx52psT6zBs2eVcXSmQBvjfa7NZdfLVSy3u1pEDDUxoxpwy89WA==
+eslint-plugin-jsdoc@50.8.0:
+  version "50.8.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-50.8.0.tgz#a8d192ccca26df368a2fbaff17c9dddefacd773f"
+  integrity sha512-UyGb5755LMFWPrZTEqqvTJ3urLz1iqj+bYOHFNag+sw3NvaMWP9K2z+uIn37XfNALmQLQyrBlJ5mkiVPL7ADEg==
   dependencies:
     "@es-joy/jsdoccomment" "~0.50.2"
     are-docs-informative "^0.0.2"
@@ -5868,10 +5868,10 @@ postcss-value-parser@^4.2.0:
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz#723c09920836ba6d3e5af019f92bc0971c02e514"
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
-postcss@8.5.4:
-  version "8.5.4"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.5.4.tgz#d61014ac00e11d5f58458ed7247d899bd65f99c0"
-  integrity sha512-QSa9EBe+uwlGTFmHsPKokv3B/oEMQZxfqW0QqNCyhpa6mB1afzulwn8hihglqAb2pOw+BJgNlmXQ8la2VeHB7w==
+postcss@8.5.5:
+  version "8.5.5"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.5.5.tgz#04de7797f6911fb1c96550e96616d08681537ef3"
+  integrity sha512-d/jtm+rdNT8tpXuHY5MMtcbJFBkhXE6593XVR9UoGCH8jSFGci7jGvMGH5RYd5PBJW+00NZQt6gf7CbagJCrhg==
   dependencies:
     nanoid "^3.3.11"
     picocolors "^1.1.1"
