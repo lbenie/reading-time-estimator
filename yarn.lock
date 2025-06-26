@@ -561,10 +561,10 @@
   dependencies:
     buffer "^6.0.3"
 
-"@lbenie/linting@1.8.156":
-  version "1.8.156"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.156.tgz#81c61844c5702fa4a172e66b77ebc843c6d04f76"
-  integrity sha512-9182hodu2qNmHYAfM0xyO6ZK9axhOpy0yfdtqsDM5UILuoNgHm53BfyE3vrCdnEEiQxtuFz6WyG7idVxefY09A==
+"@lbenie/linting@1.8.158":
+  version "1.8.158"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.158.tgz#ab2deac3ec8bde80669eec764442ceaaeb107b8e"
+  integrity sha512-yEBRzKhRl5IFo4QfkyU5v0skm3HN/xxRAZ0sKoTmcl0Y2OxESZuZsjRwiQ/1iStI/06sqY1Vy0DAjv9QIoJEBg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "8.35.0"
     "@typescript-eslint/parser" "8.35.0"
@@ -573,12 +573,12 @@
     eslint-plugin-functional "9.0.2"
     eslint-plugin-jsdoc "50.8.0"
     eslint-plugin-lit-a11y "4.1.4"
-    eslint-plugin-prettier "5.5.0"
+    eslint-plugin-prettier "5.5.1"
     globals "16.2.0"
     postcss "8.5.6"
     postcss-scss "4.0.9"
     postcss-styl "0.12.3"
-    prettier "3.6.0"
+    prettier "3.6.1"
     stylelint "16.21.0"
     stylelint-order "6.0.4"
     stylelint-stylus "1.0.0"
@@ -3043,10 +3043,10 @@ eslint-plugin-lit@^1.10.1:
     parse5-htmlparser2-tree-adapter "^6.0.1"
     requireindex "^1.2.0"
 
-eslint-plugin-prettier@5.5.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-5.5.0.tgz#cf763962f90bad035db03ca008ffb0c9b359fb16"
-  integrity sha512-8qsOYwkkGrahrgoUv76NZi23koqXOGiiEzXMrT8Q7VcYaUISR+5MorIUxfWqYXN0fN/31WbSrxCxFkVQ43wwrA==
+eslint-plugin-prettier@5.5.1:
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-5.5.1.tgz#470820964de9aedb37e9ce62c3266d2d26d08d15"
+  integrity sha512-dobTkHT6XaEVOo8IO90Q4DOSxnm3Y151QxPJlM/vKC0bVy+d6cVWQZLlFiuZPP0wS6vZwSKeJgKkcS+KfMBlRw==
   dependencies:
     prettier-linter-helpers "^1.0.0"
     synckit "^0.11.7"
@@ -5964,10 +5964,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.6.0.tgz#18ec98d62cb0757a5d4eab40253ff3e6d0fc8dea"
-  integrity sha512-ujSB9uXHJKzM/2GBuE0hBOUgC77CN3Bnpqa+g80bkv3T3A93wL/xlzDATHhnhkzifz/UE2SNOvmbTz5hSkDlHw==
+prettier@3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.6.1.tgz#cc3bce21c09a477b1e987b76ce9663925d86ae44"
+  integrity sha512-5xGWRa90Sp2+x1dQtNpIpeOQpTDBs9cZDmA/qs2vDNN2i18PdapqY7CmBeyLlMuGqXJRIOPaCaVZTLNQRWUH/A==
 
 prettier@^2:
   version "2.8.8"
