@@ -563,10 +563,10 @@
   dependencies:
     buffer "^6.0.3"
 
-"@lbenie/linting@1.8.163":
-  version "1.8.163"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.163.tgz#aa0fda6a6a30a315a92ebf14746a6c8cc0d5703e"
-  integrity sha512-i57+9lqALUYCy56pGCweMQeIr1Q+QFI9//h4cl66xU8rxvYI3bKcnegJrg7cfOZx8/CkQpP0B45axwWuBAou7Q==
+"@lbenie/linting@1.8.164":
+  version "1.8.164"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.164.tgz#c3f2232d4c5aedac21914f6716a5efd2e54e78dd"
+  integrity sha512-6fAasejJcRyCzlkS1p6OFLkvEXqq1Jz0QI1uxHwho544fZ4rufTJi/zp6Tf3/ZuCIFJAKEgnhsXIrhdP/LNvvg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "8.35.1"
     "@typescript-eslint/parser" "8.35.1"
@@ -581,7 +581,7 @@
     postcss-scss "4.0.9"
     postcss-styl "0.12.3"
     prettier "3.6.2"
-    stylelint "16.21.0"
+    stylelint "16.21.1"
     stylelint-order "6.0.4"
     stylelint-stylus "1.0.0"
 
@@ -5432,7 +5432,7 @@ postcss-value-parser@^4.2.0:
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz#723c09920836ba6d3e5af019f92bc0971c02e514"
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
-postcss@8.5.6, postcss@^8.5.5, postcss@^8.5.6:
+postcss@8.5.6, postcss@^8.5.6:
   version "8.5.6"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.5.6.tgz#2825006615a619b4f62a9e7426cc120b349a8f3c"
   integrity sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==
@@ -6233,10 +6233,10 @@ stylelint-stylus@1.0.0:
     stylelint-config-html "^1.0.0"
     svg-tags "^1.0.0"
 
-stylelint@16.21.0:
-  version "16.21.0"
-  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-16.21.0.tgz#c24050d8e67621fa2c2269c082966e2c0f6a1883"
-  integrity sha512-ki3PpJGG7xhm3WtINoWGnlvqAmbqSexoRMbEMJzlwewSIOqPRKPlq452c22xAdEJISVi80r+I7KL9GPUiwFgbg==
+stylelint@16.21.1:
+  version "16.21.1"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-16.21.1.tgz#1887cbea53c40ff2a0b3ff3912852ff16e1b696c"
+  integrity sha512-WCXdXnYK2tpCbebgMF0Bme3YZH/Rh/UXerj75twYo4uLULlcrLwFVdZTvTEF8idFnAcW21YUDJFyKOfaf6xJRw==
   dependencies:
     "@csstools/css-parser-algorithms" "^3.0.5"
     "@csstools/css-tokenizer" "^3.0.4"
@@ -6265,7 +6265,7 @@ stylelint@16.21.0:
     micromatch "^4.0.8"
     normalize-path "^3.0.0"
     picocolors "^1.1.1"
-    postcss "^8.5.5"
+    postcss "^8.5.6"
     postcss-resolve-nested-selector "^0.1.6"
     postcss-safe-parser "^7.0.1"
     postcss-selector-parser "^7.1.0"
