@@ -44,7 +44,6 @@
     "url": "https://github.com/lbenie/reading-time-estimator"
   },
   "license": "MIT",
-  "private": false,
   "scripts": {
     "build": "vite build",
     "test": "concurrently -n vitest 'vitest --coverage'",
