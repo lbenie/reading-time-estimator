@@ -58,7 +58,7 @@
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "11.0.6",
     "@semantic-release/release-notes-generator": "14.1.0",
-    "@types/node": "24.6.2",
+    "@types/node": "24.7.0",
     "@types/sanitize-html": "^2.13.0",
     "@vitest/coverage-v8": "^2.0.5",
     "all-contributors-cli": "6.26.1",
