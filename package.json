@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "@lbenie/linting": "1.8.195",
-    "@rollup/plugin-typescript": "12.2.0",
+    "@rollup/plugin-typescript": "12.3.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "12.0.0",
