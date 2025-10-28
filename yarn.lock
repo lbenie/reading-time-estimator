@@ -464,15 +464,15 @@
   resolved "https://registry.yarnpkg.com/@keyv/serialize/-/serialize-1.1.1.tgz#0c01dd3a3483882af7cf3878d4e71d505c81fc4a"
   integrity sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==
 
-"@lbenie/linting@1.8.195":
-  version "1.8.195"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.195.tgz#026a49d35af37ce57806a9fbfba338e5ceceb792"
-  integrity sha512-PF/lddVXoEsAW+sROoQXMgdNHUjGF4RIMgoc8WmhObDEy2vI+N2XCxpoOTpONZzLgyikKkeMIZJGVnWWEXoXPw==
+"@lbenie/linting@1.8.196":
+  version "1.8.196"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.196.tgz#059cc4aa2ea24d17f5e44b30325c36ccfc7317c2"
+  integrity sha512-42nRzRD/u7ZgUabVE2Z7rgeEJNFgkLGRyU3tLvRA6o2ZrvgTr2UkRWXwd2KLrR7nfmPnvjQaWUTCMN+U+uUoHA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "8.46.2"
     "@typescript-eslint/parser" "8.46.2"
     eslint "9.38.0"
-    eslint-plugin-astro "1.3.1"
+    eslint-plugin-astro "1.4.0"
     eslint-plugin-functional "9.0.2"
     eslint-plugin-jsdoc "50.8.0"
     eslint-plugin-lit-a11y "4.1.4"
@@ -2377,17 +2377,17 @@ eslint-compat-utils@^0.6.0:
   dependencies:
     semver "^7.5.4"
 
-eslint-plugin-astro@1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-astro/-/eslint-plugin-astro-1.3.1.tgz#087e6930c3a0435532327d9ffca1c128a7873d5e"
-  integrity sha512-2XaLCMQm8htW1UvJvy1Zcmg8l0ziskitiUfJTn/w1Mk7r4Mxj0fZeNpN6UTNrm64XBIXSa5h8UCGrg8mdu47+g==
+eslint-plugin-astro@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-astro/-/eslint-plugin-astro-1.4.0.tgz#93f6236b54d5982a393c99c87276e24ce0dbd6bb"
+  integrity sha512-BCHPj3gORh1RYFR3sZXY0/9N9lOOw4mQYUkMWFFoFqhZtYnytuzxlyCIr8tqMmSNdZ9P4SQNq5h4v8Amr2EE5Q==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
     "@typescript-eslint/types" "^7.7.1 || ^8"
     astro-eslint-parser "^1.0.2"
     eslint-compat-utils "^0.6.0"
-    globals "^15.0.0"
+    globals "^16.0.0"
     postcss "^8.4.14"
     postcss-selector-parser "^7.0.0"
 
@@ -2972,7 +2972,7 @@ global-prefix@^3.0.0:
     kind-of "^6.0.2"
     which "^1.3.1"
 
-globals@16.4.0:
+globals@16.4.0, globals@^16.0.0:
   version "16.4.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-16.4.0.tgz#574bc7e72993d40cf27cf6c241f324ee77808e51"
   integrity sha512-ob/2LcVVaVGCYN+r14cnwnoDPUufjiYgSqRhiFD0Q1iI4Odora5RE8Iv1D24hAz5oMophRGkGz+yuvQmmUMnMw==
@@ -2981,11 +2981,6 @@ globals@^14.0.0:
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-14.0.0.tgz#898d7413c29babcf6bafe56fcadded858ada724e"
   integrity sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==
-
-globals@^15.0.0:
-  version "15.15.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-15.15.0.tgz#7c4761299d41c32b075715a4ce1ede7897ff72a8"
-  integrity sha512-7ACyT3wmyp3I61S4fG682L0VA2RGD9otkqGJIwNUMF1SWUombIIk+af1unuDYgMm082aHYwD+mzJvv9Iu8dsgg==
 
 globby@^11.1.0:
   version "11.1.0"
