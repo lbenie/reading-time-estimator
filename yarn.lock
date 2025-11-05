@@ -464,15 +464,15 @@
   resolved "https://registry.yarnpkg.com/@keyv/serialize/-/serialize-1.1.1.tgz#0c01dd3a3483882af7cf3878d4e71d505c81fc4a"
   integrity sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==
 
-"@lbenie/linting@1.8.200":
-  version "1.8.200"
-  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.200.tgz#8f2d79d5ab87825eb6f49919663405983f494e90"
-  integrity sha512-/iqPjXvVWbFWT33DK4gnvDSG3DdHOW4N80sOAAG+LfR7jujUjdoyaoMArMtlGdSMNeBG4gnw3PkI6pETl9oT8A==
+"@lbenie/linting@1.8.201":
+  version "1.8.201"
+  resolved "https://registry.yarnpkg.com/@lbenie/linting/-/linting-1.8.201.tgz#3b3115018bd1d854a2b6bd80b9e9024a8dfb65f7"
+  integrity sha512-5Qv7vDUOHFq0kjJ5lCheRl0j0iKLzFsPwlJGJk8oWaupT4lXq2mFFTzkDXtSfevXRvlO554ClsvqkA92oy0ESQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "8.46.3"
     "@typescript-eslint/parser" "8.46.3"
     eslint "9.39.1"
-    eslint-plugin-astro "1.4.0"
+    eslint-plugin-astro "1.5.0"
     eslint-plugin-functional "9.0.2"
     eslint-plugin-jsdoc "50.8.0"
     eslint-plugin-lit-a11y "4.1.4"
@@ -2418,10 +2418,10 @@ eslint-compat-utils@^0.6.0:
   dependencies:
     semver "^7.5.4"
 
-eslint-plugin-astro@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-astro/-/eslint-plugin-astro-1.4.0.tgz#93f6236b54d5982a393c99c87276e24ce0dbd6bb"
-  integrity sha512-BCHPj3gORh1RYFR3sZXY0/9N9lOOw4mQYUkMWFFoFqhZtYnytuzxlyCIr8tqMmSNdZ9P4SQNq5h4v8Amr2EE5Q==
+eslint-plugin-astro@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-astro/-/eslint-plugin-astro-1.5.0.tgz#dc4d034a12c34b5133601c2a8927a01a6c55f1bc"
+  integrity sha512-IWy4kY3DKTJxd7g652zIWpBGFuxw7NIIt16kyqc8BlhnIKvI8yGJj+Maua0DiNYED3F/D8AmzoTTTA6A95WX9g==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
