@@ -1,6 +1,6 @@
 # reading-time-estimator
 
-![Test](https://github.com/lbenie/reading-time-estimator/workflows/Test/badge.svg)
+[![Test](https://github.com/lbenie/reading-time-estimator/actions/workflows/test.yml/badge.svg)](https://github.com/lbenie/reading-time-estimator/actions/workflows/test.yml)
 [![Lint commit messages](https://github.com/lbenie/reading-time-estimator/actions/workflows/commintlint.yml/badge.svg)](https://github.com/lbenie/reading-time-estimator/actions/workflows/commintlint.yml)
 [![Release](https://github.com/lbenie/reading-time-estimator/actions/workflows/release.yml/badge.svg)](https://github.com/lbenie/reading-time-estimator/actions/workflows/release.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
