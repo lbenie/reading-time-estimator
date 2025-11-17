@@ -1,3 +1,14 @@
+## [2.0.1](https://github.com/lbenie/reading-time-estimator/compare/v2.0.0...v2.0.1) (2025-11-17)
+
+### :bug: Fixes
+
+* properly bundle `sanitize-html` ([8525d12](https://github.com/lbenie/reading-time-estimator/commit/8525d12eb54f0ccbaf9cf9867b1e01e7d7643917))
+
+### :white_check_mark: Chores
+
+* fix ci corepack ([7cb274f](https://github.com/lbenie/reading-time-estimator/commit/7cb274f0c38140b63cd0221b903c0f1b021c85ed))
+* prettier ignored file [ci skip] ([9180d13](https://github.com/lbenie/reading-time-estimator/commit/9180d133f8b8ba3758f67018936cd00e88730b3a))
+
 ## [2.0.0](https://github.com/lbenie/reading-time-estimator/compare/v1.14.0...v2.0.0) (2025-11-17)
 
 ### ⚠ BREAKING CHANGES
