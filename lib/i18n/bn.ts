@@ -1,4 +1,4 @@
-import type { I18n } from './i18n'
+import type { I18n } from './types'
 
 export const bn: I18n = {
   less: 'এক মিনিটের কম সময়ে পড়ুন',

@@ -12,12 +12,13 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: latest
+          cache: 'yarn'
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: yarn install --immutable
       - name: Run format
         run: yarn format
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v7.0.0
         with:
-          commit_message: "chore: apply formatting changes"
+          commit_message: 'chore: apply formatting changes'
           branch: ${{ github.head_ref }}

@@ -41,15 +41,15 @@ or Yarn
 
 ### API
 
-The api is fairly simple. Here are the types definition for this module.
-
-It is a simple function that takes the data as a required argument with the words per minute and locale as optional arguments.
+The API is fairly simple. `readingTime` accepts the text to analyze plus an optional options object.
 
 Per default the locale is set to english `en`.
 
-Per default the word per minute is set to `300`.
+Per default the words per minute is set to `200`.
 
-At the moment it supports these locales: `en`, `fr`, `es`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `de`, `tr`, `ro`, `bn`, `sk` and `cs`.
+You can also provide `translations` to override locale strings or `htmlSanitizerOptions` to customize how markup is handled.
+
+At the moment it supports these locales: `'en', 'fr', 'es', 'zh-cn', 'zh-tw', 'ja', 'de', 'pt-br', 'tr', 'ro', 'bn', 'sk', 'cs', 'ru', 'vi', 'it' and 'id'`
 
 ### Usage
 
@@ -60,8 +60,8 @@ import { readingTime } from 'reading-time-estimator'
 
 const text = 'some text to parse'
 
-// default options
-const result = readingTime(text, 10)
+// custom words per minute
+const result = readingTime(text, { wordsPerMinute: 10 })
 
 // output:
 // {
@@ -71,7 +71,15 @@ const result = readingTime(text, 10)
 // }
 
 // with french locale
-const result = readingTime(text, 10, 'fr')
+import { fr } from 'reading-time-estimator/i18n/fr'
+
+const frenchResult = readingTime(text, {
+  wordsPerMinute: 10,
+  language: 'fr',
+  {
+    fr,
+  },
+})
 
 // output:
 // {

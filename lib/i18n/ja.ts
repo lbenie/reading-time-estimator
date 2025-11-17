@@ -1,4 +1,4 @@
-import type { I18n } from './i18n'
+import type { I18n } from './types'
 
 export const ja: I18n = {
   less: '1分未満の読み取り',

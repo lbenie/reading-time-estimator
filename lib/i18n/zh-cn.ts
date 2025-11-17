@@ -1,4 +1,4 @@
-import type { I18n } from './i18n'
+import type { I18n } from './types'
 
 export const zhCn: I18n = {
   less: '小于一分钟',

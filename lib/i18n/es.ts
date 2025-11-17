@@ -1,4 +1,4 @@
-import type { I18n } from './i18n'
+import type { I18n } from './types'
 
 export const es: I18n = {
   less: `menos de un minuto leyendo`,

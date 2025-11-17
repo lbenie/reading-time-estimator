@@ -1,4 +1,4 @@
-import type { I18n } from './i18n'
+import type { I18n } from './types'
 
 export const ru: I18n = {
   less: 'менее минуты чтения',

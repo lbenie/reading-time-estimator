@@ -1,7 +1,6 @@
 name: Test
 
-on:
-  [push, pull_request]
+on: [push, pull_request]
 
 jobs:
   test:
@@ -13,7 +12,8 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: latest
+          cache: 'yarn'
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: yarn install --immutable
       - name: Running unit tests
         run: yarn test
