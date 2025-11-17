@@ -1,7 +1,6 @@
 import { defineConfig, coverageConfigDefaults } from 'vitest/config'
 import { resolve } from 'path'
 import { name } from './package.json'
-// @ts-expect-error expected error
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import typescript from '@rollup/plugin-typescript'
 import AutoImport from 'unplugin-auto-import/vite'
@@ -27,6 +26,7 @@ export default defineConfig({
         '__tests__/**',
         'release.config.cjs',
         'lib/i18n/**',
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
         ...coverageConfigDefaults.exclude,
       ],
     },
@@ -61,6 +61,7 @@ export default defineConfig({
           exports: 'named',
         },
       ],
+      external: ['sanitize-html'],
       plugins: [
         // eslint-disable-next-line @typescript-eslint/no-unsafe-call
         peerDepsExternal(),
