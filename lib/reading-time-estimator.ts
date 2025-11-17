@@ -46,6 +46,7 @@ const normalizeInput = (input: string) =>
  * @param {Readonly<IOptions>} options - The options for HTML sanitization
  * @returns {ReadonlyArray<string>} Parsed chinese, japanese and accented text
  */
+// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
 const parseWords = (data: string, options: Readonly<IOptions>) => {
   const strippedHTML = sanitizeHtml(data, options)
   const normalized = normalizeInput(strippedHTML)
@@ -59,6 +60,7 @@ const parseWords = (data: string, options: Readonly<IOptions>) => {
  * @param {Readonly<IOptions>} options - The options for HTML sanitization
  * @returns {number} number of words in the text
  */
+// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
 const getNumberOfWords = (data: string, options: Readonly<IOptions>) =>
   parseWords(data, options).reduce(
     (accumulator, token) => accumulator + (token.trim().length ? 1 : 0),
