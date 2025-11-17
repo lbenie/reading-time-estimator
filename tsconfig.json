@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "paths": {
+      "reading-time-estimator": ["./lib/index.ts"],
+      "reading-time-estimator/*": ["./lib/*"]
+    },
     "target": "ESNext",
     "module": "ESNext",
     "strict": true,
