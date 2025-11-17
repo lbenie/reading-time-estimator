@@ -9,13 +9,13 @@ jobs:
       - uses: actions/checkout@v5
         with:
           ref: ${{ github.head_ref }}
+      - name: ⬢ Enable Corepack
+        shell: bash
+        run: npm install --global --force corepack
       - uses: actions/setup-node@v6
         with:
           node-version: latest
           cache: 'yarn'
-      - name: ⬢ Enable Corepack
-        shell: bash
-        run: npm install --global --force corepack
       - name: Install dependencies
         run: yarn install --immutable
       - name: Run format
