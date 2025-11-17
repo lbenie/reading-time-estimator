@@ -12,4 +12,5 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: latest
+          cache: 'yarn'
       - uses: wagoid/commitlint-github-action@v6
