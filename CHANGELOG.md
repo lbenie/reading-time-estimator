@@ -1,3 +1,13 @@
+## [2.0.2](https://github.com/lbenie/reading-time-estimator/compare/v2.0.1...v2.0.2) (2025-11-17)
+
+### :bug: Fixes
+
+* consumers can resolve sub-paths ([dba9923](https://github.com/lbenie/reading-time-estimator/commit/dba9923acd99c1c75d66b8a3bee6f2c281350d7d))
+
+### :white_check_mark: Chores
+
+* fix ci corepack ([c9b3e1d](https://github.com/lbenie/reading-time-estimator/commit/c9b3e1d4542e3f3ff7b575c73354ff5ec586099f))
+
 ## [2.0.1](https://github.com/lbenie/reading-time-estimator/compare/v2.0.0...v2.0.1) (2025-11-17)
 
 ### :bug: Fixes
