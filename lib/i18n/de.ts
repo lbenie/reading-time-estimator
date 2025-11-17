@@ -1,4 +1,4 @@
-import type { I18n } from './i18n'
+import type { I18n } from './types'
 
 export const de: I18n = {
   less: 'weniger als eine Minute Lesezeit',

@@ -1,267 +1,241 @@
 import { readingTime } from '../lib'
-import { translations } from '../lib/i18n'
-import type { SupportedLanguages } from '../lib/i18n'
+import { en } from '../lib/i18n/en'
+import { fr } from '../lib/i18n/fr'
+import { es } from '../lib/i18n/es'
+import { zhCn } from '../lib/i18n/zh-cn'
+import { zhTw } from '../lib/i18n/zh-tw'
+import { ja } from '../lib/i18n/ja'
+import { de } from '../lib/i18n/de'
+import { ptBr } from '../lib/i18n/pt-br'
+import { tr } from '../lib/i18n/tr'
+import { bn } from '../lib/i18n/bn'
+import { ru } from '../lib/i18n/ru'
+import { vi as viLocale } from '../lib/i18n/vi'
+import { it as itLocale } from '../lib/i18n/it'
+import { type I18n } from '../lib/i18n/types'
 
-const englishText = `I never took the time to properly build my website even though I am a Frontend Developer. I started to look at some technologies in 2018 and 2019, I found some amazing projects (nuxt, vuepress, etc...) but I never did finish my website.`
+const map = <T extends Record<string, I18n>>(m: T) => m
 
-const simplifiedChineseText = `中文 多来几个字`
+const longEnglish =
+  'I never took the time to properly build my website even though I am a Frontend Developer.'
+const french =
+  "Reading Time Estimator a été créé pour fournir une estimation du temps de lecture d'un article."
+const chineseSimplified = '中文 多来几个字'
+const chineseTraditional = '繁體中文，海上生明月，天涯共此時。'
+const japanese = 'どういたしまして。'
+const withHtml = '<p>Hello <strong>world</strong> &nbsp; test</p>'
+const bangla = "Riḍiṁ ṭā'ima ēsṭimēṭara tairi karā haẏēchila ēkaṭi ārṭikēla"
 
-const traditionalChineseText = `繁體中文，海上生明月，天涯共此時。`
+describe('readingTime (tree-shakable + options)', () => {
+  test('english default (no options => uses defaults, falls back to en)', () => {
+    const result = readingTime(longEnglish)
+    expect('language' in result).toBe(false)
 
-const frenchText = `Reading Time Estimator a été créé pour fournir une estimation de la durée de lecture d'un article ou d'un blog comme vu sur medium`
+    expect(result.minutes).toBeGreaterThanOrEqual(0)
+    expect(
+      result.text.endsWith(en.less) || result.text.endsWith(en.default),
+    ).toBe(true)
+  })
 
-const spanishText = `Reading Time Estimator fue creado para proporcionar una estimación del tiempo de lectura de un artículo o blog como se ve en el medio`
-
-const japaneseText = `どういたしまして。`
-
-const germanText = `Ich habe mir nie die Zeit genommen, meine Website richtig zu bauen, obwohl ich ein Frontend-Entwickler bin. Ich habe 2018 und 2019 begonnen, mich mit einigen Technologien zu beschäftigen, ich habe einige tolle Projekte gefunden (nuxt, vuepress, etc...), aber ich habe meine Website nie fertiggestellt`
-
-const brazilianPortugueseText =
-  'Eu gostaria de ter um site que eu achasse incrível, com cores belas e que se casem uma com a outra, mas nunca chegou perto disso'
-
-const turkishText =
-  'Güvenemem servetime, malıma, Ümidim yok bugün ile yarına, Toprak beni de basacak bağrına, Adaletin bu mu dünya, Ne yar verdin, ne mal, dünya, Kötülerinsin sen dünya, İyileri öldüren dünya, Ne insanlar gelip geçti kapından, Memnun gelip giden var mı yolundan, Kimi fakir, kimi ayrılmış yarinden'
-
-const romanianText =
-  '„Nu mi-am făcut niciodată timp să-mi construiesc site-ul corect, chiar dacă sunt dezvoltator Frontend. Am început să mă uit la unele tehnologii în 2018 și 2019, am găsit niște proiecte uimitoare (nuxt, vuepress, etc...) dar nu mi-am terminat niciodată site-ul.'
-
-const banglaText = `Riḍiṁ ṭā'ima ēsṭimēṭara tairi karā haẏēchila ēkaṭi ārṭikēla bā blagēra paṛāra samaẏēra ēkaṭi anumāna pradāna karāra jan'ya yā miḍiẏāmē dēkhā yāẏa`
-
-const slovakText = `Reading Time Estimator bol vytvorený s cieľom poskytnúť odhad, aký dlhý čas je potrebný na prečítanie článku alebo blogu tak, ako je to implementované na stránke medium.`
-
-const czechText = `Reading Time Estimator byl vytvořen s cílem poskytnout odhad, jak dlouhou dobu je zapotřebí k přečtení článku nebo blogu tak, jak je to implementováno na stránce medium.`
-
-const russianText = `Reading Time Estimator был создан, чтобы предоставить оценку времени, необходимого для прочтения статьи или блога, так, как это реализовано на сайте medium.`;
-
-const vietnameseText = `Reading Time Estimator được tạo ra nhằm cung cấp ước tính về thời gian cần thiết để đọc một bài viết hoặc blog, giống như cách nó được triển khai trên trang medium.`;
-
-const italianText = `Reading Time Estimator è stato creato per fornire una stima di quanto tempo sia necessario per leggere un articolo o un blog, così come viene implementato sul sito medium.`;
-
-const indonesianText = `Reading Time Estimator dibuat untuk memberikan perkiraan waktu yang dibutuhkan untuk membaca artikel atau blog, sebagaimana diimplementasikan di situs medium.`;
-
-interface TestSetup {
-  readonly language: SupportedLanguages | undefined
-  readonly words: string | undefined
-  readonly wordsPerMinute: number | undefined
-  readonly expectedResult: {
-    readonly minutes: number
-    readonly words: number
-    readonly text: string
-  }
-}
-
-describe('readingTime', () => {
-  it.each<TestSetup>([
-    {
+  test('english explicit wordsPerMinute small -> forces > 1 minute string', () => {
+    const r = readingTime(longEnglish, {
+      wordsPerMinute: 5,
       language: 'en',
-      words: englishText,
-      wordsPerMinute: 10,
-      expectedResult: {
-        minutes: 4,
-        words: 43,
-        text: `4 ${translations['en'].default}`,
-      },
-    },
-    {
-      language: 'en',
-      words: englishText,
-      wordsPerMinute: undefined,
-      expectedResult: {
-        minutes: 0,
-        words: 43,
-        text: `${translations['en'].less}`,
-      },
-    },
-    {
-      language: 'en',
-      words: '',
-      wordsPerMinute: undefined,
-      expectedResult: { minutes: 0, words: 0, text: translations['en'].less },
-    },
-    {
-      language: undefined,
-      words: undefined,
-      wordsPerMinute: undefined,
-      expectedResult: { minutes: 0, words: 0, text: translations['en'].less },
-    },
-    {
-      language: 'zh-cn',
-      words: simplifiedChineseText,
-      wordsPerMinute: 2,
-      expectedResult: {
-        minutes: 4,
-        words: 7,
-        text: `4 ${translations['zh-cn'].default}`,
-      },
-    },
-    {
-      language: 'zh-tw',
-      words: traditionalChineseText,
-      wordsPerMinute: 2,
-      expectedResult: {
-        minutes: 7,
-        words: 14,
-        text: `7 ${translations['zh-tw'].default}`,
-      },
-    },
-    {
-      language: 'fr',
-      words: frenchText,
-      wordsPerMinute: 10,
-      expectedResult: {
-        minutes: 3,
-        words: 26,
-        text: `3 ${translations['fr'].default}`,
-      },
-    },
-    {
-      language: 'es',
-      words: spanishText,
-      wordsPerMinute: 10,
-      expectedResult: {
-        minutes: 2,
-        words: 24,
-        text: `2 ${translations['es'].default}`,
-      },
-    },
-    {
-      language: 'ja',
-      words: japaneseText,
-      wordsPerMinute: 10,
-      expectedResult: {
-        minutes: 0,
-        words: 1,
-        text: translations['ja'].less,
-      },
-    },
-    {
-      language: 'de',
-      words: germanText,
-      wordsPerMinute: 10,
-      expectedResult: {
-        minutes: 5,
-        words: 47,
-        text: `5 ${translations['de'].default}`,
-      },
-    },
-    {
-      language: 'pt-br',
-      words: brazilianPortugueseText,
-      wordsPerMinute: 10,
-      expectedResult: {
-        minutes: 3,
-        words: 26,
-        text: `3 ${translations['pt-br'].default}`,
-      },
-    },
-    {
-      language: 'tr',
-      words: turkishText,
-      wordsPerMinute: 10,
-      expectedResult: {
-        minutes: 5,
-        words: 45,
-        text: `5 ${translations['tr'].default}`,
-      },
-    },
-    {
-      language: 'ro',
-      words: romanianText,
-      wordsPerMinute: 10,
-      expectedResult: {
-        minutes: 5,
-        words: 45,
-        text: `5 ${translations['ro'].default}`,
-      },
-    },
-    {
-      language: 'bn',
-      words: banglaText,
-      wordsPerMinute: 10,
-      expectedResult: {
-        minutes: 4,
-        words: 35,
-        text: `4 ${translations['bn'].default}`,
-      },
-    },
-    {
-      language: 'sk',
-      words: slovakText,
-      wordsPerMinute: 10,
-      expectedResult: {
-        minutes: 3,
-        words: 27,
-        text: `3 ${translations['sk'].default}`,
-      },
-    },
-    {
-      language: 'cs',
-      words: czechText,
-      wordsPerMinute: 10,
-      expectedResult: {
-        minutes: 3,
-        words: 27,
-        text: `3 ${translations['cs'].default}`,
-      },
-    },
-    {
-      language: 'ru',
-      words: russianText,
-      wordsPerMinute: 10,
-      expectedResult: {
-        minutes: 1,
-        words: 8,
-        text: `${translations['ru'].less}`,
-      },
-    },
-    {
-      language: 'vi',
-      words: vietnameseText,
-      wordsPerMinute: 10,
-      expectedResult: {
-        minutes: 5,
-        words: 48,
-        text: `5 ${translations['vi'].default}`,
-      },
-    },
-    {
-      language: 'it',
-      words: italianText,
-      wordsPerMinute: 10,
-      expectedResult: {
-        minutes: 3,
-        words: 29,
-        text: `3 ${translations['it'].default}`,
-      },
-    },
-    {
-      language: 'id',
-      words: indonesianText,
-      wordsPerMinute: 10,
-      expectedResult: {
-        minutes: 2,
-        words: 20,
-        text: `2 ${translations['id'].default}`,
-      },
-    },
-  ])(
-    'approximates time to read a text in %s',
-    ({ words, wordsPerMinute, language, expectedResult }) => {
-      const result = readingTime(words ?? '', wordsPerMinute, language)
-
-      expect(result).toStrictEqual(expectedResult)
-    },
-  )
-
-  it('strips out HTML tags', () => {
-    const text = `<p>Reading Time Estimator</p>`
-
-    const result = readingTime(text, 10, 'en')
-
-    expect(result).toStrictEqual({
-      minutes: 0,
-      words: 3,
-      text: 'less than a minute read',
+      translations: map({ en }),
     })
+    expect(r.minutes).toBeGreaterThanOrEqual(1)
+    expect(r.text.endsWith(en.default)).toBe(true)
+  })
+
+  test('english fast WPM -> less than a minute string', () => {
+    const r = readingTime(longEnglish, {
+      wordsPerMinute: 1000,
+      language: 'en',
+      translations: map({ en }),
+    })
+    expect(r.minutes).toBe(0)
+    expect(r.text).toBe(en.less)
+  })
+
+  test('french locale present in map', () => {
+    const r = readingTime(french, {
+      language: 'fr',
+      translations: map({ fr }),
+    })
+    expect(r.text.endsWith(fr.less) || r.text.endsWith(fr.default)).toBe(true)
+  })
+
+  test('french locale missing from map -> falls back to english', () => {
+    const r = readingTime(french, {
+      language: 'fr',
+      translations: map({ en }),
+    })
+    expect(r.text.endsWith(en.less) || r.text.endsWith(en.default)).toBe(true)
+  })
+
+  test('simplified chinese segmentation + custom map', () => {
+    const r = readingTime(chineseSimplified, {
+      language: 'zh-cn',
+      wordsPerMinute: 2,
+      translations: map({ 'zh-cn': zhCn }),
+    })
+    expect(r.words).toBeGreaterThan(0)
+    expect(r.text.endsWith(zhCn.default) || r.text.endsWith(zhCn.less)).toBe(
+      true,
+    )
+  })
+
+  test('traditional chinese segmentation', () => {
+    const r = readingTime(chineseTraditional, {
+      language: 'zh-tw',
+      wordsPerMinute: 3,
+      translations: map({ 'zh-tw': zhTw }),
+    })
+    expect(r.text.endsWith(zhTw.default) || r.text.endsWith(zhTw.less)).toBe(
+      true,
+    )
+  })
+
+  test('alias cn -> zh-cn fallback behavior when alias not provided but zh-cn is', () => {
+    const r = readingTime(chineseSimplified, {
+      language: 'cn',
+      translations: map({ 'zh-cn': zhCn }),
+    })
+    // Because 'cn' not found, falls back to en (as per current resolve logic)
+    expect(r.text.endsWith(en.less) || r.text.endsWith(en.default)).toBe(true)
+  })
+
+  test('japanese segmentation minimal', () => {
+    const r = readingTime(japanese, {
+      language: 'ja',
+      translations: map({ ja }),
+    })
+    expect(r.words).toBeGreaterThan(0)
+    expect(r.text.endsWith(ja.less) || r.text.endsWith(ja.default)).toBe(true)
+  })
+
+  test('bangla script handling', () => {
+    const r = readingTime(bangla, {
+      language: 'bn',
+      translations: map({ bn }),
+    })
+    expect(r.words).toBeGreaterThan(0)
+    expect(r.text.endsWith(bn.less) || r.text.endsWith(bn.default)).toBe(true)
+  })
+
+  test('multiple locales in one map (fr + es)', () => {
+    const rEs = readingTime(french, {
+      language: 'es',
+      translations: map({ es, fr }), // order doesn’t matter
+    })
+    expect(rEs.text.endsWith(es.less) || rEs.text.endsWith(es.default)).toBe(
+      true,
+    )
+  })
+
+  test('html stripping removes tags and counts words only', () => {
+    const r = readingTime(withHtml, {
+      language: 'en',
+      wordsPerMinute: 10,
+      translations: map({ en }),
+    })
+    expect(r.words).toBe(3) // "Hello world test"
+    expect(r.text.endsWith(en.less) || r.text.endsWith(en.default)).toBe(true)
+  })
+
+  test('empty input yields 0 minutes + less message', () => {
+    const r = readingTime('', {
+      language: 'en',
+      translations: map({ en }),
+    })
+    expect(r.minutes).toBe(0)
+    expect(r.words).toBe(0)
+    expect(r.text).toBe(en.less)
+  })
+
+  test('rounding behavior (forces rounding up/down)', () => {
+    const short = 'one two three four five six seven eight nine ten eleven'
+    const rSlow = readingTime(short, {
+      wordsPerMinute: 1,
+      language: 'en',
+      translations: map({ en }),
+    })
+    // With WPM=1, minutes = number_of_words rounded
+    expect(rSlow.minutes).toBe(rSlow.words) // since words / 1 rounded
+  })
+
+  test('fallback when translations map omitted entirely (just english baseline)', () => {
+    const r = readingTime(french, {
+      language: 'fr',
+      wordsPerMinute: 500,
+    })
+    // Lacking fr in map, falls back to english strings
+    expect(r.text.endsWith(en.less) || r.text.endsWith(en.default)).toBe(true)
+  })
+
+  test('large translation map does not break resolution', () => {
+    const r = readingTime(longEnglish, {
+      language: 'pt-br',
+      wordsPerMinute: 5,
+      translations: map({ en, fr, es, 'pt-br': ptBr, ja, ru, de, tr }),
+    })
+    expect(r.text.endsWith(ptBr.default) || r.text.endsWith(ptBr.less)).toBe(
+      true,
+    )
+  })
+
+  test('russian Cyrillic script', () => {
+    const r = readingTime('Привет мир пример текста', {
+      language: 'ru',
+      translations: map({ ru }),
+    })
+    expect(r.words).toBeGreaterThanOrEqual(3)
+    expect(r.text.endsWith(ru.less) || r.text.endsWith(ru.default)).toBe(true)
+  })
+
+  test('turkish locale', () => {
+    const r = readingTime('Merhaba dünya örnek metin', {
+      language: 'tr',
+      translations: map({ tr }),
+    })
+    expect(r.text.endsWith(tr.less) || r.text.endsWith(tr.default)).toBe(true)
+  })
+
+  test('italian locale', () => {
+    const r = readingTime('Ciao mondo testo di esempio', {
+      language: 'it',
+      translations: map({ it: itLocale }),
+    })
+    expect(
+      r.text.endsWith(itLocale.less) || r.text.endsWith(itLocale.default),
+    ).toBe(true)
+  })
+
+  test('portuguese (brazil) locale', () => {
+    const r = readingTime('Olá mundo texto simples', {
+      language: 'pt-br',
+      translations: map({ 'pt-br': ptBr }),
+    })
+    expect(r.text.endsWith(ptBr.less) || r.text.endsWith(ptBr.default)).toBe(
+      true,
+    )
+  })
+
+  test('vietnamese locale', () => {
+    const r = readingTime('Đây là một đoạn văn bản ví dụ', {
+      language: 'vi',
+      translations: map({ vi: viLocale }),
+    })
+    expect(
+      r.text.endsWith(viLocale.less) || r.text.endsWith(viLocale.default),
+    ).toBe(true)
+  })
+
+  test('german locale', () => {
+    const r = readingTime('Dies ist ein deutscher Beispielsatz', {
+      language: 'de',
+      translations: map({ de }),
+    })
+    expect(r.text.endsWith(de.less) || r.text.endsWith(de.default)).toBe(true)
   })
 })

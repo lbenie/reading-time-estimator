@@ -19,17 +19,104 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/reading-time-estimator.umd.cjs",
-  "module": "./dist/reading-time-estimator.js",
   "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/types/index.d.ts",
-      "import": "./dist/reading-time-estimator.js",
-      "require": "./dist/reading-time-estimator.umd.cjs"
-    }
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./i18n/en": {
+      "types": "./dist/types/i18n/en.d.ts",
+      "import": "./dist/i18n/en/locale.js",
+      "require": "./dist/i18n/en/locale.cjs"
+    },
+    "./i18n/fr": {
+      "types": "./dist/types/i18n/fr.d.ts",
+      "import": "./dist/i18n/fr/locale.js",
+      "require": "./dist/i18n/fr/locale.cjs"
+    },
+    "./i18n/es": {
+      "types": "./dist/types/i18n/es.d.ts",
+      "import": "./dist/i18n/es/locale.js",
+      "require": "./dist/i18n/es/locale.cjs"
+    },
+    "./i18n/zh-cn": {
+      "types": "./dist/types/i18n/zh-cn.d.ts",
+      "import": "./dist/i18n/zh-cn/locale.js",
+      "require": "./dist/i18n/zh-cn/locale.cjs"
+    },
+    "./i18n/zh-tw": {
+      "types": "./dist/types/i18n/zh-tw.d.ts",
+      "import": "./dist/i18n/zh-tw/locale.js",
+      "require": "./dist/i18n/zh-tw/locale.cjs"
+    },
+    "./i18n/ja": {
+      "types": "./dist/types/i18n/ja.d.ts",
+      "import": "./dist/i18n/ja/locale.js",
+      "require": "./dist/i18n/ja/locale.cjs"
+    },
+    "./i18n/de": {
+      "types": "./dist/types/i18n/de.d.ts",
+      "import": "./dist/i18n/de/locale.js",
+      "require": "./dist/i18n/de/locale.cjs"
+    },
+    "./i18n/pt-br": {
+      "types": "./dist/types/i18n/pt-br.d.ts",
+      "import": "./dist/i18n/pt-br/locale.js",
+      "require": "./dist/i18n/pt-br/locale.cjs"
+    },
+    "./i18n/tr": {
+      "types": "./dist/types/i18n/tr.d.ts",
+      "import": "./dist/i18n/tr/locale.js",
+      "require": "./dist/i18n/tr/locale.cjs"
+    },
+    "./i18n/ro": {
+      "types": "./dist/types/i18n/ro.d.ts",
+      "import": "./dist/i18n/ro/locale.js",
+      "require": "./dist/i18n/ro/locale.cjs"
+    },
+    "./i18n/bn": {
+      "types": "./dist/types/i18n/bn.d.ts",
+      "import": "./dist/i18n/bn/locale.js",
+      "require": "./dist/i18n/bn/locale.cjs"
+    },
+    "./i18n/sk": {
+      "types": "./dist/types/i18n/sk.d.ts",
+      "import": "./dist/i18n/sk/locale.js",
+      "require": "./dist/i18n/sk/locale.cjs"
+    },
+    "./i18n/cs": {
+      "types": "./dist/types/i18n/cs.d.ts",
+      "import": "./dist/i18n/cs/locale.js",
+      "require": "./dist/i18n/cs/locale.cjs"
+    },
+    "./i18n/ru": {
+      "types": "./dist/types/i18n/ru.d.ts",
+      "import": "./dist/i18n/ru/locale.js",
+      "require": "./dist/i18n/ru/locale.cjs"
+    },
+    "./i18n/vi": {
+      "types": "./dist/types/i18n/vi.d.ts",
+      "import": "./dist/i18n/vi/locale.js",
+      "require": "./dist/i18n/vi/locale.cjs"
+    },
+    "./i18n/it": {
+      "types": "./dist/types/i18n/it.d.ts",
+      "import": "./dist/i18n/it/locale.js",
+      "require": "./dist/i18n/it/locale.cjs"
+    },
+    "./i18n/id": {
+      "types": "./dist/types/i18n/id.d.ts",
+      "import": "./dist/i18n/id/locale.js",
+      "require": "./dist/i18n/id/locale.cjs"
+    },
+    "./package.json": "./package.json"
   },
-  "types": "./dist/types/index.d.ts",
   "bugs": {
     "url": "https://github.com/lbenie/reading-time-estimator/issues"
   },

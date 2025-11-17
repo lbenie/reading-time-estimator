@@ -2,15 +2,8 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "esModuleInterop": true,
-    "resolveJsonModule": true,
+    "resolveJsonModule": true
   },
-  "include": [
-    "__tests__",
-    "auto-imports.d.ts",
-    "vite.config.ts",
-    "config",
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["__tests__", "auto-imports.d.ts", "vite.config.ts", "config"],
+  "exclude": ["node_modules"]
 }

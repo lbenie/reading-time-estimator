@@ -5,16 +5,15 @@
     "module": "ESNext",
     "strict": true,
     "moduleResolution": "node",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "typeRoots": ["node_modules/@types"],
     "lib": ["ES2021", "dom"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "declaration": true,
     "strictNullChecks": true,
-    "declarationDir": "dist/types",
     "allowSyntheticDefaultImports": true,
+    "outDir": "dist",
+    "declarationDir": "dist/types"
   },
   "include": ["lib/**/*.ts"],
   "exclude": ["node_modules", "*.spec.ts"]
