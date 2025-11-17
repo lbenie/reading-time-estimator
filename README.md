@@ -1,8 +1,8 @@
 # reading-time-estimator
 
 ![Test](https://github.com/lbenie/reading-time-estimator/workflows/Test/badge.svg)
-![Lint](https://github.com/lbenie/reading-time-estimator/workflows/Lint/badge.svg)
-![Semantic Release](https://github.com/lbenie/reading-time-estimator/workflows/Semantic%20Release/badge.svg)
+[![Lint commit messages](https://github.com/lbenie/reading-time-estimator/actions/workflows/commintlint.yml/badge.svg)](https://github.com/lbenie/reading-time-estimator/actions/workflows/commintlint.yml)
+[![Release](https://github.com/lbenie/reading-time-estimator/actions/workflows/release.yml/badge.svg)](https://github.com/lbenie/reading-time-estimator/actions/workflows/release.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![npm](https://img.shields.io/npm/l/reading-time-estimator.svg)](https://github.com/lbenie/reading-time-estimator/blob/main/LICENSE)
