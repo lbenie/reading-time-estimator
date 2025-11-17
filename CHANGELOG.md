@@ -1,3 +1,14 @@
+## [2.0.3](https://github.com/lbenie/reading-time-estimator/compare/v2.0.2...v2.0.3) (2025-11-17)
+
+### :bug: Fixes
+
+* properly export index sub-path ([ec7568a](https://github.com/lbenie/reading-time-estimator/commit/ec7568ae4f64f56765c91cb43f722f6940617257))
+
+### :white_check_mark: Chores
+
+* fix badges [ci skip] ([3c65866](https://github.com/lbenie/reading-time-estimator/commit/3c6586600837ab8db2099018e4bedd858f135650))
+* fix badges [ci skip] ([3063bff](https://github.com/lbenie/reading-time-estimator/commit/3063bffb5beb893e907ce6415321914ed89c2925))
+
 ## [2.0.2](https://github.com/lbenie/reading-time-estimator/compare/v2.0.1...v2.0.2) (2025-11-17)
 
 ### :bug: Fixes
