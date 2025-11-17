@@ -1,5 +1,5 @@
 import type { IOptions } from 'sanitize-html'
-import { type TranslationMap, type SupportedLanguages } from './i18n/types'
+import { type TranslationMap, type SupportedLanguages } from './i18n/types.js'
 
 /**
  * Reading time estimator result shape

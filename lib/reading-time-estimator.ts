@@ -3,9 +3,9 @@ import {
   type I18n,
   type SupportedLanguages,
   type TranslationMap,
-} from './i18n/types'
-import { type ReadingTime, type Options } from './types'
-import { en } from './i18n/en'
+} from './i18n/types.js'
+import { type ReadingTime, type Options } from './types.js'
+import { en } from './i18n/en.js'
 
 /**
  * Parses the text and returns an array of tokens (words / characters)

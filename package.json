@@ -26,14 +26,8 @@
   "types": "./dist/types/index.d.ts",
   "typesVersions": {
     "*": {
-      "reading-time-estimator": [
-        "dist/types/index.d.ts"
-      ],
       "i18n/*": [
-        "dist/types/i18n/*"
-      ],
-      "*": [
-        "dist/types/*"
+        "./dist/types/i18n/*"
       ]
     }
   },

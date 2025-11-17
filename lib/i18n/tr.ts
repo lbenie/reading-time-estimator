@@ -1,4 +1,4 @@
-import type { I18n } from './types'
+import type { I18n } from './types.js'
 
 export const tr: I18n = {
   less: 'bir dakikadan az okuma süresi',

@@ -6,9 +6,9 @@
       "reading-time-estimator/*": ["./lib/*"]
     },
     "target": "ESNext",
-    "module": "ESNext",
+    "module": "NodeNext",
     "strict": true,
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "typeRoots": ["node_modules/@types"],
     "lib": ["ES2021", "dom"],
     "experimentalDecorators": true,
