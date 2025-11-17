@@ -1,3 +1,15 @@
+## [2.0.4](https://github.com/lbenie/reading-time-estimator/compare/v2.0.3...v2.0.4) (2025-11-17)
+
+### :bug: Fixes
+
+* use .js extensions in imports for ESM compatibility ([097df89](https://github.com/lbenie/reading-time-estimator/commit/097df8989cf9552bac04cc76278ddda2a6767c87))
+
+### :white_check_mark: Chores
+
+* fix ci ([0b4c0b3](https://github.com/lbenie/reading-time-estimator/commit/0b4c0b37895a5ad071e3877283427524072a8207))
+* **deps:** update dependencies ([a336d1d](https://github.com/lbenie/reading-time-estimator/commit/a336d1d1acc4c1b7c7126537aeb87c6e5640c19e))
+* **deps:** update dependencies ([2869b45](https://github.com/lbenie/reading-time-estimator/commit/2869b45a5e080dff33c5e039fb64f4ef4535fc67))
+
 ## [2.0.3](https://github.com/lbenie/reading-time-estimator/compare/v2.0.2...v2.0.3) (2025-11-17)
 
 ### :bug: Fixes
