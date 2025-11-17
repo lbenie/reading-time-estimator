@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+      - name: ⬢ Enable Corepack
+        shell: bash
+        run: npm install --global --force corepack
       - uses: actions/setup-node@v6
         with:
           node-version: latest
