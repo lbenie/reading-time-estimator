@@ -935,6 +935,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@octokit/plugin-paginate-rest@npm:^14.0.0":
+  version: 14.0.0
+  resolution: "@octokit/plugin-paginate-rest@npm:14.0.0"
+  dependencies:
+    "@octokit/types": "npm:^16.0.0"
+  peerDependencies:
+    "@octokit/core": ">=6"
+  checksum: 10c0/841d79d4ccfe18fc809a4a67529b75c1dcdda13399bf4bf5b48ce7559c8b4b2cd422e3204bad4cbdea31c0cf0943521067415268e5bcfc615a3b813e058cad6b
+  languageName: node
+  linkType: hard
+
 "@octokit/plugin-retry@npm:^8.0.0":
   version: 8.0.3
   resolution: "@octokit/plugin-retry@npm:8.0.3"
@@ -1311,7 +1322,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/github@npm:11.0.6, @semantic-release/github@npm:^11.0.0":
+"@semantic-release/github@npm:12.0.2":
+  version: 12.0.2
+  resolution: "@semantic-release/github@npm:12.0.2"
+  dependencies:
+    "@octokit/core": "npm:^7.0.0"
+    "@octokit/plugin-paginate-rest": "npm:^14.0.0"
+    "@octokit/plugin-retry": "npm:^8.0.0"
+    "@octokit/plugin-throttling": "npm:^11.0.0"
+    "@semantic-release/error": "npm:^4.0.0"
+    aggregate-error: "npm:^5.0.0"
+    debug: "npm:^4.3.4"
+    dir-glob: "npm:^3.0.1"
+    http-proxy-agent: "npm:^7.0.0"
+    https-proxy-agent: "npm:^7.0.0"
+    issue-parser: "npm:^7.0.0"
+    lodash-es: "npm:^4.17.21"
+    mime: "npm:^4.0.0"
+    p-filter: "npm:^4.0.0"
+    tinyglobby: "npm:^0.2.14"
+    undici: "npm:^7.0.0"
+    url-join: "npm:^5.0.0"
+  peerDependencies:
+    semantic-release: ">=24.1.0"
+  checksum: 10c0/aadb9f761d6041b455958627721e37aa7057d1f826f5115c3992f7bfc1830c06527cbff0b6b98d2c0505e8f96e60056e8aaa704c59287f8d9a01d62f6fdab796
+  languageName: node
+  linkType: hard
+
+"@semantic-release/github@npm:^11.0.0":
   version: 11.0.6
   resolution: "@semantic-release/github@npm:11.0.6"
   dependencies:
@@ -6749,7 +6787,7 @@ __metadata:
     "@rollup/plugin-typescript": "npm:12.1.4"
     "@semantic-release/changelog": "npm:6.0.3"
     "@semantic-release/git": "npm:10.0.1"
-    "@semantic-release/github": "npm:11.0.6"
+    "@semantic-release/github": "npm:12.0.2"
     "@semantic-release/release-notes-generator": "npm:14.1.0"
     "@types/node": "npm:24.6.2"
     "@types/sanitize-html": "npm:^2.13.0"
@@ -8012,6 +8050,13 @@ __metadata:
   version: 7.16.0
   resolution: "undici-types@npm:7.16.0"
   checksum: 10c0/3033e2f2b5c9f1504bdc5934646cb54e37ecaca0f9249c983f7b1fc2e87c6d18399ebb05dc7fd5419e02b2e915f734d872a65da2e3eeed1813951c427d33cc9a
+  languageName: node
+  linkType: hard
+
+"undici@npm:^7.0.0":
+  version: 7.16.0
+  resolution: "undici@npm:7.16.0"
+  checksum: 10c0/efd867792e9f233facf9efa0a087e2d9c3e4415c0b234061b9b40307ca4fa01d945fee4d43c7b564e1b80e0d519bcc682f9f6e0de13c717146c00a80e2f1fb0f
   languageName: node
   linkType: hard
 
