@@ -5007,7 +5007,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"local-pkg@npm:^1.1.1, local-pkg@npm:^1.1.2":
+"local-pkg@npm:^1.1.2":
   version: 1.1.2
   resolution: "local-pkg@npm:1.1.2"
   dependencies:
@@ -5130,7 +5130,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magic-string@npm:^0.30.17, magic-string@npm:^0.30.19, magic-string@npm:^0.30.21":
+"magic-string@npm:^0.30.19, magic-string@npm:^0.30.21":
   version: 0.30.21
   resolution: "magic-string@npm:0.30.21"
   dependencies:
@@ -6764,7 +6764,7 @@ __metadata:
     sanitize-html: "npm:^2.15.0"
     semantic-release: "npm:24.2.9"
     typescript: "npm:5.9.3"
-    unplugin-auto-import: "npm:20.0.0"
+    unplugin-auto-import: "npm:20.2.0"
     vite: "npm:7.1.11"
     vitest: "npm:4.0.10"
   languageName: unknown
@@ -8036,7 +8036,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unimport@npm:^5.2.0":
+"unimport@npm:^5.4.0":
   version: 5.5.0
   resolution: "unimport@npm:5.5.0"
   dependencies:
@@ -8099,16 +8099,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin-auto-import@npm:20.0.0":
-  version: 20.0.0
-  resolution: "unplugin-auto-import@npm:20.0.0"
+"unplugin-auto-import@npm:20.2.0":
+  version: 20.2.0
+  resolution: "unplugin-auto-import@npm:20.2.0"
   dependencies:
-    local-pkg: "npm:^1.1.1"
-    magic-string: "npm:^0.30.17"
+    local-pkg: "npm:^1.1.2"
+    magic-string: "npm:^0.30.19"
     picomatch: "npm:^4.0.3"
-    unimport: "npm:^5.2.0"
-    unplugin: "npm:^2.3.5"
-    unplugin-utils: "npm:^0.2.4"
+    unimport: "npm:^5.4.0"
+    unplugin: "npm:^2.3.10"
+    unplugin-utils: "npm:^0.3.0"
   peerDependencies:
     "@nuxt/kit": ^4.0.0
     "@vueuse/core": "*"
@@ -8117,17 +8117,7 @@ __metadata:
       optional: true
     "@vueuse/core":
       optional: true
-  checksum: 10c0/c2e817debca1b2fa404659a5a1c9f85c62ad12aacfa1cab0be37cf4dd2e6f952217843d21224f836f8809c97e0b701aae05bb1d18ecf8f00b7d2c86b82656e84
-  languageName: node
-  linkType: hard
-
-"unplugin-utils@npm:^0.2.4":
-  version: 0.2.5
-  resolution: "unplugin-utils@npm:0.2.5"
-  dependencies:
-    pathe: "npm:^2.0.3"
-    picomatch: "npm:^4.0.3"
-  checksum: 10c0/51541892216a0505210866f956228ffe8c64792b0f7397d919e68aece7ac18cc4bed9cceaf0b59f777183701e4b1f2d95776b18e7d4a75ac64e2cfa4737bd9e5
+  checksum: 10c0/e767a32b0d0924f88780f14df16164ae725da19f1e76cfbd4b94f3c0c66ae61319fd264f88dfc31d19d3e33038337bcc93e6ac51df76880d9ad9c3dcc1923819
   languageName: node
   linkType: hard
 
@@ -8141,7 +8131,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin@npm:^2.3.10, unplugin@npm:^2.3.5":
+"unplugin@npm:^2.3.10":
   version: 2.3.10
   resolution: "unplugin@npm:2.3.10"
   dependencies:
