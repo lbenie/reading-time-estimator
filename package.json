@@ -146,7 +146,7 @@
     "format": "eslint lib --fix"
   },
   "devDependencies": {
-    "@lbenie/linting": "1.8.190",
+    "@lbenie/linting": "1.8.202",
     "@rollup/plugin-typescript": "12.1.4",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
