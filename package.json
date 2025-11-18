@@ -171,5 +171,5 @@
   "dependencies": {
     "sanitize-html": "^2.15.0"
   },
-  "packageManager": "yarn@4.9.2"
+  "packageManager": "yarn@4.11.0"
 }
