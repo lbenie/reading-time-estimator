@@ -6782,7 +6782,7 @@ __metadata:
     semantic-release: "npm:25.0.2"
     typescript: "npm:5.9.3"
     unplugin-auto-import: "npm:20.2.0"
-    vite: "npm:7.1.11"
+    vite: "npm:7.2.4"
     vitest: "npm:4.0.10"
   languageName: unknown
   linkType: soft
@@ -8317,9 +8317,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:7.1.11":
-  version: 7.1.11
-  resolution: "vite@npm:7.1.11"
+"vite@npm:7.2.4":
+  version: 7.2.4
+  resolution: "vite@npm:7.2.4"
   dependencies:
     esbuild: "npm:^0.25.0"
     fdir: "npm:^6.5.0"
@@ -8368,7 +8368,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10c0/c4aa7f47b1fb07f734ed6f4f605d73e5acf7ff9754d75b4adbfbdddf0e520413019834620c1f7b4a207bce7e1d20a2636c584db2b1b17f5a3ba2cd23d47e50ab
+  checksum: 10c0/26aa0cad01d6e00f17c837b2a0587ab52f6bd0d0e64606b4220cfc58fa5fa76a4095ef3ea27c886bea542a346363912c4fad9f9462ef1e6757262fedfd5196b2
   languageName: node
   linkType: hard
 
