@@ -1878,12 +1878,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/coverage-v8@npm:4.0.10":
-  version: 4.0.10
-  resolution: "@vitest/coverage-v8@npm:4.0.10"
+"@vitest/coverage-v8@npm:4.0.12":
+  version: 4.0.12
+  resolution: "@vitest/coverage-v8@npm:4.0.12"
   dependencies:
     "@bcoe/v8-coverage": "npm:^1.0.2"
-    "@vitest/utils": "npm:4.0.10"
+    "@vitest/utils": "npm:4.0.12"
     ast-v8-to-istanbul: "npm:^0.3.8"
     debug: "npm:^4.4.3"
     istanbul-lib-coverage: "npm:^3.2.2"
@@ -1894,12 +1894,12 @@ __metadata:
     std-env: "npm:^3.10.0"
     tinyrainbow: "npm:^3.0.3"
   peerDependencies:
-    "@vitest/browser": 4.0.10
-    vitest: 4.0.10
+    "@vitest/browser": 4.0.12
+    vitest: 4.0.12
   peerDependenciesMeta:
     "@vitest/browser":
       optional: true
-  checksum: 10c0/d3697f98d9ac7806e9646588a9d9c1aa864872768a26f402af54ec10f1d1dc59fc8ebd8da1a7354eed1e23d2c97336998d9079a559488a18beeda66b380becd0
+  checksum: 10c0/52e8288a7974a9f7b8d02a44252eed97e4ad3394d40d1f3427d36414933660ca804a183d8985c03e463b8595e81a48bd81f287dd5b5a193b128bdc8ce064431b
   languageName: node
   linkType: hard
 
@@ -1945,6 +1945,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vitest/pretty-format@npm:4.0.12":
+  version: 4.0.12
+  resolution: "@vitest/pretty-format@npm:4.0.12"
+  dependencies:
+    tinyrainbow: "npm:^3.0.3"
+  checksum: 10c0/2944f5908f95901f69509196337e1622da0c3743473759c44b09e40d2eeae2015dc0a7b9a0903b1766147642fd1f1df5f51d3ee914caf10d627103a4cef9dfad
+  languageName: node
+  linkType: hard
+
 "@vitest/runner@npm:4.0.10":
   version: 4.0.10
   resolution: "@vitest/runner@npm:4.0.10"
@@ -1980,6 +1989,16 @@ __metadata:
     "@vitest/pretty-format": "npm:4.0.10"
     tinyrainbow: "npm:^3.0.3"
   checksum: 10c0/cfca5d33ac7b609e6ada34c17dfbe02322eb6c5016d17a9dc8dd1b6db3d7962bd39ca4f9e40f127cd3c5bb8a6193df8b7c99a3c3f30b3ae051e52fbe6bedd3e4
+  languageName: node
+  linkType: hard
+
+"@vitest/utils@npm:4.0.12":
+  version: 4.0.12
+  resolution: "@vitest/utils@npm:4.0.12"
+  dependencies:
+    "@vitest/pretty-format": "npm:4.0.12"
+    tinyrainbow: "npm:^3.0.3"
+  checksum: 10c0/f935442ea2fa2fc7bbc4b0a2eac9569df58562e79572f9ffc62ca1e8676aa766649848ebaa97c7c006edfa3d51f82cf2e763b0a2cf9b60043efccd6ebf83a337
   languageName: node
   linkType: hard
 
@@ -6770,7 +6789,7 @@ __metadata:
     "@semantic-release/release-notes-generator": "npm:14.1.0"
     "@types/node": "npm:24.10.1"
     "@types/sanitize-html": "npm:^2.13.0"
-    "@vitest/coverage-v8": "npm:4.0.10"
+    "@vitest/coverage-v8": "npm:4.0.12"
     all-contributors-cli: "npm:6.26.1"
     concurrently: "npm:9.2.1"
     conventional-changelog-conventionalcommits: "npm:9.1.0"
