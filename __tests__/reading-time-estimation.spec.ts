@@ -238,4 +238,13 @@ describe('readingTime (tree-shakable + options)', () => {
     })
     expect(r.text.endsWith(de.less) || r.text.endsWith(de.default)).toBe(true)
   })
+
+  test('markdown', () => {
+    const r = readingTime('# Hello World\nThis is a **bold** statement.', {
+      language: 'en',
+      translations: map({ en }),
+    })
+    expect(r.words).toBe(7)
+    expect(r.text.endsWith(en.less) || r.text.endsWith(en.default)).toBe(true)
+  })
 })
