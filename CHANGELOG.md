@@ -1,3 +1,15 @@
+## [2.1.1](https://github.com/lbenie/reading-time-estimator/compare/v2.1.0...v2.1.1) (2026-01-27)
+
+### :bug: Fixes
+
+* ci should now publish ([e1204b9](https://github.com/lbenie/reading-time-estimator/commit/e1204b9dca867f4de6ae481ff4be2c9677c3bf26))
+
+### :white_check_mark: Chores
+
+* **deps:** update dependency @types/node to v25 ([#2113](https://github.com/lbenie/reading-time-estimator/issues/2113)) ([c9c20ea](https://github.com/lbenie/reading-time-estimator/commit/c9c20ea882155023290f8930c1014d8e26a645b3))
+* **deps:** update dependency unplugin-auto-import to v21 ([#2121](https://github.com/lbenie/reading-time-estimator/issues/2121)) ([4147a98](https://github.com/lbenie/reading-time-estimator/commit/4147a98e7f115200e044ff576d62237616da281e))
+* **deps:** update stefanzweifel/git-auto-commit-action action to v7.1.0 ([#2116](https://github.com/lbenie/reading-time-estimator/issues/2116)) ([1052818](https://github.com/lbenie/reading-time-estimator/commit/1052818d11da954c2456013abfbe39bf8c22ebe4))
+
 ## [2.1.0](https://github.com/lbenie/reading-time-estimator/compare/v2.0.5...v2.1.0) (2026-01-27)
 
 ### :sparkles: Features
