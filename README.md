@@ -47,6 +47,8 @@ Per default the locale is set to english `en`.
 
 Per default the words per minute is set to `200`.
 
+Inputs are parsed as Markdown and sanitized as HTML automatically before word counting.
+
 You can also provide `translations` to override locale strings or `htmlSanitizerOptions` to customize how markup is handled.
 
 At the moment it supports these locales: `'en', 'fr', 'es', 'zh-cn', 'zh-tw', 'ja', 'de', 'pt-br', 'tr', 'ro', 'bn', 'sk', 'cs', 'ru', 'vi', 'it' and 'id'`
