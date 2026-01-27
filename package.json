@@ -154,7 +154,7 @@
     "@semantic-release/release-notes-generator": "14.1.0",
     "@types/node": "25.0.10",
     "@types/sanitize-html": "2.16.0",
-    "@vitest/coverage-v8": "4.0.12",
+    "@vitest/coverage-v8": "4.0.18",
     "all-contributors-cli": "6.26.1",
     "concurrently": "9.2.1",
     "conventional-changelog-conventionalcommits": "9.1.0",
