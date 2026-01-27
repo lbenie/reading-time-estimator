@@ -1,4 +1,5 @@
 import sanitizeHtml, { type IOptions } from 'sanitize-html'
+import { parse } from 'marked'
 import {
   type I18n,
   type SupportedLanguages,
@@ -48,7 +49,7 @@ const normalizeInput = (input: string) =>
  */
 // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
 const parseWords = (data: string, options: Readonly<IOptions>) => {
-  const strippedHTML = sanitizeHtml(data, options)
+  const strippedHTML = sanitizeHtml(parse(data, { async: false }), options)
   const normalized = normalizeInput(strippedHTML)
   const tokens = normalized.match(TOKEN_REGEX) ?? []
   return tokens
