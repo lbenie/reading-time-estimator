@@ -17,7 +17,7 @@ jobs:
           node-version: latest
           cache: 'pnpm'
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
       - name: Run format
         run: pnpm format
       - name: Commit changes
