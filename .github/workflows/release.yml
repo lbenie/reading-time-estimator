@@ -17,11 +17,11 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: latest
-          cache: 'yarn'
+          cache: 'pnpm'
       - name: Install dependencies
-        run: yarn install --immutable
+        run: pnpm install --frozen-lockfile
       - name: Build module
-        run: yarn build
+        run: pnpm build
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
         env:
