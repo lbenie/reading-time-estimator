@@ -1,7 +1,6 @@
 import { defineConfig, coverageConfigDefaults } from 'vitest/config'
 import { resolve } from 'path'
 import { name } from './package.json'
-import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import typescript from '@rollup/plugin-typescript'
 import AutoImport from 'unplugin-auto-import/vite'
 import { supportedLanguages } from './lib/i18n/types'
@@ -32,7 +31,6 @@ export default defineConfig({
     },
   },
   plugins: [
-    // @ts-expect-error expected error
     AutoImport({
       imports: ['vitest'],
       dts: true,
@@ -48,23 +46,16 @@ export default defineConfig({
         {
           format: 'esm',
           dir: 'dist',
-          preserveModules: true,
-          preserveModulesRoot: 'lib',
           entryFileNames: '[name].js',
         },
         {
           format: 'cjs',
           dir: 'dist',
-          preserveModules: true,
-          preserveModulesRoot: 'lib',
           entryFileNames: '[name].cjs',
           exports: 'named',
         },
       ],
-      external: ['sanitize-html'],
       plugins: [
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-        peerDepsExternal(),
         typescript({
           tsconfig: resolve(__dirname, 'tsconfig.json'),
         }),
