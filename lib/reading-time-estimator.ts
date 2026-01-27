@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/prefer-readonly-parameter-types */
 import sanitizeHtml, { type IOptions } from 'sanitize-html'
-import { parse } from 'marked'
+import { parse, type MarkedOptions } from 'marked'
 import {
   type I18n,
   type SupportedLanguages,
@@ -44,12 +45,20 @@ const normalizeInput = (input: string) =>
 /**
  * Parses the text and returns an array of words
  * @param {string} data - The text to be analyzed
- * @param {Readonly<IOptions>} options - The options for HTML sanitization
+ * @param {Readonly<IOptions>} sanitizerOptions - The options for HTML sanitization
+ * @param {Readonly<MarkedOptions>} markdownOptions - The options for markdown parsing
  * @returns {ReadonlyArray<string>} Parsed chinese, japanese and accented text
  */
-// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
-const parseWords = (data: string, options: Readonly<IOptions>) => {
-  const strippedHTML = sanitizeHtml(parse(data, { async: false }), options)
+
+const parseWords = (
+  data: string,
+  sanitizerOptions: Readonly<IOptions>,
+  markdownOptions: Readonly<MarkedOptions>,
+) => {
+  const strippedHTML = sanitizeHtml(
+    parse(data, { ...markdownOptions, async: false }),
+    sanitizerOptions,
+  )
   const normalized = normalizeInput(strippedHTML)
   const tokens = normalized.match(TOKEN_REGEX) ?? []
   return tokens
@@ -58,12 +67,17 @@ const parseWords = (data: string, options: Readonly<IOptions>) => {
 /**
  * Calculates the number of words in the text
  * @param {string} data - The text to be analyzed
- * @param {Readonly<IOptions>} options - The options for HTML sanitization
+ * @param {Readonly<IOptions>} sanitizerOptions - The options for HTML sanitization
+ * @param {Readonly<MarkedOptions>} markdownOptions - The options for markdown parsing
  * @returns {number} number of words in the text
  */
-// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
-const getNumberOfWords = (data: string, options: Readonly<IOptions>) =>
-  parseWords(data, options).reduce(
+
+const getNumberOfWords = (
+  data: string,
+  sanitizerOptions: Readonly<IOptions>,
+  markdownOptions: Readonly<MarkedOptions>,
+) =>
+  parseWords(data, sanitizerOptions, markdownOptions).reduce(
     (accumulator, token) => accumulator + (token.trim().length ? 1 : 0),
     0,
   )
@@ -108,18 +122,19 @@ export const readingTime = (
     language = 'en',
     translations = {},
     htmlSanitizerOptions = { allowedTags: [], allowedAttributes: {} },
+    markdownParserOptions = {},
   } = options
-  const words = getNumberOfWords(data, htmlSanitizerOptions)
+  const words = getNumberOfWords(
+    data,
+    htmlSanitizerOptions,
+    markdownParserOptions,
+  )
   const minutes = Math.round(words / wordsPerMinute)
   const isLessThanOne = isLessThanAMinute(minutes)
 
   return {
     minutes,
     words,
-    text: `${isLessThanOne ? '' : `${minutes} `}${resolveTranslation(
-      language,
-      isLessThanOne,
-      translations,
-    )}`,
+    text: `${isLessThanOne ? '' : `${minutes} `}${resolveTranslation(language, isLessThanOne, translations)}`,
   } as const
 }

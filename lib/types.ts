@@ -1,4 +1,5 @@
 import type { IOptions } from 'sanitize-html'
+import type { MarkedOptions } from 'marked'
 import { type TranslationMap, type SupportedLanguages } from './i18n/types.js'
 
 /**
@@ -39,4 +40,8 @@ export type Options = {
    * Options for the HTML sanitizer (default: {allowedTags: [], allowedAttributes: {}})
    */
   readonly htmlSanitizerOptions?: Readonly<IOptions>
+  /**
+   * Options for the markdown parser (default: {}), always sets async to false, you cannot override that
+   */
+  readonly markdownParserOptions?: Readonly<MarkedOptions>
 }
