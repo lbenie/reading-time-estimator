@@ -1,3 +1,9 @@
+## [2.1.0](https://github.com/lbenie/reading-time-estimator/compare/v2.0.5...v2.1.0) (2026-01-27)
+
+### :sparkles: Features
+
+* support markdown input ([#2122](https://github.com/lbenie/reading-time-estimator/issues/2122)) ([d34aebf](https://github.com/lbenie/reading-time-estimator/commit/d34aebffda7f31b22f93a6ff2d3e644f4c6a08f0))
+
 ## [2.0.5](https://github.com/lbenie/reading-time-estimator/compare/v2.0.4...v2.0.5) (2026-01-27)
 
 ### :bug: Fixes
