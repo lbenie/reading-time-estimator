@@ -1,134 +1,134 @@
 module.exports = {
   branches: [
-    'main',
-    'next',
+    "main",
+    "next",
     {
-      name: 'beta',
+      name: "beta",
       prerelease: true,
     },
     {
-      name: 'alpha',
+      name: "alpha",
       prerelease: true,
     },
   ],
   plugins: [
     [
-      '@semantic-release/commit-analyzer',
+      "@semantic-release/commit-analyzer",
       {
-        preset: 'angular',
+        preset: "angular",
         releaseRules: [
-          { type: 'docs', release: 'patch' },
-          { type: 'refactor', release: 'patch' },
+          { type: "docs", release: "patch" },
+          { type: "refactor", release: "patch" },
           // { type: 'chore', scope: 'deps', release: 'patch' },
         ],
         parserOpts: {
           noteKeywords: [
-            'BREAKING CHANGE',
-            'BREAKING CHANGES',
-            'BREAKING',
-            'breaking change',
-            'breaking changes',
-            'breaking',
+            "BREAKING CHANGE",
+            "BREAKING CHANGES",
+            "BREAKING",
+            "breaking change",
+            "breaking changes",
+            "breaking",
           ],
         },
       },
     ],
     [
-      '@semantic-release/release-notes-generator',
+      "@semantic-release/release-notes-generator",
       {
-        preset: 'conventionalcommits',
+        preset: "conventionalcommits",
         presetConfig: {
           types: [
             {
-              type: 'feat',
-              section: ':sparkles: Features',
+              type: "feat",
+              section: ":sparkles: Features",
               hidden: false,
             },
             {
-              type: 'fix',
-              section: ':bug: Fixes',
+              type: "fix",
+              section: ":bug: Fixes",
               hidden: false,
             },
             {
-              type: 'docs',
-              section: ':memo: Documenation',
+              type: "docs",
+              section: ":memo: Documenation",
               hidden: false,
             },
             {
-              type: 'style',
-              section: ':barber: Styling',
+              type: "style",
+              section: ":barber: Styling",
               hidden: false,
             },
             {
-              type: 'refactor',
-              section: ':zap: Refactoring',
+              type: "refactor",
+              section: ":zap: Refactoring",
               hidden: false,
             },
             {
-              type: 'perf',
-              section: ':fast_forward: Performance',
+              type: "perf",
+              section: ":fast_forward: Performance",
               hidden: false,
             },
             {
-              type: 'test',
-              section: ':white_check_mark: Tests',
+              type: "test",
+              section: ":white_check_mark: Tests",
               hidden: true,
             },
             {
-              type: 'ci',
-              section: ':repeat: CI',
+              type: "ci",
+              section: ":repeat: CI",
               hidden: true,
             },
             {
-              type: 'chore',
-              section: ':white_check_mark: Chores',
+              type: "chore",
+              section: ":white_check_mark: Chores",
               hidden: false,
             },
           ],
         },
         parserOpts: {
           noteKeywords: [
-            'BREAKING CHANGE',
-            'BREAKING CHANGES',
-            'BREAKING',
-            'breaking change',
-            'breaking changes',
-            'breaking',
+            "BREAKING CHANGE",
+            "BREAKING CHANGES",
+            "BREAKING",
+            "breaking change",
+            "breaking changes",
+            "breaking",
           ],
         },
         writerOpts: {
-          commitsSort: ['subject', 'scope'],
+          commitsSort: ["subject", "scope"],
         },
       },
     ],
     [
-      '@semantic-release/changelog',
+      "@semantic-release/changelog",
       {
-        changelogFile: 'CHANGELOG.md',
+        changelogFile: "CHANGELOG.md",
       },
     ],
-    '@semantic-release/npm',
+    "@semantic-release/npm",
     [
-      '@semantic-release/github',
+      "@semantic-release/github",
       {
         assets: [
           {
-            path: 'dist/reading-time-estimator.js',
-            label: 'ES js distribution',
+            path: "dist/reading-time-estimator.js",
+            label: "ES js distribution",
           },
           {
-            path: 'dist/reading-time-estimator.js',
-            label: 'UMD js distribution',
+            path: "dist/reading-time-estimator.js",
+            label: "UMD js distribution",
           },
         ],
       },
     ],
     [
-      '@semantic-release/git',
+      "@semantic-release/git",
       {
-        assets: ['package.json', 'CHANGELOG.md'],
-        message: 'chore(release): ${nextRelease.version} [skip ci]',
+        assets: ["package.json", "CHANGELOG.md"],
+        message: "chore(release): ${nextRelease.version} [skip ci]",
       },
     ],
   ],
-}
+};

@@ -1,13 +1,16 @@
 /* eslint-disable @typescript-eslint/prefer-readonly-parameter-types */
-import sanitizeHtml, { type IOptions } from 'sanitize-html'
-import { parse, type MarkedOptions } from 'marked'
-import {
-  type I18n,
-  type SupportedLanguages,
-  type TranslationMap,
-} from './i18n/types.js'
-import { type ReadingTime, type Options } from './types.js'
-import { en } from './i18n/en.js'
+
+import { type MarkedOptions, parse } from "marked";
+import sanitizeHtml, { type IOptions } from "sanitize-html";
+import { en } from "./i18n/en.js";
+import type { I18n, SupportedLanguages, TranslationMap } from "./i18n/types.js";
+import type { Options, ReadingTime } from "./types.js";
+
+// Re-export types and constants
+export type { SupportedLanguages } from "./i18n/types.js";
+// biome-ignore lint/performance/noBarrelFile: entry point
+export { supportedLanguages } from "./i18n/types.js";
+export type { Options, ReadingTime } from "./types.js";
 
 /**
  * Parses the text and returns an array of tokens (words / characters)
@@ -20,7 +23,7 @@ import { en } from './i18n/en.js'
  *  - Punctuation outside recognized ranges is ignored
  */
 const TOKEN_REGEX =
-  /[\u4E00-\u9FFF\u3400-\u4DBF\u3040-\u309F\u30A0-\u30FF]|[A-Za-z0-9\u00C0-\u024F\u0400-\u052F\u2DE0-\u2DFF\uA640-\uA69F\u0980-\u09FF\uAC00-\uD7AF\u0590-\u05FF\u0600-\u06FF]+(?:[\u0300-\u036F\u0610-\u061A\u064B-\u065F]+)*(?:['’‑-][A-Za-z0-9\u00C0-\u024F\u0400-\u052F\u2DE0-\u2DFF\uA640-\uA69F\u0980-\u09FF\uAC00-\uD7AF\u0590-\u05FF\u0600-\u06FF]+)*|[0-9]+(?:[.,][0-9]+)*/g
+  /[\u4E00-\u9FFF\u3400-\u4DBF\u3040-\u309F\u30A0-\u30FF]|[A-Za-z0-9\u00C0-\u024F\u0400-\u052F\u2DE0-\u2DFF\uA640-\uA69F\u0980-\u09FF\uAC00-\uD7AF\u0590-\u05FF\u0600-\u06FF]+(?:[\u0300-\u036F\u0610-\u061A\u064B-\u065F]+)*(?:['’‑-][A-Za-z0-9\u00C0-\u024F\u0400-\u052F\u2DE0-\u2DFF\uA640-\uA69F\u0980-\u09FF\uAC00-\uD7AF\u0590-\u05FF\u0600-\u06FF]+)*|[0-9]+(?:[.,][0-9]+)*/g;
 
 /**
  * Normalizes input text before tokenization.
@@ -35,12 +38,12 @@ const TOKEN_REGEX =
  */
 const normalizeInput = (input: string) =>
   input
-    .normalize('NFC')
-    .replace(/[\u00A0\u1680\u2000-\u200A\u202F\u205F\u3000]/gu, ' ')
-    .replace(/[\u200B-\u200F\u202A-\u202E\u2060]/gu, '')
-    .replace(/[\u3001\u3002\uFF0C\uFF0E]/gu, ' ')
-    .replace(/\s+/gu, ' ')
-    .trim()
+    .normalize("NFC")
+    .replace(/[\u00A0\u1680\u2000-\u200A\u202F\u205F\u3000]/gu, " ")
+    .replace(/[\u200B-\u200F\u202A-\u202E\u2060]/gu, "")
+    .replace(/[\u3001\u3002\uFF0C\uFF0E]/gu, " ")
+    .replace(/\s+/gu, " ")
+    .trim();
 
 /**
  * Parses the text and returns an array of words
@@ -50,19 +53,12 @@ const normalizeInput = (input: string) =>
  * @returns {ReadonlyArray<string>} Parsed chinese, japanese and accented text
  */
 
-const parseWords = (
-  data: string,
-  sanitizerOptions: Readonly<IOptions>,
-  markdownOptions: Readonly<MarkedOptions>,
-) => {
-  const strippedHTML = sanitizeHtml(
-    parse(data, { ...markdownOptions, async: false }),
-    sanitizerOptions,
-  )
-  const normalized = normalizeInput(strippedHTML)
-  const tokens = normalized.match(TOKEN_REGEX) ?? []
-  return tokens
-}
+const parseWords = (data: string, sanitizerOptions: Readonly<IOptions>, markdownOptions: Readonly<MarkedOptions>) => {
+  const strippedHTML = sanitizeHtml(parse(data, { ...markdownOptions, async: false }), sanitizerOptions);
+  const normalized = normalizeInput(strippedHTML);
+  const tokens = normalized.match(TOKEN_REGEX) ?? [];
+  return tokens;
+};
 
 /**
  * Calculates the number of words in the text
@@ -80,14 +76,14 @@ const getNumberOfWords = (
   parseWords(data, sanitizerOptions, markdownOptions).reduce(
     (accumulator, token) => accumulator + (token.trim().length ? 1 : 0),
     0,
-  )
+  );
 
 /**
  * Checks if the number of minutes is less than 1
  * @param {number} minutes - Number of minutes to read the text
  * @returns {boolean} True if the number of minutes is less than 1, otherwise false
  */
-const isLessThanAMinute = (minutes: number) => minutes < 1 + Number.EPSILON
+const isLessThanAMinute = (minutes: number) => minutes < 1 + Number.EPSILON;
 
 /**
  * Resolves the correct translation for a locale.
@@ -97,44 +93,31 @@ const isLessThanAMinute = (minutes: number) => minutes < 1 + Number.EPSILON
  * @param {TranslationMap | undefined} translations - Optional user-supplied translation map
  * @returns {string} localized string segment
  */
-const resolveTranslation = (
-  language: SupportedLanguages,
-  isLessThanOne: boolean,
-  translations?: TranslationMap,
-) => {
-  const locale: I18n =
-    translations?.[language] ??
-    (language === 'en' ? en : (translations?.en ?? en))
-  return locale[isLessThanOne ? 'less' : 'default']
-}
+const resolveTranslation = (language: SupportedLanguages, isLessThanOne: boolean, translations?: TranslationMap) => {
+  const locale: I18n = translations?.[language] ?? (language === "en" ? en : (translations?.en ?? en));
+  return locale[isLessThanOne ? "less" : "default"];
+};
 /**
  *
  * @param {string} data - The text to be estimated
  * @param {Options} options - The options for the reading time estimation
  * @returns {ReadingTime} The estimated reading time
  */
-export const readingTime = (
-  data: string,
-  options: Options = {},
-): ReadingTime => {
+export const readingTime = (data: string, options: Options = {}): ReadingTime => {
   const {
     wordsPerMinute = 200,
-    language = 'en',
+    language = "en",
     translations = {},
     htmlSanitizerOptions = { allowedTags: [], allowedAttributes: {} },
     markdownParserOptions = {},
-  } = options
-  const words = getNumberOfWords(
-    data,
-    htmlSanitizerOptions,
-    markdownParserOptions,
-  )
-  const minutes = Math.round(words / wordsPerMinute)
-  const isLessThanOne = isLessThanAMinute(minutes)
+  } = options;
+  const words = getNumberOfWords(data, htmlSanitizerOptions, markdownParserOptions);
+  const minutes = Math.round(words / wordsPerMinute);
+  const isLessThanOne = isLessThanAMinute(minutes);
 
   return {
     minutes,
     words,
-    text: `${isLessThanOne ? '' : `${minutes} `}${resolveTranslation(language, isLessThanOne, translations)}`,
-  } as const
-}
+    text: `${isLessThanOne ? "" : `${minutes} `}${resolveTranslation(language, isLessThanOne, translations)}`,
+  } as const;
+};

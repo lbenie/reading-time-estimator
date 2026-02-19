@@ -33,7 +33,7 @@
   },
   "exports": {
     ".": {
-      "types": "./dist/types/index.d.ts",
+      "types": "./dist/types/reading-time-estimator.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
@@ -140,13 +140,13 @@
   "license": "MIT",
   "scripts": {
     "build": "vite build",
-    "test": "concurrently -n vitest 'vitest --coverage'",
+    "test": "vitest --coverage",
     "test:vitest": "vitest",
     "semantic-release": "npx semantic-release",
-    "format": "eslint lib --fix"
+    "format": "biome check --write ."
   },
   "devDependencies": {
-    "@lbenie/linting": "1.8.217",
+    "@lbenie/linting": "2.1.5",
     "@rollup/plugin-typescript": "12.3.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
@@ -156,9 +156,7 @@
     "@types/sanitize-html": "2.16.0",
     "@vitest/coverage-v8": "4.0.18",
     "all-contributors-cli": "6.26.1",
-    "concurrently": "9.2.1",
     "conventional-changelog-conventionalcommits": "9.1.0",
-    "eslint": "9.39.2",
     "rollup": "4.57.1",
     "semantic-release": "25.0.3",
     "typescript": "5.9.3",
