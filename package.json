@@ -143,7 +143,7 @@
     "test": "vitest --coverage",
     "test:vitest": "vitest",
     "semantic-release": "npx semantic-release",
-    "format": "biome check --write ."
+    "format": "biome check --write lib"
   },
   "devDependencies": {
     "@lbenie/linting": "2.1.5",
