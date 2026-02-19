@@ -1,7 +1,5 @@
 {
-  "extends": [
-    "github>whitesource/merge-confidence:beta"
-  ],
+  "extends": ["github>whitesource/merge-confidence:beta"],
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
