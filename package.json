@@ -157,7 +157,7 @@
     "@vitest/coverage-v8": "4.0.18",
     "all-contributors-cli": "6.26.1",
     "conventional-changelog-conventionalcommits": "9.1.0",
-    "rollup": "4.57.1",
+    "rollup": "4.58.0",
     "semantic-release": "25.0.3",
     "typescript": "5.9.3",
     "unplugin-auto-import": "21.0.0",
