@@ -16,8 +16,8 @@ importers:
         version: 2.17.1
     devDependencies:
       '@lbenie/linting':
-        specifier: 2.1.7
-        version: 2.1.7
+        specifier: 2.1.8
+        version: 2.1.8
       '@rollup/plugin-typescript':
         specifier: 12.3.0
         version: 12.3.0(rollup@4.58.0)(tslib@2.8.1)(typescript@5.9.3)
@@ -343,8 +343,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@lbenie/linting@2.1.7':
-    resolution: {integrity: sha512-xIMoCrN8XvLRep6wmhVw8DWeJ2J6hfOwPwWXscv5wJQ2yNUX41mnm6NKy+3iKKKQDvOWp/Qb0YUZc1VGGaVKcA==}
+  '@lbenie/linting@2.1.8':
+    resolution: {integrity: sha512-BYgrCQfQNBW4GnIER+ZP1640MwQYSW2mW6563T4pc/A5Oiy/z8r4+dnyxJbeWSkI0ojPxKWAQDpr3oCyKyswEw==}
 
   '@octokit/auth-token@6.0.0':
     resolution: {integrity: sha512-P4YJBPdPSpWTQ1NU4XYdvHvXJJDxM6YwpS0FZHRgP7YFkdVxsWcpWGy/NVqlAA7PcPCnMacXlRm1y2PFZRWL/w==}
@@ -2515,7 +2515,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@lbenie/linting@2.1.7':
+  '@lbenie/linting@2.1.8':
     dependencies:
       '@biomejs/biome': 2.4.4
 
