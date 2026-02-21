@@ -2,6 +2,24 @@
   "extends": ["github>whitesource/merge-confidence:beta"],
   "packageRules": [
     {
+      "matchPackageNames": ["@biomejs/biome"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "postUpgradeTasks": {
+        "commands": ["pnpm run format"],
+        "executionMode": "branch"
+      }
+    },
+    {
+      "matchPackageNames": ["@biomejs/biome"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "postUpgradeTasks": {
+        "commands": ["pnpm run format"],
+        "executionMode": "branch"
+      }
+    },
+    {
       "matchDepTypes": ["devDependencies"],
       "automerge": true
     }
