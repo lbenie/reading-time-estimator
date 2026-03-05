@@ -156,7 +156,7 @@
     "@types/sanitize-html": "2.16.0",
     "@vitest/coverage-v8": "4.0.18",
     "all-contributors-cli": "6.26.1",
-    "conventional-changelog-conventionalcommits": "9.2.0",
+    "conventional-changelog-conventionalcommits": "9.3.0",
     "rollup": "4.59.0",
     "semantic-release": "25.0.3",
     "typescript": "5.9.3",
