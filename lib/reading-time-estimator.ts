@@ -23,7 +23,7 @@ export type { Options, ReadingTime } from "./types.js";
  *  - Punctuation outside recognized ranges is ignored
  */
 const TOKEN_REGEX =
-  /[\u4E00-\u9FFF\u3400-\u4DBF\u3040-\u309F\u30A0-\u30FF]|[A-Za-z0-9\u00C0-\u024F\u0400-\u052F\u2DE0-\u2DFF\uA640-\uA69F\u0980-\u09FF\uAC00-\uD7AF\u0590-\u05FF\u0600-\u06FF]+(?:[\u0300-\u036F\u0610-\u061A\u064B-\u065F]+)*(?:['’‑-][A-Za-z0-9\u00C0-\u024F\u0400-\u052F\u2DE0-\u2DFF\uA640-\uA69F\u0980-\u09FF\uAC00-\uD7AF\u0590-\u05FF\u0600-\u06FF]+)*|[0-9]+(?:[.,][0-9]+)*/g;
+  /[\u4E00-\u9FFF\u3400-\u4DBF\u3040-\u309F\u30A0-\u30FF]|[A-Za-z0-9\u00C0-\u024F\u0400-\u052F\u2DE0-\u2DFF\uA640-\uA69F\u0900-\u097F\u0980-\u09FF\uAC00-\uD7AF\u0590-\u05FF\u0600-\u06FF]+(?:[\u0300-\u036F\u0610-\u061A\u064B-\u065F]+)*(?:['’‑-][A-Za-z0-9\u00C0-\u024F\u0400-\u052F\u2DE0-\u2DFF\uA640-\uA69F\u0900-\u097F\u0980-\u09FF\uAC00-\uD7AF\u0590-\u05FF\u0600-\u06FF]+)*|[0-9]+(?:[.,][0-9]+)*/g;
 
 /**
  * Normalizes input text before tokenization.

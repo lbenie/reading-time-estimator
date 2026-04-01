@@ -122,6 +122,11 @@
       "import": "./dist/i18n/id/locale.js",
       "require": "./dist/i18n/id/locale.cjs"
     },
+    "./i18n/hi": {
+      "types": "./dist/types/i18n/hi.d.ts",
+      "import": "./dist/i18n/hi/locale.js",
+      "require": "./dist/i18n/hi/locale.cjs"
+    },
     "./package.json": "./package.json"
   },
   "bugs": {

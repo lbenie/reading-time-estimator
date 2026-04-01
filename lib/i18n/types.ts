@@ -33,6 +33,7 @@ export const supportedLanguages = [
   "vi",
   "it",
   "id",
+  "hi",
 ] as const;
 
 /**

@@ -3,6 +3,7 @@ import { de } from "../lib/i18n/de.js";
 import { en } from "../lib/i18n/en.js";
 import { es } from "../lib/i18n/es.js";
 import { fr } from "../lib/i18n/fr.js";
+import { hi } from "../lib/i18n/hi.js";
 import { it as itLocale } from "../lib/i18n/it.js";
 import { ja } from "../lib/i18n/ja.js";
 import { ptBr } from "../lib/i18n/pt-br.js";
@@ -23,6 +24,7 @@ const chineseTraditional = "繁體中文，海上生明月，天涯共此時。"
 const japanese = "どういたしまして。";
 const withHtml = "<p>Hello <strong>world</strong> &nbsp; test</p>";
 const bangla = "Riḍiṁ ṭā'ima ēsṭimēṭara tairi karā haẏēchila ēkaṭi ārṭikēla";
+const hindi = "रीडिंग टाइम एस्टिमेटर एक आर्टिकल के रीडिंग टाइम का अनुमान प्रदान करने के लिए बनाया गया था।";
 
 describe("readingTime (tree-shakable + options)", () => {
   test("english default (no options => uses defaults, falls back to en)", () => {
@@ -114,6 +116,15 @@ describe("readingTime (tree-shakable + options)", () => {
     });
     expect(r.words).toBeGreaterThan(0);
     expect(r.text.endsWith(bn.less) || r.text.endsWith(bn.default)).toBe(true);
+  });
+
+  test("hindi (devanagari) script handling", () => {
+    const r = readingTime(hindi, {
+      language: "hi",
+      translations: map({ hi }),
+    });
+    expect(r.words).toBeGreaterThan(0);
+    expect(r.text.endsWith(hi.less) || r.text.endsWith(hi.default)).toBe(true);
   });
 
   test("multiple locales in one map (fr + es)", () => {
