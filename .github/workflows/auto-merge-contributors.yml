@@ -1,13 +1,13 @@
 name: Auto-merge all-contributors PRs
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types: [closed]
 
 jobs:
   auto-merge-contributors:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
     steps:
       - name: Find all-contributors PRs
         id: find-pr
