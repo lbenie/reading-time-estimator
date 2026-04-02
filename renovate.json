@@ -1,5 +1,6 @@
 {
   "extends": ["github>whitesource/merge-confidence:beta"],
+  "semanticCommits": "enabled",
   "packageRules": [
     {
       "matchPackageNames": ["@biomejs/biome"],
@@ -27,6 +28,8 @@
     },
     {
       "matchDepTypes": ["devDependencies"],
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "deps-dev",
       "automerge": true
     }
   ]
