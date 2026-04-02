@@ -20,6 +20,12 @@
       }
     },
     {
+      "matchDepTypes": ["dependencies"],
+      "semanticCommitType": "feat",
+      "semanticCommitScope": "deps",
+      "automerge": false
+    },
+    {
       "matchDepTypes": ["devDependencies"],
       "automerge": true
     }
