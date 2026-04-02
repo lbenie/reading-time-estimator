@@ -1,10 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "reading-time-estimator": ["./lib/index.ts"],
-      "reading-time-estimator/*": ["./lib/*"]
-    },
     "target": "ESNext",
     "module": "NodeNext",
     "strict": true,
@@ -16,6 +11,7 @@
     "declaration": true,
     "strictNullChecks": true,
     "allowSyntheticDefaultImports": true,
+    "rootDir": "./lib",
     "outDir": "dist",
     "declarationDir": "dist/types"
   },

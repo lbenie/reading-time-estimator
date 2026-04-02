@@ -1,5 +1,5 @@
+import { resolve } from "node:path";
 import typescript from "@rollup/plugin-typescript";
-import { resolve } from "path";
 import AutoImport from "unplugin-auto-import/vite";
 import { coverageConfigDefaults, defineConfig } from "vitest/config";
 import { supportedLanguages } from "./lib/i18n/types";
@@ -13,6 +13,7 @@ const libEntryMap = supportedLanguages.reduce<Record<string, string>>(
   { index: resolve(__dirname, "lib/reading-time-estimator.ts") },
 );
 
+// biome-ignore lint/style/noDefaultExport: vite configuration
 export default defineConfig({
   test: {
     globals: true,
@@ -21,13 +22,7 @@ export default defineConfig({
     setupFiles: [],
     coverage: {
       provider: "v8",
-      exclude: [
-        "__tests__/**",
-        "release.config.cjs",
-        "lib/i18n/**",
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-        ...coverageConfigDefaults.exclude,
-      ],
+      exclude: ["__tests__/**", "release.config.cjs", "lib/i18n/**", ...coverageConfigDefaults.exclude],
     },
   },
   plugins: [
