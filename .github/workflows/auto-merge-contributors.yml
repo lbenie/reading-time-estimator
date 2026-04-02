@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Find all-contributors PRs
         id: find-pr
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -33,7 +33,7 @@ jobs:
 
       - name: Auto-merge all-contributors PRs
         if: steps.find-pr.outputs.result != '[]'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
