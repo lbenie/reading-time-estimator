@@ -1,0 +1,81 @@
+name: Auto-merge all-contributors PRs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  auto-merge-contributors:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Find all-contributors PRs
+        id: find-pr
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { data: pullRequests } = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100
+            });
+
+            const contributorPRs = pullRequests.filter(pr =>
+              pr.user.login === 'allcontributors[bot]' ||
+              pr.user.login === 'all-contributors[bot]'
+            );
+
+            console.log(`Found ${contributorPRs.length} all-contributors PRs`);
+
+            return contributorPRs.map(pr => pr.number);
+
+      - name: Auto-merge all-contributors PRs
+        if: steps.find-pr.outputs.result != '[]'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const prNumbers = ${{ steps.find-pr.outputs.result }};
+
+            for (const prNumber of prNumbers) {
+              try {
+                console.log(`Processing PR #${prNumber}`);
+
+                // Get PR details to check if it's mergeable
+                const { data: pr } = await github.rest.pulls.get({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: prNumber
+                });
+
+                if (!pr.mergeable) {
+                  console.log(`PR #${prNumber} is not mergeable, skipping`);
+                  continue;
+                }
+
+                // Approve the PR
+                await github.rest.pulls.createReview({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: prNumber,
+                  event: 'APPROVE'
+                });
+                console.log(`Approved PR #${prNumber}`);
+
+                // Merge the PR
+                await github.rest.pulls.merge({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: prNumber,
+                  merge_method: 'squash',
+                  commit_title: `docs: ${pr.title}`,
+                  commit_message: 'Auto-merged by all-contributors workflow'
+                });
+                console.log(`Successfully merged PR #${prNumber}`);
+
+              } catch (error) {
+                console.error(`Error processing PR #${prNumber}:`, error.message);
+              }
+            }
