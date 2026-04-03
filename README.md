@@ -51,7 +51,7 @@ Inputs are parsed as Markdown and sanitized as HTML automatically before word co
 
 You can also provide `translations` to override locale strings or `htmlSanitizerOptions` to customize how markup is handled.
 
-At the moment it supports these locales: `'en', 'fr', 'es', 'zh-cn', 'zh-tw', 'ja', 'de', 'pt-br', 'tr', 'ro', 'bn', 'sk', 'cs', 'ru', 'vi', 'it' and 'id'`
+At the moment it supports these locales: `'en', 'fr', 'es', 'zh-cn', 'zh-tw', 'ja', 'de', 'pt-br', 'tr', 'ro', 'bn', 'sk', 'cs', 'ru', 'vi', 'it', 'id' and 'hi'`
 
 ### Usage
 
