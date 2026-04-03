@@ -1,3 +1,9 @@
+## [2.3.0](https://github.com/lbenie/reading-time-estimator/compare/v2.2.0...v2.3.0) (2026-04-03)
+
+### :sparkles: Features
+
+* add support for Hindi language ([#2179](https://github.com/lbenie/reading-time-estimator/issues/2179)) ([a8c8897](https://github.com/lbenie/reading-time-estimator/commit/a8c889710ab5bd3d127c5158fafb64d77d007f88))
+
 ## [2.2.0](https://github.com/lbenie/reading-time-estimator/compare/v2.1.1...v2.2.0) (2026-04-02)
 
 ### :sparkles: Features
