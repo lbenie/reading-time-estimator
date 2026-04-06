@@ -1,3 +1,13 @@
+## [2.4.0](https://github.com/lbenie/reading-time-estimator/compare/v2.3.0...v2.4.0) (2026-04-06)
+
+### :sparkles: Features
+
+* **deps:** update dependency marked to v17.0.6 ([#2184](https://github.com/lbenie/reading-time-estimator/issues/2184)) ([f28b98c](https://github.com/lbenie/reading-time-estimator/commit/f28b98c1b6a5134b9d52deababcc8de17ab961b5))
+
+### :white_check_mark: Chores
+
+* **deps-dev:** update dependency @types/node to v25.5.2 ([#2183](https://github.com/lbenie/reading-time-estimator/issues/2183)) ([56bb04d](https://github.com/lbenie/reading-time-estimator/commit/56bb04d15d121c519078cec8d50b92c38c1267dc))
+
 ## [2.3.0](https://github.com/lbenie/reading-time-estimator/compare/v2.2.0...v2.3.0) (2026-04-03)
 
 ### :sparkles: Features
