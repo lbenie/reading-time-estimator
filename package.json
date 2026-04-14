@@ -151,7 +151,7 @@
     "format": "biome check --write lib"
   },
   "devDependencies": {
-    "@lbenie/linting": "2.1.11",
+    "@lbenie/linting": "2.1.12",
     "@rollup/plugin-typescript": "12.3.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
