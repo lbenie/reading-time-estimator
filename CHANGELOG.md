@@ -1,3 +1,22 @@
+## [2.5.0](https://github.com/lbenie/reading-time-estimator/compare/v2.4.0...v2.5.0) (2026-04-15)
+
+### :sparkles: Features
+
+* **deps:** update dependency marked to v18 ([#2186](https://github.com/lbenie/reading-time-estimator/issues/2186)) ([48261e9](https://github.com/lbenie/reading-time-estimator/commit/48261e9e96c257fe8610df789aff7a75ba6f7193))
+
+### :white_check_mark: Chores
+
+* **deps:** update actions/github-script action to v9 ([#2193](https://github.com/lbenie/reading-time-estimator/issues/2193)) ([470ef47](https://github.com/lbenie/reading-time-estimator/commit/470ef4759a07cfae32d21c039b7ead0c9895e817))
+* **deps-dev:** update dependency @lbenie/linting to v2.1.12 ([#2195](https://github.com/lbenie/reading-time-estimator/issues/2195)) ([06ee819](https://github.com/lbenie/reading-time-estimator/commit/06ee8194ee0b80668dfb4e1019e34cd7c3eb87e8))
+* **deps-dev:** update dependency @types/node to v25.6.0 ([#2194](https://github.com/lbenie/reading-time-estimator/issues/2194)) ([243c5ae](https://github.com/lbenie/reading-time-estimator/commit/243c5ae27f7e8ecec7b5acf20e12dab2ec66acb2))
+* **deps-dev:** update dependency @vitest/coverage-v8 to v4.1.3 ([#2187](https://github.com/lbenie/reading-time-estimator/issues/2187)) ([244fb52](https://github.com/lbenie/reading-time-estimator/commit/244fb5294d206fffc76e083ae773d30b559a7e8d))
+* **deps-dev:** update dependency @vitest/coverage-v8 to v4.1.4 ([#2191](https://github.com/lbenie/reading-time-estimator/issues/2191)) ([d178c6a](https://github.com/lbenie/reading-time-estimator/commit/d178c6abcc5880db413b8187783e09224ef92afb))
+* **deps-dev:** update dependency vite to v8.0.5 ([#2185](https://github.com/lbenie/reading-time-estimator/issues/2185)) ([ee9e43d](https://github.com/lbenie/reading-time-estimator/commit/ee9e43d86dac29af5cbd63fae7e3361adc543f9f))
+* **deps-dev:** update dependency vite to v8.0.7 ([#2188](https://github.com/lbenie/reading-time-estimator/issues/2188)) ([b43f515](https://github.com/lbenie/reading-time-estimator/commit/b43f515ece4d02e95645f47d4d85cb9f8997c234))
+* **deps-dev:** update dependency vite to v8.0.8 ([#2190](https://github.com/lbenie/reading-time-estimator/issues/2190)) ([3bcd915](https://github.com/lbenie/reading-time-estimator/commit/3bcd91526f3003ee9d4e0dc7329b91b9e4e85fc1))
+* **deps-dev:** update dependency vitest to v4.1.3 ([#2189](https://github.com/lbenie/reading-time-estimator/issues/2189)) ([02bd6de](https://github.com/lbenie/reading-time-estimator/commit/02bd6de77665d5e7f02537cf1d2abcef63d27bb6))
+* **deps-dev:** update dependency vitest to v4.1.4 ([#2192](https://github.com/lbenie/reading-time-estimator/issues/2192)) ([20c59d1](https://github.com/lbenie/reading-time-estimator/commit/20c59d16ed0bd1d898be404997e012d20bebe462))
+
 ## [2.4.0](https://github.com/lbenie/reading-time-estimator/compare/v2.3.0...v2.4.0) (2026-04-06)
 
 ### :sparkles: Features
