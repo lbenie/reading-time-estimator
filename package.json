@@ -167,7 +167,7 @@
     "typescript": "6.0.3",
     "unplugin-auto-import": "21.0.0",
     "vite": "8.0.12",
-    "vitest": "4.1.5"
+    "vitest": "4.1.6"
   },
   "dependencies": {
     "marked": "18.0.0",
