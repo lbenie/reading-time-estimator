@@ -46,8 +46,8 @@ importers:
         specifier: 6.26.1
         version: 6.26.1
       conventional-changelog-conventionalcommits:
-        specifier: 10.0.0
-        version: 10.0.0
+        specifier: 10.2.0
+        version: 10.2.0
       rollup:
         specifier: 4.62.2
         version: 4.62.2
@@ -171,8 +171,8 @@ packages:
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
     engines: {node: '>=0.1.90'}
 
-  '@conventional-changelog/template@1.0.0':
-    resolution: {integrity: sha512-gJCWgneQIGfxZ22B4nGh7LF3cHbIdhwTHZi9octL7kagH4UHfnsLvp/yPl6tzWvdnIIRUutJtVNEih6Ln2YzFw==}
+  '@conventional-changelog/template@1.2.0':
+    resolution: {integrity: sha512-12qHxvlKjHmP0PQ+17EREgC7lWyLwbph1RKcZQZ7k7ZWGmrxfxC9gadHGfvzr0g0u8BhiBGg3tks93txodlyRQ==}
     engines: {node: '>=22'}
 
   '@emnapi/core@1.11.1':
@@ -997,8 +997,8 @@ packages:
     resolution: {integrity: sha512-GGf2Nipn1RUCAktxuVauVr1e3r8QrLP/B0lEUsFktmGqc3ddbQkhoJZHJctVU829U1c6mTSWftrVOCHaL85Q3w==}
     engines: {node: '>=18'}
 
-  conventional-changelog-conventionalcommits@10.0.0:
-    resolution: {integrity: sha512-MI9NHlb+21eTLJyd6c8mgH2XHGz+ZaQanCFyH1A6AGtqqbTw+w9Ren4Oi5yWFi/pDehlmbnFU1pJzRqQXTOp+w==}
+  conventional-changelog-conventionalcommits@10.2.0:
+    resolution: {integrity: sha512-UtlM9GqolY7OmlQh5L/UEVoKsTUpTgUVy1PU8JN5gl5Ydaejb7WRklGliG1SKPxxj7hzA173eG3Kt5fYWE2pmg==}
     engines: {node: '>=22'}
 
   conventional-changelog-writer@8.2.0:
@@ -2649,7 +2649,7 @@ snapshots:
   '@colors/colors@1.5.0':
     optional: true
 
-  '@conventional-changelog/template@1.0.0': {}
+  '@conventional-changelog/template@1.2.0': {}
 
   '@emnapi/core@1.11.1':
     dependencies:
@@ -3368,9 +3368,9 @@ snapshots:
     dependencies:
       compare-func: 2.0.0
 
-  conventional-changelog-conventionalcommits@10.0.0:
+  conventional-changelog-conventionalcommits@10.2.0:
     dependencies:
-      '@conventional-changelog/template': 1.0.0
+      '@conventional-changelog/template': 1.2.0
 
   conventional-changelog-writer@8.2.0:
     dependencies:
