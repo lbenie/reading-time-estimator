@@ -1,3 +1,15 @@
+# [2.9.0](https://github.com/lbenie/reading-time-estimator/compare/v2.8.0...v2.9.0) (2026-07-02)
+
+
+### :sparkles: Features
+
+* **deps:** update dependency marked to v18.0.5 ([#2252](https://github.com/lbenie/reading-time-estimator/issues/2252)) ([2a8a935](https://github.com/lbenie/reading-time-estimator/commit/2a8a935fcc0fa8dc60862fd79449786776fd7841))
+
+
+### :white_check_mark: Chores
+
+* **deps-dev:** update dependency @lbenie/linting to v2.1.15 ([#2251](https://github.com/lbenie/reading-time-estimator/issues/2251)) ([65f7769](https://github.com/lbenie/reading-time-estimator/commit/65f7769d19189d6c707fcb8cd04891a6e3b66043))
+
 ## [2.8.0](https://github.com/lbenie/reading-time-estimator/compare/v2.7.0...v2.8.0) (2026-07-02)
 
 ## [2.7.0](https://github.com/lbenie/reading-time-estimator/compare/v2.6.0...v2.7.0) (2026-07-02)
