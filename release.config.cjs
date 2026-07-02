@@ -1,3 +1,65 @@
+const RELEASE_NOTE_SECTIONS = {
+  feat: ":sparkles: Features",
+  fix: ":bug: Fixes",
+  docs: ":memo: Documentation",
+  style: ":barber: Styling",
+  refactor: ":zap: Refactoring",
+  perf: ":fast_forward: Performance",
+  chore: ":white_check_mark: Chores",
+};
+
+const HIDDEN_RELEASE_NOTE_TYPES = new Set(["build", "ci", "test"]);
+
+function formatIssueLink(context, reference) {
+  const owner = reference.owner || context.owner;
+  const repository = reference.repository || context.repository;
+
+  return `${context.host}/${owner}/${repository}/issues/${reference.issue}`;
+}
+
+function formatCommitLink(context, commit) {
+  return `${context.host}/${context.owner}/${context.repository}/commit/${commit.hash}`;
+}
+
+function transformReleaseNotesCommit(commit, context) {
+  const type = commit.revert ? "revert" : (commit.type || "").toLowerCase();
+  const section = RELEASE_NOTE_SECTIONS[type];
+  const notes = (commit.notes || []).map((note) => ({
+    ...note,
+    title: "BREAKING CHANGES",
+  }));
+
+  if (!notes.length && (!section || HIDDEN_RELEASE_NOTE_TYPES.has(type))) {
+    return undefined;
+  }
+
+  const linkedIssues = [];
+  const shortHash =
+    typeof commit.hash === "string" ? commit.hash.substring(0, 7) : commit.hash;
+  const scope = commit.scope === "*" ? "" : commit.scope;
+  const subject =
+    typeof commit.subject === "string"
+      ? commit.subject.replace(/(^|[^\\w])#([a-z0-9]+)/gi, (match, prefix, issue) => {
+          linkedIssues.push(`#${issue}`);
+          return `${prefix}[#${issue}](${formatIssueLink(context, { issue })})`;
+        })
+      : commit.subject;
+  const references = (commit.references || []).filter(
+    (reference) => !linkedIssues.includes(`${reference.prefix}${reference.issue}`),
+  );
+
+  return {
+    notes,
+    type: section || commit.type,
+    scope,
+    subject,
+    references,
+    hash: commit.hash,
+    shortHash,
+    commit: formatCommitLink(context, commit),
+  };
+}
+
 module.exports = {
   branches: [
     "main",
@@ -36,56 +98,7 @@ module.exports = {
     [
       "@semantic-release/release-notes-generator",
       {
-        preset: "conventionalcommits",
-        presetConfig: {
-          types: [
-            {
-              type: "feat",
-              section: ":sparkles: Features",
-              hidden: false,
-            },
-            {
-              type: "fix",
-              section: ":bug: Fixes",
-              hidden: false,
-            },
-            {
-              type: "docs",
-              section: ":memo: Documenation",
-              hidden: false,
-            },
-            {
-              type: "style",
-              section: ":barber: Styling",
-              hidden: false,
-            },
-            {
-              type: "refactor",
-              section: ":zap: Refactoring",
-              hidden: false,
-            },
-            {
-              type: "perf",
-              section: ":fast_forward: Performance",
-              hidden: false,
-            },
-            {
-              type: "test",
-              section: ":white_check_mark: Tests",
-              hidden: true,
-            },
-            {
-              type: "ci",
-              section: ":repeat: CI",
-              hidden: true,
-            },
-            {
-              type: "chore",
-              section: ":white_check_mark: Chores",
-              hidden: false,
-            },
-          ],
-        },
+        preset: "angular",
         parserOpts: {
           noteKeywords: [
             "BREAKING CHANGE",
@@ -97,7 +110,14 @@ module.exports = {
           ],
         },
         writerOpts: {
-          commitsSort: ["subject", "scope"],
+          transform: transformReleaseNotesCommit,
+          groupBy: "type",
+          commitGroupsSort: (a, b) => {
+            const order = Object.values(RELEASE_NOTE_SECTIONS);
+
+            return order.indexOf(a.title) - order.indexOf(b.title);
+          },
+          commitsSort: ["scope", "subject"],
         },
       },
     ],
