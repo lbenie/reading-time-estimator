@@ -1,2 +1,9 @@
 allowBuilds:
   esbuild: true
+minimumReleaseAge: 720
+minimumReleaseAgeExclude:
+  - "@biomejs/*"
+  - "@lbenie/*"
+  - vite
+publicHoistPattern:
+  - "@biomejs/biome"
