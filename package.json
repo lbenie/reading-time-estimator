@@ -154,7 +154,7 @@
     "@lbenie/linting": "2.1.15",
     "@rollup/plugin-typescript": "12.3.0",
     "@semantic-release/changelog": "7.0.0",
-    "@semantic-release/git": "10.0.1",
+    "@semantic-release/git": "11.0.1",
     "@semantic-release/github": "12.0.9",
     "@semantic-release/release-notes-generator": "14.1.1",
     "@types/node": "26.1.1",
