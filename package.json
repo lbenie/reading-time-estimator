@@ -165,7 +165,7 @@
     "rollup": "4.62.4",
     "semantic-release": "25.0.8",
     "typescript": "6.0.3",
-    "unplugin-auto-import": "21.0.0",
+    "unplugin-auto-import": "21.1.0",
     "vite": "8.2.0",
     "vitest": "4.1.10"
   },
