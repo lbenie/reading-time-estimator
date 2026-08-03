@@ -1,3 +1,10 @@
+# [2.12.0](https://github.com/lbenie/reading-time-estimator/compare/v2.11.0...v2.12.0) (2026-08-03)
+
+
+### :sparkles: Features
+
+* **deps:** update dependency sanitize-html to v2.17.6 ([#2253](https://github.com/lbenie/reading-time-estimator/issues/2253)) ([0504505](https://github.com/lbenie/reading-time-estimator/commit/0504505b9656230a4ae2df71b47aaffd4f238059))
+
 # [2.11.0](https://github.com/lbenie/reading-time-estimator/compare/v2.10.0...v2.11.0) (2026-08-03)
 
 
