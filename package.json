@@ -173,5 +173,5 @@
     "marked": "18.0.9",
     "sanitize-html": "2.17.6"
   },
-  "packageManager": "pnpm@11.20.0"
+  "packageManager": "pnpm@11.22.0"
 }
