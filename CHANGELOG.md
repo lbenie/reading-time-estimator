@@ -1,3 +1,26 @@
+# [2.14.0](https://github.com/lbenie/reading-time-estimator/compare/v2.13.0...v2.14.0) (2026-08-30)
+
+
+### :sparkles: Features
+
+* **deps:** update dependency sanitize-html to v2.17.7 ([#2279](https://github.com/lbenie/reading-time-estimator/issues/2279)) ([36d5901](https://github.com/lbenie/reading-time-estimator/commit/36d5901f2efdd7be0cd536c1ac9b4b1ab3428bb4))
+
+
+### :white_check_mark: Chores
+
+* **deps-dev:** update dependency @lbenie/linting to v2.1.18 ([#2286](https://github.com/lbenie/reading-time-estimator/issues/2286)) ([2baeca2](https://github.com/lbenie/reading-time-estimator/commit/2baeca26a9d8f6498da6c779a7c315523ed0a53c))
+* **deps-dev:** update dependency @types/node to v26.2.0 ([#2277](https://github.com/lbenie/reading-time-estimator/issues/2277)) ([d1e6dd4](https://github.com/lbenie/reading-time-estimator/commit/d1e6dd42b9c07908bfa264fe612693343dc4a900))
+* **deps-dev:** update dependency @types/node to v26.4.0 ([#2287](https://github.com/lbenie/reading-time-estimator/issues/2287)) ([23591c2](https://github.com/lbenie/reading-time-estimator/commit/23591c220a2feb3f0b44c45e682d1b7842ff49a5))
+* **deps-dev:** update dependency @vitest/coverage-v8 to v4.1.11 ([#2282](https://github.com/lbenie/reading-time-estimator/issues/2282)) ([53550f9](https://github.com/lbenie/reading-time-estimator/commit/53550f9f56431b1ba144d4e774629103bc8622d4))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.3.0 ([#2280](https://github.com/lbenie/reading-time-estimator/issues/2280)) ([7205d51](https://github.com/lbenie/reading-time-estimator/commit/7205d514453597d6ee142fa6957df0878c8d1bfe))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.4.0 ([#2284](https://github.com/lbenie/reading-time-estimator/issues/2284)) ([6b03ae8](https://github.com/lbenie/reading-time-estimator/commit/6b03ae87f5e01354d536b8930308a680e4ee4584))
+* **deps-dev:** update dependency rollup to v4.63.1 ([#2288](https://github.com/lbenie/reading-time-estimator/issues/2288)) ([6c2b070](https://github.com/lbenie/reading-time-estimator/commit/6c2b070ec7464bc1d70d9dc72c4c432db41a19a0))
+* **deps-dev:** update dependency semantic-release to v25.0.9 ([#2275](https://github.com/lbenie/reading-time-estimator/issues/2275)) ([dac21ea](https://github.com/lbenie/reading-time-estimator/commit/dac21ea998c4528ebd164dc1657acc8e1cd238cf))
+* **deps-dev:** update dependency vite to v8.2.1 ([#2276](https://github.com/lbenie/reading-time-estimator/issues/2276)) ([3cf1ae6](https://github.com/lbenie/reading-time-estimator/commit/3cf1ae6205b91b7af50a200ae420ad3d5971b594))
+* **deps-dev:** update dependency vite to v8.2.2 ([#2285](https://github.com/lbenie/reading-time-estimator/issues/2285)) ([26a6751](https://github.com/lbenie/reading-time-estimator/commit/26a675199c7e956cbec7b607d91441250661b3f9))
+* **deps-dev:** update dependency vitest to v4.1.11 ([#2283](https://github.com/lbenie/reading-time-estimator/issues/2283)) ([0ca0efb](https://github.com/lbenie/reading-time-estimator/commit/0ca0efbe77fe603c120aab1849de4ca6d33618b4))
+* **deps:** update pnpm to v11.24.0 ([#2278](https://github.com/lbenie/reading-time-estimator/issues/2278)) ([a140254](https://github.com/lbenie/reading-time-estimator/commit/a14025404453c6ce7e290b547a2b06cd5c4a4ac4))
+
 # [2.13.0](https://github.com/lbenie/reading-time-estimator/compare/v2.12.0...v2.13.0) (2026-08-05)
 
 
