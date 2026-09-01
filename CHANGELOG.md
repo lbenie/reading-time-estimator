@@ -1,3 +1,16 @@
+# [2.15.0](https://github.com/lbenie/reading-time-estimator/compare/v2.14.0...v2.15.0) (2026-09-01)
+
+
+### :sparkles: Features
+
+* **deps:** update dependency marked to v18.0.11 ([#2281](https://github.com/lbenie/reading-time-estimator/issues/2281)) ([bc86e8b](https://github.com/lbenie/reading-time-estimator/commit/bc86e8b8584a8fc4a9e93b17f77b336742f8f9c0))
+
+
+### :white_check_mark: Chores
+
+* **deps-dev:** update dependency @lbenie/linting to v2.1.19 ([#2289](https://github.com/lbenie/reading-time-estimator/issues/2289)) ([68b1be7](https://github.com/lbenie/reading-time-estimator/commit/68b1be73e7597b3b72c331b2d5e0ffccdc36d761))
+* **deps:** update pnpm to v11.25.0 ([#2290](https://github.com/lbenie/reading-time-estimator/issues/2290)) ([f0f75a4](https://github.com/lbenie/reading-time-estimator/commit/f0f75a42162e4e68fb135594b42904e48f2de05e))
+
 # [2.14.0](https://github.com/lbenie/reading-time-estimator/compare/v2.13.0...v2.14.0) (2026-08-30)
 
 
