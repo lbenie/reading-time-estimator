@@ -34,8 +34,8 @@ importers:
         specifier: 14.1.1
         version: 14.1.1(semantic-release@25.0.9(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@types/node':
-        specifier: 26.4.1
-        version: 26.4.1
+        specifier: 26.5.1
+        version: 26.5.1
       '@types/sanitize-html':
         specifier: 2.16.1
         version: 2.16.1
@@ -59,13 +59,13 @@ importers:
         version: 6.0.3
       unplugin-auto-import:
         specifier: 21.1.0
-        version: 21.1.0(esbuild@0.27.2)(rolldown@1.2.5)(rollup@4.63.1)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
+        version: 21.1.0(esbuild@0.27.2)(rolldown@1.2.5)(rollup@4.63.1)(vite@8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
       vite:
         specifier: 8.2.2
-        version: 8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))
+        version: 8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))
       vitest:
         specifier: 4.1.11
-        version: 4.1.11(@types/node@26.4.1)(@vitest/coverage-v8@4.1.11)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
+        version: 4.1.11(@types/node@26.5.1)(@vitest/coverage-v8@4.1.11)(vite@8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
 
 packages:
 
@@ -745,8 +745,8 @@ packages:
   '@types/estree@1.0.9':
     resolution: {integrity: sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==}
 
-  '@types/node@26.4.1':
-    resolution: {integrity: sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA==}
+  '@types/node@26.5.1':
+    resolution: {integrity: sha512-CzNm2FezW4VR/LjG6yUdiEgLE/rAQ9Slj5gCu/C2VrdcW7I0ahNZ8DRbHT7zOZ6r3ONgd/bsQIeSaoDGrd1C6g==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2322,8 +2322,8 @@ packages:
     engines: {node: '>=0.8.0'}
     hasBin: true
 
-  undici-types@8.3.0:
-    resolution: {integrity: sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ==}
+  undici-types@8.9.0:
+    resolution: {integrity: sha512-KTDyRTYX8sWmKXAikPHHSyc63CRPETMctyjKFupcC6OBLXT3xsN0e9aF7m+mIXutFWpUXuedtowG7iLOzp0kQg==}
 
   undici@6.23.0:
     resolution: {integrity: sha512-VfQPToRA5FZs/qJxLIinmU59u0r7LXqoJkCzinq3ckNJp3vKEh7jTWN589YQ5+aoAC/TGRLyJLCPKcLQbM8r9g==}
@@ -3107,9 +3107,9 @@ snapshots:
 
   '@types/estree@1.0.9': {}
 
-  '@types/node@26.4.1':
+  '@types/node@26.5.1':
     dependencies:
-      undici-types: 8.3.0
+      undici-types: 8.9.0
 
   '@types/normalize-package-data@2.4.4': {}
 
@@ -3129,7 +3129,7 @@ snapshots:
       obug: 2.1.1
       std-env: 4.0.0
       tinyrainbow: 3.1.0
-      vitest: 4.1.11(@types/node@26.4.1)(@vitest/coverage-v8@4.1.11)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
+      vitest: 4.1.11(@types/node@26.5.1)(@vitest/coverage-v8@4.1.11)(vite@8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
 
   '@vitest/expect@4.1.11':
     dependencies:
@@ -3140,13 +3140,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.0
 
-  '@vitest/mocker@4.1.11(vite@8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))':
+  '@vitest/mocker@4.1.11(vite@8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))':
     dependencies:
       '@vitest/spy': 4.1.11
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))
+      vite: 8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))
 
   '@vitest/pretty-format@4.1.11':
     dependencies:
@@ -4659,7 +4659,7 @@ snapshots:
   uglify-js@3.19.3:
     optional: true
 
-  undici-types@8.3.0: {}
+  undici-types@8.9.0: {}
 
   undici@6.23.0: {}
 
@@ -4671,7 +4671,7 @@ snapshots:
 
   unicorn-magic@0.3.0: {}
 
-  unimport@6.4.0(esbuild@0.27.2)(rolldown@1.2.5)(rollup@4.63.1)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))):
+  unimport@6.4.0(esbuild@0.27.2)(rolldown@1.2.5)(rollup@4.63.1)(vite@8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))):
     dependencies:
       acorn: 8.18.0
       escape-string-regexp: 5.0.0
@@ -4685,7 +4685,7 @@ snapshots:
       scule: 1.3.0
       strip-literal: 4.0.0
       tinyglobby: 0.2.17
-      unplugin: 3.3.0(esbuild@0.27.2)(rolldown@1.2.5)(rollup@4.63.1)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
+      unplugin: 3.3.0(esbuild@0.27.2)(rolldown@1.2.5)(rollup@4.63.1)(vite@8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
       unplugin-utils: 0.3.2
     optionalDependencies:
       rolldown: 1.2.5
@@ -4707,13 +4707,13 @@ snapshots:
 
   universalify@2.0.1: {}
 
-  unplugin-auto-import@21.1.0(esbuild@0.27.2)(rolldown@1.2.5)(rollup@4.63.1)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))):
+  unplugin-auto-import@21.1.0(esbuild@0.27.2)(rolldown@1.2.5)(rollup@4.63.1)(vite@8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))):
     dependencies:
       local-pkg: 1.2.1
       magic-string: 1.1.0
       picomatch: 4.0.5
-      unimport: 6.4.0(esbuild@0.27.2)(rolldown@1.2.5)(rollup@4.63.1)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
-      unplugin: 3.3.0(esbuild@0.27.2)(rolldown@1.2.5)(rollup@4.63.1)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
+      unimport: 6.4.0(esbuild@0.27.2)(rolldown@1.2.5)(rollup@4.63.1)(vite@8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
+      unplugin: 3.3.0(esbuild@0.27.2)(rolldown@1.2.5)(rollup@4.63.1)(vite@8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
       unplugin-utils: 0.3.2
     transitivePeerDependencies:
       - '@farmfe/core'
@@ -4732,7 +4732,7 @@ snapshots:
       pathe: 2.0.3
       picomatch: 4.0.5
 
-  unplugin@3.3.0(esbuild@0.27.2)(rolldown@1.2.5)(rollup@4.63.1)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))):
+  unplugin@3.3.0(esbuild@0.27.2)(rolldown@1.2.5)(rollup@4.63.1)(vite@8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))):
     dependencies:
       '@jridgewell/remapping': 2.3.5
       picomatch: 4.0.5
@@ -4741,7 +4741,7 @@ snapshots:
       esbuild: 0.27.2
       rolldown: 1.2.5
       rollup: 4.63.1
-      vite: 8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))
+      vite: 8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))
 
   url-join@5.0.0: {}
 
@@ -4752,7 +4752,7 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite@8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)):
+  vite@8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.5
@@ -4760,15 +4760,15 @@ snapshots:
       rolldown: 1.2.5
       tinyglobby: 0.2.17
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.1
       esbuild: 0.27.2
       fsevents: 2.3.3
       stylus: 0.57.0(supports-color@7.2.0)
 
-  vitest@4.1.11(@types/node@26.4.1)(@vitest/coverage-v8@4.1.11)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))):
+  vitest@4.1.11(@types/node@26.5.1)(@vitest/coverage-v8@4.1.11)(vite@8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))):
     dependencies:
       '@vitest/expect': 4.1.11
-      '@vitest/mocker': 4.1.11(vite@8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
+      '@vitest/mocker': 4.1.11(vite@8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
       '@vitest/pretty-format': 4.1.11
       '@vitest/runner': 4.1.11
       '@vitest/snapshot': 4.1.11
@@ -4785,10 +4785,10 @@ snapshots:
       tinyexec: 1.0.2
       tinyglobby: 0.2.17
       tinyrainbow: 3.1.0
-      vite: 8.2.2(@types/node@26.4.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))
+      vite: 8.2.2(@types/node@26.5.1)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.1
       '@vitest/coverage-v8': 4.1.11(vitest@4.1.11)
     transitivePeerDependencies:
       - msw
