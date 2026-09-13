@@ -170,7 +170,7 @@
     "vitest": "4.1.11"
   },
   "dependencies": {
-    "marked": "18.0.11",
+    "marked": "18.0.13",
     "sanitize-html": "2.17.7"
   },
   "packageManager": "pnpm@11.25.0"
