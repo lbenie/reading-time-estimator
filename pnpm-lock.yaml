@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       marked:
-        specifier: 18.0.11
-        version: 18.0.11
+        specifier: 18.0.13
+        version: 18.0.13
       sanitize-html:
         specifier: 2.17.7
         version: 2.17.7
@@ -1626,8 +1626,8 @@ packages:
     engines: {node: '>= 18'}
     hasBin: true
 
-  marked@18.0.11:
-    resolution: {integrity: sha512-HnslJfsZkRPBDJRHvVtAaWlZHEpSu7u8LgQuJCELjRKuWR+hpq4A7sLq3p8HaI9ypVoXDXxV34CsQJEe1+J5Aw==}
+  marked@18.0.13:
+    resolution: {integrity: sha512-xTxVzZsBFwunP6HDmtBkabUQEYArnP7/rMDGmPj9SlrKlQ4i8MdYVow+nJL0eOqwpUqhzBoTBRADGN6uYwPyOw==}
     engines: {node: '>= 20'}
     hasBin: true
 
@@ -4017,7 +4017,7 @@ snapshots:
 
   marked@15.0.12: {}
 
-  marked@18.0.11: {}
+  marked@18.0.13: {}
 
   meow@13.2.0: {}
 
