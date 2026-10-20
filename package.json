@@ -158,7 +158,7 @@
     "@semantic-release/github": "12.0.10",
     "@semantic-release/release-notes-generator": "14.1.1",
     "@types/node": "26.6.5",
-    "@types/sanitize-html": "2.16.1",
+    "@types/sanitize-html": "2.16.2",
     "@vitest/coverage-v8": "4.1.12",
     "all-contributors-cli": "6.26.1",
     "conventional-changelog-conventionalcommits": "10.4.1",
