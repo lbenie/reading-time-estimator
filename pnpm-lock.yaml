@@ -167,8 +167,8 @@ importers:
   .:
     dependencies:
       marked:
-        specifier: 18.0.11
-        version: 18.0.11
+        specifier: 18.1.1
+        version: 18.1.1
       sanitize-html:
         specifier: 2.17.7
         version: 2.17.7
@@ -1763,8 +1763,8 @@ packages:
     engines: {node: '>= 18'}
     hasBin: true
 
-  marked@18.0.11:
-    resolution: {integrity: sha512-HnslJfsZkRPBDJRHvVtAaWlZHEpSu7u8LgQuJCELjRKuWR+hpq4A7sLq3p8HaI9ypVoXDXxV34CsQJEe1+J5Aw==}
+  marked@18.1.1:
+    resolution: {integrity: sha512-zEGgrtUG8crk+TrMacJSVABU4DYDDkS8uqgU3ohrn/2fW9C2AEfUrO3m6IhpIpQpl7YcVpiXXC9cSMWDANT3dg==}
     engines: {node: '>= 20'}
     hasBin: true
 
@@ -4131,7 +4131,7 @@ snapshots:
 
   marked@15.0.12: {}
 
-  marked@18.0.11: {}
+  marked@18.1.1: {}
 
   meow@13.2.0: {}
 
