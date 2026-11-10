@@ -201,8 +201,8 @@ importers:
         specifier: 4.1.12
         version: 4.1.12(vitest@4.1.12)
       all-contributors-cli:
-        specifier: 7.0.0
-        version: 7.0.0(@types/node@26.6.6)
+        specifier: 7.0.1
+        version: 7.0.1(@types/node@26.6.6)
       conventional-changelog-conventionalcommits:
         specifier: 10.4.1
         version: 10.4.1
@@ -1106,8 +1106,8 @@ packages:
     resolution: {integrity: sha512-gOsf2YwSlleG6IjRYG2A7k0HmBMEo6qVNk9Bp/EaLgAJT5ngH6PXbqa4ItvnEwCm/velL5jAnQgsHsWnjhGmvw==}
     engines: {node: '>=18'}
 
-  all-contributors-cli@7.0.0:
-    resolution: {integrity: sha512-Ng5BzMGjyd5BOKONQLkZ0udJBuda65t+CmhGoURhHmfuztvCjLw/CkRuA/lj1+FgqWvzv06IOEgxt6h+7GlSBQ==}
+  all-contributors-cli@7.0.1:
+    resolution: {integrity: sha512-gMP/2fSB3aUjM147lCFIGoALT7d4+RzPNicUvmTFh1aCBp8eprureRWaOvmkAGg3Esc2IJTeW9mh/LB+RDQevQ==}
     engines: {node: '>=22.22.0'}
     hasBin: true
 
@@ -3469,7 +3469,7 @@ snapshots:
       clean-stack: 5.3.0
       indent-string: 5.0.0
 
-  all-contributors-cli@7.0.0(@types/node@26.6.6):
+  all-contributors-cli@7.0.1(@types/node@26.6.6):
     dependencies:
       eta: 4.6.0
       inquirer: 14.2.5(@types/node@26.6.6)
