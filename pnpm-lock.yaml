@@ -217,8 +217,8 @@ importers:
         specifier: 2.16.2
         version: 2.16.2
       '@vitest/coverage-v8':
-        specifier: 5.1.1
-        version: 5.1.1(vitest@5.1.2)
+        specifier: 5.1.2
+        version: 5.1.2(vitest@5.1.2)
       all-contributors-cli:
         specifier: 7.0.3
         version: 7.0.3(@types/node@26.6.10)
@@ -242,7 +242,7 @@ importers:
         version: 8.3.8(@types/node@26.6.10)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))
       vitest:
         specifier: 5.1.2
-        version: 5.1.2(@types/node@26.6.10)(@vitest/coverage-v8@5.1.1)(vite@8.3.8(@types/node@26.6.10)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
+        version: 5.1.2(@types/node@26.6.10)(@vitest/coverage-v8@5.1.2)(vite@8.3.8(@types/node@26.6.10)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
 
 packages:
 
@@ -1087,11 +1087,11 @@ packages:
   '@types/sanitize-html@2.16.2':
     resolution: {integrity: sha512-kuAbgDCFv418flrp3z4o/4ufLA/5ovmXRH0L419iZCPGO7w00znjeDI5Wy/KZWNIBpDQc7hucCK+J5almB6FyA==}
 
-  '@vitest/coverage-v8@5.1.1':
-    resolution: {integrity: sha512-xL4NkbVx/UqqDHaXSOyvB8qsSoLQ+dVNGR9H2Bh/4ggQtmaPFNPUC9gZQwKZePLOQ6WDcgwXVnPulFW9eCHt0w==}
+  '@vitest/coverage-v8@5.1.2':
+    resolution: {integrity: sha512-VG0JLv0T4kr1fR6QAfe8PTou+Frc4t0u4j+oKgDH3djJpFawzBfGyX14/z56NXoCTNem3OEphzCJhc4DkE62xQ==}
     peerDependencies:
-      '@vitest/browser': 5.1.1
-      vitest: 5.1.1
+      '@vitest/browser': 5.1.2
+      vitest: 5.1.2
     peerDependenciesMeta:
       '@vitest/browser':
         optional: true
@@ -3438,7 +3438,7 @@ snapshots:
     dependencies:
       htmlparser2: 12.0.0
 
-  '@vitest/coverage-v8@5.1.1(vitest@5.1.2)':
+  '@vitest/coverage-v8@5.1.2(vitest@5.1.2)':
     dependencies:
       '@bcoe/v8-coverage': 1.0.2
       '@vitest/istanbul-lib-coverage': 2.1.1
@@ -3448,7 +3448,7 @@ snapshots:
       obug: 3.0.0
       std-env: 4.3.0
       tinyrainbow: 3.2.0
-      vitest: 5.1.2(@types/node@26.6.10)(@vitest/coverage-v8@5.1.1)(vite@8.3.8(@types/node@26.6.10)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
+      vitest: 5.1.2(@types/node@26.6.10)(@vitest/coverage-v8@5.1.2)(vite@8.3.8(@types/node@26.6.10)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
 
   '@vitest/istanbul-lib-coverage@2.1.1': {}
 
@@ -4891,7 +4891,7 @@ snapshots:
       fsevents: 2.3.3
       stylus: 0.57.0(supports-color@7.2.0)
 
-  vitest@5.1.2(@types/node@26.6.10)(@vitest/coverage-v8@5.1.1)(vite@8.3.8(@types/node@26.6.10)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))):
+  vitest@5.1.2(@types/node@26.6.10)(@vitest/coverage-v8@5.1.2)(vite@8.3.8(@types/node@26.6.10)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0))):
     dependencies:
       '@types/chai': 5.2.3
       '@vitest/mocker': 5.1.2(vite@8.3.8(@types/node@26.6.10)(esbuild@0.27.2)(stylus@0.57.0(supports-color@7.2.0)))
@@ -4909,7 +4909,7 @@ snapshots:
       why-is-node-running: 3.2.1
     optionalDependencies:
       '@types/node': 26.6.10
-      '@vitest/coverage-v8': 5.1.1(vitest@5.1.2)
+      '@vitest/coverage-v8': 5.1.2(vitest@5.1.2)
     transitivePeerDependencies:
       - msw
 
