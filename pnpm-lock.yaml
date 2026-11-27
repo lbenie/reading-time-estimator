@@ -220,8 +220,8 @@ importers:
         specifier: 5.1.2
         version: 5.1.2(vitest@5.1.2)
       all-contributors-cli:
-        specifier: 7.0.3
-        version: 7.0.3(@types/node@26.6.11)
+        specifier: 7.0.4
+        version: 7.0.4(@types/node@26.6.11)
       conventional-changelog-conventionalcommits:
         specifier: 10.4.1
         version: 10.4.1
@@ -1136,8 +1136,8 @@ packages:
     resolution: {integrity: sha512-gOsf2YwSlleG6IjRYG2A7k0HmBMEo6qVNk9Bp/EaLgAJT5ngH6PXbqa4ItvnEwCm/velL5jAnQgsHsWnjhGmvw==}
     engines: {node: '>=18'}
 
-  all-contributors-cli@7.0.3:
-    resolution: {integrity: sha512-zsKuzp+F5JUjy9IThlwYyQJuwFiReo0RRIlGVU7mdZfU/ZwsQHuov8PZGFOFfenitA7+qWoItARKp4CUu5NnVw==}
+  all-contributors-cli@7.0.4:
+    resolution: {integrity: sha512-60tShb2IOQK6fRxvqTqZt1v6QfZ2FTegZR7r7EmnI/jTuBHU2ZoATwMu31MkM1jgsB8XcmcPczhAewrZkMom4A==}
     engines: {node: '>=22.22.0'}
     deprecated: This package has been renamed to @all-contributors/cli. Please replace your current usage with the new package to continue receiving updates.
     hasBin: true
@@ -3478,7 +3478,7 @@ snapshots:
       clean-stack: 5.3.0
       indent-string: 5.0.0
 
-  all-contributors-cli@7.0.3(@types/node@26.6.11):
+  all-contributors-cli@7.0.4(@types/node@26.6.11):
     dependencies:
       eta: 4.6.0
       inquirer: 14.2.5(@types/node@26.6.11)
